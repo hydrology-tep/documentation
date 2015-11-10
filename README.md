@@ -13,7 +13,17 @@ Here's the procedure to install the required packages on a CentOS 6.x
 ```
 sudo yum install python-sphinx
 sudo yum install python-pip
+```
+
+As root do:
+
+```
 pip install sphinx_bootstrap_theme
+```
+
+Back as your user, do:
+
+```
 git clone git@github.com:hydrology-tep/documentation.git
 cd documentation
 ```
