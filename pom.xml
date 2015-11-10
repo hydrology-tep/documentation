@@ -14,8 +14,8 @@
 	<description>Hydrology Thematic Exploitation Platform guide</description>
 	<version>0.1.0-SNAPSHOT</version>
 	
-	<dependencies>
-<!--		<dependency>
+<!--	<dependencies>
+		<dependency>
 			<groupId>com.terradue.infra</groupId>
 			<artifactId>documentation</artifactId>
 			<type>zip</type>
