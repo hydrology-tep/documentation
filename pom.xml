@@ -9,7 +9,7 @@
 	</parent>
 
 	<groupId>com.terradue.tag</groupId>
-	<artifactId>documentation</artifactId>
+	<artifactId>doc-tep-hydrology</artifactId>
 	<packaging>rpm</packaging>
 	<description>Hydrology Thematic Exploitation Platform guide</description>
 	<version>0.1.0-SNAPSHOT</version>
@@ -167,7 +167,7 @@
 					</defineStatements>
 					<mappings>
 						<mapping>
-							<directory>/var/www/html/tep-geohazards</directory>
+							<directory>/var/www/html/tep-hydrology</directory>
 							<filemode>755</filemode>
 							<sources>
 								<source>
