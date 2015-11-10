@@ -27,7 +27,7 @@
 	<properties>
 		<github.global.server>github</github.global.server>
 		<github.site.repositoryName>documentation</github.site.repositoryName>
-		<github.site.repositoryOwner>Terradue</github.site.repositoryOwner>
+		<github.site.repositoryOwner>hydrology-tep</github.site.repositoryOwner>
 	</properties>
 	
 	<scm>
