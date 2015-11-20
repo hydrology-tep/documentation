@@ -1,6 +1,7 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Hydrology Thematic Exploitation Platform documentation build configuration file, created by
+# Urban Thematic Exploitation Platform documentation build configuration file, created by
 # sphinx-quickstart on Tue Nov 10 15:34:34 2015.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -24,7 +25,7 @@ sys.path.append(os.path.abspath('ext'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo', 'sphinx.ext.ifconfig', 'githubpath']
+extensions = ['sphinx.ext.todo', 'sphinx.ext.ifconfig', 'githubpath', 'sphinxcontrib.plantuml']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -40,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Hydrology Thematic Exploitation Platform'
-copyright = u'2015, HEP consortium'
+copyright = u'2015, TEP Hydrology consortium'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -62,7 +63,7 @@ release = '0.1'
 #today_fmt = '%B %d, %Y'
 
 # List of documents that shouldn't be included in the build.
-#unused_docs = []
+unused_docs = []
 
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
@@ -96,7 +97,7 @@ github_branch = "master"
 
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
-html_theme = 'default'
+html_theme = 'bootstrap'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -104,7 +105,7 @@ html_theme = 'default'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -136,7 +137,7 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {'**': ['alltoc.html', 'sourcelink.html', 'searchbox.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -178,7 +179,7 @@ htmlhelp_basename = 'HydrologyThematicExploitationPlatformdoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'HydrologyThematicExploitationPlatform.tex', u'Hydrology Thematic Exploitation Platform Documentation',
-   u'HEP consortium', 'manual'),
+   u'TEP Hydrology consortium', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
