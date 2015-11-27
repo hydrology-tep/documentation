@@ -5,10 +5,10 @@ GitHub is a web-based hosting service for software development projects that use
 
 GitHub offers both paid plans for private repositories, and free accounts for open source projects.
 
-GEP Laboratory and the GitHub organization
+HEP Laboratory and the GitHub organization
 ++++++++++++++++++++++++++++++++++++++++++
 
-The GEP laboratory has a one-to-one relationship with the corresponding Hydrology TEP GitHub organization https://github.com/hydrology-tep/.
+The HEP laboratory has a one-to-one relationship with the corresponding Hydrology TEP GitHub organization https://github.com/hydrology-tep/.
 
 Organizing the GitHub teams
 +++++++++++++++++++++++++++

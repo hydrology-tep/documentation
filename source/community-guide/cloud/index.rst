@@ -7,7 +7,7 @@ Contents:
    :maxdepth: 2
    
    Cloud Dashboard <dashboard>
-   Join the GEP Laboratory <laboratory>
+   Join the HEP Laboratory <laboratory>
    ESA Cloud Toolbox <esa_toolbox>
    Developer Cloud Sandbox <sandbox>
    Using Github <github>
