@@ -7,6 +7,11 @@ GeoBrowser
 .. figure:: ../../includes/geobrowser.png
 	:figclass: img-border img-max-width
 
+.. req:: HEP-TS-DES-001
+	:show:
+
+	This section shows that TEP platform implement a geobrowser with web widgets.
+
 
 The GeoBrowser is composed of:
 

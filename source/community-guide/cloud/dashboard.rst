@@ -23,3 +23,8 @@ From the cloud dashboard, user can:
 .. |bulb| image:: ../../includes/bulb.png
 .. |cloud_dahsboard_plus.png| image:: ../../includes/cloud_dahsboard_plus.png
 .. |cloud_dahsboard_list.png| image:: ../../includes/cloud_dahsboard_list.png
+
+.. req:: HEP-TS-DES-001
+	:show:
+
+	This section shows that TEP platform implement a cloud dashboard.

@@ -11,6 +11,11 @@ It is defined by a list of services offerings, such as:
 	- wps services
 	- ...
 
+.. req:: HEP-TS-DES-002
+	:show:
+
+	This section describes how a user can create its own thematic application.
+
 .. req:: HEP-TS-DES-020
 	:show:
 
@@ -40,11 +45,6 @@ A user is able to define its own *Thematic App* by selecting widget amongst:
 - Map description (background, layers)
 - Data package widget defining the data packages OpenSearch endpoint
 The application shall be defined using OGC OWS Context.
-
-.. req:: HEP-TS-DES-002
-	:show:
-
-	This section describes how a user can create its own thematic application.
 
 .. req:: HEP-TS-FUN-015
 	:show:
