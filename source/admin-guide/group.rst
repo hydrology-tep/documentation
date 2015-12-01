@@ -11,3 +11,7 @@ Groups management
 .. |plus| image:: ../includes/plus.png
 .. |minus| image:: ../includes/minus.png
 
+.. req:: HEP-TS-DES-010
+	:show:
+
+	This section describes how an administrator can manage groups.

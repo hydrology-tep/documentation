@@ -8,6 +8,16 @@ WPS services management
 | To add a group, click on |plus| in front of the group's name in the *All Groups* panel.
 | To remove a group, click on |minus| in front of the group's name in the *Allowed Groups* panel.
 
+.. req:: HEP-TS-DES-010
+	:show:
+
+	This section describes how an administrator can modify sharing authorization of a processing service.
+
+.. req:: HEP-TS-DES-011
+	:show:
+
+	This section describes how an expert can modify sharing authorization of a processing service.
+
 .. |manage| image:: ../includes/groups_manage.png
 .. |plus| image:: ../includes/plus.png
 .. |minus| image:: ../includes/minus.png

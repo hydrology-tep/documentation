@@ -8,6 +8,16 @@ Reporting
 .. figure:: ../includes/report.png
 	:figclass: img-border img-max-width
 
+.. req:: HEP-TS-DES-012
+    :show:
+
+    This section describes how an ICT provider can create users and groups accounting reports.
+
+.. req:: HEP-TS-DES-013
+    :show:
+
+    This section describes how a Data provider can create users and groups accounting reports.
+
 Create a new report
 -------------------
 

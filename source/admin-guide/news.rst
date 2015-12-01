@@ -31,3 +31,13 @@ News management
 - Author (author of the news)
 - Url (related url)
 - Tags (tags to use on the query, coma separated)
+
+.. req:: HEP-TS-DES-010
+	:show:
+
+	This section describes how an administrator can manage news sources and blog posts.
+
+.. req:: HEP-TS-DES-015
+	:show:
+
+	This section describes how a user with Content Authoriry role can manage news sources and blog posts.
