@@ -25,7 +25,7 @@ sys.path.append(os.path.abspath('ext'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo', 'sphinx.ext.ifconfig', 'githubpath', 'sphinxcontrib.plantuml']
+extensions = ['sphinx.ext.todo', 'sphinx.ext.ifconfig', 'githubpath', 'sphinxcontrib.plantuml', 'req']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -92,6 +92,9 @@ pygments_style = 'sphinx'
 # Github path
 github_repo = "https://github.com/hydrology-tep/documentation"
 github_branch = "master"
+
+# requirements trace
+req_include_reqs = True
 
 # -- Options for HTML output ---------------------------------------------------
 
