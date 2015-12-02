@@ -13,7 +13,7 @@ From the home page, click on the **View Groups** button to access the list of ex
 	:figclass: img-border
 	:scale: 80%
 
-The list of all Tep Urban groups will be displayed, with information about users of this group.
+The list of all Tep Hydrology groups will be displayed, with information about users of this group.
 
 .. figure:: ../includes/groups.png
 	:align: center
