@@ -12,6 +12,11 @@ GeoBrowser
 
 	This section shows that TEP platform implement a geobrowser with web widgets.
 
+.. req:: HEP-TS-ICD-016
+	:show:
+
+	This section describes how is structured and configured the geobrowser.
+
 
 The GeoBrowser is composed of:
 
