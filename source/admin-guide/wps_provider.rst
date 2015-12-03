@@ -5,3 +5,8 @@ WPS providers management
 | The Administrator can also *Update* a WPS provider (by clicking on |update|). This action will do a request to the WPS provider (GetCapabilities) to check wethere there are new WPS services available. If so, these services will be automatically added to the list of existing WPS services in DB.
 
 .. |update| image:: ../includes/update.png
+
+.. req:: HEP-TS-DES-010
+	:show:
+
+	This section describes how an administrator can manage users.

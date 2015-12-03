@@ -6,7 +6,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   Thematic applications <thematic_app>
-   WOIS applications <wois_app>
-   Management application <management_app>
+   Overview <overview>
+   Niger river <niger_river>
+   Red river <red_river>
+   Global Hydrological Modeling <global_hydro_model>
+   WOIS CloudToolbox <wois_app>
+   My worskpace <workspace>
    

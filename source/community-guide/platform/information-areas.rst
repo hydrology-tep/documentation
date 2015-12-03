@@ -18,3 +18,8 @@ Directly on the homepage, the user can find:
 
 .. figure:: ../../includes/news_tumblr.png
 	:figclass: img-border
+
+.. req:: HEP-TS-DES-001
+	:show:
+
+	This section shows that TEP platform implement editorial pages.

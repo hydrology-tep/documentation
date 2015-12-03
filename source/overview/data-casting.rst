@@ -11,7 +11,7 @@ These provided data resources can be searched and retrieved by users from the pl
 and exploited through cloud appliances bound to a proper usage policy.
 
 
-I am a data provider, how can I proceed to get registered on GEP ?
+I am a data provider, how can I proceed to get registered on HEP ?
 ------------------------------------------------------------------
 
 For the time period of the Platform Validation with early adopters, 

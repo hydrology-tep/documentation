@@ -1,3 +1,5 @@
+.. _geobrowser:
+
 GeoBrowser area for data and Cloud processing services
 ======================================================
 
@@ -6,6 +8,16 @@ GeoBrowser
 
 .. figure:: ../../includes/geobrowser.png
 	:figclass: img-border img-max-width
+
+.. req:: HEP-TS-DES-001
+	:show:
+
+	This section shows that TEP platform implement a geobrowser with web widgets.
+
+.. req:: HEP-TS-ICD-016
+	:show:
+
+	This section describes how is structured and configured the geobrowser.
 
 
 The GeoBrowser is composed of:
@@ -22,7 +34,8 @@ The map is just a simple map, on which you can zoom in, zoom out and navigate.
 
 Some buttons maybe used to interact with the map:
 
--  |geobrowser_button_search.png| search area
+-  |geobrowser_button_search.png| search text
+-  |geobrowser_button_search_area.png| search area
 -  |geobrowser_button_plus.png| Zoom in
 -  |geobrowser_button_minus.png| Zoom out
 -  |geobrowser_button_query.png| Open query search tab
@@ -35,7 +48,7 @@ Some buttons maybe used to interact with the map:
 
 Search area
 ***********
-From the geobrowser, a search area can be accessed by clicking on the |geobrowser_button_search.png| button. This expands a view containing all search parameters associated to the current catalogue on which the search will be performed.
+From the geobrowser, a search area can be accessed by clicking on the |geobrowser_button_search_area.png| button. This expands a view containing all search parameters associated to the current catalogue on which the search will be performed.
 Some parameters are just free text, others can be chosen from a list, and some parameters can be filled from the geobrowser. This is the case of:
 
 - the temporal parameter which can be filled by moving the temporal bar present on the geobrowser.
@@ -53,19 +66,6 @@ Data Results layer
 ******************
 
 Display the results (orange polygons) of the current search or context.
-
-Disaster charter layer
-**********************
-
-Add disaster events on the map (list of events comes from https://www.disasterscharter.org).
-For a better visibility, events are grouped by location, accordingly to the zoom level. If you zoom in, grouped events will split into smaller groups or unique events:
-
--  |geobrowser_disaster_big_group.png| group of more than 10 events
--  |geobrowser_disaster_small_group.png| group of less than 10 events
--  |geobrowser_disaster_event.png| unique event
-
-You can click on a unique event and get related data or access the webpage related to this event.
-
 
 Density map layer
 *****************
@@ -97,11 +97,10 @@ Results
 The result tab is divided in two parts:
 
 - On the left, the **Results Table** showing the list of current results displayed on the map. Results are paginatd, only 20 items are displayed, select another page to discover more products.
-- On the right, the **Features Basket** showing all data in the current basket.
+- On the right, the **Features Basket** showing all data in the current basket and **Data Package** panel showing list of data packages accessibles for the user.
 
 Results can be dragged fron the left table to the basket. Then the basket can be saved as a new data package and shared with other users.
 Saved Data packages can then be loaded into the basket. (see :doc:`data <../data>` for more details)
-
 
 Cloud Processing
 ----------------
@@ -127,6 +126,7 @@ Details on jobs can be accessed by clicking on the title of the job.
 .. |geobrowser_button_query.png| image:: ../../includes/geobrowser_button_query.png
 .. |geobrowser_button_plus.png| image:: ../../includes/geobrowser_button_plus.png
 .. |geobrowser_button_minus.png| image:: ../../includes/geobrowser_button_minus.png
+.. |geobrowser_button_search_area.png| image:: ../../includes/geobrowser_button_search_area.png
 .. |geobrowser_button_search.png| image:: ../../includes/geobrowser_button_search.png
 .. |geobrowser_button_polygon.png| image:: ../../includes/geobrowser_button_polygon.png
 .. |geobrowser_button_recbox.png| image:: ../../includes/geobrowser_button_recbox.png
