@@ -1,12 +1,13 @@
-Management App
-==============
+My Workspace
+============
 
-Each user has a personal management app in which he can manage items he owns such as:
+Each user has a personal management app called **My worskpace** in which he can manage items he owns such as:
 
 - data collections,
 - data series,
 - data packages,
-- processing services
+- processing services,
+- processing jobs
 
 For each item, the user can:
 

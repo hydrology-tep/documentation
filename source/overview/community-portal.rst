@@ -5,7 +5,9 @@ The Hydrology Exploitation Platform is a community portal helping you to access 
 It is meant to be used by the following kind of users:
 
 - end user
-- processor provider
+- expert user
+- content authority
+- ICT provider
 - data provider
 - administrator
 
