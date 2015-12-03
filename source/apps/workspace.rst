@@ -26,11 +26,11 @@ For each item, the user can:
 	This section describes how the user can share series, data package, services and jobs.
 
 .. figure:: ../includes/user_edit_collection.png
-	:figclass: img-border img-max-width
+	:figclass: img-border
 	:scale: 80%
 
 .. figure:: ../includes/user_edit_datapackage.png
-	:figclass: img-border img-max-width
+	:figclass: img-border
 	:scale: 80%
 
 Catalog Editor
@@ -63,6 +63,10 @@ From its workspace app, the user has also the ability to create its own Thematic
 - Data package widget defining the data packages OpenSearch endpoint
 
 The application shall be defined using OGC OWS Context.
+
+.. figure:: ../includes/user_new_app.png
+	:figclass: img-border
+	:scale: 80%
 
 .. req:: HEP-TS-FUN-015
 	:show:
