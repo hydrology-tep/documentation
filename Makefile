@@ -62,12 +62,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/HydrologyThematicExploitationPlatform.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/UrbanThematicExploitationPlatform.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/HydrologyThematicExploitationPlatform.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/UrbanThematicExploitationPlatform.qhc"
 
 latex:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+	sed -i .bak 's/{\\hyperref\[\(.*\:req-[0-9]*\)\]{.*}}/{\\autoref{\1}}/g' $(BUILDDIR)/latex/*.tex
+	sed -i .bak 's/\\begin{tabulary}{\linewidth}{|L|L|L|}/\begin{longtable}{|l|l|p{12cm}|}/g' $(BUILDDIR)/latex/*.tex
+	sed -i .bak 's/\\hline\end{longtable}/\hline\end{longtable}/g' $(BUILDDIR)/latex/*.tex
+	cp source/_templates/*.sty $(BUILDDIR)/latex
+	cp source/_static/* $(BUILDDIR)/latex
 	@echo
 	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
 	@echo "Run \`make all-pdf' or \`make all-ps' in that directory to" \
