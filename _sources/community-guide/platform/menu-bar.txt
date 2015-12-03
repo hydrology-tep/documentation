@@ -8,6 +8,7 @@ The menu bar is always visible, apart from the geobrowser page. It contains the 
 - `Information Processing`_,
 - `Community`_,
 - `EO sector Collaboration`_
+- `Partners`_
 
 .. figure:: ../../includes/home_menubar.png
 	:figclass: img-border img-max-width
@@ -41,3 +42,8 @@ EO sector Collaboration
 -----------------------
 
 Description of partners and actors of the TEP Hydrology initiative.
+
+Partners
+--------
+
+Description of the partners in the project.

@@ -8,6 +8,16 @@ Reporting
 .. figure:: ../includes/report.png
 	:figclass: img-border img-max-width
 
+.. req:: HEP-TS-DES-012
+    :show:
+
+    This section describes how an ICT provider can create users and groups accounting reports.
+
+.. req:: HEP-TS-DES-013
+    :show:
+
+    This section describes how a Data provider can create users and groups accounting reports.
+
 Create a new report
 -------------------
 
@@ -16,7 +26,7 @@ To create a new report:
 1. Select a start date (e.g 2015-06-01).
 2. Select a end date (e.g 2015-06-30).
 3. Click on *Generate Report*.
-4. A report named **GEP-report-<start date>-<end date>.csv** is created and saved on the server.
+4. A report named **HEP-report-<start date>-<end date>.csv** is created and saved on the server.
 5. The report is displayed on the page and added to the list of existing reports.
 
 .. note:: If you don't select any date, it will create a report from 2014-01-01 until the current date.

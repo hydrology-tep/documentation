@@ -29,7 +29,7 @@ Access the CloudToolbox
 Prerequisites
 ^^^^^^^^^^^^^
 
-- You are connected to the GEP Virtual Private Network (see :ref:`laboratory`).
+- You are connected to the HEP Virtual Private Network (see :ref:`laboratory`).
 
 Procedure
 ^^^^^^^^^
@@ -96,10 +96,10 @@ User Login
 
 - *(Only for the first connection)* And finally enter (twice) your new password:
 
-Access the datapackages retrieved from the GEP Portal
+Access the datapackages retrieved from the HEP Portal
 -----------------------------------------------------
 
-To access the GEP Portal data that was made available locally to the CloudToolbox by an administrator, 
+To access the HEP Portal data that was made available locally to the CloudToolbox by an administrator, 
 just follow this procedure:
 
 - Click on the *Computer* icon, then on *Filesystem* icon:
@@ -124,5 +124,5 @@ just follow this procedure:
 .. |cloud_dahsboard_plus.png| image:: ../../includes/cloud_dahsboard_plus.png
 
 .. WARNING::
-  To request the configuration of your CloudToolbox with a datapackage previously defined on the GEP Portal, 
+  To request the configuration of your CloudToolbox with a datapackage previously defined on the HEP Portal, 
   contact the support via email to tep-hydrology at esa.int , providing the Portal URL of the requested datapackage.

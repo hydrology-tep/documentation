@@ -6,3 +6,7 @@ Data Package management
 
 .. |export| image:: ../includes/data_package_export.png
 
+.. req:: HEP-TS-DES-010
+	:show:
+
+	This section describes how an administrator can modify sharing authorization of a data package.

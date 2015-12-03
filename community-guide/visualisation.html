@@ -95,6 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
 </li>
@@ -110,7 +111,11 @@
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Visualisation</a><ul>
 <li><a class="reference internal" href="#access-job-result">Access job result</a></li>
-<li><a class="reference internal" href="#visualize-result-on-the-map">Visualize result on the map</a></li>
+<li><a class="reference internal" href="#visualize-result-on-the-map">Visualize result on the map</a><ul>
+<li><a class="reference internal" href="#jobs-results">Jobs results</a></li>
+<li><a class="reference internal" href="#community-results">Community results</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -162,11 +167,16 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Community Portal User Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="platform/index.html">Platform overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user.html">User Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="group.html">Groups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data.html">Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="processing.html">Processing</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Visualisation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#access-job-result">Access job result</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#visualize-result-on-the-map">Visualize result on the map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visualize-result-on-the-map">Visualize result on the map</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#jobs-results">Jobs results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#community-results">Community results</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="reproducibility.html">Reproducibility</a></li>
@@ -177,6 +187,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
   <a href="https://github.com/hydrology-tep/documentation/blob/master/source/community-guide/visualisation.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
@@ -217,16 +228,46 @@
 </div>
 <div class="section" id="visualize-result-on-the-map">
 <h2>Visualize result on the map<a class="headerlink" href="#visualize-result-on-the-map" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-requirement-coverage admonition" id="req-0">
+<p class="first admonition-title">Requirement coverage</p>
+<p>HEP-TS-ICD-017</p>
+<p class="last">This section describes the data visualisation web widget.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The visualization capabilities depends on the offerings presented in the OWS Context document representing the results.
+The Geobrowser will be able to display:
+-       Footprint of a dataset on the map
+-       WMS/WMS-T raster display in the extent defined
+-       Projected Image raster overlay (png, jpeg, gif) with a defined extent
+-       Popup with information given in the abstract of the dataset or a de-fault popup with default information (title, id, dates)</p>
+</div>
+<div class="section" id="jobs-results">
+<h3>Jobs results<a class="headerlink" href="#jobs-results" title="Permalink to this headline">¶</a></h3>
 <p>To visualize results on the map:</p>
 <ol class="arabic simple">
 <li>Access the job once it is finished (see <a href="#id1"><span class="problematic" id="id2">`Discover existing jobs`_</span></a>).</li>
 <li>If a layer is detected, you can display it on the map from the <strong>Results</strong> part of the job description.</li>
 <li>Click on <strong>Show results on map</strong>.</li>
-<li>The layer is displayed on the map.</li>
+<li>The layer is displayed on the map, according to the offerings presented in the OWS Context of the result.</li>
 </ol>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">You may need to be connected to the GEP Virtual Private Network (see <a class="reference internal" href="cloud/laboratory.html#laboratory"><span class="std std-ref">Join the GEP Laboratory</span></a>), in order to download the results.</p>
+<p class="last">You may need to be connected to the HEP Virtual Private Network (see <a class="reference internal" href="cloud/laboratory.html#laboratory"><span class="std std-ref">Join the HEP Laboratory</span></a>), in order to download the results.</p>
+</div>
+</div>
+<div class="section" id="community-results">
+<h3>Community results<a class="headerlink" href="#community-results" title="Permalink to this headline">¶</a></h3>
+<p>To visualize community results on the map:</p>
+<ol class="arabic simple">
+<li>Access the Community context on the geobrowser (see <a class="reference internal" href="platform/geobrowser.html#geobrowser"><span class="std std-ref">GeoBrowser area for data and Cloud processing services</span></a>).</li>
+<li>Select a data published in the Community context using the search function.</li>
+<li>The layer is displayed on the map, according to the offerings presented in the OWS Context of the result.</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">You may need to be connected to the HEP Virtual Private Network (see <a class="reference internal" href="cloud/laboratory.html#laboratory"><span class="std std-ref">Join the HEP Laboratory</span></a>), in order to download the results.</p>
+</div>
 </div>
 </div>
 </div>

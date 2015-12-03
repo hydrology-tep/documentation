@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Thematic Apps &mdash; Hydrology Thematic Exploitation Platform 0.1 documentation</title>
+    <title>Overview &mdash; Hydrology Thematic Exploitation Platform 0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Hydrology Thematic Exploitation Platform 0.1 documentation" href="../index.html" />
     <link rel="up" title="Overview" href="index.html" />
-    <link rel="next" title="WOIS application" href="wois_app.html" />
+    <link rel="next" title="Niger River" href="niger_river.html" />
     <link rel="prev" title="Overview" href="index.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
@@ -95,6 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
 </li>
@@ -108,11 +109,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Thematic Apps</a><ul>
-<li><a class="reference internal" href="#pre-defined-apps">Pre-defined apps</a></li>
-<li><a class="reference internal" href="#user-s-apps">User&#8217;s apps</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Overview</a></li>
 </ul>
 </ul>
 </li>
@@ -126,7 +123,7 @@
     </a>
   </li>
   <li>
-    <a href="wois_app.html" title="Next Chapter: WOIS application"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">WOIS application &raquo;</span>
+    <a href="niger_river.html" title="Next Chapter: Niger River"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Niger River &raquo;</span>
     </a>
   </li>
               
@@ -135,7 +132,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/thematic_app.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/overview.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -163,18 +160,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thematic Applications</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Thematic applications</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pre-defined-apps">Pre-defined apps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#user-s-apps">User&#8217;s apps</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="niger_river.html">Niger river</a></li>
+<li class="toctree-l2"><a class="reference internal" href="red_river.html">Red river</a></li>
+<li class="toctree-l2"><a class="reference internal" href="global_hydro_model.html">Global Hydrological Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wois_app.html">WOIS CloudToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workspace.html">My worskpace</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="wois_app.html">WOIS applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="management_app.html">Management application</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/thematic_app.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/overview.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -188,28 +185,45 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="thematic-apps">
-<h1>Thematic Apps<a class="headerlink" href="#thematic-apps" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="pre-defined-apps">
-<h2>Pre-defined apps<a class="headerlink" href="#pre-defined-apps" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
 <p>A <em>Thematic App</em> is a specific version of the geobrowser, in which specific parameters are pre-defined, in order to serve a specific thematic.
-A list of pre-defined thematic apps can be accessed from the <em>Thematics</em> page.</p>
+It is defined by a list of services offerings, such as:</p>
+<blockquote>
+<div><ul class="simple">
+<li>web widget,</li>
+<li>map layer,</li>
+<li>map background,</li>
+<li>data series,</li>
+<li>wps services</li>
+</ul>
+</div></blockquote>
+<div class="admonition-requirement-coverage admonition" id="req-0">
+<p class="first admonition-title">Requirement coverage</p>
+<p>HEP-TS-DES-002</p>
+<p class="last">This section describes how a user can create its own thematic application.</p>
+</div>
+<div class="admonition-requirement-coverage admonition" id="req-1">
+<p class="first admonition-title">Requirement coverage</p>
+<p>HEP-TS-DES-020</p>
+<p class="last">This section describes the data flow of thematic apps.</p>
+</div>
+<p>A list of pre-defined thematic apps can be accessed from the <em>Thematics</em> page.</p>
 <div class="img-border img-max-width figure">
-<a class="reference internal image-reference" href="apps/../includes/thematic_apps.png"><img alt="apps/../includes/thematic_apps.png" src="apps/../includes/thematic_apps.png" /></a>
+<a class="reference internal image-reference" href="../_images/thematic_apps.png"><img alt="../_images/thematic_apps.png" src="../_images/thematic_apps.png" style="width: 891.2px; height: 674.4px;" /></a>
 </div>
 <p>The pre-defined thematics are:</p>
-</div>
-<div class="section" id="user-s-apps">
-<h2>User&#8217;s apps<a class="headerlink" href="#user-s-apps" title="Permalink to this headline">¶</a></h2>
-<p>A user is able to define its own <em>Thematic App</em> by selecting widget amongst:</p>
-<ul class="simple">
-<li>Dataset search widget defining series, collection or data packages OpenSearch endpoint</li>
-<li>processing Service widget defining service series OpenSearch endpoint</li>
-<li>Map description (background, layers)</li>
-<li>Data package widget defining the data packages OpenSearch endpoint</li>
+<blockquote>
+<div><ul class="simple">
+<li>Niger river (see <a class="reference internal" href="niger_river.html#app-niger-river"><span class="std std-ref">Niger River</span></a>),</li>
+<li>Red river (see <a class="reference internal" href="red_river.html#app-red-river"><span class="std std-ref">Red River</span></a>),</li>
+<li>Global Hydrological Modeling (see <a class="reference internal" href="global_hydro_model.html#app-hydro-model"><span class="std std-ref">Global Hydrological Modeling</span></a>),</li>
+<li>WOIS CloudToolbox (see <a class="reference internal" href="wois_app.html#app-wois"><span class="std std-ref">WOIS CloudToolBox</span></a>)</li>
 </ul>
-<p>The application shall be defined using OGC OWS Context.</p>
-</div>
+</div></blockquote>
+<p>All users also have an application dedicated to the management of all items he owns (see <a class="reference internal" href="workspace.html#app-workspace"><span class="std std-ref">My Workspace</span></a>).
+It is call <strong>My worskpace</strong> and will give to the user the ability to manage (edit / share / delete) all items he owns amongst WPS services, data collections, data packages, WPS jobs.</p>
+<p>From this &#8220;workspace&#8221;, users can also manage (create / edit / delete) their own <em>Thematic App</em> (see <a class="reference internal" href="workspace.html#app-workspace"><span class="std std-ref">My Workspace</span></a>).</p>
 </div>
 
 

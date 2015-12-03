@@ -95,6 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
 </li>
@@ -109,11 +110,10 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">GeoBrowser area for data and Cloud processing services</a><ul>
-<li><a class="reference internal" href="#geobrowser">GeoBrowser</a><ul>
+<li><a class="reference internal" href="#id1">GeoBrowser</a><ul>
 <li><a class="reference internal" href="#map">Map</a><ul>
 <li><a class="reference internal" href="#search-area">Search area</a></li>
 <li><a class="reference internal" href="#data-results-layer">Data Results layer</a></li>
-<li><a class="reference internal" href="#disaster-charter-layer">Disaster charter layer</a></li>
 <li><a class="reference internal" href="#density-map-layer">Density map layer</a></li>
 </ul>
 </li>
@@ -179,7 +179,7 @@
 <li class="toctree-l3"><a class="reference internal" href="menu-bar.html">Menu bar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="information-areas.html">Information areas (Blog, News, ...)</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">GeoBrowser area for data and Cloud processing services</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#geobrowser">GeoBrowser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">GeoBrowser</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloud-processing">Cloud Processing</a></li>
 </ul>
 </li>
@@ -187,6 +187,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user.html">User Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../group.html">Groups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data.html">Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../processing.html">Processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../visualisation.html">Visualisation</a></li>
@@ -198,6 +199,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
   <a href="https://github.com/hydrology-tep/documentation/blob/master/source/community-guide/platform/geobrowser.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
@@ -215,11 +217,21 @@
     <div class="col-md-9">
       
   <div class="section" id="geobrowser-area-for-data-and-cloud-processing-services">
-<h1>GeoBrowser area for data and Cloud processing services<a class="headerlink" href="#geobrowser-area-for-data-and-cloud-processing-services" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="geobrowser">
-<h2>GeoBrowser<a class="headerlink" href="#geobrowser" title="Permalink to this headline">¶</a></h2>
+<span id="geobrowser"></span><h1>GeoBrowser area for data and Cloud processing services<a class="headerlink" href="#geobrowser-area-for-data-and-cloud-processing-services" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>GeoBrowser<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="img-border img-max-width figure">
 <img alt="../../_images/geobrowser.png" src="../../_images/geobrowser.png" />
+</div>
+<div class="admonition-requirement-coverage admonition" id="req-0">
+<p class="first admonition-title">Requirement coverage</p>
+<p>HEP-TS-DES-001</p>
+<p class="last">This section shows that TEP platform implement a geobrowser with web widgets.</p>
+</div>
+<div class="admonition-requirement-coverage admonition" id="req-1">
+<p class="first admonition-title">Requirement coverage</p>
+<p>HEP-TS-ICD-016</p>
+<p class="last">This section describes how is structured and configured the geobrowser.</p>
 </div>
 <p>The GeoBrowser is composed of:</p>
 <blockquote>
@@ -235,7 +247,8 @@
 <p>The map is just a simple map, on which you can zoom in, zoom out and navigate.</p>
 <p>Some buttons maybe used to interact with the map:</p>
 <ul class="simple">
-<li><img alt="geobrowser_button_search.png" src="../../_images/geobrowser_button_search.png" /> search area</li>
+<li><img alt="geobrowser_button_search.png" src="../../_images/geobrowser_button_search.png" /> search text</li>
+<li><img alt="geobrowser_button_search_area.png" src="../../_images/geobrowser_button_search_area.png" /> search area</li>
 <li><img alt="geobrowser_button_plus.png" src="../../_images/geobrowser_button_plus.png" /> Zoom in</li>
 <li><img alt="geobrowser_button_minus.png" src="../../_images/geobrowser_button_minus.png" /> Zoom out</li>
 <li><img alt="geobrowser_button_query.png" src="../../_images/geobrowser_button_query1.png" /> Open query search tab</li>
@@ -247,7 +260,7 @@
 </ul>
 <div class="section" id="search-area">
 <h4>Search area<a class="headerlink" href="#search-area" title="Permalink to this headline">¶</a></h4>
-<p>From the geobrowser, a search area can be accessed by clicking on the <img alt="geobrowser_button_search.png" src="../../_images/geobrowser_button_search.png" /> button. This expands a view containing all search parameters associated to the current catalogue on which the search will be performed.
+<p>From the geobrowser, a search area can be accessed by clicking on the <img alt="geobrowser_button_search_area.png" src="../../_images/geobrowser_button_search_area.png" /> button. This expands a view containing all search parameters associated to the current catalogue on which the search will be performed.
 Some parameters are just free text, others can be chosen from a list, and some parameters can be filled from the geobrowser. This is the case of:</p>
 <ul class="simple">
 <li>the temporal parameter which can be filled by moving the temporal bar present on the geobrowser.</li>
@@ -267,17 +280,6 @@ Some parameters are just free text, others can be chosen from a list, and some p
 <div class="section" id="data-results-layer">
 <h4>Data Results layer<a class="headerlink" href="#data-results-layer" title="Permalink to this headline">¶</a></h4>
 <p>Display the results (orange polygons) of the current search or context.</p>
-</div>
-<div class="section" id="disaster-charter-layer">
-<h4>Disaster charter layer<a class="headerlink" href="#disaster-charter-layer" title="Permalink to this headline">¶</a></h4>
-<p>Add disaster events on the map (list of events comes from <a class="reference external" href="https://www.disasterscharter.org">https://www.disasterscharter.org</a>).
-For a better visibility, events are grouped by location, accordingly to the zoom level. If you zoom in, grouped events will split into smaller groups or unique events:</p>
-<ul class="simple">
-<li><img alt="geobrowser_disaster_big_group.png" src="../../_images/geobrowser_disaster_big_group.png" /> group of more than 10 events</li>
-<li><img alt="geobrowser_disaster_small_group.png" src="../../_images/geobrowser_disaster_small_group.png" /> group of less than 10 events</li>
-<li><img alt="geobrowser_disaster_event.png" src="../../_images/geobrowser_disaster_event.png" /> unique event</li>
-</ul>
-<p>You can click on a unique event and get related data or access the webpage related to this event.</p>
 </div>
 <div class="section" id="density-map-layer">
 <h4>Density map layer<a class="headerlink" href="#density-map-layer" title="Permalink to this headline">¶</a></h4>
@@ -307,7 +309,7 @@ The existing pre-defined contexts are:</p>
 <p>The result tab is divided in two parts:</p>
 <ul class="simple">
 <li>On the left, the <strong>Results Table</strong> showing the list of current results displayed on the map. Results are paginatd, only 20 items are displayed, select another page to discover more products.</li>
-<li>On the right, the <strong>Features Basket</strong> showing all data in the current basket.</li>
+<li>On the right, the <strong>Features Basket</strong> showing all data in the current basket and <strong>Data Package</strong> panel showing list of data packages accessibles for the user.</li>
 </ul>
 <p>Results can be dragged fron the left table to the basket. Then the basket can be saved as a new data package and shared with other users.
 Saved Data packages can then be loaded into the basket. (see <a class="reference internal" href="../data.html"><span class="doc">data</span></a> for more details)</p>

@@ -50,6 +50,11 @@ Fill in your profile:
 .. NOTE::
 		Direct access to your EO-SSO account is provided by clicking on *EO-SSO account*.
 
+.. req:: HEP-TS-DES-014
+	:show:
+
+	This section describes how a user can update profile information.
+
 Change your password
 --------------------
 
@@ -164,8 +169,18 @@ See your groups
 To find out to which groups you belong, just go to the **Groups** tab on your profile page.
 The groups in which you are a member are listed here.
 
+.. req:: HEP-TS-DES-014
+	:show:
+
+	This section describes how a user can get analytics report on belongings groups.
+
 See your usage
 --------------
 
 To find out how you are using the platform, just go to the **Usage** tab on your profile page.
 You will see what is your level for each type of usage of the platform.
+
+.. req:: HEP-TS-DES-014
+	:show:
+
+	This section describes how a user can get analytics report.

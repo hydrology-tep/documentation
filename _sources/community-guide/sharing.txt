@@ -71,6 +71,11 @@ To share a Data package you just created:
 
 6. Other users will now be able to access this data package just by clicking on the link you will have share with them. The data package will also appear in the list of available data packages to be loaded.
 
+.. req:: HEP-TS-DES-014
+	:show:
+
+	This section describes how a user can share a data package.
+
 Share a Data Search
 -------------------
 

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Management App &mdash; Hydrology Thematic Exploitation Platform 0.1 documentation</title>
+    <title>Global Hydrological Modeling &mdash; Hydrology Thematic Exploitation Platform 0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,7 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Hydrology Thematic Exploitation Platform 0.1 documentation" href="../index.html" />
     <link rel="up" title="Overview" href="index.html" />
-    <link rel="prev" title="WOIS application" href="wois_app.html" />
+    <link rel="next" title="WOIS CloudToolBox" href="wois_app.html" />
+    <link rel="prev" title="Red River" href="red_river.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -94,6 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
 </li>
@@ -107,7 +109,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Management App</a></li>
+<li><a class="reference internal" href="#">Global Hydrological Modeling</a></li>
 </ul>
 </ul>
 </li>
@@ -117,7 +119,11 @@
               
                 
   <li>
-    <a href="wois_app.html" title="Previous Chapter: WOIS application"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; WOIS application</span>
+    <a href="red_river.html" title="Previous Chapter: Red River"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Red River</span>
+    </a>
+  </li>
+  <li>
+    <a href="wois_app.html" title="Next Chapter: WOIS CloudToolBox"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">WOIS CloudToo... &raquo;</span>
     </a>
   </li>
               
@@ -126,7 +132,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/management_app.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/global_hydro_model.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -154,14 +160,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thematic Applications</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="thematic_app.html">Thematic applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wois_app.html">WOIS applications</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Management application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="niger_river.html">Niger river</a></li>
+<li class="toctree-l2"><a class="reference internal" href="red_river.html">Red river</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Global Hydrological Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wois_app.html">WOIS CloudToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workspace.html">My worskpace</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/management_app.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/global_hydro_model.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -175,26 +185,11 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="management-app">
-<h1>Management App<a class="headerlink" href="#management-app" title="Permalink to this headline">¶</a></h1>
-<p>Each user has a personal management app in which he can manage items he owns such as:</p>
-<ul class="simple">
-<li>data collections,</li>
-<li>data series,</li>
-<li>data packages,</li>
-<li>processing services</li>
-</ul>
-<p>For each item, the user can:</p>
-<ul class="simple">
-<li>edit the item (name, description, ...),</li>
-<li>share it with other users or groups (see <span class="xref doc">../community_guide/sharing</span>)</li>
-<li>transfer the ownership to another user</li>
-</ul>
-<div class="img-border img-max-width figure">
-<a class="reference internal image-reference" href="apps/../includes/user_edit_collection.png"><img alt="apps/../includes/user_edit_collection.png" src="apps/../includes/user_edit_collection.png" /></a>
-</div>
-<div class="img-border img-max-width figure">
-<a class="reference internal image-reference" href="apps/../includes/user_edit_datapackage.png"><img alt="apps/../includes/user_edit_datapackage.png" src="apps/../includes/user_edit_datapackage.png" /></a>
+  <div class="section" id="global-hydrological-modeling">
+<span id="app-hydro-model"></span><h1>Global Hydrological Modeling<a class="headerlink" href="#global-hydrological-modeling" title="Permalink to this headline">¶</a></h1>
+<p>The Global Hydrological Modeling Thematic App focuses on global hydrological models.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_hydro_model.png"><img alt="../_images/apps_hydro_model.png" src="../_images/apps_hydro_model.png" style="width: 680.8px; height: 139.2px;" /></a>
 </div>
 </div>
 
