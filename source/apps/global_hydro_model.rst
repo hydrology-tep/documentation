@@ -1,3 +1,5 @@
+.. _app_hydro_model:
+
 Global Hydrological Modeling
 ============================
 

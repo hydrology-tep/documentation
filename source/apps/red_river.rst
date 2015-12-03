@@ -1,3 +1,5 @@
+.. _app_red_river:
+
 Red River
 =========
 

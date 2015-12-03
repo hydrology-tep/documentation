@@ -1,10 +1,10 @@
 .. _laboratory:
 
-Join the GEP Laboratory
+Join the HEP Laboratory
 ########################
 
-A GEP Laboratory is a virtual network on the Terradue's Cloud Platform dedicated to the hosting of your Cloud services.
-A GEP laboratory and its services are secured by user authentication (using SSL / X.509 certificates) and VPN access.
+A HEP Laboratory is a virtual network on the Terradue's Cloud Platform dedicated to the hosting of your Cloud services.
+A HEP laboratory and its services are secured by user authentication (using SSL / X.509 certificates) and VPN access.
 The following sections will guide you through the procedures related to the Certificate download and VPN Setup.
 
 .. _laboratory-prerequisites:
@@ -12,7 +12,7 @@ The following sections will guide you through the procedures related to the Cert
 Prerequisites
 -------------
 
-- You are registered to the Geohazards Exploitation Platform https://geohazards-tep.eo.esa.int/.
+- You are registered to the Hydrology Exploitation Platform https://hydrology-tep.eo.esa.int/.
 - You requested a Terradue's Certificate from the User Profile section of the Platform (see :ref:`user-profile`).
 - Your certificate was approved, and you received an e-mail from ca@terradue.com with subject "Your Terradue certificate is ready to download".
 

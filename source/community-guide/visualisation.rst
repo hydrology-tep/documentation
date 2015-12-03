@@ -50,7 +50,7 @@ To visualize results on the map:
 4. The layer is displayed on the map, according to the offerings presented in the OWS Context of the result.
 
 .. WARNING::
-  You may need to be connected to the GEP Virtual Private Network (see :ref:`laboratory`), in order to download the results. 
+  You may need to be connected to the HEP Virtual Private Network (see :ref:`laboratory`), in order to download the results. 
 
 
 Community results
@@ -58,10 +58,10 @@ Community results
 
 To visualize community results on the map:
 
-1. Access the Community context on the geobrowser (see :ref: platform/geobrowser).
+1. Access the Community context on the geobrowser (see :ref:`geobrowser`).
 2. Select a data published in the Community context using the search function.
 3. The layer is displayed on the map, according to the offerings presented in the OWS Context of the result.
 
 .. WARNING::
-  You may need to be connected to the GEP Virtual Private Network (see :ref:`laboratory`), in order to download the results. 
+  You may need to be connected to the HEP Virtual Private Network (see :ref:`laboratory`), in order to download the results. 
 

@@ -9,7 +9,6 @@ It is defined by a list of services offerings, such as:
 	- map background,
 	- data series,
 	- wps services
-	- ...
 
 .. req:: HEP-TS-DES-002
 	:show:
@@ -30,13 +29,13 @@ A list of pre-defined thematic apps can be accessed from the *Thematics* page.
 
 The pre-defined thematics are:
 
-	- Niger river (see :doc:`Niger River <niger_river>`)
-	- Red river (see :doc:`Red River <red_river>`)
-	- Global Hydrological Modeling (see :doc:`Global Hydrological Modeling <global_hydro_model>`)
-	- WOIS CloudToolbox (see :doc:`WOIS CloudToolBox <wois_app>`)
+	- Niger river (see :ref:`app_niger_river`),
+	- Red river (see :ref:`app_red_river`),
+	- Global Hydrological Modeling (see :ref:`app_hydro_model`),
+	- WOIS CloudToolbox (see :ref:`app_wois`)
 
-All users also have an application dedicated to the management of all items he owns (see :doc:`My Worspace <workspace`>).
+All users also have an application dedicated to the management of all items he owns (see :ref:`app_workspace`).
 It is call **My worskpace** and will give to the user the ability to manage (edit / share / delete) all items he owns amongst WPS services, data collections, data packages, WPS jobs.
 
-From this "workspace", users can also manage (create / edit / delete) their own *Thematic App* (see :doc:`My Thematic Apps <workspace`>).
+From this "workspace", users can also manage (create / edit / delete) their own *Thematic App* (see :ref:`app_workspace`).
 

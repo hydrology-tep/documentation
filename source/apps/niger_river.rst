@@ -1,3 +1,5 @@
+.. _app_niger_river:
+
 Niger River
 ===========
 

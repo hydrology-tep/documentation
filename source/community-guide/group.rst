@@ -40,7 +40,6 @@ From the list of groups (see `See list of groups`_), click on **Leave Group** fo
 
 .. figure:: ../includes/group_leave.png
 	:figclass: img-border
-	:scale: 80%
 	
 This action is immediate. To join again this group, your request will have to be validated by an administrator.
 
@@ -51,10 +50,8 @@ From the list of groups (see `See list of groups`_), click on **Enter Group** fo
 
 .. figure:: ../includes/group_enter.png
 	:figclass: img-border
-	:scale: 80%
 
 Information about the group, its users and their activities will be displayed.
 
 .. figure:: ../includes/group_details.png
 	:figclass: img-border
-	:scale: 80%
