@@ -33,6 +33,25 @@ For each item, the user can:
 	:figclass: img-border img-max-width
 	:scale: 80%
 
+Catalog Editor
+--------------
+
+The catalogue editor area is a workspace dedicated to the user in which he will be able to access all his files (results of processings, uploaded files, ...), manage them and specially ingest them in one of its catalogues or ask to publish the result as a contribution to the community results (this would need to be validated by an administrator).
+
+.. figure:: ../includes/cas_editor.png
+	:figclass: img-border
+	:scale: 70 %
+
+.. req:: HEP-TS-DES-004
+	:show:
+
+	This section describes the catalogue as a service functionality.
+
+.. req:: HEP-TS-DES-001
+	:show:
+
+	This section shows that TEP platform implement a catalogue editor.
+
 My Thematic Apps
 ----------------
 
@@ -49,3 +68,4 @@ The application shall be defined using OGC OWS Context.
 	:show:
 
 	This section describes how a user can create its own thematic application.
+
