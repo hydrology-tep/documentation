@@ -30,10 +30,10 @@ A list of pre-defined thematic apps can be accessed from the *Thematics* page.
 
 The pre-defined thematics are:
 
-	- Niger river (see :doc:`Niger River <niger_river`>)
-	- Red river (see :doc:`Red River <red_river`>)
-	- Global Hydrological Modeling (see :doc:`Global Hydrological Modeling <global_hydro_model`>)
-	- WOIS CloudToolbox (see :doc:`WOIS CloudToolBox <wois_app`>)
+	- Niger river (see :doc:`Niger River <niger_river>`)
+	- Red river (see :doc:`Red River <red_river>`)
+	- Global Hydrological Modeling (see :doc:`Global Hydrological Modeling <global_hydro_model>`)
+	- WOIS CloudToolbox (see :doc:`WOIS CloudToolBox <wois_app>`)
 
 All users also have an application dedicated to the management of all items he owns (see :doc:`My Worspace <workspace`>).
 It is call **My worskpace** and will give to the user the ability to manage (edit / share / delete) all items he owns amongst WPS services, data collections, data packages, WPS jobs.

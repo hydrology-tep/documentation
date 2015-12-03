@@ -11,5 +11,5 @@ Contents:
    Red river <red_river>
    Global Hydrological Modeling <global_hydro_model>
    WOIS CloudToolbox <wois_app>
-   My worskpace <worskpace>
+   My worskpace <workspace>
    
