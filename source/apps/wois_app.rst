@@ -21,7 +21,7 @@ The Data Selection to use inside WOIS is also done within the Hydrology Exploita
 After to save Data as a package, the user should have a URL, which can paste inside WOIS, in order to make the Data available on the Virtual Machine where WOIS is installed.
 Within HEP, WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.
 
-.. figure:: ../includes/open_wois.png
+.. figure:: ../includes/open_WOIS.png
 	:figclass: img-border
 	:scale: 80%
 
@@ -124,7 +124,7 @@ On the left side, the user can select the tool or operation which intends to per
 	:scale: 80%
 
 Here, the user will be able to set the default parameters and write the explanations that are considered important to pass to whoever runs the workflow. Other option to define on each workflow step is the “Input Data Mode”. The options are “Normal” or “Batch” (single input or multiple inputs, respectively).
-After set up everything, the user will be able to test the step created or simply save it and configure the next steps until get a complete workflow.
+After set up everything, the user will be able to test the step created, by click the button "Test", or simply save it and configure the next steps until get a complete workflow.
 
 Share Workflow
 --------------
