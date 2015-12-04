@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>WOIS CloudToolBox &mdash; Hydrology Thematic Exploitation Platform 0.1 documentation</title>
+    <title>WOIS CloudToolBox &mdash; Hydrology Thematic Exploitation Platform 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.1',
+        VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Hydrology Thematic Exploitation Platform 0.1 documentation" href="../index.html" />
+    <link rel="top" title="Hydrology Thematic Exploitation Platform 1.0 documentation" href="../index.html" />
     <link rel="up" title="Overview" href="index.html" />
     <link rel="next" title="My Workspace" href="workspace.html" />
     <link rel="prev" title="Global Hydrological Modeling" href="global_hydro_model.html" />
@@ -71,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.1</b><b class="caret"></b>
+        <b>1.0</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -109,7 +109,16 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">WOIS CloudToolBox</a></li>
+<li><a class="reference internal" href="#">WOIS CloudToolBox</a><ul>
+<li><a class="reference internal" href="#wois-access">WOIS Access</a></li>
+<li><a class="reference internal" href="#select-data-to-use-on-wois">Select Data to use on WOIS</a></li>
+<li><a class="reference internal" href="#run-wois-workflow">Run WOIS Workflow</a></li>
+<li><a class="reference internal" href="#run-single-tool-wois-as-modular-toolbox">Run Single Tool (WOIS as Modular Toolbox)</a></li>
+<li><a class="reference internal" href="#share-outputs">Share Outputs</a></li>
+<li><a class="reference internal" href="#create-workflow">Create Workflow</a></li>
+<li><a class="reference internal" href="#share-workflow">Share Workflow</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -164,7 +173,16 @@
 <li class="toctree-l2"><a class="reference internal" href="niger_river.html">Niger river</a></li>
 <li class="toctree-l2"><a class="reference internal" href="red_river.html">Red river</a></li>
 <li class="toctree-l2"><a class="reference internal" href="global_hydro_model.html">Global Hydrological Modeling</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">WOIS CloudToolbox</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">WOIS CloudToolbox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wois-access">WOIS Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#select-data-to-use-on-wois">Select Data to use on WOIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-wois-workflow">Run WOIS Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-single-tool-wois-as-modular-toolbox">Run Single Tool (WOIS as Modular Toolbox)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#share-outputs">Share Outputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-workflow">Create Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#share-workflow">Share Workflow</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="workspace.html">My worskpace</a></li>
 </ul>
 </li>
@@ -190,6 +208,99 @@
 <p>The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/apps_wois.png"><img alt="../_images/apps_wois.png" src="../_images/apps_wois.png" style="width: 636.0px; height: 132.0px;" /></a>
+</div>
+<div class="section" id="wois-access">
+<h2>WOIS Access<a class="headerlink" href="#wois-access" title="Permalink to this headline">¶</a></h2>
+<p>To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using?**EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section <strong>?User Profile?</strong> of this Document.</p>
+</div>
+<div class="section" id="select-data-to-use-on-wois">
+<h2>Select Data to use on WOIS<a class="headerlink" href="#select-data-to-use-on-wois" title="Permalink to this headline">¶</a></h2>
+<p>The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section <strong>?Data?</strong> of this Document.
+After to save Data as a package, the user should have a URL, which can paste inside WOIS, in order to make the Data available on the Virtual Machine where WOIS is installed.
+Within HEP, WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/open_WOIS.png"><img alt="../_images/open_WOIS.png" src="../_images/open_WOIS.png" style="width: 1535.2px; height: 833.6px;" /></a>
+</div>
+<p>After open QGIS on the button</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/WOIS_button.png"><img alt="../_images/WOIS_button.png" src="../_images/WOIS_button.png" style="width: 30.4px; height: 30.4px;" /></a>
+</div>
+<p>A window with the default WOIS Workflows will open.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_data_tab.png"><img alt="../_images/WOIS_data_tab.png" src="../_images/WOIS_data_tab.png" style="width: 332.0px; height: 430.4px;" /></a>
+</div>
+<p>By clicking on the Tab ?Data? (Red circle on the image above), a window will open and the user can paste the Data URL on it to get the Data selected before.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/insert_url.png"><img alt="../_images/insert_url.png" src="../_images/insert_url.png" style="width: 280.0px; height: 119.2px;" /></a>
+</div>
+<p>By clicking on the button ?Get Data? all the Data into the package selected by the User will be available on the Virtual Machine where WOIS is running.</p>
+</div>
+<div class="section" id="run-wois-workflow">
+<h2>Run WOIS Workflow<a class="headerlink" href="#run-wois-workflow" title="Permalink to this headline">¶</a></h2>
+<p>After open WOIS and get the Data, the user can finally run a WOIS Workflow. For that, the user shall select the intended workflow and double click as explained on the image below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_wf_select.png"><img alt="../_images/WOIS_wf_select.png" src="../_images/WOIS_wf_select.png" style="width: 331.2px; height: 430.4px;" /></a>
+</div>
+<p>In this case, the workflow selected was the ?Lake temperature (AATSR)?. A window with the first step of the workflow will open.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WF_step_1.png"><img alt="../_images/WF_step_1.png" src="../_images/WF_step_1.png" style="width: 897.6px; height: 653.6px;" /></a>
+</div>
+<p>On this window, the user will be able to open the data to process on this step, define parameters related with the operation and choose the output filepath. On the left side of the window, it is available a set of detailed explanations about the current step (input data, mean of each parameter and processing operation).
+After set the parameters and the input and output data the user shall click the button ?Run? in order to start the current step. On each step of the workflow, the user can go to a different step by using the buttons ?&lt; Previous step? and ?Skip step &gt;? and/or exit the workflow by clicking ?Finish Workflow?.</p>
+</div>
+<div class="section" id="run-single-tool-wois-as-modular-toolbox">
+<h2>Run Single Tool (WOIS as Modular Toolbox)<a class="headerlink" href="#run-single-tool-wois-as-modular-toolbox" title="Permalink to this headline">¶</a></h2>
+<p>Other option is to use WOIS as a modular toolbox. Inside QGIS, the user has available all the tools that can be used on WOIS workflows and can use them to perform single operations. The figure below shows all the available toolboxes and libraries.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_modular_tbx.png"><img alt="../_images/WOIS_modular_tbx.png" src="../_images/WOIS_modular_tbx.png" style="width: 283.2px; height: 326.4px;" /></a>
+</div>
+<p>On the figure below, a tool from the Sentinel-1 Toolbox was selected (Range Doppler Terrain Correction).</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_modular_tbx_single_tool_selection.png"><img alt="../_images/WOIS_modular_tbx_single_tool_selection.png" src="../_images/WOIS_modular_tbx_single_tool_selection.png" style="width: 286.4px; height: 469.6px;" /></a>
+</div>
+<p>A window will open and will allow the user to select the input data to process the operation, define the operation parameters and choose the output filepath.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_modular_tbx_single_tool_interface.png"><img alt="../_images/WOIS_modular_tbx_single_tool_interface.png" src="../_images/WOIS_modular_tbx_single_tool_interface.png" style="width: 475.2px; height: 354.4px;" /></a>
+</div>
+<p>After set the parameters to perform the single operation, the user can start it by clicking the button ?Run?.</p>
+</div>
+<div class="section" id="share-outputs">
+<h2>Share Outputs<a class="headerlink" href="#share-outputs" title="Permalink to this headline">¶</a></h2>
+<p>A WOIS user can share his outputs with the HEP Community. To do that, on the WOIS Workflows window the user shall select the Tab ?Results?.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_results_tab.png"><img alt="../_images/WOIS_results_tab.png" src="../_images/WOIS_results_tab.png" style="width: 332.0px; height: 430.4px;" /></a>
+</div>
+<p>The Tab ?Results? will display the list of all the outputs generated by the workflows run by the user will appear. Here, the user can select the results which intend to share.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_share_results.png"><img alt="../_images/WOIS_share_results.png" src="../_images/WOIS_share_results.png" style="width: 335.2px; height: 320.0px;" /></a>
+</div>
+</div>
+<div class="section" id="create-workflow">
+<h2>Create Workflow<a class="headerlink" href="#create-workflow" title="Permalink to this headline">¶</a></h2>
+<p>Other feature available in WOIS is to create new workflows.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_create_new_WF_selection.png"><img alt="../_images/WOIS_create_new_WF_selection.png" src="../_images/WOIS_create_new_WF_selection.png" style="width: 283.2px; height: 217.6px;" /></a>
+</div>
+<p>Inside WOIS Tools, the user shall select the option ?Create new workflow?.
+The interface to create a new workflow is displayed on the figure below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_create_new_WF.png"><img alt="../_images/WOIS_create_new_WF.png" src="../_images/WOIS_create_new_WF.png" style="width: 972.0px; height: 508.8px;" /></a>
+</div>
+<p>The first thing to do is to choose the ?Workflow Name? and the ?Group? of the new workflow (top of the window). This information will appear later on the WOIS Workflows Window, with all the default workflows.
+On the left side, the user can select the tool or operation which intends to perform on each step. After that, on the left side, the operation window will appear (equal to the window that will open when the user decide to run the workflow later).</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_create_new_WF_step_definition.png"><img alt="../_images/WOIS_create_new_WF_step_definition.png" src="../_images/WOIS_create_new_WF_step_definition.png" style="width: 972.0px; height: 510.4px;" /></a>
+</div>
+<p>Here, the user will be able to set the default parameters and write the explanations that are considered important to pass to whoever runs the workflow. Other option to define on each workflow step is the ?Input Data Mode?. The options are ?Normal? or ?Batch? (single input or multiple inputs, respectively).
+After set up everything, the user will be able to test the step created, by click the button &#8220;Test&#8221;, or simply save it and configure the next steps until get a complete workflow.</p>
+</div>
+<div class="section" id="share-workflow">
+<h2>Share Workflow<a class="headerlink" href="#share-workflow" title="Permalink to this headline">¶</a></h2>
+<p>After create a New Workflow, the user has the possibility of share it with the HEP Community. For that, on the WOIS Workflows window, the user shall select the New Workflow created and click the button ?Share? as explained on the image below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/WOIS_wf_share.png"><img alt="../_images/WOIS_wf_share.png" src="../_images/WOIS_wf_share.png" style="width: 331.2px; height: 430.4px;" /></a>
+</div>
+<p><strong>Note:</strong> A new workflow created can also be inserted into existent Groups. To do that, the user shall use an existent ?Group? name when creates the workflow.</p>
 </div>
 </div>
 
