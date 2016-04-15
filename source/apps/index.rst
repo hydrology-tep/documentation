@@ -1,7 +1,5 @@
-Overview
-========
-
-Contents:
+Thematic Applications
+=====================
 
 .. toctree::
    :maxdepth: 2
