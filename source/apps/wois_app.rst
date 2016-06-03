@@ -213,17 +213,17 @@ The exported model will be automatically available on HEP Webportal.
 Run QGIS model in HEP
 ---------------------
 
- The user can run models, in the HEP Webportal, similar to other HEP services.
+The user can run models, in the HEP Webportal, similar to other HEP services.
  
- For that, the user must select the intended workflow as it is shown at the image below.
+For that, the user must select the intended workflow as it is shown at the image below.
  
- .. figure:: ../includes/select_model_hep.png
+.. figure:: ../includes/select_model_hep.png
 	:figclass: img-border
 	:scale: 80%
 
 Then, the user nust enter the input parameters and click the button "Run Job" to start the model on the VM.
 
- .. figure:: ../includes/run_model_hep.png
+.. figure:: ../includes/run_model_hep.png
 	:figclass: img-border
 	:scale: 80%
 
