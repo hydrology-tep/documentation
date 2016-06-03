@@ -18,7 +18,9 @@ Select Data to use on WOIS
 --------------------------
 
 The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section **“Data”** of this Documentation.
+
 After to save Data as a package, the user should have a URL, containing the datapackages information, which can paste inside QGIS in order to make the Data available on the Virtual Machine where WOIS is installed.
+
 A QGIS plugin to get HEP Data on the VM was developed and the figure below explains how to open it.
 
 .. figure:: ../includes/open_data_plugin.png
