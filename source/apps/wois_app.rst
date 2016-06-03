@@ -32,7 +32,11 @@ After open QGIS on the button
 .. figure:: ../includes/hep_data_button.png
 	:scale: 80%
 
+A window, where the user can insert the datapackages URL, will pop up.
 
+.. figure:: ../includes/data_plugin_window.png
+	:figclass: img-border
+	:scale: 80%
 
 
 
