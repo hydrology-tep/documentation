@@ -103,7 +103,7 @@ Upload Outputs to HEP
 
 After a workflow run, a user can upload the results to his HEP Data Storage. This will allow the user to check the results on the HEP Webportal or share his outputs with the HEP Community.
 
-A QGIS Script to upload results to HEP was developed and it can be used in two different ways:
+A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it can be used in two different ways:
 
 - Directly on QGIS
 
@@ -140,7 +140,7 @@ The interface to create a new workflow is displayed on the figure below.
 	:scale: 80%
 
 The first thing to do is to choose the “Workflow Name” and the “Group” of the new workflow (top of the window). This information will appear later on the WOIS Workflows Window, with all the default workflows.
-On the left side, the user can select the tool or operation which intends to perform on each step. After that, on the left side, the operation window will appear (equal to the window that will open when the user decide to run the workflow later).
+On the left side, the user can select the tool or operation which intends to perform on each step. After that, on the right side, the operation window will appear (equal to the window that will open when the user decide to run the workflow later).
 
 .. figure:: ../includes/WOIS_create_new_WF_step_definition.png
 	:figclass: img-border
@@ -169,8 +169,40 @@ Create/configure QGIS models
 ----------------------------
 
 Once the tools available to create QGIS models are the same available for WOIS, a user can create a model based on a WOIS workflow.
-To create a new model the user shall select the modeler tool "Create new model".
+To create a new model, the user shall select the modeler tool "Create new model".
 
 .. figure:: ../includes/open_create_model.png
 	:figclass: img-border
 	:scale: 80%
+
+The interface to create a new model is displayed on the figure below.
+
+.. figure:: ../includes/create_model_window.png
+	:figclass: img-border
+	:scale: 80%
+	
+The first thing to do is to choose the “Model Name” and the “Group” of the new model (top of the window).
+On the left side, the user can select the tool or operation which intends to perform on each step. A schema with the model sequence will appearing on the right side.
+
+It is also possible to upload the outputs of a model to HEP automatically, by including the script "Upload to TEP" as the final step of a model.
+
+.. figure:: ../includes/create_model_w_upload.png
+	:figclass: img-border
+	:scale: 80%
+	
+Export QGIS model to the HEP
+----------------------------
+
+If the user creates the model on his local machine, it will be possible to export the created model to the VM.
+To export a model, the user shall select the modeler tool "Export model to TEP".
+
+.. figure:: ../includes/open_export_model.png
+	:figclass: img-border
+	:scale: 80%
+
+The interface to create a model is displayed on the figure below.
+
+.. figure:: ../includes/export_model_window.png
+	:figclass: img-border
+	:scale: 80%
+	
