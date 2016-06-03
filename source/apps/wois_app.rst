@@ -27,7 +27,7 @@ A QGIS plugin to get HEP Data on the VM was developed and the figure below expla
 	:figclass: img-border
 	:scale: 80%
 
-After open QGIS on the button
+After open QGIS, click on the button
 
 .. figure:: ../includes/hep_data_button.png
 	:scale: 80%
@@ -49,13 +49,13 @@ By double clicking on a product or by selecting a product and clicking “Get Da
 Run WOIS Workflow
 -----------------
 
-Within HEP, WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.
+WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.
 
 .. figure:: ../includes/open_WOIS.png
 	:figclass: img-border
 	:scale: 80%
 
-After open QGIS on the button
+After open QGIS, click on the button
 
 .. figure:: ../includes/WOIS_button.png
 	:scale: 80%
