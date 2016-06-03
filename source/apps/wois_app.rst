@@ -27,6 +27,13 @@ A QGIS plugin to get HEP Data on the VM was developed and the figure below expla
 	:figclass: img-border
 	:scale: 80%
 
+After open QGIS on the button
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+
+
 
 
 
