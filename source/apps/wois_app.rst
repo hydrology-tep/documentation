@@ -205,4 +205,7 @@ The interface to create a model is displayed on the figure below.
 .. figure:: ../includes/export_model_window.png
 	:figclass: img-border
 	:scale: 80%
-	
+
+On this window, the user shall select the workflow that intends to export, insert the VM IP and username and load the VM certificate (.pem for Windows users / .ppk for Linux users). Then click the button "Export to TEP".
+
+The exported model will be automatically available on HEP Webportal.
