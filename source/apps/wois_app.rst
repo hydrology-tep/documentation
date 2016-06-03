@@ -156,6 +156,6 @@ Share Workflows
 
 After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the New Workflow created and click the button “Share Workflow” as explained on the image below.
 
-.. figure:: ../includes/WOIS_wf_share.png
+.. figure:: ../includes/wf_share.png
 	:figclass: img-border
 	:scale: 80%
