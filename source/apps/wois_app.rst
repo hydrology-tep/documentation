@@ -12,55 +12,68 @@ The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.
 WOIS Access
 -----------
 
-To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using†**EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **ìUser Profileî** of this Document.
+To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using¬†**EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation.
 
 Select Data to use on WOIS
 --------------------------
 
-The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section **ìDataî** of this Document.
-After to save Data as a package, the user should have a URL, which can paste inside WOIS, in order to make the Data available on the Virtual Machine where WOIS is installed.
-Within HEP, WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.
+The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section **‚ÄúData‚Äù** of this Documentation.
+
+After to save Data as a package, the user should have a URL, containing the datapackages information, which can paste inside QGIS in order to make the Data available on the Virtual Machine where WOIS is installed.
+
+A QGIS plugin to get HEP Data on the VM was developed and the figure below explains how to open it.
+
+.. figure:: ../includes/open_data_plugin.png
+	:figclass: img-border
+	:scale: 80%
+
+After open QGIS, click on the button
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+A window, where the user can insert the datapackages URL, will pop up.
+
+.. figure:: ../includes/data_plugin_window.png
+	:figclass: img-border
+	:scale: 80%
+
+After insert the datapackages URL, a new window listing all the datapackages and the products inside each one of them will pop up.
+
+.. figure:: ../includes/data_window.png
+	:figclass: img-border
+	:scale: 80%
+
+By double clicking on a product or by selecting a product and clicking ‚ÄúGet Data‚Äù, a window to select the location to save will open. After choose the location the product will be downloaded.
+
+Run WOIS Workflow
+-----------------
+
+WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.
 
 .. figure:: ../includes/open_WOIS.png
 	:figclass: img-border
 	:scale: 80%
 
-After open QGIS on the button
+After open QGIS, click on the button
 
 .. figure:: ../includes/WOIS_button.png
 	:scale: 80%
-
-A window with the default WOIS Workflows will open.
-
-.. figure:: ../includes/WOIS_data_tab.png
-	:figclass: img-border
-	:scale: 80%
-
-By clicking on the Tab ìDataî (Red circle on the image above), a window will open and the user can paste the Data URL on it to get the Data selected before.
-
-.. figure:: ../includes/insert_url.png
-	:figclass: img-border
-	:scale: 80%
-
-By clicking on the button ìGet Dataî all the Data into the package selected by the User will be available on the Virtual Machine where WOIS is running.
-
-Run WOIS Workflow
------------------
-
+	
 After open WOIS and get the Data, the user can finally run a WOIS Workflow. For that, the user shall select the intended workflow and double click as explained on the image below.
 
 .. figure:: ../includes/WOIS_wf_select.png
 	:figclass: img-border
 	:scale: 80%
 
-In this case, the workflow selected was the ìLake temperature (AATSR)î. A window with the first step of the workflow will open.
+In this case, the workflow selected was the ‚ÄúLake temperature (AATSR)‚Äù. A window with the first step of the workflow will open.
 
 .. figure:: ../includes/WF_step_1.png
 	:figclass: img-border
 	:scale: 80%
 
 On this window, the user will be able to open the data to process on this step, define parameters related with the operation and choose the output filepath. On the left side of the window, it is available a set of detailed explanations about the current step (input data, mean of each parameter and processing operation).
-After set the parameters and the input and output data the user shall click the button ìRunî in order to start the current step. On each step of the workflow, the user can go to a different step by using the buttons ì< Previous stepî and ìSkip step >î and/or exit the workflow by clicking ìFinish Workflowî.
+After set the parameters and the input and output data the user shall click the button ‚ÄúRun‚Äù in order to start the current step. On each step of the workflow, the user can go to a different step by using the buttons ‚Äú< Previous step‚Äù and ‚ÄúSkip step >‚Äù and/or exit the workflow by clicking ‚ÄúFinish Workflow‚Äù.
 
 Run Single Tool (WOIS as Modular Toolbox)
 -----------------------------------------
@@ -83,20 +96,30 @@ A window will open and will allow the user to select the input data to process t
 	:figclass: img-border
 	:scale: 80%
 
-After set the parameters to perform the single operation, the user can start it by clicking the button ìRunî.
+After set the parameters to perform the single operation, the user can start it by clicking the button ‚ÄúRun‚Äù.
 
-Share Outputs
--------------
+Upload Outputs to HEP
+---------------------
 
-A WOIS user can share his outputs with the HEP Community. To do that, on the WOIS Workflows window the user shall select the Tab ìResultsî.
+After a workflow run, a user can upload the results to his HEP Data Storage. This will allow the user to check the results on the HEP Webportal or share his outputs with the HEP Community.
 
-.. figure:: ../includes/WOIS_results_tab.png
+A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it can be used in two different ways:
+
+- Directly on QGIS
+
+.. figure:: ../includes/upload_outputs_script.png
 	:figclass: img-border
 	:scale: 80%
 
-The Tab ìResultsî will display the list of all the outputs generated by the workflows run by the user will appear. Here, the user can select the results which intend to share.
+- Include the script as the final step of a workflow
 
-.. figure:: ../includes/WOIS_share_results.png
+.. figure:: ../includes/upload_outputs_at_wf.png
+	:figclass: img-border
+	:scale: 80%
+	
+When an output is exported to HEP, it will appear at the HEP Webportal, as it is shown on the image below.
+
+.. figure:: ../includes/outputs_on_hep.png
 	:figclass: img-border
 	:scale: 80%
 
@@ -109,30 +132,97 @@ Other feature available in WOIS is to create new workflows.
 	:figclass: img-border
 	:scale: 80%
 
-Inside WOIS Tools, the user shall select the option ìCreate new workflowî.
+Inside WOIS Tools, the user shall select the option ‚ÄúCreate new workflow‚Äù.
 The interface to create a new workflow is displayed on the figure below.
 
 .. figure:: ../includes/WOIS_create_new_WF.png
 	:figclass: img-border
 	:scale: 80%
 
-The first thing to do is to choose the ìWorkflow Nameî and the ìGroupî of the new workflow (top of the window). This information will appear later on the WOIS Workflows Window, with all the default workflows.
-On the left side, the user can select the tool or operation which intends to perform on each step. After that, on the left side, the operation window will appear (equal to the window that will open when the user decide to run the workflow later).
+The first thing to do is to choose the ‚ÄúWorkflow Name‚Äù and the ‚ÄúGroup‚Äù of the new workflow (top of the window). This information will appear later on the WOIS Workflows Window, with all the default workflows.
+On the left side, the user can select the tool or operation which intends to perform on each step. After that, on the right side, the operation window will appear (equal to the window that will open when the user decide to run the workflow later).
 
 .. figure:: ../includes/WOIS_create_new_WF_step_definition.png
 	:figclass: img-border
 	:scale: 80%
 
-Here, the user will be able to set the default parameters and write the explanations that are considered important to pass to whoever runs the workflow. Other option to define on each workflow step is the ìInput Data Modeî. The options are ìNormalî or ìBatchî (single input or multiple inputs, respectively).
+Here, the user will be able to set the default parameters and write the explanations that are considered important to pass to whoever runs the workflow. Other option to define on each workflow step is the ‚ÄúInput Data Mode‚Äù. The options are ‚ÄúNormal‚Äù or ‚ÄúBatch‚Äù (single input or multiple inputs, respectively).
 After set up everything, the user will be able to test the step created, by click the button "Test", or simply save it and configure the next steps until get a complete workflow.
 
-Share Workflow
---------------
+**Note:** A new workflow created can also be inserted into existent Groups. To do that, the user shall use an existent ‚ÄúGroup‚Äù name when creates the workflow.
 
-After create a New Workflow, the user has the possibility of share it with the HEP Community. For that, on the WOIS Workflows window, the user shall select the New Workflow created and click the button ìShareî as explained on the image below.
+Share Workflows
+---------------
 
-.. figure:: ../includes/WOIS_wf_share.png
+After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the New Workflow created and click the button ‚ÄúShare Workflow‚Äù as explained on the image below.
+
+.. figure:: ../includes/wf_share.png
 	:figclass: img-border
 	:scale: 80%
 
-**Note:** A new workflow created can also be inserted into existent Groups. To do that, the user shall use an existent ìGroupî name when creates the workflow.
+QGIS Models
+-----------
+
+A QGIS model is a sequence of operations that run without interruptions. Each operation inside a QGIS model can be performed by the same third party libraries and tools that are used in WOIS workflows.
+
+Create/configure QGIS models
+----------------------------
+
+Once the tools available to create QGIS models are the same available for WOIS, a user can create a model based on a WOIS workflow.
+To create a new model, the user shall select the modeler tool "Create new model".
+
+.. figure:: ../includes/open_create_model.png
+	:figclass: img-border
+	:scale: 80%
+
+The interface to create a new model is displayed on the figure below.
+
+.. figure:: ../includes/create_model_window.png
+	:figclass: img-border
+	:scale: 80%
+	
+The first thing to do is to choose the ‚ÄúModel Name‚Äù and the ‚ÄúGroup‚Äù of the new model (top of the window).
+On the left side, the user can select the tool or operation which intends to perform on each step. A schema with the model sequence will appearing on the right side.
+
+It is also possible to upload the outputs of a model to HEP automatically, by including the script "Upload to TEP" as the final step of a model.
+
+.. figure:: ../includes/create_model_w_upload.png
+	:figclass: img-border
+	:scale: 80%
+	
+Export QGIS model to the HEP
+----------------------------
+
+If the user creates the model on his local machine, it will be possible to export the created model to the VM.
+To export a model, the user shall select the modeler tool "Export model to TEP".
+
+.. figure:: ../includes/open_export_model.png
+	:figclass: img-border
+	:scale: 80%
+
+The interface to create a model is displayed on the figure below.
+
+.. figure:: ../includes/export_model_window.png
+	:figclass: img-border
+	:scale: 80%
+
+On this window, the user shall select the workflow that intends to export, insert the VM IP and username and load the VM certificate (.pem for Windows users / .ppk for Linux users). Then click the button "Export to TEP".
+
+The exported model will be automatically available on HEP Webportal.
+
+Run QGIS model in HEP
+---------------------
+
+The user can run models, in the HEP Webportal, similar to other HEP services.
+ 
+For that, the user must select the intended workflow as it is shown at the image below.
+ 
+.. figure:: ../includes/select_model_hep.png
+	:figclass: img-border
+	:scale: 80%
+
+Then, the user nust enter the input parameters and click the button "Run Job" to start the model on the VM.
+
+.. figure:: ../includes/run_model_hep.png
+	:figclass: img-border
+	:scale: 80%
