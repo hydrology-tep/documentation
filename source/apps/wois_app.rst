@@ -38,7 +38,11 @@ A window, where the user can insert the datapackages URL, will pop up.
 	:figclass: img-border
 	:scale: 80%
 
+After insert the datapackages URL, a new window listing all the datapackages and the products inside each one of them will pop up.
 
+.. figure:: ../includes/data_window.png
+	:figclass: img-border
+	:scale: 80%
 
 
 
