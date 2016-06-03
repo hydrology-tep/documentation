@@ -149,13 +149,13 @@ On the left side, the user can select the tool or operation which intends to per
 Here, the user will be able to set the default parameters and write the explanations that are considered important to pass to whoever runs the workflow. Other option to define on each workflow step is the “Input Data Mode”. The options are “Normal” or “Batch” (single input or multiple inputs, respectively).
 After set up everything, the user will be able to test the step created, by click the button "Test", or simply save it and configure the next steps until get a complete workflow.
 
-Share Workflow
---------------
+**Note:** A new workflow created can also be inserted into existent Groups. To do that, the user shall use an existent “Group” name when creates the workflow.
 
-After create a New Workflow, the user has the possibility of share it with the HEP Community. For that, on the WOIS Workflows window, the user shall select the New Workflow created and click the button “Share” as explained on the image below.
+Share Workflows
+---------------
+
+After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the New Workflow created and click the button “Share Workflow” as explained on the image below.
 
 .. figure:: ../includes/WOIS_wf_share.png
 	:figclass: img-border
 	:scale: 80%
-
-**Note:** A new workflow created can also be inserted into existent Groups. To do that, the user shall use an existent “Group” name when creates the workflow.
