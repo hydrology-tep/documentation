@@ -44,7 +44,10 @@ After insert the datapackages URL, a new window listing all the datapackages and
 	:figclass: img-border
 	:scale: 80%
 
+By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded.
 
+Run WOIS Workflow
+-----------------
 
 Within HEP, WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.
 
@@ -56,24 +59,7 @@ After open QGIS on the button
 
 .. figure:: ../includes/WOIS_button.png
 	:scale: 80%
-
-A window with the default WOIS Workflows will open.
-
-.. figure:: ../includes/WOIS_data_tab.png
-	:figclass: img-border
-	:scale: 80%
-
-By clicking on the Tab “Data” (Red circle on the image above), a window will open and the user can paste the Data URL on it to get the Data selected before.
-
-.. figure:: ../includes/insert_url.png
-	:figclass: img-border
-	:scale: 80%
-
-By clicking on the button “Get Data” all the Data into the package selected by the User will be available on the Virtual Machine where WOIS is running.
-
-Run WOIS Workflow
------------------
-
+	
 After open WOIS and get the Data, the user can finally run a WOIS Workflow. For that, the user shall select the intended workflow and double click as explained on the image below.
 
 .. figure:: ../includes/WOIS_wf_select.png
