@@ -159,3 +159,18 @@ After create a new Workflow, the user has the possibility of share it with the H
 .. figure:: ../includes/wf_share.png
 	:figclass: img-border
 	:scale: 80%
+
+QGIS Models
+-----------
+
+A QGIS model is a sequence of operations that run without interruptions. Each operation inside a QGIS model can be performed by the same third party libraries and tools that are used in WOIS workflows.
+
+Create/configure QGIS models
+----------------------------
+
+Once the tools available to create QGIS models are the same available for WOIS, a user can create a model based on a WOIS workflow.
+To create a new model the user shall select the modeler tool "Create new model".
+
+.. figure:: ../includes/open_create_model.png
+	:figclass: img-border
+	:scale: 80%
