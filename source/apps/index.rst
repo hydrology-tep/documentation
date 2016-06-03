@@ -5,7 +5,7 @@ Thematic Applications
    :maxdepth: 2
    
    Overview <overview>
-   Niger river <niger_river>
+   Flood monitoring <fm>
    Red river <red_river>
    Global Hydrological Modeling <global_hydro_model>
    WOIS CloudToolbox <wois_app>
