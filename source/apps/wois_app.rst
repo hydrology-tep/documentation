@@ -190,6 +190,8 @@ It is also possible to upload the outputs of a model to HEP automatically, by in
 	:figclass: img-border
 	:scale: 80%
 	
+**Note:** A new model created can also be inserted into existent Groups. To do that, the user shall use an existent “Group” name when creates the model.
+	
 Export QGIS model to the HEP
 ----------------------------
 
