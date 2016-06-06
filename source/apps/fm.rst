@@ -26,7 +26,7 @@ Run the flood map extent processing service
 
 Open the Processing Services tab on the right of the geobrowser.
 
-.. figure:: ../includes/geobrowser_wps_tab_hidden.png
+.. figure:: ../includes/apps_fm_geobrowser_wps_highlighted.png
 	:figclass: img-border
 	:scale: 80%
 
