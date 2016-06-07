@@ -1,4 +1,4 @@
-.. _app_niger_river:
+.. _fm:
 
 Flood monitoring
 ================
