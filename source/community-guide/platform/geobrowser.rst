@@ -76,6 +76,9 @@ Currently disactivated.
 Area of interest
 *****************
 
+.. figure:: ../../includes/aoi.png
+	:figclass: img-border img-max-width
+
 Area of interest may be defined by the user using the tools to draw a polygon or a rectangle on the map (see `Map`_). Once set, the search will be automatically updated with data corresponding to this AOI.
 
 Area of interest external definition
