@@ -1,8 +1,6 @@
 Getting Started Guide
 =====================
 
-Contents:
-
 .. toctree::
     :maxdepth: 2
 

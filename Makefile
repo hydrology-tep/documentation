@@ -7,7 +7,6 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = _build
 REPORTDIR     = _reports
-
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
@@ -29,7 +28,7 @@ help:
 	@echo "  doctest   to run all doctests embedded in the documentation (if enabled)"
 
 clean:
-	-rm -rf $(BUILDDIR)/*
+	-rm -rf $(BUILDDIR)/* $(REPORTDIR)
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
@@ -62,15 +61,25 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/UrbanThematicExploitationPlatform.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/E-CEODataChallengesplatform.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/UrbanThematicExploitationPlatform.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/E-CEODataChallengesplatform.qhc"
 
 latex:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+	sed -i.bak 's/{\\hyperref\[\(.*\:req-[0-9]*\)\]{.*}}/{\\autoref{\1}}/g' $(BUILDDIR)/latex/*.tex
+	sed -i.bak 's/\\begin{longtable}{|l|l|l|}/\\begin{longtable}{|l|l|p{10cm}|}/g' $(BUILDDIR)/latex/*.tex
+	cp source/_templates/*.sty $(BUILDDIR)/latex
+	cp source/_static/* $(BUILDDIR)/latex
+	@echo
+	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
+	@echo "Run \`make all-pdf' or \`make all-ps' in that directory to" \
+	      "run these through (pdf)latex."
+
+latex-mac:
+	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	sed -i .bak 's/{\\hyperref\[\(.*\:req-[0-9]*\)\]{.*}}/{\\autoref{\1}}/g' $(BUILDDIR)/latex/*.tex
-	sed -i .bak 's/\\begin{tabulary}{\linewidth}{|L|L|L|}/\begin{longtable}{|l|l|p{12cm}|}/g' $(BUILDDIR)/latex/*.tex
-	sed -i .bak 's/\\hline\end{longtable}/\hline\end{longtable}/g' $(BUILDDIR)/latex/*.tex
+	sed -i .bak 's/$\\begin{longtable}{|l|l|l|}/\begin{longtable}{|l|l|p{10cm}|}/g' $(BUILDDIR)/latex/*.tex
 	cp source/_templates/*.sty $(BUILDDIR)/latex
 	cp source/_static/* $(BUILDDIR)/latex
 	@echo
@@ -93,3 +102,17 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+man:
+	$(SPHINXBUILD) -b man $(ALLSPHINXOPTS) $(BUILDDIR)/man
+	@echo
+	@echo "Build finished. The manual pages are in $(BUILDDIR)/man."
+
+test:
+	mkdir $(REPORTDIR)
+	`which py.test` --tb=line -v --junitxml=$(REPORTDIR)/junit.xml check_sphinx.py
+
+pdf:
+	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
+	@echo
+	@echo "Build finished. The PDF files are in $(BUILDDIR)/pdf."

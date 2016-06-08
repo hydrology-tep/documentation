@@ -1,8 +1,6 @@
 Cloud Resources
 ================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    
