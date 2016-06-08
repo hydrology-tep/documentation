@@ -76,7 +76,7 @@ Currently disactivated.
 Area of interest
 *****************
 
-.. figure:: ../includes/aoi.png
+.. figure:: ../../includes/aoi.png
 	:align: center
 	:figclass: img-container-border
 	:scale: 80%
@@ -103,7 +103,7 @@ Area of Interest according to processing service
 Area of Interest may be directly used to fill bounding box parameters exposed by Processing services.
 When it is the case, the symbol |geobrowser_button_bboxparam.png| will be displayed along the parameter input field. Clicking on it will directly fill the input with the value of the current search bounding box.
 
-.. figure:: ../includes/geobrowser_bboxparam.png
+.. figure:: ../../includes/geobrowser_bboxparam.png
 	:align: center
 	:figclass: img-container-border
 	:scale: 50%
