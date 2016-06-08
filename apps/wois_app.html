@@ -31,9 +31,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Hydrology Thematic Exploitation Platform 1.0 documentation" href="../index.html" />
-    <link rel="up" title="Overview" href="index.html" />
-    <link rel="next" title="My Workspace" href="workspace.html" />
-    <link rel="prev" title="Global Hydrological Modeling" href="global_hydro_model.html" />
+    <link rel="up" title="Thematic Applications" href="index.html" />
+    <link rel="next" title="Flood monitoring" href="fm.html" />
+    <link rel="prev" title="Overview" href="overview.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -114,9 +114,13 @@
 <li><a class="reference internal" href="#select-data-to-use-on-wois">Select Data to use on WOIS</a></li>
 <li><a class="reference internal" href="#run-wois-workflow">Run WOIS Workflow</a></li>
 <li><a class="reference internal" href="#run-single-tool-wois-as-modular-toolbox">Run Single Tool (WOIS as Modular Toolbox)</a></li>
-<li><a class="reference internal" href="#share-outputs">Share Outputs</a></li>
+<li><a class="reference internal" href="#upload-outputs-to-hep">Upload Outputs to HEP</a></li>
 <li><a class="reference internal" href="#create-workflow">Create Workflow</a></li>
-<li><a class="reference internal" href="#share-workflow">Share Workflow</a></li>
+<li><a class="reference internal" href="#share-workflows">Share Workflows</a></li>
+<li><a class="reference internal" href="#qgis-models">QGIS Models</a></li>
+<li><a class="reference internal" href="#create-configure-qgis-models">Create/configure QGIS models</a></li>
+<li><a class="reference internal" href="#export-qgis-model-to-the-hep">Export QGIS model to the HEP</a></li>
+<li><a class="reference internal" href="#run-qgis-model-in-hep">Run QGIS model in HEP</a></li>
 </ul>
 </li>
 </ul>
@@ -128,11 +132,11 @@
               
                 
   <li>
-    <a href="global_hydro_model.html" title="Previous Chapter: Global Hydrological Modeling"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Global Hydrol...</span>
+    <a href="overview.html" title="Previous Chapter: Overview"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Overview</span>
     </a>
   </li>
   <li>
-    <a href="workspace.html" title="Next Chapter: My Workspace"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">My Workspace &raquo;</span>
+    <a href="fm.html" title="Next Chapter: Flood monitoring"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Flood monitoring &raquo;</span>
     </a>
   </li>
               
@@ -170,19 +174,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thematic Applications</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="niger_river.html">Niger river</a></li>
-<li class="toctree-l2"><a class="reference internal" href="red_river.html">Red river</a></li>
-<li class="toctree-l2"><a class="reference internal" href="global_hydro_model.html">Global Hydrological Modeling</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">WOIS CloudToolbox</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#wois-access">WOIS Access</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#select-data-to-use-on-wois">Select Data to use on WOIS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-wois-workflow">Run WOIS Workflow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-single-tool-wois-as-modular-toolbox">Run Single Tool (WOIS as Modular Toolbox)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#share-outputs">Share Outputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upload-outputs-to-hep">Upload Outputs to HEP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-workflow">Create Workflow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#share-workflow">Share Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#share-workflows">Share Workflows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qgis-models">QGIS Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-configure-qgis-models">Create/configure QGIS models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-qgis-model-to-the-hep">Export QGIS model to the HEP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-qgis-model-in-hep">Run QGIS model in HEP</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="fm.html">Flood monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hm.html">Hydrological Modelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wq.html">Water Quality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="workspace.html">My worskpace</a></li>
 </ul>
 </li>
@@ -211,42 +219,50 @@
 </div>
 <div class="section" id="wois-access">
 <h2>WOIS Access<a class="headerlink" href="#wois-access" title="Permalink to this headline">¶</a></h2>
-<p>To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using?**EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section <strong>?User Profile?</strong> of this Document.</p>
+<p>To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using&nbsp;<strong>EO-SSO</strong>. To learn more about the User Profile and the sign-in operation please consult the section <strong>&#8220;User Profile&#8221;</strong> of this Documentation.</p>
 </div>
 <div class="section" id="select-data-to-use-on-wois">
 <h2>Select Data to use on WOIS<a class="headerlink" href="#select-data-to-use-on-wois" title="Permalink to this headline">¶</a></h2>
-<p>The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section <strong>?Data?</strong> of this Document.
-After to save Data as a package, the user should have a URL, which can paste inside WOIS, in order to make the Data available on the Virtual Machine where WOIS is installed.
-Within HEP, WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.</p>
+<p>The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section <strong>“Data”</strong> of this Documentation.</p>
+<p>After to save Data as a package, the user should have a URL, containing the datapackages information, which can paste inside QGIS in order to make the Data available on the Virtual Machine where WOIS is installed.</p>
+<p>A QGIS plugin to get HEP Data on the VM was developed and the figure below explains how to open it.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/open_WOIS.png"><img alt="../_images/open_WOIS.png" src="../_images/open_WOIS.png" style="width: 1535.2px; height: 833.6px;" /></a>
+<a class="reference internal image-reference" href="../_images/open_data_plugin.png"><img alt="../_images/open_data_plugin.png" src="../_images/open_data_plugin.png" style="width: 1532.0px; height: 808.8px;" /></a>
 </div>
-<p>After open QGIS on the button</p>
+<p>After open QGIS, click on the button</p>
 <div class="figure">
-<a class="reference internal image-reference" href="../_images/WOIS_button.png"><img alt="../_images/WOIS_button.png" src="../_images/WOIS_button.png" style="width: 30.4px; height: 30.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>
 </div>
-<p>A window with the default WOIS Workflows will open.</p>
+<p>A window, where the user can insert the datapackages URL, will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/WOIS_data_tab.png"><img alt="../_images/WOIS_data_tab.png" src="../_images/WOIS_data_tab.png" style="width: 332.0px; height: 430.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/data_plugin_window.png"><img alt="../_images/data_plugin_window.png" src="../_images/data_plugin_window.png" style="width: 328.0px; height: 120.8px;" /></a>
 </div>
-<p>By clicking on the Tab ?Data? (Red circle on the image above), a window will open and the user can paste the Data URL on it to get the Data selected before.</p>
+<p>After insert the datapackages URL, a new window listing all the datapackages and the products inside each one of them will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/insert_url.png"><img alt="../_images/insert_url.png" src="../_images/insert_url.png" style="width: 280.0px; height: 119.2px;" /></a>
+<a class="reference internal image-reference" href="../_images/data_window.png"><img alt="../_images/data_window.png" src="../_images/data_window.png" style="width: 259.2px; height: 276.0px;" /></a>
 </div>
-<p>By clicking on the button ?Get Data? all the Data into the package selected by the User will be available on the Virtual Machine where WOIS is running.</p>
+<p>By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded.</p>
 </div>
 <div class="section" id="run-wois-workflow">
 <h2>Run WOIS Workflow<a class="headerlink" href="#run-wois-workflow" title="Permalink to this headline">¶</a></h2>
+<p>WOIS is accessible through QGIS. The figure below explains how to open WOIS on QGIS.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/open_WOIS.png"><img alt="../_images/open_WOIS.png" src="../_images/open_WOIS.png" style="width: 1532.0px; height: 808.8px;" /></a>
+</div>
+<p>After open QGIS, click on the button</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/WOIS_button.png"><img alt="../_images/WOIS_button.png" src="../_images/WOIS_button.png" style="width: 30.4px; height: 30.4px;" /></a>
+</div>
 <p>After open WOIS and get the Data, the user can finally run a WOIS Workflow. For that, the user shall select the intended workflow and double click as explained on the image below.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/WOIS_wf_select.png"><img alt="../_images/WOIS_wf_select.png" src="../_images/WOIS_wf_select.png" style="width: 331.2px; height: 430.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/WOIS_wf_select.png"><img alt="../_images/WOIS_wf_select.png" src="../_images/WOIS_wf_select.png" style="width: 324.0px; height: 422.4px;" /></a>
 </div>
-<p>In this case, the workflow selected was the ?Lake temperature (AATSR)?. A window with the first step of the workflow will open.</p>
+<p>In this case, the workflow selected was the “Lake temperature (AATSR)”. A window with the first step of the workflow will open.</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/WF_step_1.png"><img alt="../_images/WF_step_1.png" src="../_images/WF_step_1.png" style="width: 897.6px; height: 653.6px;" /></a>
 </div>
 <p>On this window, the user will be able to open the data to process on this step, define parameters related with the operation and choose the output filepath. On the left side of the window, it is available a set of detailed explanations about the current step (input data, mean of each parameter and processing operation).
-After set the parameters and the input and output data the user shall click the button ?Run? in order to start the current step. On each step of the workflow, the user can go to a different step by using the buttons ?&lt; Previous step? and ?Skip step &gt;? and/or exit the workflow by clicking ?Finish Workflow?.</p>
+After set the parameters and the input and output data the user shall click the button “Run” in order to start the current step. On each step of the workflow, the user can go to a different step by using the buttons “&lt; Previous step” and “Skip step &gt;” and/or exit the workflow by clicking “Finish Workflow”.</p>
 </div>
 <div class="section" id="run-single-tool-wois-as-modular-toolbox">
 <h2>Run Single Tool (WOIS as Modular Toolbox)<a class="headerlink" href="#run-single-tool-wois-as-modular-toolbox" title="Permalink to this headline">¶</a></h2>
@@ -262,17 +278,27 @@ After set the parameters and the input and output data the user shall click the 
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/WOIS_modular_tbx_single_tool_interface.png"><img alt="../_images/WOIS_modular_tbx_single_tool_interface.png" src="../_images/WOIS_modular_tbx_single_tool_interface.png" style="width: 475.2px; height: 354.4px;" /></a>
 </div>
-<p>After set the parameters to perform the single operation, the user can start it by clicking the button ?Run?.</p>
+<p>After set the parameters to perform the single operation, the user can start it by clicking the button “Run”.</p>
 </div>
-<div class="section" id="share-outputs">
-<h2>Share Outputs<a class="headerlink" href="#share-outputs" title="Permalink to this headline">¶</a></h2>
-<p>A WOIS user can share his outputs with the HEP Community. To do that, on the WOIS Workflows window the user shall select the Tab ?Results?.</p>
+<div class="section" id="upload-outputs-to-hep">
+<h2>Upload Outputs to HEP<a class="headerlink" href="#upload-outputs-to-hep" title="Permalink to this headline">¶</a></h2>
+<p>After a workflow run, a user can upload the results to his HEP Data Storage. This will allow the user to check the results on the HEP Webportal or share his outputs with the HEP Community.</p>
+<p>A QGIS Script to upload results to HEP (&#8220;Upload to TEP&#8221;) was developed and it can be used in two different ways:</p>
+<ul class="simple">
+<li>Directly on QGIS</li>
+</ul>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/WOIS_results_tab.png"><img alt="../_images/WOIS_results_tab.png" src="../_images/WOIS_results_tab.png" style="width: 332.0px; height: 430.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/upload_outputs_script.png"><img alt="../_images/upload_outputs_script.png" src="../_images/upload_outputs_script.png" style="width: 560.8px; height: 295.2px;" /></a>
 </div>
-<p>The Tab ?Results? will display the list of all the outputs generated by the workflows run by the user will appear. Here, the user can select the results which intend to share.</p>
+<ul class="simple">
+<li>Include the script as the final step of a workflow</li>
+</ul>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/WOIS_share_results.png"><img alt="../_images/WOIS_share_results.png" src="../_images/WOIS_share_results.png" style="width: 335.2px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/upload_outputs_at_wf.png"><img alt="../_images/upload_outputs_at_wf.png" src="../_images/upload_outputs_at_wf.png" style="width: 963.2px; height: 502.4px;" /></a>
+</div>
+<p>When an output is exported to HEP, it will appear at the HEP Webportal, as it is shown on the image below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/outputs_on_hep.png"><img alt="../_images/outputs_on_hep.png" src="../_images/outputs_on_hep.png" style="width: 1476.8px; height: 647.2px;" /></a>
 </div>
 </div>
 <div class="section" id="create-workflow">
@@ -281,26 +307,75 @@ After set the parameters and the input and output data the user shall click the 
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/WOIS_create_new_WF_selection.png"><img alt="../_images/WOIS_create_new_WF_selection.png" src="../_images/WOIS_create_new_WF_selection.png" style="width: 283.2px; height: 217.6px;" /></a>
 </div>
-<p>Inside WOIS Tools, the user shall select the option ?Create new workflow?.
+<p>Inside WOIS Tools, the user shall select the option “Create new workflow”.
 The interface to create a new workflow is displayed on the figure below.</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/WOIS_create_new_WF.png"><img alt="../_images/WOIS_create_new_WF.png" src="../_images/WOIS_create_new_WF.png" style="width: 972.0px; height: 508.8px;" /></a>
 </div>
-<p>The first thing to do is to choose the ?Workflow Name? and the ?Group? of the new workflow (top of the window). This information will appear later on the WOIS Workflows Window, with all the default workflows.
-On the left side, the user can select the tool or operation which intends to perform on each step. After that, on the left side, the operation window will appear (equal to the window that will open when the user decide to run the workflow later).</p>
+<p>The first thing to do is to choose the “Workflow Name” and the “Group” of the new workflow (top of the window). This information will appear later on the WOIS Workflows Window, with all the default workflows.
+On the left side, the user can select the tool or operation which intends to perform on each step. After that, on the right side, the operation window will appear (equal to the window that will open when the user decide to run the workflow later).</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/WOIS_create_new_WF_step_definition.png"><img alt="../_images/WOIS_create_new_WF_step_definition.png" src="../_images/WOIS_create_new_WF_step_definition.png" style="width: 972.0px; height: 510.4px;" /></a>
 </div>
-<p>Here, the user will be able to set the default parameters and write the explanations that are considered important to pass to whoever runs the workflow. Other option to define on each workflow step is the ?Input Data Mode?. The options are ?Normal? or ?Batch? (single input or multiple inputs, respectively).
+<p>Here, the user will be able to set the default parameters and write the explanations that are considered important to pass to whoever runs the workflow. Other option to define on each workflow step is the “Input Data Mode”. The options are “Normal” or “Batch” (single input or multiple inputs, respectively).
 After set up everything, the user will be able to test the step created, by click the button &#8220;Test&#8221;, or simply save it and configure the next steps until get a complete workflow.</p>
+<p><strong>Note:</strong> A new workflow created can also be inserted into existent Groups. To do that, the user shall use an existent “Group” name when creates the workflow.</p>
 </div>
-<div class="section" id="share-workflow">
-<h2>Share Workflow<a class="headerlink" href="#share-workflow" title="Permalink to this headline">¶</a></h2>
-<p>After create a New Workflow, the user has the possibility of share it with the HEP Community. For that, on the WOIS Workflows window, the user shall select the New Workflow created and click the button ?Share? as explained on the image below.</p>
+<div class="section" id="share-workflows">
+<h2>Share Workflows<a class="headerlink" href="#share-workflows" title="Permalink to this headline">¶</a></h2>
+<p>After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the New Workflow created and click the button “Share Workflow” as explained on the image below.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/WOIS_wf_share.png"><img alt="../_images/WOIS_wf_share.png" src="../_images/WOIS_wf_share.png" style="width: 331.2px; height: 430.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/wf_share.png"><img alt="../_images/wf_share.png" src="../_images/wf_share.png" style="width: 257.6px; height: 194.4px;" /></a>
 </div>
-<p><strong>Note:</strong> A new workflow created can also be inserted into existent Groups. To do that, the user shall use an existent ?Group? name when creates the workflow.</p>
+</div>
+<div class="section" id="qgis-models">
+<h2>QGIS Models<a class="headerlink" href="#qgis-models" title="Permalink to this headline">¶</a></h2>
+<p>A QGIS model is a sequence of operations that run without interruptions. Each operation inside a QGIS model can be performed by the same third party libraries and tools that are used in WOIS workflows.</p>
+</div>
+<div class="section" id="create-configure-qgis-models">
+<h2>Create/configure QGIS models<a class="headerlink" href="#create-configure-qgis-models" title="Permalink to this headline">¶</a></h2>
+<p>Once the tools available to create QGIS models are the same available for WOIS, a user can create a model based on a WOIS workflow.
+To create a new model, the user shall select the modeler tool &#8220;Create new model&#8221;.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/open_create_model.png"><img alt="../_images/open_create_model.png" src="../_images/open_create_model.png" style="width: 196.0px; height: 173.6px;" /></a>
+</div>
+<p>The interface to create a new model is displayed on the figure below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/create_model_window.png"><img alt="../_images/create_model_window.png" src="../_images/create_model_window.png" style="width: 800.8px; height: 513.6px;" /></a>
+</div>
+<p>The first thing to do is to choose the “Model Name” and the “Group” of the new model (top of the window).
+On the left side, the user can select the tool or operation which intends to perform on each step. A schema with the model sequence will appearing on the right side.</p>
+<p>It is also possible to upload the outputs of a model to HEP automatically, by including the script &#8220;Upload to TEP&#8221; as the final step of a model.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/create_model_w_upload.png"><img alt="../_images/create_model_w_upload.png" src="../_images/create_model_w_upload.png" style="width: 594.4px; height: 380.8px;" /></a>
+</div>
+<p><strong>Note:</strong> A new model created can also be inserted into existent Groups. To do that, the user shall use an existent “Group” name when creates the model.</p>
+</div>
+<div class="section" id="export-qgis-model-to-the-hep">
+<h2>Export QGIS model to the HEP<a class="headerlink" href="#export-qgis-model-to-the-hep" title="Permalink to this headline">¶</a></h2>
+<p>If the user creates the model on his local machine, it will be possible to export the created model to the VM.
+To export a model, the user shall select the modeler tool &#8220;Export model to TEP&#8221;.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/open_export_model.png"><img alt="../_images/open_export_model.png" src="../_images/open_export_model.png" style="width: 184.0px; height: 29.6px;" /></a>
+</div>
+<p>The interface to create a model is displayed on the figure below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/export_model_window.png"><img alt="../_images/export_model_window.png" src="../_images/export_model_window.png" style="width: 276.0px; height: 278.4px;" /></a>
+</div>
+<p>On this window, the user shall select the workflow that intends to export, insert the VM IP and username and load the VM certificate (.pem for Windows users / .ppk for Linux users). Then click the button &#8220;Export to TEP&#8221;.</p>
+<p>The exported model will be automatically available on HEP Webportal.</p>
+</div>
+<div class="section" id="run-qgis-model-in-hep">
+<h2>Run QGIS model in HEP<a class="headerlink" href="#run-qgis-model-in-hep" title="Permalink to this headline">¶</a></h2>
+<p>The user can run models, in the HEP Webportal, similar to other HEP services.</p>
+<p>For that, the user must select the intended workflow as it is shown at the image below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/select_model_hep.png"><img alt="../_images/select_model_hep.png" src="../_images/select_model_hep.png" style="width: 1440.8px; height: 796.0px;" /></a>
+</div>
+<p>Then, the user nust enter the input parameters and click the button &#8220;Run Job&#8221; to start the model on the VM.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/run_model_hep.png"><img alt="../_images/run_model_hep.png" src="../_images/run_model_hep.png" style="width: 1439.2px; height: 799.2px;" /></a>
+</div>
 </div>
 </div>
 

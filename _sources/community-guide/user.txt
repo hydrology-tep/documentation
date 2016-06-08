@@ -74,76 +74,40 @@ To change your EO-SSO password:
 	:figclass: img-border
 	:scale: 80%
 
-Upload your certificate
------------------------
+Link your account to the Terradue Cloud Platform
+------------------------------------------------
 
-.. figure:: ../includes/user_certificate.png
+To access the Cloud resources, you need to have an account on the Terradue Cloud Platform. From this page, you can check that you have a valid account, or create a new one.
+
+Don't have a Terradue account ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you don't have yet an account on the Terradue Cloud Platform
+
+.. figure:: ../includes/user_profile_cloud_no.png
 	:figclass: img-border img-max-width
 	:scale: 80%
 
-Certificate is the key to access the cloud environment, it is thus very important that you set it correctly in your profile.
+1. Click on the button "Create" 
+2. Enter a password for the Terradue account (see below for password recommandations)
+3. A new account will be created on https://www.terradue.com using your EO-SSO email/username
 
-No certificate
-~~~~~~~~~~~~~~
-
-If you don't have yet any valid certificate:
-
-1. Request a new one to Terradue (clicking *Request certificate* button). 
-2. You will receive an email with a link to download the certificate.
-3. The new certificate, once created, will automatically be added to your profile.
-
-
-Existing certificate
-~~~~~~~~~~~~~~~~~~~~
-
-If you already have a valid certificate and you want to use it:
-
-1. Select a valid **PEM** certificate from your computer by clicking **Select file**.
-2. Once the correct file is chosen, click on **Upload file**.
-3. Your certificate is automatically added to your profile.
-
-Remove your certificate
------------------------
-
-.. figure:: ../includes/certificate_removal.png
-	:figclass: img-border img-max-width
+.. figure:: ../includes/t2_password_rules.png
+	:figclass: img-border
 	:scale: 80%
 
-If you need to change your certificate, you need first to remove it.
-As it is link to your cloud account, *Terradue Support Team* needs to perform manual operations to remove it correctly.
+.. NOTE::
+	If you want to create an account with a different username or email, you can do it directly at https://www.terradue.com/signup (but a least one of Username or email shall be the same as in EO-SSO).
 
-1. Click on *Remove Certificate*
-2. A message appear on the certificate view, confirming the request is under process.
-3. Wait until you receive an email from *Terradue Support Team* telling you the certificate has been succesfully removed.
-4. You can now upload a new certificate (see `Upload your certificate`_).
+Already have a Terradue account ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Access the Cloud Dashboard
---------------------------
+If you already have an account on the Terradue Cloud Platform, the portal will be able to detect it by itself and display the Opennebula Sunstone logo. 
+If not the case, it means that you have a different username/email than on your EO-SSO profile. In this case, please contact us so we can manually link your accounts.
 
-To access the Cloud dashboard, you will need to have a valid certificate stored on the platform, as well as an account on the Cloud Controller.
-
-
-1. You don't have a valid certificate stored on the platform ? See `Upload your certificate`_.
-
-.. figure:: ../includes/cloud_certificate_missing.png
+.. figure:: ../includes/user_profile_cloud.png
 	:figclass: img-border img-max-width
 	:scale: 80%
-
-2. You don't have an account on the Cloud Controller ? Create one by clicking on **Create**.
-
-.. figure:: ../includes/cloud_account_missing.png
-	:figclass: img-border img-max-width
-	:scale: 80%
-
-3. You can see the cloud logo |sunstone_logo.png| ? Congratulations, all is correctly set up.
-
-.. figure:: ../includes/cloud_dashboard_ok.png
-	:figclass: img-border img-max-width
-	:scale: 80%
-
-Just click on it to be redirected to the Cloud Dashboard (powered by OpenNebula, see :doc:`Cloud Dashboard <cloud/dashboard>`).
-
-.. |sunstone_logo.png| image:: ../includes/sunstone_logo-small.png
 
 Link your Github account
 ------------------------

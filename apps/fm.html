@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Red River &mdash; Hydrology Thematic Exploitation Platform 1.0 documentation</title>
+    <title>Flood monitoring &mdash; Hydrology Thematic Exploitation Platform 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -31,9 +31,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Hydrology Thematic Exploitation Platform 1.0 documentation" href="../index.html" />
-    <link rel="up" title="Overview" href="index.html" />
-    <link rel="next" title="Global Hydrological Modeling" href="global_hydro_model.html" />
-    <link rel="prev" title="Niger River" href="niger_river.html" />
+    <link rel="up" title="Thematic Applications" href="index.html" />
+    <link rel="next" title="Hydrological Modelling" href="hm.html" />
+    <link rel="prev" title="WOIS CloudToolBox" href="wois_app.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -109,7 +109,11 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Red River</a></li>
+<li><a class="reference internal" href="#">Flood monitoring</a><ul>
+<li><a class="reference internal" href="#access-to-the-thematic-application">Access to the thematic application</a></li>
+<li><a class="reference internal" href="#run-the-flood-map-extent-processing-service">Run the flood map extent processing service</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -119,11 +123,11 @@
               
                 
   <li>
-    <a href="niger_river.html" title="Previous Chapter: Niger River"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Niger River</span>
+    <a href="wois_app.html" title="Previous Chapter: WOIS CloudToolBox"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; WOIS CloudToo...</span>
     </a>
   </li>
   <li>
-    <a href="global_hydro_model.html" title="Next Chapter: Global Hydrological Modeling"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Global Hydrol... &raquo;</span>
+    <a href="hm.html" title="Next Chapter: Hydrological Modelling"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Hydrological ... &raquo;</span>
     </a>
   </li>
               
@@ -132,7 +136,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/red_river.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/fm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -161,17 +165,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../cloud-administrator/index.html">Cloud Operations Administrator Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thematic Applications</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="niger_river.html">Niger river</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Red river</a></li>
-<li class="toctree-l2"><a class="reference internal" href="global_hydro_model.html">Global Hydrological Modeling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wois_app.html">WOIS CloudToolbox</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Flood monitoring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#access-to-the-thematic-application">Access to the thematic application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-the-flood-map-extent-processing-service">Run the flood map extent processing service</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="hm.html">Hydrological Modelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wq.html">Water Quality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="workspace.html">My worskpace</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/red_river.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/apps/fm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -185,11 +193,39 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="red-river">
-<span id="app-red-river"></span><h1>Red River<a class="headerlink" href="#red-river" title="Permalink to this headline">¶</a></h1>
-<p>The Red river Thematic App focuses on the Red river rivers, streams and sub-basins.</p>
+  <div class="section" id="flood-monitoring">
+<span id="fm"></span><h1>Flood monitoring<a class="headerlink" href="#flood-monitoring" title="Permalink to this headline">¶</a></h1>
+<p>Historical analysis of large floods events at medium resolution using ASAR archive data and archive MODIS data for results refinement. Also flood monitoring and detailed mapping of affected areas at high resolution using Sentinel-1, and high resolution optical imagery for results refinement.</p>
+<div class="section" id="access-to-the-thematic-application">
+<h2>Access to the thematic application<a class="headerlink" href="#access-to-the-thematic-application" title="Permalink to this headline">¶</a></h2>
+<p>From the thematic application page, click on the <strong>Flood monitoring</strong> application.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/apps_red_river.png"><img alt="../_images/apps_red_river.png" src="../_images/apps_red_river.png" style="width: 726.4px; height: 135.2px;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_fm.png"><img alt="../_images/apps_fm.png" src="../_images/apps_fm.png" style="width: 962.4px; height: 140.8px;" /></a>
+</div>
+<p>A new page with the geobrowser, data collections and processing services associated to the Flood monitoring application will appear.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_fm_geobrowser.png"><img alt="../_images/apps_fm_geobrowser.png" src="../_images/apps_fm_geobrowser.png" style="width: 1535.2px; height: 754.4px;" /></a>
+</div>
+</div>
+<div class="section" id="run-the-flood-map-extent-processing-service">
+<h2>Run the flood map extent processing service<a class="headerlink" href="#run-the-flood-map-extent-processing-service" title="Permalink to this headline">¶</a></h2>
+<p>Open the Processing Services tab on the right of the geobrowser.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_fm_geobrowser_wps_highlighted.png"><img alt="../_images/apps_fm_geobrowser_wps_highlighted.png" src="../_images/apps_fm_geobrowser_wps_highlighted.png" style="width: 1152.8px; height: 565.6px;" /></a>
+</div>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_fm_wps_tab.png"><img alt="../_images/apps_fm_wps_tab.png" src="../_images/apps_fm_wps_tab.png" style="width: 270.4px; height: 263.2px;" /></a>
+</div>
+<p>Select the <strong>Flood map extent</strong> service.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_fm_wps_fme.png"><img alt="../_images/apps_fm_wps_fme.png" src="../_images/apps_fm_wps_fme.png" style="width: 371.2px; height: 537.6px;" /></a>
+</div>
+<p>Select data from the search result panel, or from a data package, and drag and drop the selected data into the <strong>Sentinel-1 GRD master</strong> and <strong>Sentinel-1 GRD slave</strong> input.
+As an example, you can find suitable data in the data package named <strong>Flood mapping tutorial</strong> (see how to select a data package).</p>
+<p>Then click on the <strong>Run job</strong> button.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/run_job.png"><img alt="../_images/run_job.png" src="../_images/run_job.png" style="width: 71.2px; height: 28.8px;" /></a>
+</div>
 </div>
 </div>
 
