@@ -76,8 +76,11 @@ Currently disactivated.
 Area of interest
 *****************
 
-.. figure:: ../../includes/aoi.png
-	:figclass: img-border img-max-width
+.. figure:: ../includes/aoi.png
+	:align: center
+	:figclass: img-container-border
+	:scale: 80%
+
 
 Area of interest may be defined by the user using the tools to draw a polygon or a rectangle on the map (see `Map`_). Once set, the search will be automatically updated with data corresponding to this AOI.
 
@@ -100,8 +103,10 @@ Area of Interest according to processing service
 Area of Interest may be directly used to fill bounding box parameters exposed by Processing services.
 When it is the case, the symbol |geobrowser_button_bboxparam.png| will be displayed along the parameter input field. Clicking on it will directly fill the input with the value of the current search bounding box.
 
-.. figure:: ../../includes/geobrowser_bboxparam.png
-	:figclass: img-border img-max-width
+.. figure:: ../includes/geobrowser_bboxparam.png
+	:align: center
+	:figclass: img-container-border
+	:scale: 50%
 
 Contexts
 ~~~~~~~~
@@ -167,4 +172,4 @@ Details on jobs can be accessed by clicking on the title of the job.
 .. |geobrowser_disaster_big_group.png| image:: ../../includes/geobrowser_disaster_big_group.png
 .. |geobrowser_disaster_small_group.png| image:: ../../includes/geobrowser_disaster_small_group.png
 .. |geobrowser_disaster_event.png| image:: ../../includes/geobrowser_disaster_event.png
-.. |geobrowser_button_bboxparam.png image:: ../../includes/geobrowser_button_bboxparam.png
+.. |geobrowser_button_bboxparam.png| image:: ../../includes/geobrowser_button_bboxparam.png
