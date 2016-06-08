@@ -1,9 +1,10 @@
 Hydrology thematic exploitation platform guide
 ==============================================
 
-Contents:
 
 .. toctree::
+   :caption: Table of Contents
+   :numbered:
    :maxdepth: 2
    
    Overview <overview/index>
