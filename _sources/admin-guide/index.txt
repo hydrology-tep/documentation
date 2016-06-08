@@ -1,7 +1,6 @@
 Hydrology thematic exploitation platform administrator guide
 ============================================================
 
-Contents:
 
 .. toctree::
    :maxdepth: 2
@@ -10,6 +9,7 @@ Contents:
    Data Collection management<data>
    Wps Providers management<wps_provider>
    Wps Services management<wps_service>
+   Wps jobs management<wpsjob>
    Data Packages management<data_package>
    Groups management<group>
    Users management<user>
