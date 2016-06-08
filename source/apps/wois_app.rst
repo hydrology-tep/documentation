@@ -228,3 +228,4 @@ Then, the user nust enter the input parameters and click the button "Run Job" to
 .. figure:: ../includes/run_model_hep.png
 	:figclass: img-border
 	:scale: 80%
+
