@@ -154,11 +154,19 @@ After set up everything, the user will be able to test the step created, by clic
 Share Workflows
 ---------------
 
-After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the New Workflow created and click the button “Share Workflow” as explained on the image below.
+After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool "Share workflow".
+
+.. figure:: ../includes/open_share_wf.png
+	:figclass: img-border
+	:scale: 80%
+
+The interface to share a workflow is displayed on the figure below.
 
 .. figure:: ../includes/wf_share.png
 	:figclass: img-border
 	:scale: 80%
+
+On this window, the user shall select the new Workflow created and click the button “Share”.
 
 QGIS Models
 -----------
@@ -202,13 +210,13 @@ To export a model, the user shall select the modeler tool "Export model to TEP".
 	:figclass: img-border
 	:scale: 80%
 
-The interface to create a model is displayed on the figure below.
+The interface to export a model is displayed on the figure below.
 
 .. figure:: ../includes/export_model_window.png
 	:figclass: img-border
 	:scale: 80%
 
-On this window, the user shall select the workflow that intends to export, insert the VM IP and username and load the VM certificate (.pem for Windows users / .ppk for Linux users). Then click the button "Export to TEP".
+On this window, the user shall select the model that intends to export, insert the VM IP and username and load the VM certificate (.pem for Windows users / .ppk for Linux users). Then click the button "Export to TEP".
 
 The exported model will be automatically available on HEP Webportal.
 
