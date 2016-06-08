@@ -1,7 +1,6 @@
 Cloud Operations Administrator Guide
 ====================================
 
-Contents:
 
 .. toctree::
     :maxdepth: 2

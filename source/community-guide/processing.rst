@@ -60,7 +60,7 @@ Make my jobs public
 To make my jobs public:
 
 1. Go to the detail view of the job (see `Access my jobs`_).
-2. See :doc:`Share a job` <sharing>`.
+2. See :doc:`Share a job <sharing>`.
 
 .. tip:: On the job list, jobs with the icon |public_jobs| are the jobs you made public.
 
