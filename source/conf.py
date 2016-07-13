@@ -91,7 +91,7 @@ pygments_style = 'sphinx'
 
 # Github path
 github_repo = "https://github.com/hydrology-tep/documentation"
-github_branch = "master"
+github_branch = "develop"
 
 # requirements trace
 req_include_reqs = True
