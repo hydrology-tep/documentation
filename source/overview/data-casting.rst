@@ -75,7 +75,7 @@ The XML content (ATOM encoding) that will create the index on the Platform’s D
 
 .. figure:: ../includes/data-casting-facility_referencing-datasets.png
 	:figclass: align-center
-        :width: 750px
+        :width: 100%
         :align: center
 
 For standard data products potentially shared by many applications (common user requirements being identified), the process above must be coordinated with the Operations Support team at Terradue to ensure no duplicates are created.
