@@ -1,3 +1,5 @@
+.. _data_casting:
+
 A data casting facility
 =======================
 
@@ -26,9 +28,6 @@ Indicate the resources you would like to promote on the platform, and the usage 
 
 What data provider should do to have their data published ?
 -----------------------------------------------------------
-
-Introduction
-~~~~~~~~~~~~
 
 For data providers needing a permanent storage to share datasets of reference to be ingested by processing jobs (especially other that EO data), the Platform is evolving to provide Partners with more autonomy in the data preparation tasks. Up to now, Platform users could make use of the S3 service (Simple Storage Service) to upload such datasets, and have them referenced on the Platform’s catalogue service by interacting with the Operations Support team at Terradue (via the Support site). In some cases, when interest from several Platform partners for some dataset of reference is well identified, the Support team can perform the files upload and referencing operations on behalf of users. As a Platform evolution, Partners can now get additional Platform credentials associated to their user profile, in order to perform the dataset files upload and referencing operations they need to perform.
 

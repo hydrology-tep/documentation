@@ -1,3 +1,5 @@
+.. _community_portal:
+
 A Community Portal
 ==================
 
