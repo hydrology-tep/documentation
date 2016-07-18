@@ -73,9 +73,9 @@ Metadata elements can be retrieved by an application in different encoding forma
 
 The XML content (ATOM encoding) that will create the index on the Platform’s Data Agency is posted as follows, according to the metadata profiles supported by the catalogue service:
 
-.. image:: ../includes/data-casting-facility_referencing-datasets.png
-	:align: center
-	:scale: 75%
-	:figclass: img-border
+.. figure:: ../includes/data-casting-facility_referencing-datasets.png
+	:figclass: align-center
+        :width: 750px
+        :align: center
 
 For standard data products potentially shared by many applications (common user requirements being identified), the process above must be coordinated with the Operations Support team at Terradue to ensure no duplicates are created.
