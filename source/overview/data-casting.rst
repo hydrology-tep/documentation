@@ -37,7 +37,7 @@ Working with the Cloud Platform’s S3 storage (legacy)
 
 Users of the Cloud Platform can still create their own S3 bucket (the ‘mb’ command below stands for make bucket) and put their dataset files (here we give only one example) in the S3 bucket:
 
-.. code-block::
+.. code-block:: bash
 
 	$ s3cmd mb s3://dataset_folder_name
 	$ s3cmd put /data/public/corine_land_cover_2012.tiff s3://dataset_folder_name
