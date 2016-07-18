@@ -37,10 +37,10 @@ Working with the Cloud Platform’s S3 storage (legacy)
 
 Users of the Cloud Platform can still create their own S3 bucket (the ‘mb’ command below stands for make bucket) and put their dataset files (here we give only one example) in the S3 bucket:
 
-.. code-block:: url
+.. code-block::
 
-$ s3cmd mb s3://dataset_folder_name
-$ s3cmd put /data/public/corine_land_cover_2012.tiff s3://dataset_folder_name
+	$ s3cmd mb s3://dataset_folder_name
+	$ s3cmd put /data/public/corine_land_cover_2012.tiff s3://dataset_folder_name
 
 This solution currently guarantees user authentication as a Platform referenced user and a flexible distributed storage management in supporting the upload tasks. After this step, the Partner registers on the Platform the prepared bucket as a validated source for the publication and referencing, which will trigger the next step, about referencing these datasets in the Platform’s catalogue service, so they can be queried and retrieved from data processing workflows using a standard API and protocol. 
 
