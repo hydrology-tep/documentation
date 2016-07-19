@@ -29,7 +29,7 @@ Data discovery is made through the map. To get specific data:
 
 .. |search| image:: ../includes/geobrowser_button_query.png
 
-.. image:: ../includes/geobrowser_map_data.png
+.. figure:: ../includes/geobrowser_map_data.png
 	:align: center
 	:scale: 75%
 	:figclass: img-border

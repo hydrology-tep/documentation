@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>3.2. Data collections management &mdash; Hydrology Thematic Exploitation Platform 1.1 documentation</title>
+    <title>3.2. Data collections management &mdash; Hydrology Thematic Exploitation Platform 1.2 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.1',
+        VERSION:     '1.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Hydrology Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
+    <link rel="top" title="Hydrology Thematic Exploitation Platform 1.2 documentation" href="../index.html" />
     <link rel="up" title="3. Hydrology thematic exploitation platform administrator guide" href="index.html" />
     <link rel="next" title="3.3. WPS providers management" href="wps_provider.html" />
     <link rel="prev" title="3.1. Control Panel" href="control_panel.html" />
@@ -71,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.1</b><b class="caret"></b>
+        <b>1.2</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -137,7 +137,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -165,7 +165,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">2. Community Portal User Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">3. Community Portal Administrator Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="control_panel.html">3.1. Control Panel</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">3.2. Data Collection management</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.2. Data Collection management</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#manage-data-collections">3.2.1. Manage Data Collections</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#publish-or-update-an-ows-context-document">3.2.2. Publish or update an OWS context document</a></li>
 </ul>
@@ -186,7 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -231,7 +231,7 @@ The following example describes step by step how to publish a user result in the
 <ol class="arabic simple">
 <li>Generate the OWS document based on the following template:</li>
 </ol>
-<div class="highlight-xml"><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;feed</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2005/Atom&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;id&gt;</span>urn:uuid:607ba1aa-7f43-4b85-9d75-adab715dc9c5<span class="nt">&lt;/id&gt;</span>
   <span class="nt">&lt;entry&gt;</span>
@@ -294,7 +294,7 @@ The following example describes step by step how to publish a user result in the
 <ol class="arabic simple" start="2">
 <li>via a curl command or with any other REST client, POST the document to the right collection:</li>
 </ol>
-<div class="highlight-curl"><div class="highlight"><pre>curl &#39;http://data.terradue.int/gs/catalogue/tepqwsr/gtfeature&#39; -H &#39;Pragma: no-cache&#39; -H &#39;Content-Type: application/atom+xml&#39; -H &#39;Accept: application/xml&#39; -H &#39;Cache-Control: no-cache&#39; -d @file.atom
+<div class="highlight-curl"><div class="highlight"><pre><span></span>curl &#39;http://data.terradue.int/gs/catalogue/tepqwsr/gtfeature&#39; -H &#39;Pragma: no-cache&#39; -H &#39;Content-Type: application/atom+xml&#39; -H &#39;Accept: application/xml&#39; -H &#39;Cache-Control: no-cache&#39; -d @file.atom
 </pre></div>
 </div>
 <p>The collections to post to are:</p>

@@ -152,7 +152,7 @@ Run your VPN Connection
 
 .. admonition:: Congrats
 
-  You have now completed your setup for accessing your GEP laboratory. 
+  You have now completed your setup for accessing your HEP laboratory. 
   You shall be able to access your user dashboard here: http://<sandbox_ip>/dashboard. 
   **So, let's try a first** :doc:`Connect to your Sandbox <../sandbox>` **now !**
 

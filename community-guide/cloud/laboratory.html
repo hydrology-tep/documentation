@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2.9.2. Join the HEP Laboratory &mdash; Hydrology Thematic Exploitation Platform 1.1 documentation</title>
+    <title>2.9.2. Join the HEP Laboratory &mdash; Hydrology Thematic Exploitation Platform 1.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '1.1',
+        VERSION:     '1.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Hydrology Thematic Exploitation Platform 1.1 documentation" href="../../index.html" />
+    <link rel="top" title="Hydrology Thematic Exploitation Platform 1.2 documentation" href="../../index.html" />
     <link rel="up" title="2.9. Cloud Resources" href="index.html" />
     <link rel="next" title="2.9.3. ESA CloudToolbox" href="esa_toolbox.html" />
     <link rel="prev" title="2.9.1. Cloud Dashboard" href="dashboard.html" />
@@ -71,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.1</b><b class="caret"></b>
+        <b>1.2</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -157,7 +157,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/community-guide/cloud/laboratory.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/community-guide/cloud/laboratory.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../sharing.html">2.8. Sharing</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">2.9. Cloud Resources</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="dashboard.html">2.9.1. Cloud Dashboard</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">2.9.2. Join the HEP Laboratory</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2.9.2. Join the HEP Laboratory</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#prerequisites">2.9.2.1. Prerequisites</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-terradue-s-ca-certificate-in-a-browser">2.9.2.2. Import Terradue&#8217;s CA certificate in a Browser</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#download-your-ssl-certificate-in-pfx-format">2.9.2.3. Download your SSL Certificate in PFX format</a></li>
@@ -218,7 +218,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">6. Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/community-guide/cloud/laboratory.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/community-guide/cloud/laboratory.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../../search.html" method="get">
  <div class="form-group">
@@ -356,7 +356,7 @@ Firefox maintains all its CAs.</p>
 </ul>
 <div class="admonition-congrats admonition">
 <p class="first admonition-title">Congrats</p>
-<p class="last">You have now completed your setup for accessing your GEP laboratory.
+<p class="last">You have now completed your setup for accessing your HEP laboratory.
 You shall be able to access your user dashboard here: <a class="reference external" href="http:/">http:/</a>/&lt;sandbox_ip&gt;/dashboard.
 <strong>So, let&#8217;s try a first</strong> <span class="xref doc">Connect to your Sandbox</span> <strong>now !</strong></p>
 </div>
@@ -368,7 +368,7 @@ You shall be able to access your user dashboard here: <a class="reference extern
 <p>When the OpenVPN client is installed on a Linux/Unix OS, the OpenVPN Server is unable to alter the DNS settings on the client in question.
 A typical behaviour in such cases is that you are able to ping your Sandbox through its IPv4 address, but not through the hostname.
 To solve this kind of issue, add manually Terradue&#8217;s DNS server as a new line in your <em>/etc/resolv.conf</em> file:</p>
-<div class="highlight-bash"><div class="highlight"><pre>nameserver 10.16.20.14
+<div class="highlight-bash"><div class="highlight"><pre><span></span>nameserver 10.16.20.14
 </pre></div>
 </div>
 <p>If you are using the NetworkManager tool (e.g. in the GNOME desktop environment), you should instead statically add the nameserver address 10.16.20.14 through the GUI.</p>
@@ -384,7 +384,7 @@ It can also be useful when you want to automatically start the VPN from a startu
 <p>So you can execute the OpenVPN client through the &#8220;openvpn&#8221; command by using the prompt (Unix Shell or Windows Prompt).</p>
 <p>The CLI parameters are listed and described in the manual page of OpenVPN.
 You can check them by typing the command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>man openvpn
+<div class="highlight-bash"><div class="highlight"><pre><span></span>man openvpn
 </pre></div>
 </div>
 <p>from a Unix shell, the OpenVPN&#8217;s manual page will be displayed.
@@ -409,7 +409,7 @@ The same parameters (not prefixed by &#8211;) can also be specified in the confi
 <li>Put the files client.ovpn and cacert.pem in a same directory (suppose /etc/openvpn/).</li>
 <li>Change the current directory to /etc/openvpn/ and exec (with root privileges) the command:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>openvpn --config client.ovpn
+<div class="highlight-bash"><div class="highlight"><pre><span></span>openvpn --config client.ovpn
 </pre></div>
 </div>
 <ul class="simple">
@@ -425,19 +425,19 @@ Anyway, sometimes, above all for some Linux Distributions, you could need to bui
 <li>Download the OpenVPN&#8217;s source code from the site <a class="reference external" href="http://openvpn.net">http://openvpn.net</a>. Pick the latest stable release that is available (<em>suppose the release 2.0.9 in the rest of this document</em>);</li>
 <li>Extract the files which are stored in the zipped archive that you have downloaded by using the tar command in the following manner:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>tar xvfz openvpn-2.0.9.tar.gz
+<div class="highlight-bash"><div class="highlight"><pre><span></span>tar xvfz openvpn-2.0.9.tar.gz
 </pre></div>
 </div>
 <ul class="simple">
 <li>Change the current directory to openvpn-2.0.9 with the command:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nb">cd </span>openvpn-2.0.9
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">cd</span> openvpn-2.0.9
 </pre></div>
 </div>
 <ul class="simple">
 <li>Check the system and produce the Makefiles by using the following command:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>./configure --prefix<span class="o">=</span>/usr
+<div class="highlight-bash"><div class="highlight"><pre><span></span>./configure --prefix<span class="o">=</span>/usr
 make
 make install
 </pre></div>
@@ -446,13 +446,13 @@ make install
 <ul class="simple">
 <li>Download the source package of LZO from the site <a class="reference external" href="http://www.oberhumer.com/">http://www.oberhumer.com/</a> and extract its content with the command:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>tar xvfz lzo-2.02.tar.gz
+<div class="highlight-bash"><div class="highlight"><pre><span></span>tar xvfz lzo-2.02.tar.gz
 </pre></div>
 </div>
 <ul class="simple">
 <li>Change the current directory to lzo-2.02 and install the LZO software with the commands:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>./configure --prefix<span class="o">=</span>/usr
+<div class="highlight-bash"><div class="highlight"><pre><span></span>./configure --prefix<span class="o">=</span>/usr
 make
 make install
 </pre></div>

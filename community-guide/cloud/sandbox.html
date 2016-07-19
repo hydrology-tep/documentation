@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2.9.4. Developer Cloud Sandbox &mdash; Hydrology Thematic Exploitation Platform 1.1 documentation</title>
+    <title>2.9.4. Developer Cloud Sandbox &mdash; Hydrology Thematic Exploitation Platform 1.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '1.1',
+        VERSION:     '1.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Hydrology Thematic Exploitation Platform 1.1 documentation" href="../../index.html" />
+    <link rel="top" title="Hydrology Thematic Exploitation Platform 1.2 documentation" href="../../index.html" />
     <link rel="up" title="2.9. Cloud Resources" href="index.html" />
     <link rel="next" title="2.9.5. Using GitHub" href="github.html" />
     <link rel="prev" title="2.9.3. ESA CloudToolbox" href="esa_toolbox.html" />
@@ -71,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.1</b><b class="caret"></b>
+        <b>1.2</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -148,7 +148,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/community-guide/cloud/sandbox.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/community-guide/cloud/sandbox.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -186,7 +186,7 @@
 <li class="toctree-l3"><a class="reference internal" href="dashboard.html">2.9.1. Cloud Dashboard</a></li>
 <li class="toctree-l3"><a class="reference internal" href="laboratory.html">2.9.2. Join the HEP Laboratory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esa_toolbox.html">2.9.3. ESA Cloud Toolbox</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">2.9.4. Developer Cloud Sandbox</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2.9.4. Developer Cloud Sandbox</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#create-a-developer-cloud-sandbox">2.9.4.1. Create a Developer Cloud Sandbox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#access-a-developer-cloud-sandbox">2.9.4.2. Access a Developer Cloud Sandbox</a></li>
 </ul>
@@ -203,7 +203,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">6. Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/hydrology-tep/documentation/blob/master/source/community-guide/cloud/sandbox.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/community-guide/cloud/sandbox.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../../search.html" method="get">
  <div class="form-group">
@@ -276,7 +276,7 @@ The Developer Cloud Sandbox PaaS allows you to plug scientific applications writ
 <li>Open a Terminal,</li>
 <li>Type:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>chmod <span class="m">600</span> &lt;yourcertificate.pem&gt;
+<div class="highlight-bash"><div class="highlight"><pre><span></span>chmod <span class="m">600</span> &lt;yourcertificate.pem&gt;
 ssh -i &lt;yourcertificate.pem&gt; &lt;umsso name&gt;@&lt;sandbox_host&gt;
 </pre></div>
 </div>
@@ -302,7 +302,7 @@ ssh -i &lt;yourcertificate.pem&gt; &lt;umsso name&gt;@&lt;sandbox_host&gt;
 <li>Open the PEM Certificate <strong>Unencrypted key format</strong> with a text editor (e.g. Notepad),</li>
 <li>Copy in your clipboard the part:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>-----BEGIN RSA PRIVATE KEY-----
+<div class="highlight-bash"><div class="highlight"><pre><span></span>-----BEGIN RSA PRIVATE KEY-----
 MII....
 -----END RSA PRIVATE KEY-----
 </pre></div>
@@ -317,7 +317,7 @@ MII....
 <ul class="simple">
 <li>Open a Command Prompt and type:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>puttygen &lt;yourcertificate&gt;.private
+<div class="highlight-bash"><div class="highlight"><pre><span></span>puttygen &lt;yourcertificate&gt;.private
 </pre></div>
 </div>
 <ul class="simple">
@@ -337,7 +337,7 @@ MII....
 <ul class="simple">
 <li>Open a Command Prompt and type:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>putty -i &lt;yourcertificate&gt;.ppk &lt;umsso name&gt;@&lt;sandbox ip&gt;
+<div class="highlight-bash"><div class="highlight"><pre><span></span>putty -i &lt;yourcertificate&gt;.ppk &lt;umsso name&gt;@&lt;sandbox ip&gt;
 </pre></div>
 </div>
 <p>That&#8217;s all :-)</p>
