@@ -108,7 +108,7 @@ A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it ca
 
 - Directly on QGIS
 
-.. figure:: ../includes/upload_outputs_script.png
+.. figure:: ../includes/upload_outputs_scriptss.png
 	:figclass: img-border
 	:scale: 80%
 	
