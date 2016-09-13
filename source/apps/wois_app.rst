@@ -34,7 +34,7 @@ After open QGIS, click on the button
 
 A window, where the user can insert the datapackages URL, will pop up.
 
-.. figure:: ../includes/data_plugin_window.png
+.. figure:: ../includes/config_data_package_window.png
 	:figclass: img-border
 	:scale: 80%
 
