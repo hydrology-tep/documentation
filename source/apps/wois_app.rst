@@ -248,3 +248,4 @@ Then, the user must enter the input parameters and click the button "Run Job" to
 	:figclass: img-border
 	:scale: 80%
 
+For each run, a folder is created to publish the outputs. The name of the folder is the job id.
