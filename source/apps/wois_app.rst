@@ -120,7 +120,7 @@ By selecting the tool "Upload to TEP" (image above), the following window will p
 	
 This tool allows to upload raster and vector outputs to TEP. For the raster data it is also possible to generate a quicklook (png) to display over the map.
 
-Note: Only a raster or a vector file must be selected each time (not both).
+**Note:** Only a raster or a vector file must be selected each time (not both).
 
 - Include the script as the final step of a workflow
 
