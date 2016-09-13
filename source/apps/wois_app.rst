@@ -38,13 +38,14 @@ A window, where the user can change the datapackages URL or insert his API Key (
 	:figclass: img-border
 	:scale: 80%
 
-After insert the datapackages URL, a new window listing all the datapackages and the products inside each one of them will pop up.
+The datapackages URL appears on the window by default. After the user insert his API Key, a new window listing all the datapackages owned by that user and the products inside each package will pop up.
 
 .. figure:: ../includes/data_tree_window.png
 	:figclass: img-border
 	:scale: 80%
 
 By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded.
+By clicking on the button "Config", the user is able to update the datapackages URL or insert other API Key to get different datapackages.
 
 Run WOIS Workflow
 -----------------
