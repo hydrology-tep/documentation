@@ -244,7 +244,7 @@ For that, the user must select the intended workflow as it is shown at the image
 
 Then, the user nust enter the input parameters and click the button "Run Job" to start the model on the VM.
 
-.. figure:: ../includes/run_model_hep.png
+.. figure:: ../includes/run_model_on_hep.png
 	:figclass: img-border
 	:scale: 80%
 
