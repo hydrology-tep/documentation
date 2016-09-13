@@ -38,13 +38,14 @@ A window, where the user can change the datapackages URL or insert his API Key (
 	:figclass: img-border
 	:scale: 80%
 
-After insert the datapackages URL, a new window listing all the datapackages and the products inside each one of them will pop up.
+The datapackages URL appears on the window by default. After the user insert his API Key, a new window listing all the datapackages owned by that user and the products inside each package will pop up.
 
-.. figure:: ../includes/data_window.png
+.. figure:: ../includes/data_tree_window.png
 	:figclass: img-border
 	:scale: 80%
 
 By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded.
+By clicking on the button "Config", the user is able to update the datapackages URL or insert other API Key to get different datapackages.
 
 Run WOIS Workflow
 -----------------
@@ -110,10 +111,20 @@ A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it ca
 .. figure:: ../includes/upload_outputs_script.png
 	:figclass: img-border
 	:scale: 80%
+	
+By selecting the tool "Upload to TEP" (image above), the following window will pop up.
+	
+.. figure:: ../includes/upload_outputs_via_script_window.png
+	:figclass: img-border
+	:scale: 80%
+	
+This tool allows to upload raster and vector outputs to TEP. For the raster data it is also possible to generate a quicklook (png) to display over the map.
+
+**Note:** Only a raster or a vector file must be selected each time (not both).
 
 - Include the script as the final step of a workflow
 
-.. figure:: ../includes/upload_outputs_at_wf.png
+.. figure:: ../includes/upload_outputs_on_wf.png
 	:figclass: img-border
 	:scale: 80%
 	
@@ -231,9 +242,10 @@ For that, the user must select the intended workflow as it is shown at the image
 	:figclass: img-border
 	:scale: 80%
 
-Then, the user nust enter the input parameters and click the button "Run Job" to start the model on the VM.
+Then, the user must enter the input parameters and click the button "Run Job" to start the model on the VM.
 
-.. figure:: ../includes/run_model_hep.png
+.. figure:: ../includes/run_model_on_hep.png
 	:figclass: img-border
 	:scale: 80%
 
+For each run, a folder is created to publish the outputs. The name of the folder is the job id.
