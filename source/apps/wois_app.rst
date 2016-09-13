@@ -40,7 +40,7 @@ A window, where the user can change the datapackages URL or insert his API Key (
 
 After insert the datapackages URL, a new window listing all the datapackages and the products inside each one of them will pop up.
 
-.. figure:: ../includes/data_window.png
+.. figure:: ../includes/data_tree_window.png
 	:figclass: img-border
 	:scale: 80%
 
