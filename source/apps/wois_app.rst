@@ -223,7 +223,7 @@ To export a model, the user shall select the modeler tool "Export model to TEP".
 
 The interface to export a model is displayed on the figure below.
 
-.. figure:: ../includes/export_model_window.png
+.. figure:: ../includes/export_model_new_window.png
 	:figclass: img-border
 	:scale: 80%
 
