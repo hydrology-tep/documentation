@@ -32,7 +32,7 @@ After open QGIS, click on the button
 .. figure:: ../includes/hep_data_button.png
 	:scale: 80%
 
-A window, where the user can insert the datapackages URL, will pop up.
+A window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.
 
 .. figure:: ../includes/config_data_package_window.png
 	:figclass: img-border
