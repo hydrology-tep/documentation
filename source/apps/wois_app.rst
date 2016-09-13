@@ -112,9 +112,15 @@ A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it ca
 	:figclass: img-border
 	:scale: 80%
 	
+By selecting the tool "Upload to TEP" (image above), the following window will pop up.
+	
 .. figure:: ../includes/upload_outputs_via_script_window.png
 	:figclass: img-border
 	:scale: 80%
+	
+This tool allows to upload raster and vector outputs to TEP. For the raster data it is also possible to generate a quicklook (png) to display over the map.
+
+Note: Only a raster or a vector file shall be selected (not both).
 
 - Include the script as the final step of a workflow
 
