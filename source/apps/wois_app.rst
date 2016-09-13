@@ -227,7 +227,7 @@ The interface to export a model is displayed on the figure below.
 	:figclass: img-border
 	:scale: 80%
 
-On this window, the user shall select the model that intends to export, insert the VM IP and username and load the VM certificate (.pem for Windows users / .ppk for Linux users). Then click the button "Export to TEP".
+On this window, the user shall select the model that intends to export, insert the VM IP, username and password. Then click the button "Export to TEP".
 
 The exported model will be automatically available on HEP Webportal.
 
