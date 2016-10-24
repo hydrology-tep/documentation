@@ -27,7 +27,7 @@ A QGIS plugin (HEP Plugin) was developed and the figure below explains how to op
 	:figclass: img-border
 	:scale: 80%
 
-After open QGIS, click on the button
+After open QGIS, click on the button.
 
 .. figure:: ../includes/hep_data_button.png
 	:scale: 80%
@@ -63,7 +63,7 @@ WOIS is accessible through QGIS. The figure below explains how to open WOIS on Q
 	:figclass: img-border
 	:scale: 80%
 
-After open QGIS, click on the button
+After open QGIS, click on the button.
 
 .. figure:: ../includes/WOIS_button.png
 	:scale: 80%
@@ -115,7 +115,7 @@ A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it ca
 
 **1) Directly on QGIS (VM)**
 
-Click on the button to open HEP Plugin
+Click on the button to open the HEP Plugin.
 
 .. figure:: ../includes/hep_data_button.png
 	:scale: 80%
@@ -185,7 +185,7 @@ Share Workflows
 
 After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool "Share WOIS workflow" on HEP Plugin.
 
-Click on the button to open HEP Plugin
+Click on the button to open the HEP Plugin.
 
 .. figure:: ../includes/hep_data_button.png
 	:scale: 80%
@@ -244,7 +244,7 @@ To export a model, the user shall select the modeler tool "Export model to TEP",
 
 **Note:** The local version of the “HEP Plugin” plugin shall be installed locally (replace the “processing” plugin folder by the updated “processing” folder)
 
-Click on the button to open HEP Plugin
+Click on the button to open the local HEP Plugin.
 
 .. figure:: ../includes/hep_data_button.png
 	:scale: 80%
