@@ -34,7 +34,7 @@ After open QGIS, click on the button
 
 The HEP Plugin window will pop up.
 
-.. figure:: ../includes/HEP_Plugin.png
+.. figure:: ../includes/HEP_Plugin_new.png
 	:figclass: img-border
 	:scale: 80%
 
@@ -122,7 +122,7 @@ Click on the button to open HEP Plugin
 
 The HEP Plugin window will pop up.
 
-.. figure:: ../includes/HEP_Plugin.png
+.. figure:: ../includes/HEP_Plugin_new.png
 	:figclass: img-border
 	:scale: 80%
 	
@@ -192,7 +192,7 @@ Click on the button to open HEP Plugin
 
 The HEP Plugin window will pop up.
 
-.. figure:: ../includes/HEP_Plugin.png
+.. figure:: ../includes/HEP_Plugin_new.png
 	:figclass: img-border
 	:scale: 80%
 
