@@ -12,16 +12,16 @@ The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.
 WOIS Access
 -----------
 
-To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation.
+To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VM is accessible via VNC. To learn more about this consult the section **"ESA CloudToolbox"**.
 
 Select Data to use on WOIS
 --------------------------
 
 The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section **“Data”** of this Documentation.
 
-After to save Data as a package, the user should have a URL, containing the datapackages information, which can paste inside QGIS in order to make the Data available on the Virtual Machine where WOIS is installed.
+After to save Data as a package, the user should have an API Key, which can paste inside HEP Plugin in order to make his Data available on the Virtual Machine where WOIS is installed.
 
-A QGIS plugin to get HEP Data on the VM was developed and the figure below explains how to open it.
+A QGIS plugin (HEP Plugin) was developed and the figure below explains how to open it.
 
 .. figure:: ../includes/open_data_plugin.png
 	:figclass: img-border
@@ -30,6 +30,12 @@ A QGIS plugin to get HEP Data on the VM was developed and the figure below expla
 After open QGIS, click on the button
 
 .. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+The HEP Plugin window will pop up.
+
+.. figure:: ../includes/HEP_Plugin.png
+	:figclass: img-border
 	:scale: 80%
 
 A window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.
