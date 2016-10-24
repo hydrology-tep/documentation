@@ -38,19 +38,20 @@ The HEP Plugin window will pop up.
 	:figclass: img-border
 	:scale: 80%
 
-A window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.
+Click the button "Get Data from TEP".
+If it's the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.
 
 .. figure:: ../includes/config_data_package_window.png
 	:figclass: img-border
 	:scale: 80%
 
-The datapackages URL appears on the window by default. After the user insert his API Key, a new window listing all the datapackages owned by that user and the products inside each package will pop up.
+If the user already entered the API Key before, a new window listing all the datapackages owned by that user and the products inside each package will pop up automatically.
 
 .. figure:: ../includes/data_tree_window.png
 	:figclass: img-border
 	:scale: 80%
 
-By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded.
+By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded. If a product is not on cache, the user will be advertised to download the product later.
 By clicking on the button "Config", the user is able to update the datapackages URL or insert other API Key to get different datapackages.
 
 Run WOIS Workflow
