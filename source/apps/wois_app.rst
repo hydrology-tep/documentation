@@ -113,7 +113,7 @@ After a workflow run, a user can upload the results to his HEP Data Storage. Thi
 
 A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it can be used in two different ways:
 
-**- Directly on QGIS (VM)**
+**1) Directly on QGIS (VM)**
 
 Click on the button to open HEP Plugin
 
@@ -137,7 +137,7 @@ This tool allows to upload raster and vector outputs to TEP. For the raster data
 
 **Note:** Only a raster or a vector file must be selected each time (not both).
 
-**- Include the script as the final step of a workflow**
+**2) Include the script as the final step of a workflow**
 
 .. figure:: ../includes/upload_outputs_on_wf.png
 	:figclass: img-border
