@@ -113,7 +113,14 @@ After a workflow run, a user can upload the results to his HEP Data Storage. Thi
 
 A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it can be used in two different ways:
 
-- Directly on QGIS
+- Directly on QGIS (VM)
+
+Click on the button to open HEP Plugin
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+The HEP Plugin window will pop up.
 
 .. figure:: ../includes/HEP_Plugin.png
 	:figclass: img-border
@@ -125,6 +132,7 @@ By clicking the button "Upload Data to TEP" (image above), the following window 
 	:figclass: img-border
 	:scale: 80%
 	
+Insert the storage/catalog username and password (mandatory). The “remote directory” is optional and its function is to organize different outputs uploaded.
 This tool allows to upload raster and vector outputs to TEP. For the raster data it is also possible to generate a quicklook (png) to display over the map.
 
 **Note:** Only a raster or a vector file must be selected each time (not both).
@@ -135,7 +143,10 @@ This tool allows to upload raster and vector outputs to TEP. For the raster data
 	:figclass: img-border
 	:scale: 80%
 	
-When an output is exported to HEP, it will appear at the HEP Webportal, as it is shown on the image below.
+Storage/catalog username and password are not necessary in this case.
+
+
+When an output is exported to HEP, it will appear at the HEP Webportal, as it is shown on the image below (only png files are displayed but all the uploaded outputs can be downloaded).
 
 .. figure:: ../includes/outputs_on_hep.png
 	:figclass: img-border
@@ -172,9 +183,16 @@ After set up everything, the user will be able to test the step created, by clic
 Share Workflows
 ---------------
 
-After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool "Share workflow".
+After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool "Share WOIS workflow" on HEP Plugin.
 
-.. figure:: ../includes/open_share_wf.png
+Click on the button to open HEP Plugin
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+The HEP Plugin window will pop up.
+
+.. figure:: ../includes/HEP_Plugin.png
 	:figclass: img-border
 	:scale: 80%
 
@@ -222,13 +240,20 @@ Export QGIS model to the HEP
 ----------------------------
 
 If the user creates the model on his local machine, it will be possible to export the created model to the VM.
-To export a model, the user shall select the modeler tool "Export model to TEP".
+To export a model, the user shall select the modeler tool "Export model to TEP", available on the local version of HEP Plugin.
 
-.. figure:: ../includes/open_export_model.png
+Click on the button to open HEP Plugin
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+The HEP Plugin window will pop up.
+
+.. figure:: ../includes/Local_HEP_Plugin.png
 	:figclass: img-border
 	:scale: 80%
 
-The interface to export a model is displayed on the figure below.
+Click on the button "Export model to TEP" and the interface to export a model is displayed on the figure below.
 
 .. figure:: ../includes/export_model_new_window.png
 	:figclass: img-border
