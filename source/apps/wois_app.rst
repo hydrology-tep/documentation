@@ -115,13 +115,13 @@ A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it ca
 
 - Directly on QGIS
 
-.. figure:: ../includes/upload_outputs_script_select.png
+.. figure:: ../includes/HEP_Plugin.png
 	:figclass: img-border
 	:scale: 80%
 	
-By selecting the tool "Upload to TEP" (image above), the following window will pop up.
+By clicking the button "Upload Data to TEP" (image above), the following window will pop up.
 	
-.. figure:: ../includes/upload_outputs_via_script_window.png
+.. figure:: ../includes/upload_outputs_new.png
 	:figclass: img-border
 	:scale: 80%
 	
