@@ -196,7 +196,7 @@ The HEP Plugin window will pop up.
 	:figclass: img-border
 	:scale: 80%
 
-The interface to share a workflow is displayed on the figure below.
+By clicking the button "Share WOIS workflow", the interface to share a workflow is displayed on the figure below.
 
 .. figure:: ../includes/wf_share.png
 	:figclass: img-border
