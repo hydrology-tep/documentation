@@ -113,7 +113,7 @@ After a workflow run, a user can upload the results to his HEP Data Storage. Thi
 
 A QGIS Script to upload results to HEP ("Upload to TEP") was developed and it can be used in two different ways:
 
-- Directly on QGIS (VM)
+**- Directly on QGIS (VM)**
 
 Click on the button to open HEP Plugin
 
@@ -137,7 +137,7 @@ This tool allows to upload raster and vector outputs to TEP. For the raster data
 
 **Note:** Only a raster or a vector file must be selected each time (not both).
 
-- Include the script as the final step of a workflow
+**- Include the script as the final step of a workflow**
 
 .. figure:: ../includes/upload_outputs_on_wf.png
 	:figclass: img-border
@@ -242,6 +242,8 @@ Export QGIS model to the HEP
 If the user creates the model on his local machine, it will be possible to export the created model to the VM.
 To export a model, the user shall select the modeler tool "Export model to TEP", available on the local version of HEP Plugin.
 
+**Note:** The local version of the “HEP Plugin” plugin shall be installed locally (replace the “processing” plugin folder by the updated “processing” folder)
+
 Click on the button to open HEP Plugin
 
 .. figure:: ../includes/hep_data_button.png
@@ -261,7 +263,7 @@ Click on the button "Export model to TEP" and the interface to export a model is
 
 On this window, the user shall select the model that intends to export, insert the VM IP, username and password. Then click the button "Export to TEP".
 
-The exported model will be automatically available on HEP Webportal.
+The exported model shall be automatically available on HEP Webportal.
 
 Run QGIS model in HEP
 ---------------------
