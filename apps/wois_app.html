@@ -221,29 +221,35 @@
 </div>
 <div class="section" id="wois-access">
 <h2>5.2.1. WOIS Access<a class="headerlink" href="#wois-access" title="Permalink to this headline">¶</a></h2>
-<p>To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using&nbsp;<strong>EO-SSO</strong>. To learn more about the User Profile and the sign-in operation please consult the section <strong>&#8220;User Profile&#8221;</strong> of this Documentation.</p>
+<p>To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using&nbsp;<strong>EO-SSO</strong>. To learn more about the User Profile and the sign-in operation please consult the section <strong>&#8220;User Profile&#8221;</strong> of this Documentation. WOIS VM is accessible via VNC. To learn more about this consult the section <strong>&#8220;ESA CloudToolbox&#8221;</strong>.</p>
 </div>
 <div class="section" id="select-data-to-use-on-wois">
 <h2>5.2.2. Select Data to use on WOIS<a class="headerlink" href="#select-data-to-use-on-wois" title="Permalink to this headline">¶</a></h2>
 <p>The Data Selection to use inside WOIS is also done within the Hydrology Exploitation Platform. To learn more about how to select Data and how to save Data as a package please consult the section <strong>“Data”</strong> of this Documentation.</p>
-<p>After to save Data as a package, the user should have a URL, containing the datapackages information, which can paste inside QGIS in order to make the Data available on the Virtual Machine where WOIS is installed.</p>
-<p>A QGIS plugin to get HEP Data on the VM was developed and the figure below explains how to open it.</p>
+<p>After to save Data as a package, the user should have an API Key, which can paste inside HEP Plugin in order to make his Data available on the Virtual Machine where WOIS is installed.</p>
+<p>A QGIS plugin (HEP Plugin) was developed and the figure below explains how to open it.</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/open_data_plugin.png"><img alt="../_images/open_data_plugin.png" src="../_images/open_data_plugin.png" style="width: 1532.0px; height: 808.8px;" /></a>
 </div>
-<p>After open QGIS, click on the button</p>
+<p>After open QGIS, click on the button.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>
 </div>
-<p>A window, where the user can insert the datapackages URL, will pop up.</p>
+<p>The HEP Plugin window will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/data_plugin_window.png"><img alt="../_images/data_plugin_window.png" src="../_images/data_plugin_window.png" style="width: 328.0px; height: 120.8px;" /></a>
+<a class="reference internal image-reference" href="../_images/HEP_Plugin_new.png"><img alt="../_images/HEP_Plugin_new.png" src="../_images/HEP_Plugin_new.png" style="width: 332.0px; height: 162.4px;" /></a>
 </div>
-<p>After insert the datapackages URL, a new window listing all the datapackages and the products inside each one of them will pop up.</p>
+<p>Click the button &#8220;Get Data from TEP&#8221;.
+If it&#8217;s the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/data_window.png"><img alt="../_images/data_window.png" src="../_images/data_window.png" style="width: 259.2px; height: 276.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/config_data_package_window.png"><img alt="../_images/config_data_package_window.png" src="../_images/config_data_package_window.png" style="width: 363.2px; height: 168.0px;" /></a>
 </div>
-<p>By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded.</p>
+<p>If the user already entered the API Key before, a new window listing all the datapackages owned by that user and the products inside each package will pop up automatically.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/data_tree_window.png"><img alt="../_images/data_tree_window.png" src="../_images/data_tree_window.png" style="width: 258.4px; height: 264.8px;" /></a>
+</div>
+<p>By double clicking on a product or by selecting a product and clicking “Get Data”, a window to select the location to save will open. After choose the location the product will be downloaded. If a product is not on cache, the user will be advertised to download the product later.
+By clicking on the button &#8220;Config&#8221;, the user is able to update the datapackages URL or insert other API Key to get different datapackages.</p>
 </div>
 <div class="section" id="run-wois-workflow">
 <h2>5.2.3. Run WOIS Workflow<a class="headerlink" href="#run-wois-workflow" title="Permalink to this headline">¶</a></h2>
@@ -251,7 +257,7 @@
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/open_WOIS.png"><img alt="../_images/open_WOIS.png" src="../_images/open_WOIS.png" style="width: 1532.0px; height: 808.8px;" /></a>
 </div>
-<p>After open QGIS, click on the button</p>
+<p>After open QGIS, click on the button.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/WOIS_button.png"><img alt="../_images/WOIS_button.png" src="../_images/WOIS_button.png" style="width: 30.4px; height: 30.4px;" /></a>
 </div>
@@ -286,19 +292,28 @@ After set the parameters and the input and output data the user shall click the 
 <h2>5.2.5. Upload Outputs to HEP<a class="headerlink" href="#upload-outputs-to-hep" title="Permalink to this headline">¶</a></h2>
 <p>After a workflow run, a user can upload the results to his HEP Data Storage. This will allow the user to check the results on the HEP Webportal or share his outputs with the HEP Community.</p>
 <p>A QGIS Script to upload results to HEP (&#8220;Upload to TEP&#8221;) was developed and it can be used in two different ways:</p>
-<ul class="simple">
-<li>Directly on QGIS</li>
-</ul>
-<div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/upload_outputs_script.png"><img alt="../_images/upload_outputs_script.png" src="../_images/upload_outputs_script.png" style="width: 560.8px; height: 295.2px;" /></a>
+<p><strong>1) Directly on QGIS (VM)</strong></p>
+<p>Click on the button to open the HEP Plugin.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>
 </div>
-<ul class="simple">
-<li>Include the script as the final step of a workflow</li>
-</ul>
+<p>The HEP Plugin window will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/upload_outputs_at_wf.png"><img alt="../_images/upload_outputs_at_wf.png" src="../_images/upload_outputs_at_wf.png" style="width: 963.2px; height: 502.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/HEP_Plugin_new.png"><img alt="../_images/HEP_Plugin_new.png" src="../_images/HEP_Plugin_new.png" style="width: 332.0px; height: 162.4px;" /></a>
 </div>
-<p>When an output is exported to HEP, it will appear at the HEP Webportal, as it is shown on the image below.</p>
+<p>By clicking the button &#8220;Upload Data to TEP&#8221; (image above), the following window will pop up.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/upload_outputs_new.png"><img alt="../_images/upload_outputs_new.png" src="../_images/upload_outputs_new.png" style="width: 466.4px; height: 349.6px;" /></a>
+</div>
+<p>Insert the storage/catalog username and password (mandatory). The “remote directory” is optional and its function is to organize different outputs uploaded.
+This tool allows to upload raster and vector outputs to TEP. For the raster data it is also possible to generate a quicklook (png) to display over the map.</p>
+<p><strong>Note:</strong> Only a raster or a vector file must be selected each time (not both).</p>
+<p><strong>2) Include the script as the final step of a workflow</strong></p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/upload_outputs_on_wf.png"><img alt="../_images/upload_outputs_on_wf.png" src="../_images/upload_outputs_on_wf.png" style="width: 963.2px; height: 504.8px;" /></a>
+</div>
+<p>Storage/catalog username and password are not necessary in this case.</p>
+<p>When an output is exported to HEP, it will appear at the HEP Webportal, as it is shown on the image below (only png files are displayed but all the uploaded outputs can be downloaded).</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/outputs_on_hep.png"><img alt="../_images/outputs_on_hep.png" src="../_images/outputs_on_hep.png" style="width: 1476.8px; height: 647.2px;" /></a>
 </div>
@@ -325,11 +340,16 @@ After set up everything, the user will be able to test the step created, by clic
 </div>
 <div class="section" id="share-workflows">
 <h2>5.2.7. Share Workflows<a class="headerlink" href="#share-workflows" title="Permalink to this headline">¶</a></h2>
-<p>After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool &#8220;Share workflow&#8221;.</p>
-<div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/open_share_wf.png"><img alt="../_images/open_share_wf.png" src="../_images/open_share_wf.png" style="width: 284.0px; height: 61.6px;" /></a>
+<p>After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool &#8220;Share WOIS workflow&#8221; on HEP Plugin.</p>
+<p>Click on the button to open the HEP Plugin.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>
 </div>
-<p>The interface to share a workflow is displayed on the figure below.</p>
+<p>The HEP Plugin window will pop up.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/HEP_Plugin_new.png"><img alt="../_images/HEP_Plugin_new.png" src="../_images/HEP_Plugin_new.png" style="width: 332.0px; height: 162.4px;" /></a>
+</div>
+<p>By clicking the button &#8220;Share WOIS workflow&#8221;, the interface to share a workflow is displayed on the figure below.</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/wf_share.png"><img alt="../_images/wf_share.png" src="../_images/wf_share.png" style="width: 256.8px; height: 275.2px;" /></a>
 </div>
@@ -361,16 +381,22 @@ On the left side, the user can select the tool or operation which intends to per
 <div class="section" id="export-qgis-model-to-the-hep">
 <h2>5.2.10. Export QGIS model to the HEP<a class="headerlink" href="#export-qgis-model-to-the-hep" title="Permalink to this headline">¶</a></h2>
 <p>If the user creates the model on his local machine, it will be possible to export the created model to the VM.
-To export a model, the user shall select the modeler tool &#8220;Export model to TEP&#8221;.</p>
-<div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/open_export_model.png"><img alt="../_images/open_export_model.png" src="../_images/open_export_model.png" style="width: 184.0px; height: 29.6px;" /></a>
+To export a model, the user shall select the modeler tool &#8220;Export model to TEP&#8221;, available on the local version of HEP Plugin.</p>
+<p><strong>Note:</strong> The local version of the “HEP Plugin” plugin shall be installed locally (replace the “processing” plugin folder by the updated “processing” folder)</p>
+<p>Click on the button to open the local HEP Plugin.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>
 </div>
-<p>The interface to export a model is displayed on the figure below.</p>
+<p>The HEP Plugin window will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/export_model_window.png"><img alt="../_images/export_model_window.png" src="../_images/export_model_window.png" style="width: 276.0px; height: 278.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/Local_HEP_Plugin.png"><img alt="../_images/Local_HEP_Plugin.png" src="../_images/Local_HEP_Plugin.png" style="width: 341.6px; height: 96.0px;" /></a>
 </div>
-<p>On this window, the user shall select the model that intends to export, insert the VM IP and username and load the VM certificate (.pem for Windows users / .ppk for Linux users). Then click the button &#8220;Export to TEP&#8221;.</p>
-<p>The exported model will be automatically available on HEP Webportal.</p>
+<p>Click on the button &#8220;Export model to TEP&#8221; and the interface to export a model is displayed on the figure below.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/export_model_new_window.png"><img alt="../_images/export_model_new_window.png" src="../_images/export_model_new_window.png" style="width: 268.8px; height: 285.6px;" /></a>
+</div>
+<p>On this window, the user shall select the model that intends to export, insert the VM IP, username and password. Then click the button &#8220;Export to TEP&#8221;.</p>
+<p>The exported model shall be automatically available on HEP Webportal.</p>
 </div>
 <div class="section" id="run-qgis-model-in-hep">
 <h2>5.2.11. Run QGIS model in HEP<a class="headerlink" href="#run-qgis-model-in-hep" title="Permalink to this headline">¶</a></h2>
@@ -379,10 +405,11 @@ To export a model, the user shall select the modeler tool &#8220;Export model to
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/select_model_hep.png"><img alt="../_images/select_model_hep.png" src="../_images/select_model_hep.png" style="width: 1440.8px; height: 796.0px;" /></a>
 </div>
-<p>Then, the user nust enter the input parameters and click the button &#8220;Run Job&#8221; to start the model on the VM.</p>
+<p>Then, the user must enter the input parameters and click the button &#8220;Run Job&#8221; to start the model on the VM.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/run_model_hep.png"><img alt="../_images/run_model_hep.png" src="../_images/run_model_hep.png" style="width: 1439.2px; height: 799.2px;" /></a>
+<a class="reference internal image-reference" href="../_images/run_model_on_hep.png"><img alt="../_images/run_model_on_hep.png" src="../_images/run_model_on_hep.png" style="width: 1502.4px; height: 630.4px;" /></a>
 </div>
+<p>For each run, a folder is created to publish the outputs. The name of the folder is the job id.</p>
 </div>
 </div>
 
