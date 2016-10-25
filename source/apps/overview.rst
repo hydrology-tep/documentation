@@ -15,7 +15,7 @@ It is defined by a list of services offerings, such as:
 
 	This section describes how a user can create its own thematic application.
 
-.. req:: HEP-TS-DES-020
+.. req:: HEP-TS-DES-002
 	:show:
 
 	This section describes the data flow of thematic apps.
