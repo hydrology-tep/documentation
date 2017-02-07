@@ -118,10 +118,11 @@
 <li><a class="reference internal" href="#upload-outputs-to-hep">5.2.5. Upload Outputs to HEP</a></li>
 <li><a class="reference internal" href="#create-workflow">5.2.6. Create Workflow</a></li>
 <li><a class="reference internal" href="#share-workflows">5.2.7. Share Workflows</a></li>
-<li><a class="reference internal" href="#qgis-models">5.2.8. QGIS Models</a></li>
-<li><a class="reference internal" href="#create-configure-qgis-models">5.2.9. Create/configure QGIS models</a></li>
-<li><a class="reference internal" href="#export-qgis-model-to-the-hep">5.2.10. Export QGIS model to the HEP</a></li>
-<li><a class="reference internal" href="#run-qgis-model-in-hep">5.2.11. Run QGIS model in HEP</a></li>
+<li><a class="reference internal" href="#get-workflows-from-the-shared-repository">5.2.8. Get Workflows from the shared repository</a></li>
+<li><a class="reference internal" href="#qgis-models">5.2.9. QGIS Models</a></li>
+<li><a class="reference internal" href="#create-configure-qgis-models">5.2.10. Create/configure QGIS models</a></li>
+<li><a class="reference internal" href="#export-qgis-model-to-the-hep">5.2.11. Export QGIS model to the HEP</a></li>
+<li><a class="reference internal" href="#run-qgis-model-in-hep">5.2.12. Run QGIS model in HEP</a></li>
 </ul>
 </li>
 </ul>
@@ -184,10 +185,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#upload-outputs-to-hep">5.2.5. Upload Outputs to HEP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-workflow">5.2.6. Create Workflow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#share-workflows">5.2.7. Share Workflows</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#qgis-models">5.2.8. QGIS Models</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-configure-qgis-models">5.2.9. Create/configure QGIS models</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-qgis-model-to-the-hep">5.2.10. Export QGIS model to the HEP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-qgis-model-in-hep">5.2.11. Run QGIS model in HEP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-workflows-from-the-shared-repository">5.2.8. Get Workflows from the shared repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qgis-models">5.2.9. QGIS Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-configure-qgis-models">5.2.10. Create/configure QGIS models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-qgis-model-to-the-hep">5.2.11. Export QGIS model to the HEP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-qgis-model-in-hep">5.2.12. Run QGIS model in HEP</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="fm.html">5.3. Flood monitoring</a></li>
@@ -237,7 +239,7 @@
 </div>
 <p>The HEP Plugin window will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/HEP_Plugin_new.png"><img alt="../_images/HEP_Plugin_new.png" src="../_images/HEP_Plugin_new.png" style="width: 332.0px; height: 162.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/HEP_plugin_5.png"><img alt="../_images/HEP_plugin_5.png" src="../_images/HEP_plugin_5.png" style="width: 332.0px; height: 192.0px;" /></a>
 </div>
 <p>Click the button &#8220;Get Data from TEP&#8221;.
 If it&#8217;s the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.</p>
@@ -299,7 +301,7 @@ After set the parameters and the input and output data the user shall click the 
 </div>
 <p>The HEP Plugin window will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/HEP_Plugin_new.png"><img alt="../_images/HEP_Plugin_new.png" src="../_images/HEP_Plugin_new.png" style="width: 332.0px; height: 162.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/HEP_plugin_5.png"><img alt="../_images/HEP_plugin_5.png" src="../_images/HEP_plugin_5.png" style="width: 332.0px; height: 192.0px;" /></a>
 </div>
 <p>By clicking the button &#8220;Upload Data to TEP&#8221; (image above), the following window will pop up.</p>
 <div class="img-border figure">
@@ -340,27 +342,44 @@ After set up everything, the user will be able to test the step created, by clic
 </div>
 <div class="section" id="share-workflows">
 <h2>5.2.7. Share Workflows<a class="headerlink" href="#share-workflows" title="Permalink to this headline">¶</a></h2>
-<p>After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool &#8220;Share WOIS workflow&#8221; on HEP Plugin.</p>
+<p>After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool &#8220;Share WOIS workflow&#8221; on the HEP Plugin.</p>
 <p>Click on the button to open the HEP Plugin.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>
 </div>
 <p>The HEP Plugin window will pop up.</p>
 <div class="img-border figure">
-<a class="reference internal image-reference" href="../_images/HEP_Plugin_new.png"><img alt="../_images/HEP_Plugin_new.png" src="../_images/HEP_Plugin_new.png" style="width: 332.0px; height: 162.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/HEP_plugin_5.png"><img alt="../_images/HEP_plugin_5.png" src="../_images/HEP_plugin_5.png" style="width: 332.0px; height: 192.0px;" /></a>
 </div>
-<p>By clicking the button &#8220;Share WOIS workflow&#8221;, the interface to share a workflow is displayed on the figure below.</p>
+<p>By clicking the button &#8220;Share WOIS workflow&#8221;, the interface to share a workflow will pop up (figure below).</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/wf_share.png"><img alt="../_images/wf_share.png" src="../_images/wf_share.png" style="width: 256.8px; height: 275.2px;" /></a>
 </div>
 <p>On this window, the user shall select the new Workflow created and click the button “Share”.</p>
 </div>
+<div class="section" id="get-workflows-from-the-shared-repository">
+<h2>5.2.8. Get Workflows from the shared repository<a class="headerlink" href="#get-workflows-from-the-shared-repository" title="Permalink to this headline">¶</a></h2>
+<p>A user can also add the workflows shared by the community to his WOIS (on the VM). To do that, the user shall select the WOIS tool &#8220;Get WOIS workflow&#8221; on the HEP Plugin.</p>
+<p>Click on the button to open the HEP Plugin.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>
+</div>
+<p>The HEP Plugin window will pop up.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/HEP_plugin_5.png"><img alt="../_images/HEP_plugin_5.png" src="../_images/HEP_plugin_5.png" style="width: 332.0px; height: 192.0px;" /></a>
+</div>
+<p>By clicking the button &#8220;Get WOIS workflow&#8221;, the interface to get a workflow will pop up (figure below).</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/wf_get.png"><img alt="../_images/wf_get.png" src="../_images/wf_get.png" style="width: 257.6px; height: 278.4px;" /></a>
+</div>
+<p>On this window, the user shall select the workflow to add and click the button “Get”.</p>
+</div>
 <div class="section" id="qgis-models">
-<h2>5.2.8. QGIS Models<a class="headerlink" href="#qgis-models" title="Permalink to this headline">¶</a></h2>
+<h2>5.2.9. QGIS Models<a class="headerlink" href="#qgis-models" title="Permalink to this headline">¶</a></h2>
 <p>A QGIS model is a sequence of operations that run without interruptions. Each operation inside a QGIS model can be performed by the same third party libraries and tools that are used in WOIS workflows.</p>
 </div>
 <div class="section" id="create-configure-qgis-models">
-<h2>5.2.9. Create/configure QGIS models<a class="headerlink" href="#create-configure-qgis-models" title="Permalink to this headline">¶</a></h2>
+<h2>5.2.10. Create/configure QGIS models<a class="headerlink" href="#create-configure-qgis-models" title="Permalink to this headline">¶</a></h2>
 <p>Once the tools available to create QGIS models are the same available for WOIS, a user can create a model based on a WOIS workflow.
 To create a new model, the user shall select the modeler tool &#8220;Create new model&#8221;.</p>
 <div class="img-border figure">
@@ -379,7 +398,7 @@ On the left side, the user can select the tool or operation which intends to per
 <p><strong>Note:</strong> A new model created can also be inserted into existent Groups. To do that, the user shall use an existent “Group” name when creates the model.</p>
 </div>
 <div class="section" id="export-qgis-model-to-the-hep">
-<h2>5.2.10. Export QGIS model to the HEP<a class="headerlink" href="#export-qgis-model-to-the-hep" title="Permalink to this headline">¶</a></h2>
+<h2>5.2.11. Export QGIS model to the HEP<a class="headerlink" href="#export-qgis-model-to-the-hep" title="Permalink to this headline">¶</a></h2>
 <p>If the user creates the model on his local machine, it will be possible to export the created model to the VM.
 To export a model, the user shall select the modeler tool &#8220;Export model to TEP&#8221;, available on the local version of HEP Plugin.</p>
 <p><strong>Note:</strong> The local version of the “HEP Plugin” plugin shall be installed locally (replace the “processing” plugin folder by the updated “processing” folder)</p>
@@ -399,7 +418,7 @@ To export a model, the user shall select the modeler tool &#8220;Export model to
 <p>The exported model shall be automatically available on HEP Webportal.</p>
 </div>
 <div class="section" id="run-qgis-model-in-hep">
-<h2>5.2.11. Run QGIS model in HEP<a class="headerlink" href="#run-qgis-model-in-hep" title="Permalink to this headline">¶</a></h2>
+<h2>5.2.12. Run QGIS model in HEP<a class="headerlink" href="#run-qgis-model-in-hep" title="Permalink to this headline">¶</a></h2>
 <p>The user can run models, in the HEP Webportal, similar to other HEP services.</p>
 <p>For that, the user must select the intended workflow as it is shown at the image below.</p>
 <div class="img-border figure">
