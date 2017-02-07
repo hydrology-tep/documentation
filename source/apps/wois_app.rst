@@ -34,7 +34,7 @@ After open QGIS, click on the button.
 
 The HEP Plugin window will pop up.
 
-.. figure:: ../includes/HEP_Plugin_new.png
+.. figure:: ../includes/HEP_plugin_5.png
 	:figclass: img-border
 	:scale: 80%
 
@@ -122,7 +122,7 @@ Click on the button to open the HEP Plugin.
 
 The HEP Plugin window will pop up.
 
-.. figure:: ../includes/HEP_Plugin_new.png
+.. figure:: ../includes/HEP_plugin_5.png
 	:figclass: img-border
 	:scale: 80%
 	
@@ -183,7 +183,7 @@ After set up everything, the user will be able to test the step created, by clic
 Share Workflows
 ---------------
 
-After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool "Share WOIS workflow" on HEP Plugin.
+After create a new Workflow, the user has the possibility of share it with the HEP Community. For that, the user shall select the WOIS tool "Share WOIS workflow" on the HEP Plugin.
 
 Click on the button to open the HEP Plugin.
 
@@ -192,17 +192,41 @@ Click on the button to open the HEP Plugin.
 
 The HEP Plugin window will pop up.
 
-.. figure:: ../includes/HEP_Plugin_new.png
+.. figure:: ../includes/HEP_plugin_5.png
 	:figclass: img-border
 	:scale: 80%
 
-By clicking the button "Share WOIS workflow", the interface to share a workflow is displayed on the figure below.
+By clicking the button "Share WOIS workflow", the interface to share a workflow will pop up (figure below).
 
 .. figure:: ../includes/wf_share.png
 	:figclass: img-border
 	:scale: 80%
 
 On this window, the user shall select the new Workflow created and click the button “Share”.
+
+Get Workflows from the shared repository
+----------------------------------------
+
+A user can also add the workflows shared by the community to his WOIS (on the VM). To do that, the user shall select the WOIS tool "Get WOIS workflow" on the HEP Plugin.
+
+Click on the button to open the HEP Plugin.
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+The HEP Plugin window will pop up.
+
+.. figure:: ../includes/HEP_plugin_5.png
+	:figclass: img-border
+	:scale: 80%
+	
+By clicking the button "Get WOIS workflow", the interface to get a workflow will pop up (figure below).
+
+.. figure:: ../includes/wf_get.png
+	:figclass: img-border
+	:scale: 80%
+
+On this window, the user shall select the workflow to add and click the button “Get”.
 
 QGIS Models
 -----------
