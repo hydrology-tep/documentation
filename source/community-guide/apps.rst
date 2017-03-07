@@ -1,3 +1,6 @@
+Thematic Applications
+---------------------
+
 Overview
 ========
 
@@ -20,12 +23,24 @@ It is defined by a list of services offerings, such as:
 
 	This section describes the data flow of thematic apps.
 
+Discovery
+=========
 
-A list of pre-defined thematic apps can be accessed from the *Thematics* page.
+A discovery page, dedicated to the search of existing/accessible Thematic apps can be accessed from the home page.
 
 .. figure:: ../includes/thematic_apps.png
-	:figclass: img-border img-max-width
-	:scale: 80%
+	:align: center
+	:scale: 75%
+	:figclass: img-border
+
+Thematic apps can be searched using filters defined by the user, such as:
+
+	- **Free text**: search within title and description of the thematic app
+	- **Start date**: search for apps created or updated after a given date
+	- **End date**: search for apps created or updated before a given date
+	- **AOI**: search for apps related to a certain area
+
+The search is performed amongst thematic apps which are accessible to the current user.
 
 The pre-defined thematics are:
 
@@ -38,4 +53,3 @@ All users also have an application dedicated to the management of all items he o
 It is call **My worskpace** and will give to the user the ability to manage (edit / share / delete) all items he owns amongst WPS services, data collections, data packages, WPS jobs.
 
 From this "workspace", users can also manage (create / edit / delete) their own *Thematic App* (see :ref:`app_workspace`).
-
