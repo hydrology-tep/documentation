@@ -51,6 +51,10 @@ Members
 
 This tab lists all users of the community, with their role within the community, their email and an avatar (if found on discuss.terradue.com).
 
+.. figure:: ../includes/community_members.png
+	:width: 30%
+	:figclass: img-border
+
 Applications
 ~~~~~~~~~~~~
 
@@ -99,3 +103,7 @@ This tab contains the following (editable) information:
  	- Icon url
  	- Applications url (search link to Thematic applications)
  	- Discuss category (name of the category associated to the community in https://discuss.terradue.com)
+ 	
+ .. figure:: ../includes/community_management.png
+	:width: 30%
+	:figclass: img-border

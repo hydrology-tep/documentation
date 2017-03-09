@@ -120,4 +120,4 @@ You can share any object directly on your favorite social network using the asso
 
 .. |share| image:: ../includes/share_button.png
 .. |manage| image:: ../includes/groups_manage.png
-.. |discuss| image:: ../includes/groups_discuss.png
+.. |discuss| image:: ../includes/community_discuss_button.png
