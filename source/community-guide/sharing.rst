@@ -9,21 +9,23 @@ Sharing
 Share your processing jobs and results with the community and allow other users to reproduce or modify your processes.
 You can even share your favorite wps services or data packages you created.
 
-Share with groups
------------------
+Share with users
+----------------
 
-Whenever you want to share an object with groups, you will see the following panel:
+Whenever you want to share an object with users, you will see the following panel:
 
-.. figure:: ../includes/sharing_group.png
+.. figure:: ../includes/sharing_permission_wpsjob.png
 	:align: center
 	:scale: 50%
 	:figclass: img-border
 
 It will allow you to:
 
-- make the object public
-- make the object private
-- make the object restricted to groups, and choose to which groups you want to share it
+- make the object public (Share with anyone)
+- make the object private (Do not share)
+- make the object restricted to users and communities (Restricted sharing)
+
+See below how `Sharing a wps job`_ or how `Sharing a data package`_ with users can be done.
 
 Sharing a wps job
 -----------------
@@ -31,6 +33,12 @@ Sharing a wps job
 On the geobrowser of your thematic application, go to the wps services panel and find the wps job you want to share.
 
 If you are the owner of the data wps job, click on the Manage permissions button |manage| to open the permissions windows of the wps job.
+
+.. figure:: ../includes/sharing_permission_wpsjob.png
+	:align: center
+	:scale: 50%
+	:figclass: img-border
+
 You can set the permissions in the following way:
 
 - Do not share *-- only you can access*
@@ -44,8 +52,19 @@ Once the permissions set, users able to view the wps job can access it by:
 - searching for it on the wps services panel of their thematic application
 - directly via the shareable link (on the top of the permissions window)
 
-.. NOTE::
-	You can also share the link directly on your favorite social network using the associated icon or on the discuss category of a community, using the button |discuss| (see `Sharing on the community blog`_), even if you are not the owner of the wps job
+You can also share the link directly on your favorite social network using the associated icon or on the discuss category of a community, using the button |discuss| (see `Sharing on the community blog`_).
+
+.. figure:: ../includes/sharing_social.png
+	:align: center
+	:scale: 50%
+	:figclass: img-border
+
+If you are not the owner of the wps job, you can also share the link directly on your favorite social network using the associated icon or on the discuss category of a community, using the button |discuss| (see `Sharing on the community blog`_).
+
+.. figure:: ../includes/sharing_social2.png
+	:align: center
+	:scale: 50%
+	:figclass: img-border
 
 .. WARNING::
 	 If you share the link with someone who has no permission to view this job, he will not be able to access it
@@ -70,6 +89,12 @@ Sharing a Data Package
 On the geobrowser of your thematic application, go to the Data package panel and find the data package you want to share.
 
 Click on the Manage permissions button |manage| to open the permissions windows of the data package.
+
+.. figure:: ../includes/sharing_permission_datapackage.png
+	:align: center
+	:scale: 50%
+	:figclass: img-border
+
 You can set the permissions in the following way:
 
 - Do not share *-- only you can access*
@@ -83,9 +108,19 @@ Once the permissions set, users able to view the data package can access it by:
 - searching for it on the data package panel of their thematic application
 - directly via the shareable link (on the top of the permissions window)
 
-.. NOTE::
-	You can also share the link directly on your favorite social network using the associated icon or on the discuss category of a community, using the button |discuss| (see `Sharing on the community blog`_), even if you are not the owner of the data package
+You can also share the link directly on your favorite social network using the associated icon or on the discuss category of a community, using the button |discuss| (see `Sharing on the community blog`_).
 
+.. figure:: ../includes/sharing_social.png
+	:align: center
+	:scale: 50%
+	:figclass: img-border
+
+If you are not the owner of the wps job, you can also share the link directly on your favorite social network using the associated icon or on the discuss category of a community, using the button |discuss| (see `Sharing on the community blog`_).
+
+.. figure:: ../includes/sharing_social2.png
+	:align: center
+	:scale: 50%
+	:figclass: img-border
 .. WARNING::
 	 If you share the link with someone not from one of the groups allowed to see this job, he will not be able to access it
 
