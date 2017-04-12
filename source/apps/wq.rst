@@ -120,3 +120,84 @@ If your are satisfied with your scenes and settings click on the **Run Job** but
 	:scale: 90%
 
 |
+Results
+-------
+
+If your processing job finished sucessfully you can click on the **Show results** button.
+
+.. figure:: ../includes/apps_wq_results1.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+
+The results of you processing will be shown in the search results list on the bottom left. The following results will be created: 
+
+|
+For processing option **Water Quality Parameters - TSS + CHL + CDOM + SWT (LS8 only)**: 
+
+* The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter. 
+* Furthermoe EOMAP's water quality products are accompanied by the processor's internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:
+
+.. figure:: ../includes/apps_wq_EOMAP_Quality_CODING_table.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+ 
+* Overview of files delivered per satellite scene (example):
+
+  * Total Suspended Solids (TSS): *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
+  * Total Suspended Solids (TSS): *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
+  * Total Suspended Solids (TSS): *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  * Chlorophyll (CHL): *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
+  * Chlorophyll (CHL): *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
+  * Chlorophyll (CHL): *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  * Colored Dissolved Organic Matter (CDOM): *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
+  * Colored Dissolved Organic Matter (CDOM): *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
+  * Colored Dissolved Organic Matter (CDOM): *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  * Surface Water Temperature (SWT): *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
+  * Surface Water Temperature (SWT): *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
+  * Surface Water Temperature (SWT): *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  * Watermask (WMA): *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTIFF, 8bit, GV 100 = water, GV 0 = no water
+  * Watermask (WMA): *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  * Quality Coding (QUC): *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTIFF, 8bit
+  * Quality Coding (QUC): *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  * Total Quality (QUT): *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTIFF, 8bit
+  * Total Quality (QUT): *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  
+|
+For processing option **Atmospheric Corrected Image**:
+
+* The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.
+* It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).
+* Overview of files delivered per satellite scene (example):
+
+  * Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, Multi-channel GeoTiff, 32bit
+  * Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+
+|
+For processing option **all**: Products of both options described above are delivered.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
