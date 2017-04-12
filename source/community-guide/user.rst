@@ -144,7 +144,47 @@ See your usage
 To find out how you are using the platform, just go to the **Usage** tab on your profile page.
 You will see what is your level for each type of usage of the platform.
 
-.. req:: HEP-TS-DES-014
-	:show:
 
-	This section describes how a user can get analytics report.
+.. figure:: ../includes/user_profile_usage.png
+	:figclass: img-border
+	:scale: 80%
+
+To find out more precisely the number of data packages you loaded, the number of jobs you created, how many failed or were successful, ... Just go the **Analytics** page from the portal homepage.
+You will see:
+
+- how many data collection you loaded
+- how many data packages and items you loaded
+- how many wps jobs you created and how many failed or succeeded
+
+.. figure:: ../includes/user_anaylytics.png
+	:figclass: img-border
+	:scale: 80%
+
+.. req:: HEP-TS-DES-014
+    :show:
+
+    This section shows that the platform has an analytics web widget.
+
+See your accountings
+--------------------
+
+The accounting panel on your profile gives your current credit balance, as well as the list of all transactions associated to your account:
+
+- credit transactions
+- debit transactions reported by wps providers for the wps jobs you created
+- deposit transactions (see section below)
+
+.. figure:: ../includes/user_profile_accounting.png
+	:figclass: img-border
+	:scale: 80%
+
+.. _deposit:
+Deposit
+~~~~~~~
+
+A deposit transaction is performed when the user execute a job process using as balance the quotation returned first by the processing service for the selected parameters (it implies that the wps provider implemented the **quotation mode**). Deposit transactions can be *active* or *resolved*. An **active deposit** is accounted when calculating your account balance (covering the possible debit transactions associated to the same process). A **resolved deposit** is not accounted when calculating your account balance (but does not cover anymore the possible debit transactions associated to the same process). A deposit is automatically set from *active* to *resolved* when the job process status is not *In progress* anymore.
+
+Transaction policy
+~~~~~~~~~~~~~~~~~~
+
+The current policy for a wps job process accounting is that the total amount debited to the user corresponds to the real usage of the wps process and cannot be greather than the estimated deposit.

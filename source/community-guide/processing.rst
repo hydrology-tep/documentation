@@ -24,12 +24,11 @@ Create a new job
 To create a new job:
 
 1. Select the service you want to use (see `Discover existing WPS`_).
-2. Fill in the different parameters needed by the service.
-
-.. tip:: Data can be direclty dragged from the Result tab or from the basket and dropped into the parameter input
-
-3. Click on **Run Job**
-4. To visualize the result of the job, see :doc:`Visualisation <visualisation>`
+2. Fill in the different parameters needed by the service (see `Fill in parameters`_).
+3. If the wps service has implemented the quotation mode, you must first click on **Calculate cost** to get an estimation of the wps job cost.
+4. If you have enough credits on your account, you will be able to see the **Submit job** button.
+5. Click on **Run Job**
+6. To visualize the result of the job, see :doc:`Visualisation <visualisation>`
 
 Access my jobs
 --------------
