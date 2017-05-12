@@ -19,4 +19,4 @@ Hydrology thematic exploitation platform administrator guide
    Logs <logs>
    Authorization <authorization>
    Accounting <accounting>
-
+   Database config <dbconfig>

@@ -140,8 +140,7 @@ See your accountings
 The accounting panel on your profile gives your current credit balance, as well as the list of all transactions associated to your account:
 
 - credit transactions
-- debit transactions reported by wps providers for the wps jobs you created
-- deposit transactions (see section below)
+- debit transactions reported by wps providers for the wps jobs you created, associated to a deposit
 
 .. figure:: ../includes/user_profile_accounting.png
 	:figclass: img-border
@@ -151,7 +150,7 @@ The accounting panel on your profile gives your current credit balance, as well 
 Deposit
 ~~~~~~~
 
-A deposit transaction is performed when the user execute a job process using as balance the quotation returned first by the processing service for the selected parameters (it implies that the wps provider implemented the **quotation mode**). Deposit transactions can be *active* or *resolved*. An **active deposit** is accounted when calculating your account balance (covering the possible debit transactions associated to the same process). A **resolved deposit** is not accounted when calculating your account balance (but does not cover anymore the possible debit transactions associated to the same process). A deposit is automatically set from *active* to *resolved* when the job process status is not *In progress* anymore.
+A deposit transaction is stored when the user execute a job process using as balance the quotation returned first by the processing service for the selected parameters (it implies that the wps provider implemented the **quotation mode**). Deposit transactions can be *active* or *closed*. An **active deposit** is accounted when calculating your account balance (covering the possible debit transactions associated to the same process). A **closed deposit** is not accounted when calculating your account balance (but does not cover anymore the possible debit transactions associated to the same process). A deposit is automatically set from *active* to *closed* when the job process is failed or when the job is succeeded with at least one transaction recorded from the wps provider.
 
 Transaction policy
 ~~~~~~~~~~~~~~~~~~

@@ -9,6 +9,13 @@ Domain
 A Domain is an organizational unit to regroup User, Group and Objects (Entity). It also contains the Thematic Communities.
 When a user is member of a domain, he can access entities which belong to this domain, according to the provileges defined in his role.
 
+The kind of a domain can be:
+
+- USER: the domain is the private domain of the user
+- GROUP: the domain is private to a group of users
+- PRIVATE: the domain is a private community (user can only join by invitation)
+- PUBLIC: the domain is a public community (all can join)
+
 Roles
 -----
 

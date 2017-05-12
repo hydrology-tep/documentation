@@ -21,6 +21,7 @@ The control panel gives access to the administrator to the following pages:
 - :doc:`Logs <logs>`
 - :doc:`Authorization <authorization>`
 - :doc:`Accounting <accounting>`
+- :doc:`Database Config <dbconfig>`
 
 .. figure:: ../includes/control_panel.png
 	:figclass: img-border img-max-width
