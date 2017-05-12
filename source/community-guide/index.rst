@@ -13,6 +13,6 @@ Hydrology thematic exploitation platform guide
    Visualisation <visualisation>
    Reproducibility <reproducibility>
    Sharing <sharing>
-   Cloud Resources <cloud/index>
+   
 
 
