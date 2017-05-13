@@ -74,40 +74,9 @@ To change your EO-SSO password:
 	:figclass: img-border
 	:scale: 80%
 
-Link your account to the Terradue Cloud Platform
-------------------------------------------------
 
-To access the Cloud resources, you need to have an account on the Terradue Cloud Platform. From this page, you can check that you have a valid account, or create a new one.
 
-Don't have a Terradue account ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you don't have yet an account on the Terradue Cloud Platform
-
-.. figure:: ../includes/user_profile_cloud_no.png
-	:figclass: img-border img-max-width
-	:scale: 80%
-
-1. Click on the button "Create" 
-2. Enter a password for the Terradue account (see below for password recommandations)
-3. A new account will be created on https://www.terradue.com using your EO-SSO email/username
-
-.. figure:: ../includes/t2_password_rules.png
-	:figclass: img-border
-	:scale: 80%
-
-.. NOTE::
-	If you want to create an account with a different username or email, you can do it directly at https://www.terradue.com/signup (but a least one of Username or email shall be the same as in EO-SSO).
-
-Already have a Terradue account ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you already have an account on the Terradue Cloud Platform, the portal will be able to detect it by itself and display the Opennebula Sunstone logo. 
-If not the case, it means that you have a different username/email than on your EO-SSO profile. In this case, please contact us so we can manually link your accounts.
-
-.. figure:: ../includes/user_profile_cloud.png
-	:figclass: img-border img-max-width
-	:scale: 80%
 
 Link your Github account
 ------------------------
@@ -144,7 +113,46 @@ See your usage
 To find out how you are using the platform, just go to the **Usage** tab on your profile page.
 You will see what is your level for each type of usage of the platform.
 
-.. req:: HEP-TS-DES-014
-	:show:
 
-	This section describes how a user can get analytics report.
+.. figure:: ../includes/user_profile_usage.png
+	:figclass: img-border
+	:scale: 80%
+
+To find out more precisely the number of data packages you loaded, the number of jobs you created, how many failed or were successful, ... Just go the **Analytics** page from the portal homepage.
+You will see:
+
+- how many data collection you loaded
+- how many data packages and items you loaded
+- how many wps jobs you created and how many failed or succeeded
+
+.. figure:: ../includes/user_anaylytics.png
+	:figclass: img-border
+	:scale: 80%
+
+.. req:: HEP-TS-DES-014
+    :show:
+
+    This section shows that the platform has an analytics web widget.
+
+See your accountings
+--------------------
+
+The accounting panel on your profile gives your current credit balance, as well as the list of all transactions associated to your account:
+
+- credit transactions
+- debit transactions reported by wps providers for the wps jobs you created, associated to a deposit
+
+.. figure:: ../includes/user_profile_accounting.png
+	:figclass: img-border
+	:scale: 80%
+
+.. _deposit:
+Deposit
+~~~~~~~
+
+A deposit transaction is stored when the user execute a job process using as balance the quotation returned first by the processing service for the selected parameters (it implies that the wps provider implemented the **quotation mode**). Deposit transactions can be *active* or *closed*. An **active deposit** is accounted when calculating your account balance (covering the possible debit transactions associated to the same process). A **closed deposit** is not accounted when calculating your account balance (but does not cover anymore the possible debit transactions associated to the same process). A deposit is automatically set from *active* to *closed* when the job process is failed or when the job is succeeded with at least one transaction recorded from the wps provider.
+
+Transaction policy
+~~~~~~~~~~~~~~~~~~
+
+The current policy for a wps job process accounting is that the total amount debited to the user corresponds to the real usage of the wps process and cannot be greather than the estimated deposit.

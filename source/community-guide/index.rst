@@ -6,12 +6,13 @@ Hydrology thematic exploitation platform guide
    
    Platform overview <platform/index>
    User Profile <user>
-   Groups <group>
+   Thematic Applications <apps>
+   Communities <community>
    Data <data>
    Processing <processing>
    Visualisation <visualisation>
    Reproducibility <reproducibility>
    Sharing <sharing>
-   Cloud Resources <cloud/index>
+   
 
 
