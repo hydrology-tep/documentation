@@ -36,9 +36,6 @@ A discovery page, dedicated to the search of existing/accessible Thematic apps c
 Thematic apps can be searched using filters defined by the user, such as:
 
 	- **Free text**: search within title and description of the thematic app
-	- **Start date**: search for apps created or updated after a given date
-	- **End date**: search for apps created or updated before a given date
-	- **AOI**: search for apps related to a certain area
 
 The search is performed amongst thematic apps which are accessible to the current user.
 
