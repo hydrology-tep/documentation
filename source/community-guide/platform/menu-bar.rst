@@ -4,10 +4,9 @@ Menu bar
 The menu bar is always visible, apart from the geobrowser page. It contains the following links:
 
 - `Home`_,
-- `Observations & Measurements`_,
-- `Information Processing`_,
-- `Community`_,
-- `EO sector Collaboration`_
+- `About Tep Hydro`_,
+- `Quick Start`_,
+- `Thematic Apps`_,
 - `Partners`_
 
 .. figure:: ../../includes/home_menubar.png
@@ -18,30 +17,20 @@ Home
 
 A simple way to go back to the home page of the portal.
 
-Observations & Measurements
----------------------------
+About Tep Hydro
+---------------
 
-A quick access to
-	- Satellite Acquisitions (list of EO missions providing data contributions to the CEOS Seismic Hazards and Volcano Pilots),
-	- EO based Measurements (definition of EO base measurements),
-	- Other Data (definition of Other Data),
-	- Featured Products (definition of Featured Products),
-	- Publications (definition of Publications)
+This page describes the Tep Hydrology platform.
 
-Information Processing
-----------------------
+Quick Start
+-----------
 
-Information about the processing on the platform.
+This page gather all quick start guides, covering new user's needs.
 
-Community
----------
+Thematic Apps
+-------------
 
-Definition of the role of the satellite EO and hydrology user community.
-
-EO sector Collaboration
------------------------
-
-Description of partners and actors of the TEP Hydrology initiative.
+This page describes the existing Thematic Applications.
 
 Partners
 --------

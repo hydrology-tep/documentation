@@ -11,7 +11,7 @@ Don't have a Terradue account ?
 
 If you don't have yet an account on the Terradue Cloud Platform
 
-.. figure:: ../includes/user_profile_cloud_no.png
+.. figure:: ../../includes/user_profile_cloud_no.png
   :figclass: img-border img-max-width
   :scale: 80%
 
@@ -19,7 +19,7 @@ If you don't have yet an account on the Terradue Cloud Platform
 2. Enter a password for the Terradue account (see below for password recommandations)
 3. A new account will be created on https://www.terradue.com using your EO-SSO email/username
 
-.. figure:: ../includes/t2_password_rules.png
+.. figure:: ../../includes/t2_password_rules.png
   :figclass: img-border
   :scale: 80%
 
