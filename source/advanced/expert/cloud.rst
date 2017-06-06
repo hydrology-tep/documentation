@@ -32,7 +32,7 @@ Already have a Terradue account ?
 If you already have an account on the Terradue Cloud Platform, the portal will be able to detect it by itself and display the Opennebula Sunstone logo. 
 If not the case, it means that you have a different username/email than on your EO-SSO profile. In this case, please contact us so we can manually link your accounts.
 
-.. figure:: ../includes/user_profile_cloud.png
+.. figure:: ../../includes/user_profile_cloud.png
   :figclass: img-border img-max-width
   :scale: 80%
 
