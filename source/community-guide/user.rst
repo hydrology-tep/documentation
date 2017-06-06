@@ -34,6 +34,25 @@ After clicked the link received by email, you'll be able to see your profile pag
 	:figclass: img-border
 	:scale: 80%
 
+.. figure:: ../includes/user_signin.png
+	:figclass: img-border
+	:scale: 80%
+
+By clicking on your username, you will access your profile page.
+The other icons give the following functionalities:
+
+- |user_signin_balance.png| Your current accounting balance (if greater than 0)
+- |user_signin_settings.png| Access to administration settings (for users with special privileges)
+- |user_signin_contactus.png| Link to contact the Hydrology Tep support team
+- |user_signin_documentation.png| Link to the Hydrology Tep documentation
+- |user_signin_logout.png| Log out from the portal
+
+.. |user_signin_settings.png| image:: ../includes/user_signin_settings.png
+.. |user_signin_documentation.png| image:: ../includes/user_signin_documentation.png
+.. |user_signin_balance.png| image:: ../includes/user_signin_balance.png
+.. |user_signin_contactus.png| image:: ../includes/user_signin_contactus.png
+.. |user_signin_logout.png| image:: ../includes/user_signin_logout.png
+
 
 Edit your profile
 -----------------
@@ -75,8 +94,16 @@ To change your EO-SSO password:
 	:scale: 80%
 
 
+Get your Api key
+----------------
 
+You can get a private API key associated to your account.
+Currently this key can be used only to get access to your data packages without being logged in on the portal:
+e.g: https://hydrology-tep.eo.esa.int/t2api/data/package/search?key=MY_API_KEY
 
+.. figure:: ../includes/user_profile_apikey.png
+	:figclass: img-border img-max-width
+	:scale: 80%
 
 Link your Github account
 ------------------------
@@ -124,10 +151,6 @@ You will see:
 - how many data collection you loaded
 - how many data packages and items you loaded
 - how many wps jobs you created and how many failed or succeeded
-
-.. figure:: ../includes/user_anaylytics.png
-	:figclass: img-border
-	:scale: 80%
 
 .. req:: HEP-TS-DES-014
     :show:
