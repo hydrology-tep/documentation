@@ -8,5 +8,6 @@ Thematic Applications
    Flood monitoring <fm>
    Hydrological Modelling <hm>
    Water Quality <wq>
+   Water Level <wl>
    My worskpace <workspace>
    
