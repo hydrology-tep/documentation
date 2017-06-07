@@ -31,15 +31,15 @@ Open the 'Processing Services' section by clicking on **Processing Services** on
 |
 Within the 'Processing Services' section you will find the Small Water Body Mapping Service in the 'Services' tab, click on the Icon to open the service:
 
-.. image:: ../includes/apps_wq_processingservices.png
-	:width: 45%
 .. image:: ../includes/apps_swbm_3.png
+	:width: 45%
+.. image:: ../includes/apps_swbm_4.png
 	:width: 45%
 
 |
-Select what kind of **EO Data** data you would like to process using the dropdown menu on the top right, so far Water Quality Service only supports Landsat8 and Sentinel2.
+Select what kind of **EO Data** data you would like to process using the dropdown menu on the top right, so far the Small Water Body Mapping Service only supports Sentinel-1 data.
 
-.. figure:: ../includes/apps_wq_eodata.png
+.. figure:: ../includes/apps_swbm_5.png
 	:figclass: img-border
 	:align: center
 	:scale: 90%
