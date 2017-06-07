@@ -128,5 +128,3 @@ Check that now the results are tagged as public in the geobrowser. Any user in t
 	:scale: 90%
 
 
-Results
--------
