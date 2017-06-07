@@ -45,11 +45,11 @@ Select what kind of **EO Data** data you would like to process using the dropdow
 	:scale: 90%
 
 |
-Zoom to your region of interest and use the **spatial filter** to spatially restrict the list of scenes: Click on the spatial filter symbol (little square) on the left-hand side of the geobrowser and draw a rectangle on the map. 
+Zoom to your region of interest and use the **spatial filter** to spatially restrict the list of scenes: Click on the spatial filter symbol (little square) or on the polygon symbol on the left-hand side of the geobrowser and draw a polygon on the map. 
 
 .. image:: ../includes/apps_wq_spatialfilter1.png
 	:width: 14%
-.. image:: ../includes/apps_wq_spatialfilter2.png
+.. image:: ../includes/apps_swbm_6.png
 	:width: 84%
 
 |
@@ -60,10 +60,24 @@ Use the **temporal filter** via the time slider at the bottom of the map to rest
 	:align: center
 	:scale: 100%
 
-|
-The list of available scenes is now filtered for your needs. If you identified a scene you would like to process you can add the scene via drag&drop from the scene list on the bottom left to the Water Quality Service:
+By clicking on the image in the geobrowser further information is visible such as Identifier, product type, swath, orbit and geometry, track, start and end time of acquisition. Images can be downloaded from the platform clicking the Download button.
 
-.. figure:: ../includes/apps_wq_selectdata.png
+.. figure:: ../includes/apps_swbm_7.png
+	:figclass: img-border
+	:align: center
+	:scale: 100%
+
+Check that all the images that you plan to process entirely cover the former drawn AOI. The wide white square delimitates the frame of the image whilst other images available appear in thiner red frames.
+
+.. figure:: ../includes/apps_swbm_8.png.png
+	:figclass: img-border
+	:align: center
+	:scale: 100%
+
+|
+The list of available scenes is now filtered for your needs. If you identified a scene you would like to process you can add the scene via drag&drop from the scene list on the bottom left to the Small Water Body Service (right part):
+
+.. figure:: ../includes/apps_swbm_9.png
 	:figclass: img-border
 	:align: center
 	:width: 100%
