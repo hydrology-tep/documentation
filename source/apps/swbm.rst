@@ -101,30 +101,31 @@ Now you can **either** click on the **Run Job** button
 
 |
 **OR** you could add more scenes to your job, from the same EO Data collection or you can even add scenes from another collection.
-Therefore just change the **EO Data** collection in the dropdown menu on the top right:
-
-.. figure:: ../includes/apps_wq_eodata2.png
-	:figclass: img-border
-	:align: center
-	:scale: 90%
-
-|
-Your selected **spatial and temporal filters remain** and you can look for a scene from the other collection. 
-If you identified another scene you would like to process can add the scene via drag&drop from the scene list on the bottom left to the Water Quality Service:
-
-.. figure:: ../includes/apps_wq_selectdata2.png
-	:figclass: img-border
-	:align: center
-	:width: 100%
+Therefore just change the **EO Data** collection in the dropdown menu on the top right.
 
 |
 If your are satisfied with your scenes and settings click on the **Run Job** button to start the processing.
 
-.. figure:: ../includes/apps_wq_runjob.png
+.. figure:: ../includes/apps_swbm_11.png
 	:figclass: img-border
 	:align: center
 	:scale: 90%
 
+|
+You can make accessible your processing results to other users. To do it click at the share button and select the more suitable option for you: Do not Share / Share with anyone / Restricted sharing to some members.
+
+.. figure:: ../includes/apps_swbm_12.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+
+|
+Check that now the results are tagged as public in the geobrowser. Any user in the platform will have access to your processed job and will see either its status and results when it finishes.
+
+.. figure:: ../includes/apps_swbm_13.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
 
 
 Results
