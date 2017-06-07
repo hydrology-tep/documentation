@@ -9,5 +9,6 @@ Thematic Applications
    Hydrological Modelling <hm>
    Water Quality <wq>
    Water Level <wl>
+   Small Water Body Mapping <swbm>
    My worskpace <workspace>
    
