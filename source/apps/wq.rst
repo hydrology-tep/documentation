@@ -133,7 +133,8 @@ If your processing job finished sucessfully you can click on the **Show results*
 The results of you processing will be shown in the search results list on the bottom left. The following results will be created: 
 
 |
-For processing option **Water Quality Parameters - TSS + CHL + CDOM + SWT (LS8 only)**: 
+Processing option "Water Quality Parameters"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter. 
 * Furthermoe EOMAP's water quality products are accompanied by the processor's internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:
@@ -145,27 +146,49 @@ For processing option **Water Quality Parameters - TSS + CHL + CDOM + SWT (LS8 o
  
 * Overview of files delivered per satellite scene (example):
 
-  * Total Suspended Solids (TSS): *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
-  * Total Suspended Solids (TSS): *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
-  * Total Suspended Solids (TSS): *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
-  * Chlorophyll (CHL): *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
-  * Chlorophyll (CHL): *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
-  * Chlorophyll (CHL): *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
-  * Colored Dissolved Organic Matter (CDOM): *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
-  * Colored Dissolved Organic Matter (CDOM): *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
-  * Colored Dissolved Organic Matter (CDOM): *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
-  * Surface Water Temperature (SWT): *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTiff, 8bit scaled
-  * Surface Water Temperature (SWT): *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*, GeoTIFF, 32bit
-  * Surface Water Temperature (SWT): *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
-  * Watermask (WMA): *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTIFF, 8bit, GV 100 = water, GV 0 = no water
-  * Watermask (WMA): *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
-  * Quality Coding (QUC): *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTIFF, 8bit
-  * Quality Coding (QUC): *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
-  * Total Quality (QUT): *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, GeoTIFF, 8bit
-  * Total Quality (QUT): *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+  * Total Suspended Solids (TSS): 
+  
+    * GeoTiff 8bit, scaled and colored: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+    * Geotiff 32bit, real values in mg/l: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+    * XML, metadata: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+  
+  * Chlorophyll (CHL): 
+   
+    * GeoTiff 8bit, scaled and colored: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+    * Geotiff 32bit, real values in μg/l: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+    * XML, metadata: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+  
+  * Colored Dissolved Organic Matter (CDOM): 
+  
+    * GeoTiff 8bit, scaled and colored: *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+    * Geotiff 32bit, real values in 1/m:  *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+    * XML, metadata: *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+
+  * Surface Water Temperature (SWT): 
+  
+    * GeoTiff 8bit, scaled and colored: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+    * Geotiff 32bit, real values in degree Celsius: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+    * XML, metadata: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+    
+  * Watermask (WMA): 
+  
+    * GeoTiff, 8bit, GV 100 = water, GV 0 = no water: *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, 
+    * XML, metadata: *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+
+  * Quality Coding (QUC): 
+  
+    * GeoTiff, 8bit: *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+    * XML, metadata: *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+
+  * Total Quality (QUT): 
+  
+    * GeoTiff, 8bit: *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif* 
+    * XML, metadata: *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+
   
 |
-For processing option **Atmospheric Corrected Image**:
+Processing option "Atmospheric Corrected Image"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.
 * It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).
@@ -175,10 +198,34 @@ For processing option **Atmospheric Corrected Image**:
   * Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
 
 |
-For processing option **all**: Products of both options described above are delivered.
+Processing option "all"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Products of both options, Water Quality Parameters and Atmospheric Corrected Image, described above are delivered.
 
 
+Naming Convention
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The naming of EOMAP product files follows a sequence of mandatory and optional elements:
+
+``<product>_wq-tep<optional_ path/row(Landsat)>_EOMAP_<date>_<time> _<sensor>_<resolution>_<other_information>.<ext>``
+  
+* Products:
+
+  * TSS - Total Suspended Solids
+  * CHL - Chlorophyll
+  * CDM - Colored Dissolved Organic Matter
+  * SWT - Surface Water Temperature
+  * WMA - Watermask
+  * QUC - Quality Coding
+  * QUT - Total Quality 
+  * RRS - Remote Sensing Reflectance
+   
+* Sensors:
+ 
+  * LSAT8 - Landsat 8
+  * SENT2 - Sentinel 2
 
 
 
