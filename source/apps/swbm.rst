@@ -1,1 +1,124 @@
+.. _swbm:
 
+Small Water Body Mapping
+=============
+
+The Small Water Body Mapping Service provides the extent and temporal evolution of permanent and non-permanent water bodies providing it into detailed mapping, Time Series and water bodies surface evolution in time. The service is based on Sentinel 1 SAR acquisitions and ASAR for historical analysis as well as the possibility of results refinement using Sentinel-2 Optical Data. 
+
+Access to the thematic application
+----------------------------------
+From the thematic application page, click on the **Open App** button for the **Small Water Body Mapping** application.
+
+.. figure:: ../includes/apps_swbm_1.png
+	:figclass: img-border
+	:width: 100%
+
+|
+A new page with the geobrowser, data collections and processing services associated to the Small Water Body Mapping application will appear.
+
+.. figure:: ../includes/apps_swbm_2.png
+	:figclass: img-border
+	:width: 100%
+
+|
+Open the 'Processing Services' section by clicking on **Processing Services** on the right-hand side of the geobrowser window:
+
+.. figure:: ../includes/apps_wq_geobrowser2.png
+	:figclass: img-border
+	:align: center
+	:scale: 100%
+
+|
+Within the 'Processing Services' section you will find the Small Water Body Mapping Service in the 'Services' tab, click on the Icon to open the service:
+
+.. image:: ../includes/apps_wq_processingservices.png
+	:width: 45%
+.. image:: ../includes/apps_swbm_3.png
+	:width: 45%
+
+|
+Select what kind of **EO Data** data you would like to process using the dropdown menu on the top right, so far Water Quality Service only supports Landsat8 and Sentinel2.
+
+.. figure:: ../includes/apps_wq_eodata.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+
+|
+Zoom to your region of interest and use the **spatial filter** to spatially restrict the list of scenes: Click on the spatial filter symbol (little square) on the left-hand side of the geobrowser and draw a rectangle on the map. 
+
+.. image:: ../includes/apps_wq_spatialfilter1.png
+	:width: 14%
+.. image:: ../includes/apps_wq_spatialfilter2.png
+	:width: 84%
+
+|
+Use the **temporal filter** via the time slider at the bottom of the map to restrict the list of scenes temporally:
+
+.. figure:: ../includes/apps_wq_timefilter.png
+	:figclass: img-border
+	:align: center
+	:scale: 100%
+
+|
+The list of available scenes is now filtered for your needs. If you identified a scene you would like to process you can add the scene via drag&drop from the scene list on the bottom left to the Water Quality Service:
+
+.. figure:: ../includes/apps_wq_selectdata.png
+	:figclass: img-border
+	:align: center
+	:width: 100%
+
+|
+Select **one** of the three available **processing options**: 
+
+.. figure:: ../includes/apps_wq_selectoption.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+
+|
+Select a **title** for your processing job, e.g. "My first Water Quality Job for Bamako" 
+
+.. figure:: ../includes/apps_wq_jobtitle.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+
+|
+Now you can **either** click on the **Run Job** button
+
+.. figure:: ../includes/apps_wq_runjob0.png
+	:figclass: img-border
+	:align: center
+	:scale: 150%
+
+|
+**OR** you could add more scenes to your job, from the same EO Data collection or you can even add scenes from another collection.
+Therefore just change the **EO Data** collection in the dropdown menu on the top right:
+
+.. figure:: ../includes/apps_wq_eodata2.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+
+|
+Your selected **spatial and temporal filters remain** and you can look for a scene from the other collection. 
+If you identified another scene you would like to process can add the scene via drag&drop from the scene list on the bottom left to the Water Quality Service:
+
+.. figure:: ../includes/apps_wq_selectdata2.png
+	:figclass: img-border
+	:align: center
+	:width: 100%
+
+|
+If your are satisfied with your scenes and settings click on the **Run Job** button to start the processing.
+
+.. figure:: ../includes/apps_wq_runjob.png
+	:figclass: img-border
+	:align: center
+	:scale: 90%
+
+
+
+Results
+-------
