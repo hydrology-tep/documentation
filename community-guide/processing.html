@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2.6. Processing &#8212; Hydrology Thematic Exploitation Platform 1.2 documentation</title>
+    <title>2.6. Processing &#8212; Hydrology Thematic Exploitation Platform 1.2.4 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.2',
+        VERSION:     '1.2.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -72,7 +72,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.2</b><b class="caret"></b>
+        <b>1.2.4</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -114,10 +114,11 @@
 <li><a class="reference internal" href="#">2.6. Processing</a><ul>
 <li><a class="reference internal" href="#discover-existing-wps">2.6.1. Discover existing WPS</a></li>
 <li><a class="reference internal" href="#create-a-new-job">2.6.2. Create a new job</a></li>
-<li><a class="reference internal" href="#access-my-jobs">2.6.3. Access my jobs</a></li>
-<li><a class="reference internal" href="#delete-my-jobs">2.6.4. Delete my jobs</a></li>
-<li><a class="reference internal" href="#make-my-jobs-public">2.6.5. Make my jobs public</a></li>
-<li><a class="reference internal" href="#access-public-jobs">2.6.6. Access public jobs</a></li>
+<li><a class="reference internal" href="#fill-in-parameters">2.6.3. Fill in parameters</a></li>
+<li><a class="reference internal" href="#access-my-jobs">2.6.4. Access my jobs</a></li>
+<li><a class="reference internal" href="#delete-my-jobs">2.6.5. Delete my jobs</a></li>
+<li><a class="reference internal" href="#make-my-jobs-public">2.6.6. Make my jobs public</a></li>
+<li><a class="reference internal" href="#access-public-jobs">2.6.7. Access public jobs</a></li>
 </ul>
 </li>
 </ul>
@@ -176,10 +177,11 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">2.6. Processing</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#discover-existing-wps">2.6.1. Discover existing WPS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-a-new-job">2.6.2. Create a new job</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#access-my-jobs">2.6.3. Access my jobs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#delete-my-jobs">2.6.4. Delete my jobs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#make-my-jobs-public">2.6.5. Make my jobs public</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#access-public-jobs">2.6.6. Access public jobs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fill-in-parameters">2.6.3. Fill in parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access-my-jobs">2.6.4. Access my jobs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-my-jobs">2.6.5. Delete my jobs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-my-jobs-public">2.6.6. Make my jobs public</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access-public-jobs">2.6.7. Access public jobs</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="visualisation.html">2.7. Visualisation</a></li>
@@ -228,38 +230,51 @@
 <p>To create a new job:</p>
 <ol class="arabic simple">
 <li>Select the service you want to use (see <a class="reference internal" href="#discover-existing-wps">Discover existing WPS</a>).</li>
-<li>Fill in the different parameters needed by the service (see <a href="#id1"><span class="problematic" id="id2">`Fill in parameters`_</span></a>).</li>
+<li>Fill in the different parameters needed by the service (see <a class="reference internal" href="#fill-in-parameters">Fill in parameters</a>).</li>
 <li>If the wps service has implemented the quotation mode, you must first click on <strong>Calculate cost</strong> to get an estimation of the wps job cost.</li>
 <li>If you have enough credits on your account, you will be able to see the <strong>Submit job</strong> button.</li>
 <li>Click on <strong>Run Job</strong></li>
 <li>To visualize the result of the job, see <a class="reference internal" href="visualisation.html"><span class="doc">Visualisation</span></a></li>
 </ol>
 </div>
+<div class="section" id="fill-in-parameters">
+<h2>2.6.3. Fill in parameters<a class="headerlink" href="#fill-in-parameters" title="Permalink to this headline">¶</a></h2>
+<p>A processing service takes as input a list of parameters, which are defined in the DescribeProcess function of the WPS service.
+Parameters can be free text or can be selected from a list of possible values. When a default value is described in the DescribeProcess, it is automatically set in the parameter field and can of course be changed by the user if he wants to.
+Besides, some specific parameters can be filled directly from the geobrowser:</p>
+<ul class="simple">
+<li>data input or files can be directly dragged from the Result tab or from the basket and dropped into the parameter input,</li>
+<li>geographic input (bounding box) value can be taken from the bbox selected on the map by clicking on the <img alt="get_param_from_map_button.png" src="../_images/get_param_from_map_button1.png" /> button,</li>
+<li>temporal input (start date, end date) can be taken from the time bar selection by clicking on the <img alt="get_param_from_map_button.png" src="../_images/get_param_from_map_button1.png" /> button,</li>
+</ul>
+</div>
 <div class="section" id="access-my-jobs">
-<h2>2.6.3. Access my jobs<a class="headerlink" href="#access-my-jobs" title="Permalink to this headline">¶</a></h2>
+<h2>2.6.4. Access my jobs<a class="headerlink" href="#access-my-jobs" title="Permalink to this headline">¶</a></h2>
 <p>To access my jobs:</p>
 <ol class="arabic simple">
 <li>Open the Processing Services tab by clicking on <strong>Processing Services</strong> on the right of the geobrowser&#8217;s map.</li>
-<li>Click on <strong>My Jobs</strong> on top of the Processing Services tab.</li>
+<li>Click on <strong>Jobs</strong> on top of the Processing Services tab.</li>
 <li>The list of existing jobs (failed or success) is displayed.</li>
+<li>Filter jobs using the dropdown list and selecting &#8220;show only mine&#8221;.</li>
 <li>Click on the job title.</li>
 <li>You can now see details about the job.</li>
 </ol>
 </div>
 <div class="section" id="delete-my-jobs">
-<h2>2.6.4. Delete my jobs<a class="headerlink" href="#delete-my-jobs" title="Permalink to this headline">¶</a></h2>
+<h2>2.6.5. Delete my jobs<a class="headerlink" href="#delete-my-jobs" title="Permalink to this headline">¶</a></h2>
 <p>To delete my jobs:</p>
 <ol class="arabic simple">
 <li>Open the Processing Services tab by clicking on <strong>Processing Services</strong> on the right of the geobrowser&#8217;s map.</li>
-<li>Click on <strong>My Jobs</strong> on top of the Processing Services tab.</li>
+<li>Click on <strong>Jobs</strong> on top of the Processing Services tab.</li>
 <li>The list of existing jobs (failed or success) is displayed.</li>
+<li>Filter your jobs using the dropdown list and selecting &#8220;show only mine&#8221; (you can delete only your jobs).</li>
 <li>Put your mouse over the job, a small &#8220;x&#8221; appears on the right.</li>
 <li>Click on the &#8220;x&#8221;.</li>
 <li>The job is deleted</li>
 </ol>
 </div>
 <div class="section" id="make-my-jobs-public">
-<h2>2.6.5. Make my jobs public<a class="headerlink" href="#make-my-jobs-public" title="Permalink to this headline">¶</a></h2>
+<h2>2.6.6. Make my jobs public<a class="headerlink" href="#make-my-jobs-public" title="Permalink to this headline">¶</a></h2>
 <p>To make my jobs public:</p>
 <ol class="arabic simple">
 <li>Go to the detail view of the job (see <a class="reference internal" href="#access-my-jobs">Access my jobs</a>).</li>
@@ -271,12 +286,13 @@
 </div>
 </div>
 <div class="section" id="access-public-jobs">
-<h2>2.6.6. Access public jobs<a class="headerlink" href="#access-public-jobs" title="Permalink to this headline">¶</a></h2>
-<p>To access my jobs:</p>
+<h2>2.6.7. Access public jobs<a class="headerlink" href="#access-public-jobs" title="Permalink to this headline">¶</a></h2>
+<p>To access public jobs:</p>
 <ol class="arabic simple">
 <li>Open the Processing Services tab by clicking on <strong>Processing Services</strong> on the right of the geobrowser&#8217;s map.</li>
-<li>Click on <strong>Public Jobs</strong> on top of the Processing Services tab.</li>
+<li>Click on <strong>Jobs</strong> on top of the Processing Services tab.</li>
 <li>The list of existing jobs (failed or success) is displayed.</li>
+<li>Filter jobs using the dropdown list and selecting &#8220;show only public&#8221;.</li>
 <li>Click on the job title.</li>
 <li>You can now see details about the job.</li>
 </ol>

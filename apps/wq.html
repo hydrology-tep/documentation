@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>5.4. Water Quality &#8212; Hydrology Thematic Exploitation Platform 1.2 documentation</title>
+    <title>5.4. Water Quality &#8212; Hydrology Thematic Exploitation Platform 1.2.4 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.2',
+        VERSION:     '1.2.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5.5. My Workspace" href="workspace.html" />
+    <link rel="next" title="5.5. Water Level" href="wl.html" />
     <link rel="prev" title="5.3. Hydrological Modelling" href="hm.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
@@ -72,7 +72,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.2</b><b class="caret"></b>
+        <b>1.2.4</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -113,7 +113,13 @@
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">5.4. Water Quality</a><ul>
 <li><a class="reference internal" href="#access-to-the-thematic-application">5.4.1. Access to the thematic application</a></li>
-<li><a class="reference internal" href="#results">5.4.2. Results</a></li>
+<li><a class="reference internal" href="#results">5.4.2. Results</a><ul>
+<li><a class="reference internal" href="#processing-option-water-quality-parameters">5.4.2.1. Processing option &#8220;Water Quality Parameters&#8221;</a></li>
+<li><a class="reference internal" href="#processing-option-atmospheric-corrected-image">5.4.2.2. Processing option &#8220;Atmospheric Corrected Image&#8221;</a></li>
+<li><a class="reference internal" href="#processing-option-all">5.4.2.3. Processing option &#8220;all&#8221;</a></li>
+<li><a class="reference internal" href="#naming-convention">5.4.2.4. Naming Convention</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -129,7 +135,7 @@
     </a>
   </li>
   <li>
-    <a href="workspace.html" title="Next Chapter: 5.5. My Workspace"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">5.5. My Workspace &raquo;</span>
+    <a href="wl.html" title="Next Chapter: 5.5. Water Level"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">5.5. Water Level &raquo;</span>
     </a>
   </li>
               
@@ -172,10 +178,18 @@
 <li class="toctree-l2"><a class="reference internal" href="hm.html">5.3. Hydrological Modelling</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">5.4. Water Quality</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#access-to-the-thematic-application">5.4.1. Access to the thematic application</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#results">5.4.2. Results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#results">5.4.2. Results</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#processing-option-water-quality-parameters">5.4.2.1. Processing option &#8220;Water Quality Parameters&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#processing-option-atmospheric-corrected-image">5.4.2.2. Processing option &#8220;Atmospheric Corrected Image&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#processing-option-all">5.4.2.3. Processing option &#8220;all&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naming-convention">5.4.2.4. Naming Convention</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="workspace.html">5.5. My worskpace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wl.html">5.5. Water Level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="swbm.html">5.6. Small Water Body Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workspace.html">5.7. My worskpace</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
@@ -229,7 +243,7 @@
 </div>
 <p>Select what kind of <strong>EO Data</strong> data you would like to process using the dropdown menu on the top right, so far Water Quality Service only supports Landsat8 and Sentinel2.</p>
 <div class="img-border figure align-center">
-<a class="reference internal image-reference" href="../_images/apps_wq_eodata.png"><img alt="../_images/apps_wq_eodata.png" src="../_images/apps_wq_eodata.png" style="width: 421.2px; height: 177.3px;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_eodata.png"><img alt="../_images/apps_wq_eodata.png" src="../_images/apps_wq_eodata.png" style="width: 419.4px; height: 176.4px;" /></a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -278,7 +292,7 @@
 <p><strong>OR</strong> you could add more scenes to your job, from the same EO Data collection or you can even add scenes from another collection.
 Therefore just change the <strong>EO Data</strong> collection in the dropdown menu on the top right:</p>
 <div class="img-border figure align-center">
-<a class="reference internal image-reference" href="../_images/apps_wq_eodata2.png"><img alt="../_images/apps_wq_eodata2.png" src="../_images/apps_wq_eodata2.png" style="width: 417.6px; height: 265.5px;" /></a>
+<a class="reference internal image-reference" href="apps/../includes/apps_wq_eodata2.png"><img alt="apps/../includes/apps_wq_eodata2.png" src="apps/../includes/apps_wq_eodata2.png" /></a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -309,7 +323,8 @@ If you identified another scene you would like to process can add the scene via 
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>For processing option <strong>Water Quality Parameters - TSS + CHL + CDOM + SWT (LS8 only)</strong>:</p>
+<div class="section" id="processing-option-water-quality-parameters">
+<h3>5.4.2.1. Processing option &#8220;Water Quality Parameters&#8221;<a class="headerlink" href="#processing-option-water-quality-parameters" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter.</li>
 <li>Furthermoe EOMAP&#8217;s water quality products are accompanied by the processor&#8217;s internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:</li>
@@ -319,31 +334,54 @@ If you identified another scene you would like to process can add the scene via 
 </div>
 <ul class="simple">
 <li>Overview of files delivered per satellite scene (example):<ul>
-<li>Total Suspended Solids (TSS): <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, GeoTiff, 8bit scaled</li>
-<li>Total Suspended Solids (TSS): <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em>, GeoTIFF, 32bit</li>
-<li>Total Suspended Solids (TSS): <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
-<li>Chlorophyll (CHL): <em>CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, GeoTiff, 8bit scaled</li>
-<li>Chlorophyll (CHL): <em>CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em>, GeoTIFF, 32bit</li>
-<li>Chlorophyll (CHL): <em>CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
-<li>Colored Dissolved Organic Matter (CDOM): <em>CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, GeoTiff, 8bit scaled</li>
-<li>Colored Dissolved Organic Matter (CDOM): <em>CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em>, GeoTIFF, 32bit</li>
-<li>Colored Dissolved Organic Matter (CDOM): <em>CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
-<li>Surface Water Temperature (SWT): <em>SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, GeoTiff, 8bit scaled</li>
-<li>Surface Water Temperature (SWT): <em>SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em>, GeoTIFF, 32bit</li>
-<li>Surface Water Temperature (SWT): <em>SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
-<li>Watermask (WMA): <em>WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, GeoTIFF, 8bit, GV 100 = water, GV 0 = no water</li>
-<li>Watermask (WMA): <em>WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
-<li>Quality Coding (QUC): <em>QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, GeoTIFF, 8bit</li>
-<li>Quality Coding (QUC): <em>QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
-<li>Total Quality (QUT): <em>QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, GeoTIFF, 8bit</li>
-<li>Total Quality (QUT): <em>QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
+<li>Total Suspended Solids (TSS):<ul>
+<li>GeoTiff 8bit, scaled and colored: <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
+<li>Geotiff 32bit, real values in mg/l: <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em></li>
+<li>XML, metadata: <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
+</ul>
+</li>
+<li>Chlorophyll (CHL):<ul>
+<li>GeoTiff 8bit, scaled and colored: <em>CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
+<li>Geotiff 32bit, real values in μg/l: <em>CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em></li>
+<li>XML, metadata: <em>CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
+</ul>
+</li>
+<li>Colored Dissolved Organic Matter (CDOM):<ul>
+<li>GeoTiff 8bit, scaled and colored: <em>CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
+<li>Geotiff 32bit, real values in 1/m:  <em>CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em></li>
+<li>XML, metadata: <em>CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
+</ul>
+</li>
+<li>Surface Water Temperature (SWT):<ul>
+<li>GeoTiff 8bit, scaled and colored: <em>SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
+<li>Geotiff 32bit, real values in degree Celsius: <em>SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em></li>
+<li>XML, metadata: <em>SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
+</ul>
+</li>
+<li>Watermask (WMA):<ul>
+<li>GeoTiff, 8bit, GV 100 = water, GV 0 = no water: <em>WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>,</li>
+<li>XML, metadata: <em>WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
+</ul>
+</li>
+<li>Quality Coding (QUC):<ul>
+<li>GeoTiff, 8bit: <em>QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
+<li>XML, metadata: <em>QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
+</ul>
+</li>
+<li>Total Quality (QUT):<ul>
+<li>GeoTiff, 8bit: <em>QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
+<li>XML, metadata: <em>QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>For processing option <strong>Atmospheric Corrected Image</strong>:</p>
+</div>
+<div class="section" id="processing-option-atmospheric-corrected-image">
+<h3>5.4.2.2. Processing option &#8220;Atmospheric Corrected Image&#8221;<a class="headerlink" href="#processing-option-atmospheric-corrected-image" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.</li>
 <li>It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).</li>
@@ -356,7 +394,34 @@ If you identified another scene you would like to process can add the scene via 
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>For processing option <strong>all</strong>: Products of both options described above are delivered.</p>
+</div>
+<div class="section" id="processing-option-all">
+<h3>5.4.2.3. Processing option &#8220;all&#8221;<a class="headerlink" href="#processing-option-all" title="Permalink to this headline">¶</a></h3>
+<p>Products of both options, Water Quality Parameters and Atmospheric Corrected Image, described above are delivered.</p>
+</div>
+<div class="section" id="naming-convention">
+<h3>5.4.2.4. Naming Convention<a class="headerlink" href="#naming-convention" title="Permalink to this headline">¶</a></h3>
+<p>The naming of EOMAP product files follows a sequence of mandatory and optional elements:</p>
+<p><code class="docutils literal"><span class="pre">&lt;product&gt;_wq-tep&lt;optional_</span> <span class="pre">path/row(Landsat)&gt;_EOMAP_&lt;date&gt;_&lt;time&gt;</span> <span class="pre">_&lt;sensor&gt;_&lt;resolution&gt;_&lt;other_information&gt;.&lt;ext&gt;</span></code></p>
+<ul class="simple">
+<li>Products:<ul>
+<li>TSS - Total Suspended Solids</li>
+<li>CHL - Chlorophyll</li>
+<li>CDM - Colored Dissolved Organic Matter</li>
+<li>SWT - Surface Water Temperature</li>
+<li>WMA - Watermask</li>
+<li>QUC - Quality Coding</li>
+<li>QUT - Total Quality</li>
+<li>RRS - Remote Sensing Reflectance</li>
+</ul>
+</li>
+<li>Sensors:<ul>
+<li>LSAT8 - Landsat 8</li>
+<li>SENT2 - Sentinel 2</li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 </div>
 

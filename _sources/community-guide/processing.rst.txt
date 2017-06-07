@@ -30,16 +30,31 @@ To create a new job:
 5. Click on **Run Job**
 6. To visualize the result of the job, see :doc:`Visualisation <visualisation>`
 
+Fill in parameters
+------------------
+
+A processing service takes as input a list of parameters, which are defined in the DescribeProcess function of the WPS service.
+Parameters can be free text or can be selected from a list of possible values. When a default value is described in the DescribeProcess, it is automatically set in the parameter field and can of course be changed by the user if he wants to.
+Besides, some specific parameters can be filled directly from the geobrowser:
+
+- data input or files can be directly dragged from the Result tab or from the basket and dropped into the parameter input,
+- geographic input (bounding box) value can be taken from the bbox selected on the map by clicking on the |get_param_from_map_button.png| button,
+- temporal input (start date, end date) can be taken from the time bar selection by clicking on the |get_param_from_map_button.png| button,
+
+.. |get_param_from_map_button.png| image:: ../includes/get_param_from_map_button.png
+
+
 Access my jobs
 --------------
 
 To access my jobs:
 
 1. Open the Processing Services tab by clicking on **Processing Services** on the right of the geobrowser's map.
-2. Click on **My Jobs** on top of the Processing Services tab.
+2. Click on **Jobs** on top of the Processing Services tab.
 3. The list of existing jobs (failed or success) is displayed.
-4. Click on the job title.
-5. You can now see details about the job.
+4. Filter jobs using the dropdown list and selecting "show only mine".
+5. Click on the job title.
+6. You can now see details about the job.
 
 Delete my jobs
 --------------
@@ -47,11 +62,12 @@ Delete my jobs
 To delete my jobs:
 
 1. Open the Processing Services tab by clicking on **Processing Services** on the right of the geobrowser's map.
-2. Click on **My Jobs** on top of the Processing Services tab.
+2. Click on **Jobs** on top of the Processing Services tab.
 3. The list of existing jobs (failed or success) is displayed.
-4. Put your mouse over the job, a small "x" appears on the right.
-5. Click on the "x".
-6. The job is deleted
+4. Filter your jobs using the dropdown list and selecting "show only mine" (you can delete only your jobs).
+5. Put your mouse over the job, a small "x" appears on the right.
+6. Click on the "x".
+7. The job is deleted
 
 Make my jobs public
 -------------------
@@ -68,10 +84,11 @@ To make my jobs public:
 Access public jobs
 ------------------
 
-To access my jobs:
+To access public jobs:
 
 1. Open the Processing Services tab by clicking on **Processing Services** on the right of the geobrowser's map.
-2. Click on **Public Jobs** on top of the Processing Services tab.
+2. Click on **Jobs** on top of the Processing Services tab.
 3. The list of existing jobs (failed or success) is displayed.
-4. Click on the job title.
-5. You can now see details about the job.
+4. Filter jobs using the dropdown list and selecting "show only public".
+5. Click on the job title.
+6. You can now see details about the job.
