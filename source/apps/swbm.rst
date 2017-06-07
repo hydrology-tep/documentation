@@ -1,7 +1,7 @@
 .. _swbm:
 
 Small Water Body Mapping
-=============
+========================
 
 The Small Water Body Mapping Service provides the extent and temporal evolution of permanent and non-permanent water bodies providing it into detailed mapping, Time Series and water bodies surface evolution in time. The service is based on Sentinel 1 SAR acquisitions and ASAR for historical analysis as well as the possibility of results refinement using Sentinel-2 Optical Data. 
 
