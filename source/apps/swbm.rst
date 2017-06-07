@@ -7,6 +7,7 @@ The Small Water Body Mapping Service provides the extent and temporal evolution 
 
 Access to the thematic application
 ----------------------------------
+
 From the thematic application page, click on the **Open App** button for the **Small Water Body Mapping** application.
 
 .. figure:: ../includes/apps_swbm_1.png
@@ -44,7 +45,7 @@ Select what kind of **EO Data** data you would like to process using the dropdow
 	:align: center
 	:scale: 90%
 
-|
+
 Zoom to your region of interest and use the **spatial filter** to spatially restrict the list of scenes: Click on the spatial filter symbol (little square) or on the polygon symbol on the left-hand side of the geobrowser and draw a polygon on the map. 
 
 .. image:: ../includes/apps_wq_spatialfilter1.png
@@ -52,7 +53,7 @@ Zoom to your region of interest and use the **spatial filter** to spatially rest
 .. image:: ../includes/apps_swbm_6.png
 	:width: 84%
 
-|
+
 Use the **temporal filter** via the time slider at the bottom of the map to restrict the list of scenes temporally:
 
 .. figure:: ../includes/apps_wq_timefilter.png
@@ -74,7 +75,7 @@ Check that all the images that you plan to process entirely cover the former dra
 	:align: center
 	:scale: 100%
 
-|
+
 The list of available scenes is now filtered for your needs. If you identified a scene you would like to process you can add the scene via drag&drop from the scene list on the bottom left to the Small Water Body Service (right part of the browser):
 
 .. figure:: ../includes/apps_swbm_9.png
@@ -82,7 +83,7 @@ The list of available scenes is now filtered for your needs. If you identified a
 	:align: center
 	:width: 100%
 
-|
+
 In order to process this service you need at least two images to compute statistics between the water detected bodies. Drag two or more images on the **Sentinel-1 GRD images** squares. Then select a **title** for your processing job, e.g. "Lake_Selingue_test_Summer_2016_5_images"
 
 .. figure:: ../includes/apps_swbm_10.png
@@ -91,7 +92,7 @@ In order to process this service you need at least two images to compute statist
 	:scale: 90%
 
 
-|
+
 Now you can **either** click on the **Run Job** button
 
 .. figure:: ../includes/apps_wq_runjob0.png
@@ -99,11 +100,11 @@ Now you can **either** click on the **Run Job** button
 	:align: center
 	:scale: 150%
 
-|
+
 **OR** you could add more scenes to your job, from the same EO Data collection or you can even add scenes from another collection.
 Therefore just change the **EO Data** collection in the dropdown menu on the top right.
 
-|
+
 If your are satisfied with your scenes and settings click on the **Run Job** button to start the processing.
 
 .. figure:: ../includes/apps_swbm_11.png
@@ -111,7 +112,7 @@ If your are satisfied with your scenes and settings click on the **Run Job** but
 	:align: center
 	:scale: 90%
 
-|
+
 You can make accessible your processing results to other users. To do it click at the share button and select the more suitable option for you: Do not Share / Share with anyone / Restricted sharing to some members.
 
 .. figure:: ../includes/apps_swbm_12.png
@@ -119,7 +120,7 @@ You can make accessible your processing results to other users. To do it click a
 	:align: center
 	:scale: 90%
 
-|
+
 Check that now the results are tagged as public in the geobrowser. Any user in the platform will have access to your processed job and will see either its status and results when it finishes.
 
 .. figure:: ../includes/apps_swbm_13.png
