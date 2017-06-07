@@ -12,7 +12,7 @@
 	<artifactId>doc-tep-hydrology</artifactId>
 	<packaging>rpm</packaging>
 	<description>Hydrology Thematic Exploitation Platform guide</description>
-	<version>1.2.4</version>
+	<version>2.0</version>
 	
 <!--	<dependencies>
 		<dependency>
