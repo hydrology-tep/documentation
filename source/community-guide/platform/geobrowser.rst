@@ -42,7 +42,7 @@ Some buttons maybe used to interact with the map:
 -  |geobrowser_button_polygon.png| Edit the search bbox by drawing a polygon on the map
 -  |geobrowser_button_recbox.png| Edit the search bbox by drawing a rectangle on the map
 -  |geobrowser_button_placemark.png| Edit the search bbox by selecting a point as AOI
--  |geobrowser_button_wkt.png| Allow to enter a WKT or uplkoad a shapefile or a kml to be displayed on the map as bounding box
+-  |geobrowser_button_wkt.png| Allow to enter a WKT or upload a shapefile, a kml or a geojson to be displayed on the map as bounding box
 -  |geobrowser_button_meter.png| Measure an area
 -  |geobrowser_button_fullscreen.png| Put the map in full screen
 -  |geobrowser_button_layers.png| Change the background of the map | Select layers to be displayed.
@@ -58,7 +58,7 @@ Some parameters are just free text, others can be chosen from a list, and some p
 .. figure:: ../../includes/geobrowser_timebar.png
 	:figclass: img-border img-max-width
 
-- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png| or |geobrowser_button_recbox.png|, either by uploading a shapefile or a geojson file, using the import button.
+- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png|, |geobrowser_button_placemark.png| or by uploading a shapefile, a kml or geojson file, using the import button |geobrowser_button_wkt.png|.
 
 .. tip:: in the *Search Term* field supported wildcards are '*', which matches any character sequence (including the empty one), and '?', which matches any single character.
 
