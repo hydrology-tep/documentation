@@ -9,7 +9,7 @@ User Profile
 	:figclass: img-container-border
 
 
-Find out how to sign-in using **EO-SSO**, access your **Cloud** account by providing a valid **certificate** and prove your identity, or even link your profile with your **Github** account.
+Find out how to sign-in using **EO-SSO**, update your profile, link your profile with your **Github** account or get information about your usage of the platform.
 
 
 Sign in
@@ -85,15 +85,6 @@ To change your EO-SSO password:
 4. Click on **Submit**.
 5. Your password is updated.
 
-.. NOTE::
-		If your UMSSO password is different from the one recorded in your profile, a message will appear in your profile (see image below).
-		*Terradue Support Team* needs to perform manual operations as the email is associated to the certificate and the cloud account.
-
-.. figure:: ../includes/user_profile_email_change.png
-	:figclass: img-border
-	:scale: 80%
-
-
 Get your Api key
 ----------------
 
@@ -112,14 +103,9 @@ Link your Github account
 	:figclass: img-border
 	:scale: 70%
 
-Link your Github account to your profile will allow you to use Github as Software repository for the developments on your Sandboxes. You can also release and share your code there.
-
-..note:: Link your github account is not mandatory but highly recommanded.
-
 To link your Github account:
 
 1. Fill in your github name and validate by clicking on |user_github_edit.png|.
-2. You should add your ssh public key to your github account. If you don't have a Terradue certificate, you will need to add it manually. Finally click on **Add your public key** and accept the request on your Github account.
 
 .. |user_github_edit.png| image:: ../includes/user_github_edit.png
 
