@@ -9,7 +9,7 @@ User Profile
 	:figclass: img-container-border
 
 
-Find out how to sign-in using **EO-SSO**, access your **Cloud** account by providing a valid **certificate** and prove your identity, or even link your profile with your **Github** account.
+Find out how to sign-in using **EO-SSO**, update your profile, link your profile with your **Github** account or get information about your usage of the platform.
 
 
 Sign in
@@ -33,6 +33,25 @@ After clicked the link received by email, you'll be able to see your profile pag
 .. figure:: ../includes/email_confirmation3.png
 	:figclass: img-border
 	:scale: 80%
+
+.. figure:: ../includes/user_signin.png
+	:figclass: img-border
+	:scale: 80%
+
+By clicking on your username, you will access your profile page.
+The other icons give the following functionalities:
+
+- |user_signin_balance.png| Your current accounting balance (if greater than 0)
+- |user_signin_settings.png| Access to administration settings (for users with special privileges)
+- |user_signin_contactus.png| Link to contact the Hydrology Tep support team
+- |user_signin_documentation.png| Link to the Hydrology Tep documentation
+- |user_signin_logout.png| Log out from the portal
+
+.. |user_signin_settings.png| image:: ../includes/user_signin_settings.png
+.. |user_signin_documentation.png| image:: ../includes/user_signin_documentation.png
+.. |user_signin_balance.png| image:: ../includes/user_signin_balance.png
+.. |user_signin_contactus.png| image:: ../includes/user_signin_contactus.png
+.. |user_signin_logout.png| image:: ../includes/user_signin_logout.png
 
 
 Edit your profile
@@ -66,17 +85,16 @@ To change your EO-SSO password:
 4. Click on **Submit**.
 5. Your password is updated.
 
-.. NOTE::
-		If your UMSSO password is different from the one recorded in your profile, a message will appear in your profile (see image below).
-		*Terradue Support Team* needs to perform manual operations as the email is associated to the certificate and the cloud account.
+Get your Api key
+----------------
 
-.. figure:: ../includes/user_profile_email_change.png
-	:figclass: img-border
+You can get a private API key associated to your account.
+Currently this key can be used only to get access to your data packages without being logged in on the portal:
+e.g: https://hydrology-tep.eo.esa.int/t2api/data/package/search?key=MY_API_KEY
+
+.. figure:: ../includes/user_profile_apikey.png
+	:figclass: img-border img-max-width
 	:scale: 80%
-
-
-
-
 
 Link your Github account
 ------------------------
@@ -85,14 +103,9 @@ Link your Github account
 	:figclass: img-border
 	:scale: 70%
 
-Link your Github account to your profile will allow you to use Github as Software repository for the developments on your Sandboxes. You can also release and share your code there.
-
-..note:: Link your github account is not mandatory but highly recommanded.
-
 To link your Github account:
 
 1. Fill in your github name and validate by clicking on |user_github_edit.png|.
-2. You should add your ssh public key to your github account. If you don't have a Terradue certificate, you will need to add it manually. Finally click on **Add your public key** and accept the request on your Github account.
 
 .. |user_github_edit.png| image:: ../includes/user_github_edit.png
 
@@ -124,10 +137,6 @@ You will see:
 - how many data collection you loaded
 - how many data packages and items you loaded
 - how many wps jobs you created and how many failed or succeeded
-
-.. figure:: ../includes/user_anaylytics.png
-	:figclass: img-border
-	:scale: 80%
 
 .. req:: HEP-TS-DES-014
     :show:

@@ -26,18 +26,19 @@ To visualize job's result:
 Visualize result on the map
 ---------------------------
 
-.. req:: HEP-TS-ICD-017
-	:show:
-
-	This section describes the data visualisation web widget.
-
 .. NOTE::
 	The visualization capabilities depends on the offerings presented in the OWS Context document representing the results.
 	The Geobrowser will be able to display:
+
 	-	Footprint of a dataset on the map
 	-	WMS/WMS-T raster display in the extent defined
 	-	Projected Image raster overlay (png, jpeg, gif) with a defined extent
 	-	Popup with information given in the abstract of the dataset or a de-fault popup with default information (title, id, dates)
+
+.. req:: HEP-TS-ICD-017
+	:show:
+
+	This section describes the data visualisation web widget.
 
 Jobs results
 ~~~~~~~~~~~~

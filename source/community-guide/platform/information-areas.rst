@@ -14,7 +14,7 @@ Directly on the homepage, the user can find:
 .. figure:: ../../includes/news_tweets.png
 	:figclass: img-border
 
-- a list of the most recent posts from the tep hydrology `Tumblr blog <http://hydrology-tep.tumblr.com>`_.
+- a list of the most recent posts from the tep hydrology `discuss blog <https://discuss.terradue.com/c/hep-blog>`_.
 
 .. figure:: ../../includes/news_tumblr.png
 	:figclass: img-border
