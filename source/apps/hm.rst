@@ -29,7 +29,9 @@ The Hydrological Modelling application is accessed from the home page of the Hyd
 	:figclass: img-border
 	:scale: 80%
 
-4. The initial view of the hydrological modelling application showing the Niger-River drainage basin in the Geobrowser as represented in the Niger-HYPE[1]_ model.
+4. The initial view of the hydrological modelling application showing the Niger-River drainage basin in the Geobrowser as represented in the Niger-HYPE [1]_ model.
+
+.. [1]  See `http://hypecode.smhi.se <http://hypecode.smhi.se>`_ and `http://hypeweb.smhi.se/nigerhype <http://hypeweb.smhi.se/nigerhype>`_ for more details about the hydrological model HYPE and the Niger-River HYPE model application, respectively. 
 
 .. figure:: ../includes/apps_hm_initial_view.png
 	:figclass: img-border
@@ -64,8 +66,10 @@ Currently, the drainage basin of the Niger river as represented in the Niger-HYP
 Select a sub-basin and it’s upstream area in the Geobrowser
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Zoom in to the area of interest and select a sub-basin by clicking in the map (left mouse button[2]_). The selected sub-basin is highlighted in green, and the upstream areas in yellow.
+1. Zoom in to the area of interest and select a sub-basin by clicking in the map (left mouse button [2]_). The selected sub-basin is highlighted in green, and the upstream areas in yellow.
 2. To select another sub-basin, click in another non-highlighted basin (it’s not possible to select a sub-basin from the current selected upstream area).
+
+.. [2] The EO data coverage polygons may be blocking the sub-basin polygons. Solution, see *Known issues*.
 
 .. figure:: ../includes/apps_hm_subbasin.png
 	:figclass: img-border
@@ -118,7 +122,3 @@ Run the Return Period Magnitude Analysis Processing service
 -----------------------------------------------------------
 
 To be updated based with similar content as in the Quick start guide for the updated service.
-
-
-.. [1]  See `http://hypecode.smhi.se <http://hypecode.smhi.se>`_ and `http://hypeweb.smhi.se/nigerhype <http://hypeweb.smhi.se/nigerhype>`_ for more details about the hydrological model HYPE and the Niger-River HYPE model application, respectively. 
-.. [2] The EO data coverage polygons may be blocking the sub-basin polygons. Solution, see *Known issues*.
