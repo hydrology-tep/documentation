@@ -12,7 +12,7 @@ The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.
 WOIS Access
 -----------
 
-To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VM is accessible via VNC. To learn more about this consult the section **"ESA CloudToolbox"**.
+To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VM is accessible via VNC.
 
 Select Data to use on WOIS
 --------------------------
