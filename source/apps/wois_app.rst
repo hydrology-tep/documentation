@@ -12,7 +12,15 @@ The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.
 WOIS Access
 -----------
 
-To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VM is accessible via VNC.
+To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VMs are accessible via VNC.
+
+To create a new WOIS VM, the user should access to https://cloud.terradue.com/ and create a new VM using the WOIS VM template available (only avalable for some users).
+
+To access the VM via VNC, the user can use a VNC client (e.g. VNC Viewer) or select the new VM in https://cloud.terradue.com/ and click the button
+
+.. figure:: ../includes/vnc_button.png
+	:figclass: img-border
+	:scale: 80%
 
 Select Data to use on WOIS
 --------------------------
