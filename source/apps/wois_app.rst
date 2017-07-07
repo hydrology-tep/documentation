@@ -263,10 +263,11 @@ It is also possible to upload the outputs of a model to HEP automatically, by in
 Export QGIS model to the HEP
 ----------------------------
 
-If the user creates the model on his local machine, it will be possible to export the created model to the VM.
-To export a model, the user shall select the modeler tool "Export model to TEP", available on the local version of HEP Plugin.
+If the user creates the model on his local machine, it will be possible to export the created model to the VM owned by the user, to make the it available in the H-TEP portal.
+To export a model, the user shall select the modeler tool "Export model to TEP", available with the lite version of the HEP Plugin.
 
-**Note:** The local version of the “HEP Plugin” plugin shall be installed locally (replace the “processing” plugin folder by the updated “processing” folder)
+**Note 1:** The lite version of the “HEP Plugin” plugin shall be installed locally
+**Note 2:** The plugin can be downloaded at https://github.com/hydrology-tep/hep-qgis-plugin-lite (installation and usage instructions in the README)
 
 Click on the button to open the local HEP Plugin.
 
