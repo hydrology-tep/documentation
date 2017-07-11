@@ -12,7 +12,15 @@ The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.
 WOIS Access
 -----------
 
-To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VM is accessible via VNC. To learn more about this consult the section **"ESA CloudToolbox"**.
+To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VMs are accessible via VNC.
+
+To create a new WOIS VM, the user should access to https://cloud.terradue.com/ and create a new VM using the WOIS VM template available (only avalable for some users).
+
+To access the VM via VNC, the user can use a VNC client (e.g. VNC Viewer) or select the new VM in https://cloud.terradue.com/ and click the button
+
+.. figure:: ../includes/vnc_button.png
+	:figclass: img-border
+	:scale: 80%
 
 Select Data to use on WOIS
 --------------------------
@@ -263,10 +271,11 @@ It is also possible to upload the outputs of a model to HEP automatically, by in
 Export QGIS model to the HEP
 ----------------------------
 
-If the user creates the model on his local machine, it will be possible to export the created model to the VM.
-To export a model, the user shall select the modeler tool "Export model to TEP", available on the local version of HEP Plugin.
+If the user creates the model on his local machine, it will be possible to export the created model to the VM owned by the user, to make the it available in the H-TEP portal.
+To export a model, the user shall select the modeler tool "Export model to TEP", available with the lite version of the HEP Plugin.
 
-**Note:** The local version of the “HEP Plugin” plugin shall be installed locally (replace the “processing” plugin folder by the updated “processing” folder)
+**Note 1:** The lite version of the “HEP Plugin” plugin shall be installed locally
+**Note 2:** The plugin can be downloaded at https://github.com/hydrology-tep/hep-qgis-plugin-lite (installation and usage instructions in the README)
 
 Click on the button to open the local HEP Plugin.
 
