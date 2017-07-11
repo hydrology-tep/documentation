@@ -182,7 +182,7 @@ htmlhelp_basename = 'HydrologyThematicExploitationPlatformdoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'HydrologyThematicExploitationPlatform.tex', u'Hydrology Thematic Exploitation Platform Software User Manual',
-   r'Enguerran Boissier (T2)\\Emmanuel Mathot (T2)\\Joao Andrade (DEIMOS)', 'manual'),
+   r'Enguerran Boissier (T2)\\Emmanuel Mathot (T2)\\Joao Andrade (DEIMOS)\\Sabine Helm (EOMAP)\\David Gustafsson (SMHI)\\Javier Garcia Robles (TRE ALTAMIRA)\\Joel Hogeveen (TUDELFT)\\Pau Galles (ISARDSAT)', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
