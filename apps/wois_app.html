@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>5.1. WOIS CloudToolBox &#8212; Hydrology Thematic Exploitation Platform 1.2.4 documentation</title>
+    <title>5.1. WOIS CloudToolBox &#8212; Hydrology Thematic Exploitation Platform 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.2.4',
+        VERSION:     '2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -72,7 +72,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.2.4</b><b class="caret"></b>
+        <b>2.0</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -225,7 +225,12 @@
 </div>
 <div class="section" id="wois-access">
 <h2>5.1.1. WOIS Access<a class="headerlink" href="#wois-access" title="Permalink to this headline">¶</a></h2>
-<p>To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using&nbsp;<strong>EO-SSO</strong>. To learn more about the User Profile and the sign-in operation please consult the section <strong>&#8220;User Profile&#8221;</strong> of this Documentation. WOIS VM is accessible via VNC. To learn more about this consult the section <strong>&#8220;ESA CloudToolbox&#8221;</strong>.</p>
+<p>To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using&nbsp;<strong>EO-SSO</strong>. To learn more about the User Profile and the sign-in operation please consult the section <strong>&#8220;User Profile&#8221;</strong> of this Documentation. WOIS VMs are accessible via VNC.</p>
+<p>To create a new WOIS VM, the user should access to <a class="reference external" href="https://cloud.terradue.com/">https://cloud.terradue.com/</a> and create a new VM using the WOIS VM template available (only avalable for some users).</p>
+<p>To access the VM via VNC, the user can use a VNC client (e.g. VNC Viewer) or select the new VM in <a class="reference external" href="https://cloud.terradue.com/">https://cloud.terradue.com/</a> and click the button</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/vnc_button.png"><img alt="../_images/vnc_button.png" src="../_images/vnc_button.png" style="width: 47.2px; height: 32.8px;" /></a>
+</div>
 </div>
 <div class="section" id="select-data-to-use-on-wois">
 <h2>5.1.2. Select Data to use on WOIS<a class="headerlink" href="#select-data-to-use-on-wois" title="Permalink to this headline">¶</a></h2>
@@ -401,9 +406,10 @@ On the left side, the user can select the tool or operation which intends to per
 </div>
 <div class="section" id="export-qgis-model-to-the-hep">
 <h2>5.1.11. Export QGIS model to the HEP<a class="headerlink" href="#export-qgis-model-to-the-hep" title="Permalink to this headline">¶</a></h2>
-<p>If the user creates the model on his local machine, it will be possible to export the created model to the VM.
-To export a model, the user shall select the modeler tool &#8220;Export model to TEP&#8221;, available on the local version of HEP Plugin.</p>
-<p><strong>Note:</strong> The local version of the “HEP Plugin” plugin shall be installed locally (replace the “processing” plugin folder by the updated “processing” folder)</p>
+<p>If the user creates the model on his local machine, it will be possible to export the created model to the VM owned by the user, to make the it available in the H-TEP portal.
+To export a model, the user shall select the modeler tool &#8220;Export model to TEP&#8221;, available with the lite version of the HEP Plugin.</p>
+<p><strong>Note 1:</strong> The lite version of the “HEP Plugin” plugin shall be installed locally
+<strong>Note 2:</strong> The plugin can be downloaded at <a class="reference external" href="https://github.com/hydrology-tep/hep-qgis-plugin-lite">https://github.com/hydrology-tep/hep-qgis-plugin-lite</a> (installation and usage instructions in the README)</p>
 <p>Click on the button to open the local HEP Plugin.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/hep_data_button.png"><img alt="../_images/hep_data_button.png" src="../_images/hep_data_button.png" style="width: 24.0px; height: 24.8px;" /></a>

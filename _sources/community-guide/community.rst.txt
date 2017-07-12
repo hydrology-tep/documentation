@@ -14,6 +14,7 @@ To join a HEP community, go to the `community discovery page <https://hydrology-
 	:figclass: img-container-border
 
 In this page, you will be able to see the following communities:
+
 - the communities you already joined -- button Enter visible
 - the public communities you can join -- button Join visible
 - the private communities you can join (by invitation from a manager) -- button Join visible
