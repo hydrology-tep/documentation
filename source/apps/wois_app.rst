@@ -12,7 +12,7 @@ The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.
 WOIS Access
 -----------
 
-To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VMs are accessible via VNC.
+To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **“User Profile”** of this Documentation. WOIS VMs are accessible via VNC.
 
 To create a new WOIS VM, the user should access to https://cloud.terradue.com/ and create a new VM using the WOIS VM template available (only avalable for some users).
 
@@ -50,7 +50,7 @@ The HEP Plugin window will pop up.
 	:scale: 80%
 
 Click the button "Get Data from TEP".
-If it's the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up. To learn how to get your API Key please consult the subsection **“Get your Api key”** inside the **"User Profile"** section.
+If it's the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up. To learn how to get your API Key please consult the subsection **“Get your Api key”** inside the **“User Profile”** section.
 
 .. figure:: ../includes/config_data_package_window.png
 	:figclass: img-border
