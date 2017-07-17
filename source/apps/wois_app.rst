@@ -50,7 +50,7 @@ The HEP Plugin window will pop up.
 	:scale: 80%
 
 Click the button "Get Data from TEP".
-If it's the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.
+If it's the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up. To learn how to get your API Key please consult the section **“Get your Api key”**.
 
 .. figure:: ../includes/config_data_package_window.png
 	:figclass: img-border
