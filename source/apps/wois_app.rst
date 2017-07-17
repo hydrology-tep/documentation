@@ -23,7 +23,7 @@ To access the VM via VNC, the user can use a VNC client (e.g. VNC Viewer) or sel
 	:scale: 80%
 
 
-If the user uses a VNC client, the VNC server for the VM: IP:5902
+If the user uses a VNC client, the VNC server for the VM is **IP:5902**
 
 Select Data to use on WOIS
 --------------------------
