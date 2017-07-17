@@ -22,6 +22,8 @@ To access the VM via VNC, the user can use a VNC client (e.g. VNC Viewer) or sel
 	:figclass: img-border
 	:scale: 80%
 
+If the user uses a VNC client, the VNC server for the VM: IP:5902
+
 Select Data to use on WOIS
 --------------------------
 
@@ -271,7 +273,7 @@ It is also possible to upload the outputs of a model to HEP automatically, by in
 Export QGIS model to the HEP
 ----------------------------
 
-If the user creates the model on his local machine, it will be possible to export the created model to the VM owned by the user, to make the it available in the H-TEP portal.
+**If the user creates the model on his local machine**, it will be possible to export the created model to the VM owned by the user, to make the it available in the H-TEP portal.
 To export a model, the user shall select the modeler tool "Export model to TEP", available with the lite version of the HEP Plugin.
 
 **Note 1:** The lite version of the “HEP Plugin” plugin shall be installed locally
@@ -295,6 +297,29 @@ Click on the button "Export model to TEP" and the interface to export a model is
 	:scale: 80%
 
 On this window, the user shall select the model that intends to export, insert the VM IP, username and password. Then click the button "Export to TEP".
+
+The exported model shall be automatically available on HEP Webportal.
+
+**If the user creates the model inside the VM**, to export it to to the H-TEP portal, the procedure is:
+
+Click on the button to open the local HEP Plugin.
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+The HEP Plugin window will pop up.
+
+.. figure:: ../includes/Local_HEP_Plugin.png
+	:figclass: img-border
+	:scale: 80%
+
+Click on the button "Export model to TEP" and the interface to export a model is displayed on the figure below.
+
+.. figure:: ../includes/export_model_vm_window.png
+	:figclass: img-border
+	:scale: 80%
+
+On this window, the user shall select the model that intends to export and click the button "Export to TEP". The IP, username and password are not required since the user is already inside the VM.
 
 The exported model shall be automatically available on HEP Webportal.
 
