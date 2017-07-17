@@ -144,7 +144,7 @@ By clicking the button "Upload Data to TEP" (image above), the following window 
 	:scale: 80%
 	
 Insert the storage/catalog username and password (mandatory). The “remote directory” is optional and its function is to organize different outputs uploaded.
-This tool allows to upload raster and vector outputs to TEP. For the raster data it is also possible to generate a quicklook (png) to display over the map.
+This tool allows to upload raster and vector outputs to TEP. For the raster data (compatible with QGIS), it is also possible to generate a Quicklook (png) to display over the map. If the raster is too big, the Quicklook won't be generated since the QGIS has pixel limit to create images from layers.
 
 **Note:** Only a raster or a vector file must be selected each time (not both).
 
