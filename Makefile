@@ -31,7 +31,7 @@ clean:
 	-rm -rf $(BUILDDIR)/* $(REPORTDIR)
 
 html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html source/apps/wq.rst
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
