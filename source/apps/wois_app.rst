@@ -12,7 +12,7 @@ The WOIS CloudToolBox Thematic App focuses on the WOIS CloudToolBox processings.
 WOIS Access
 -----------
 
-To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **"User Profile"** of this Documentation. WOIS VMs are accessible via VNC.
+To access WOIS CloudToolBox through the Hydrology Exploitation Platform, the user has to sign-in using **EO-SSO**. To learn more about the User Profile and the sign-in operation please consult the section **“User Profile”** of this Documentation. WOIS VMs are accessible via VNC.
 
 To create a new WOIS VM, the user should access to https://cloud.terradue.com/ and create a new VM using the WOIS VM template available (only avalable for some users).
 
@@ -21,6 +21,9 @@ To access the VM via VNC, the user can use a VNC client (e.g. VNC Viewer) or sel
 .. figure:: ../includes/vnc_button.png
 	:figclass: img-border
 	:scale: 80%
+
+
+If the user uses a VNC client, the VNC server for the VM is **IP:5902**
 
 Select Data to use on WOIS
 --------------------------
@@ -47,7 +50,7 @@ The HEP Plugin window will pop up.
 	:scale: 80%
 
 Click the button "Get Data from TEP".
-If it's the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up.
+If it's the first time the user uses this feature, a window, where the user can change the datapackages URL or insert his API Key (to access to his datapackages), will pop up. To learn how to get your API Key please consult the subsection **“Get your Api key”** inside the **“User Profile”** section.
 
 .. figure:: ../includes/config_data_package_window.png
 	:figclass: img-border
@@ -141,7 +144,7 @@ By clicking the button "Upload Data to TEP" (image above), the following window 
 	:scale: 80%
 	
 Insert the storage/catalog username and password (mandatory). The “remote directory” is optional and its function is to organize different outputs uploaded.
-This tool allows to upload raster and vector outputs to TEP. For the raster data it is also possible to generate a quicklook (png) to display over the map.
+This tool allows to upload raster and vector outputs to TEP. For the raster data (compatible with QGIS), it is also possible to generate a Quicklook (png) to display over the map. If the raster is too big, the Quicklook won't be generated since the QGIS has pixel limit to create images from layers.
 
 **Note:** Only a raster or a vector file must be selected each time (not both).
 
@@ -271,7 +274,7 @@ It is also possible to upload the outputs of a model to HEP automatically, by in
 Export QGIS model to the HEP
 ----------------------------
 
-If the user creates the model on his local machine, it will be possible to export the created model to the VM owned by the user, to make the it available in the H-TEP portal.
+**If the user creates the model on his local machine**, it will be possible to export the created model to the VM owned by the user, to make the it available in the H-TEP portal.
 To export a model, the user shall select the modeler tool "Export model to TEP", available with the lite version of the HEP Plugin.
 
 **Note 1:** The lite version of the “HEP Plugin” plugin shall be installed locally
@@ -295,6 +298,29 @@ Click on the button "Export model to TEP" and the interface to export a model is
 	:scale: 80%
 
 On this window, the user shall select the model that intends to export, insert the VM IP, username and password. Then click the button "Export to TEP".
+
+The exported model shall be automatically available on HEP Webportal.
+
+**If the user creates the model inside the VM**, to export it to to the H-TEP portal, the procedure is:
+
+Click on the button to open the local HEP Plugin.
+
+.. figure:: ../includes/hep_data_button.png
+	:scale: 80%
+
+The HEP Plugin window will pop up.
+
+.. figure:: ../includes/Local_HEP_Plugin.png
+	:figclass: img-border
+	:scale: 80%
+
+Click on the button "Export model to TEP" and the interface to export a model is displayed on the figure below.
+
+.. figure:: ../includes/export_model_vm_window.png
+	:figclass: img-border
+	:scale: 80%
+
+On this window, the user shall select the model that intends to export and click the button "Export to TEP". The IP, username and password are not required since the user is already inside the VM.
 
 The exported model shall be automatically available on HEP Webportal.
 
