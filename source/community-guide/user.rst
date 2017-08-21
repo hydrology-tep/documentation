@@ -109,11 +109,11 @@ To link your Github account:
 
 .. |user_github_edit.png| image:: ../includes/user_github_edit.png
 
-See your groups
----------------
+See your communities
+--------------------
 
-To find out to which groups you belong, just go to the **Groups** tab on your profile page.
-The groups in which you are a member are listed here.
+To find out which communities you belong to, just go to the **Communities** tab on your profile page.
+The communities for which you are a member are listed here, along with your role in it.
 
 .. req:: HEP-TS-DES-014
 	:show:
