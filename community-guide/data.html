@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2.5. Data &#8212; Hydrology Thematic Exploitation Platform 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.6. Processing" href="processing.html" />
+    <link rel="prev" title="2.4. Communities" href="community.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>2.0</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">5. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">2.5. Data</a><ul>
+<li><a class="reference internal" href="#discover-data">2.5.1. Discover data</a></li>
+<li><a class="reference internal" href="#discover-contextualized-data">2.5.2. Discover contextualized data</a></li>
+<li><a class="reference internal" href="#discover-data-related-to-a-specific-event">2.5.3. Discover data related to a specific event</a></li>
+<li><a class="reference internal" href="#select-data-in-your-basket">2.5.4. Select data in your basket</a></li>
+<li><a class="reference internal" href="#save-basket-as-data-package">2.5.5. Save basket as data package</a></li>
+<li><a class="reference internal" href="#load-an-existing-data-package">2.5.6. Load an existing data package</a></li>
+<li><a class="reference internal" href="#clear-the-basket">2.5.7. Clear the basket</a></li>
+<li><a class="reference internal" href="#use-data-in-a-process">2.5.8. Use data in a process</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="community.html" title="Previous Chapter: 2.4. Communities"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2.4. Communities</span>
+    </a>
+  </li>
+  <li>
+    <a href="processing.html" title="Next Chapter: 2.6. Processing"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">2.6. Processing &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/community-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Community Portal User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="platform/index.html">2.1. Platform overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">2.2. User Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">2.3. Thematic Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community.html">2.4. Communities</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.5. Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#discover-data">2.5.1. Discover data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#discover-contextualized-data">2.5.2. Discover contextualized data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#discover-data-related-to-a-specific-event">2.5.3. Discover data related to a specific event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#select-data-in-your-basket">2.5.4. Select data in your basket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#save-basket-as-data-package">2.5.5. Save basket as data package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-an-existing-data-package">2.5.6. Load an existing data package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clear-the-basket">2.5.7. Clear the basket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-data-in-a-process">2.5.8. Use data in a process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="processing.html">2.6. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualisation.html">2.7. Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reproducibility.html">2.8. Reproducibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sharing.html">2.9. Sharing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">5. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/community-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="data">
+<h1>2.5. Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h1>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/data.png"><img alt="../_images/data.png" src="../_images/data.png" style="width: 375.9px; height: 127.8px;" /></a>
+</div>
+<p>Discovery of data is made through the <a class="reference internal" href="platform/geobrowser.html"><span class="doc">geobrowser</span></a>.</p>
+<p>You can search for specific data by creating a query to a catalogue, look for specific events or simply see amongst the contextualized results what can be interesting for you.</p>
+<p>Put data in your basket and save it for later, or simply drag and drop data as a parameter of a process.</p>
+<div class="section" id="discover-data">
+<h2>2.5.1. Discover data<a class="headerlink" href="#discover-data" title="Permalink to this headline">¶</a></h2>
+<p>Data discovery is made through the map. To get specific data:</p>
+<ol class="arabic simple">
+<li>Focus on an area of the geobrowser.</li>
+<li>Select a time period on the time slider.</li>
+<li>Click on <img alt="search" src="../_images/geobrowser_button_query.png" /> to open the query tab.</li>
+<li>Fill in specific parameters.</li>
+<li>Click on <strong>Search</strong>.</li>
+<li>Results appear on the map and the <strong>Results Table</strong>.</li>
+<li>Click on a result (directly on the map or in the Results table) to get more info about this result.</li>
+</ol>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">in the <em>Search Term</em> field supported wildcards are &#8216;*&#8217;, which matches any character sequence (including the empty one), and &#8216;?&#8217;, which matches any single character.</p>
+</div>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/geobrowser_map_data.png"><img alt="../_images/geobrowser_map_data.png" src="../_images/geobrowser_map_data.png" style="width: 247.5px; height: 429.0px;" /></a>
+</div>
+</div>
+<div class="section" id="discover-contextualized-data">
+<h2>2.5.2. Discover contextualized data<a class="headerlink" href="#discover-contextualized-data" title="Permalink to this headline">¶</a></h2>
+<p>Data related to a specific context can be accessed by clicking on one of the available context on the top-right of the browser.</p>
+<p>Currently existing contexts are:</p>
+<ul class="simple">
+<li>EO data</li>
+<li>EO processing</li>
+<li>Publications</li>
+<li>Community</li>
+</ul>
+<p>Once clicked on a context, data automatically appear on the map.</p>
+</div>
+<div class="section" id="discover-data-related-to-a-specific-event">
+<h2>2.5.3. Discover data related to a specific event<a class="headerlink" href="#discover-data-related-to-a-specific-event" title="Permalink to this headline">¶</a></h2>
+<p>To access data related to a specific event:</p>
+<ol class="arabic simple">
+<li>Access the geobrowser, by default, data related to specific hydrology events (provided by the disaster charter) are displayed on the map.</li>
+<li>Focus on one event.</li>
+<li>Click on <strong>Search data for event</strong>.</li>
+<li>Data related to this event is automatically added to the result tab and displayed on the map.</li>
+</ol>
+<div class="img-border figure">
+<img alt="../_images/geobrowser_data_event.png" src="../_images/geobrowser_data_event.png" />
+</div>
+</div>
+<div class="section" id="select-data-in-your-basket">
+<h2>2.5.4. Select data in your basket<a class="headerlink" href="#select-data-in-your-basket" title="Permalink to this headline">¶</a></h2>
+<p>Data can be selected on the map as well as on the result tab.</p>
+<ol class="arabic simple">
+<li>Click on data on the map to make it appear on the <strong>Results Table</strong>.</li>
+<li>Drag data from the <strong>Results Table</strong> to the <strong>Features Basket</strong>.</li>
+<li>Data appears on the <strong>Features Basket</strong>.</li>
+</ol>
+<div class="img-border figure">
+<img alt="../_images/geobrowser_basket.png" src="../_images/geobrowser_basket.png" />
+</div>
+</div>
+<div class="section" id="save-basket-as-data-package">
+<h2>2.5.5. Save basket as data package<a class="headerlink" href="#save-basket-as-data-package" title="Permalink to this headline">¶</a></h2>
+<p>To create a new data package:</p>
+<ol class="arabic simple">
+<li>Add all data you want in the <strong>Features Basket</strong>.</li>
+<li>Click on <strong>Save</strong>.</li>
+<li>Choose a name for the data package.</li>
+<li>Tick the box if you want to make it public (means that everybody can access it).</li>
+<li>Click on <strong>Save</strong>.</li>
+<li>The data package is saved on the platform, you can re-access it later.</li>
+</ol>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/geobrowser_dp_save.png"><img alt="../_images/geobrowser_dp_save.png" src="../_images/geobrowser_dp_save.png" style="width: 411.75px; height: 183.75px;" /></a>
+</div>
+</div>
+<div class="section" id="load-an-existing-data-package">
+<h2>2.5.6. Load an existing data package<a class="headerlink" href="#load-an-existing-data-package" title="Permalink to this headline">¶</a></h2>
+<p>To access a previously saved data package:</p>
+<ol class="arabic simple">
+<li>Click on the <strong>Data Packages</strong> tab.</li>
+<li>Select a data package on the list.</li>
+<li>To add all the items from the data package into the current basket, click on <em>load</em>.</li>
+<li>To use the data package as the current search, click on <em>set as current search</em>.</li>
+</ol>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/geobrowser_dp_load.png"><img alt="../_images/geobrowser_dp_load.png" src="../_images/geobrowser_dp_load.png" style="width: 465.75px; height: 186.0px;" /></a>
+</div>
+</div>
+<div class="section" id="clear-the-basket">
+<h2>2.5.7. Clear the basket<a class="headerlink" href="#clear-the-basket" title="Permalink to this headline">¶</a></h2>
+<p>To clear your current basket:</p>
+<ol class="arabic simple">
+<li>Click on <strong>Remove all</strong> on the basket tab.</li>
+<li>Your basket is now empty.</li>
+</ol>
+</div>
+<div class="section" id="use-data-in-a-process">
+<h2>2.5.8. Use data in a process<a class="headerlink" href="#use-data-in-a-process" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Select a WPS and open it.</li>
+<li>The list of parameters is visible.</li>
+<li>Drag data from the <strong>Results Table</strong> and drop it over the selected parameter (only selected items are added).</li>
+<li><strong>OR</strong> drag data from the <strong>Features Basket</strong> and drop it over the selected parameter (all items from the basket are added).</li>
+<li>In case of several items, it creates one occurence of the parameter per item.</li>
+<li>Data are ready to be used in the process. Click on <strong>Run process</strong> to actually run the process.</li>
+</ol>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

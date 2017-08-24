@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>5.3. Hydrological Modelling &#8212; Hydrology Thematic Exploitation Platform 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5.4. Water Quality" href="wq.html" />
+    <link rel="prev" title="5.2. Flood monitoring" href="fm.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>2.0</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">2. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">5.3. Hydrological Modelling</a><ul>
+<li><a class="reference internal" href="#access-to-the-thematic-application">5.3.1. Access to the thematic application</a></li>
+<li><a class="reference internal" href="#selecting-the-area-of-interest-based-on-drainage-basins-and-upstream-area">5.3.2. Selecting the Area of Interest based on drainage basins and upstream area</a><ul>
+<li><a class="reference internal" href="#select-a-sub-basin-and-its-upstream-area-in-the-geobrowser">5.3.2.1. Select a sub-basin and it’s upstream area in the Geobrowser</a></li>
+<li><a class="reference internal" href="#spatial-filtering-of-eo-data-using-the-hydrological-model-sub-basins">5.3.2.2. Spatial filtering of EO data using the hydrological model sub-basins</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#run-the-niger-hype-simulation-of-historical-period-service">5.3.3. Run the Niger-HYPE Simulation of historical period Service</a></li>
+<li><a class="reference internal" href="#run-the-niger-hype-forecast-processing-service">5.3.4. Run the Niger-HYPE Forecast Processing Service</a></li>
+<li><a class="reference internal" href="#run-the-eo-data-pre-processing-processing-service">5.3.5. Run the EO Data Pre-processing Processing Service</a></li>
+<li><a class="reference internal" href="#run-the-return-period-magnitude-analysis-processing-service">5.3.6. Run the Return Period Magnitude Analysis Processing service</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="fm.html" title="Previous Chapter: 5.2. Flood monitoring"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 5.2. Flood monitoring</span>
+    </a>
+  </li>
+  <li>
+    <a href="wq.html" title="Next Chapter: 5.4. Water Quality"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">5.4. Water Quality &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/apps/hm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">2. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. Thematic Applications</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="wois_app.html">5.1. WOIS CloudToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fm.html">5.2. Flood monitoring</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.3. Hydrological Modelling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#access-to-the-thematic-application">5.3.1. Access to the thematic application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#selecting-the-area-of-interest-based-on-drainage-basins-and-upstream-area">5.3.2. Selecting the Area of Interest based on drainage basins and upstream area</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#select-a-sub-basin-and-its-upstream-area-in-the-geobrowser">5.3.2.1. Select a sub-basin and it’s upstream area in the Geobrowser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spatial-filtering-of-eo-data-using-the-hydrological-model-sub-basins">5.3.2.2. Spatial filtering of EO data using the hydrological model sub-basins</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#run-the-niger-hype-simulation-of-historical-period-service">5.3.3. Run the Niger-HYPE Simulation of historical period Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-the-niger-hype-forecast-processing-service">5.3.4. Run the Niger-HYPE Forecast Processing Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-the-eo-data-pre-processing-processing-service">5.3.5. Run the EO Data Pre-processing Processing Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-the-return-period-magnitude-analysis-processing-service">5.3.6. Run the Return Period Magnitude Analysis Processing service</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wq.html">5.4. Water Quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wl.html">5.5. Water Level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="swbm.html">5.6. Small Water Body Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workspace.html">5.7. My worskpace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/apps/hm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="hydrological-modelling">
+<span id="hm"></span><h1>5.3. Hydrological Modelling<a class="headerlink" href="#hydrological-modelling" title="Permalink to this headline">¶</a></h1>
+<p>The aim of the Hydrological Modelling Application is to provide a platform for assimilation of EO data in hydrological models. It includes processing services for running a hydrological model in hindcast and forecast mode with or without data assimilation, accessing meteorological data from external data services, preparing EO data for assimilation in the hydrological models, basic visualization and statistical analysis of model results.</p>
+<p>The Hydrological Modelling Application is implemented using the Niger-HYPE model (v2.1) providing simulations of river discharge, lake water level and outflow, as well as land surface water balance components (precipitation, evapotranspiration, soil water content) for the Niger river basin. The service collects meteorological forcing data from the SMHI Global Forcing Data service for simulations of historical periods from 1979 until current time, and short to medium range forecasts (10 days) since 2016-06-01. The following four Processing services are included in the application:</p>
+<ul class="simple">
+<li>Niger-Hype simulation of historical period</li>
+<li>Niger-HYPE forecast</li>
+<li>EO-data pre-processing</li>
+<li>Return Period magnitude Analysis</li>
+</ul>
+<p>Further details about the Niger-HYPE model <a class="reference external" href="http://hypeweb.smhi.se/niger-hype">http://hypeweb.smhi.se/niger-hype</a>.
+Source code and information about the HYPE model see <a class="reference external" href="http://hypecode.smhi.se">http://hypecode.smhi.se</a>.
+Documentation and wiki about HYPE that can be useful in the following hands on exercises is found here <a class="reference external" href="http://www.smhi.net/hype/wiki/doku.php">http://www.smhi.net/hype/wiki/doku.php</a>.</p>
+<div class="section" id="access-to-the-thematic-application">
+<h2>5.3.1. Access to the thematic application<a class="headerlink" href="#access-to-the-thematic-application" title="Permalink to this headline">¶</a></h2>
+<p>The Hydrological Modelling application is accessed from the home page of the Hydrology TEP community portal:</p>
+<ol class="arabic simple">
+<li>Enter the <strong>HEP portal</strong> and <strong>sign</strong> in with your HEP community user account <a class="reference external" href="https://hydrology-tep.eo.esa.int">https://hydrology-tep.eo.esa.int</a></li>
+<li>Open the list of <strong>Thematic applications</strong> with the <a class="reference external" href="https://hydrology-tep.eo.esa.int/#!thematic">view_apps</a> link below the Discover Thematic Apps icon.</li>
+<li>Switch to the <strong>second tab</strong> to find the link to the <a class="reference external" href="https://hydrology-tep.eo.esa.int/geobrowser/?id=hydrologicalmodelling">Hydrological_modelling</a> application (Open App):</li>
+</ol>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_hm.png"><img alt="../_images/apps_hm.png" src="../_images/apps_hm.png" style="width: 614.4px; height: 248.8px;" /></a>
+</div>
+<ol class="arabic simple" start="4">
+<li>The initial view of the hydrological modelling application showing the Niger-River drainage basin in the Geobrowser as represented in the Niger-HYPE <a class="footnote-reference" href="#id3" id="id2">[1]</a> model.</li>
+</ol>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>See <a class="reference external" href="http://hypecode.smhi.se">http://hypecode.smhi.se</a> and <a class="reference external" href="http://hypeweb.smhi.se/nigerhype">http://hypeweb.smhi.se/nigerhype</a> for more details about the hydrological model HYPE and the Niger-River HYPE model application, respectively.</td></tr>
+</tbody>
+</table>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_hm_initial_view.png"><img alt="../_images/apps_hm_initial_view.png" src="../_images/apps_hm_initial_view.png" style="width: 526.4px; height: 284.0px;" /></a>
+</div>
+<ol class="arabic" start="5">
+<li><p class="first">Selection of area of interest based on drainage basins and upstream area:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>Integrated in the Geobrowser is a functionality to select of area of interest for EO data exploitation based on the hydrological model sub-basins and their upstream area</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">Hydrological Modelling Processing Services are found on the Processing  Services tab on the right side of the geobrowser:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>Niger-Hype simulation of historical period</li>
+<li>Niger-HYPE forecast</li>
+<li>EO-data pre-processing</li>
+<li>Return Period magnitude Analysis</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_hm_services.png"><img alt="../_images/apps_hm_services.png" src="../_images/apps_hm_services.png" style="width: 674.4px; height: 259.2px;" /></a>
+</div>
+<p>Instructions how to run the different processing services are given in the following sections.</p>
+</div>
+<div class="section" id="selecting-the-area-of-interest-based-on-drainage-basins-and-upstream-area">
+<h2>5.3.2. Selecting the Area of Interest based on drainage basins and upstream area<a class="headerlink" href="#selecting-the-area-of-interest-based-on-drainage-basins-and-upstream-area" title="Permalink to this headline">¶</a></h2>
+<p>The hydrological model sub-basin layer makes it possible to select area of interest based on drainage basins and upstream area.</p>
+<p>This functionality is dependent on the drainage basin data set available on the portal.</p>
+<p>Currently, the drainage basin of the Niger river as represented in the Niger-HYPE model is the only dataset loaded into the HEP community portal.</p>
+<div class="section" id="select-a-sub-basin-and-its-upstream-area-in-the-geobrowser">
+<h3>5.3.2.1. Select a sub-basin and it’s upstream area in the Geobrowser<a class="headerlink" href="#select-a-sub-basin-and-its-upstream-area-in-the-geobrowser" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Zoom in to the area of interest and select a sub-basin by clicking in the map (left mouse button <a class="footnote-reference" href="#id6" id="id5">[2]</a>). The selected sub-basin is highlighted in green, and the upstream areas in yellow.</li>
+<li>To select another sub-basin, click in another non-highlighted basin (it’s not possible to select a sub-basin from the current selected upstream area).</li>
+</ol>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td>The EO data coverage polygons may be blocking the sub-basin polygons. Solution, see <em>Known issues</em>.</td></tr>
+</tbody>
+</table>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_hm_subbasin.png"><img alt="../_images/apps_hm_subbasin.png" src="../_images/apps_hm_subbasin.png" style="width: 366.4px; height: 284.8px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li>Click a second time in the selected sub-basin and a pop-up dialogue will appear with information about the sub-basins identifier in the Niger-HYPE model. There is also functionality for applying spatial filter on the EO data selection, see further below.</li>
+</ol>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_hm_subbasin2.png"><img alt="../_images/apps_hm_subbasin2.png" src="../_images/apps_hm_subbasin2.png" style="width: 360.0px; height: 208.0px;" /></a>
+</div>
+<ol class="arabic" start="4">
+<li><p class="first">Known issues</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>It is not possible to select sub-basins that are covered by an EO data coverage polygon. Try to reduce the EO data selection by changing data set or by using the time filter.</li>
+<li>To select a sub-basin in the current selected upstream area, the selected region must first be de-selected, which can done by selecting a non-highlighted sub-basin in another part of the model domain.</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="spatial-filtering-of-eo-data-using-the-hydrological-model-sub-basins">
+<h3>5.3.2.2. Spatial filtering of EO data using the hydrological model sub-basins<a class="headerlink" href="#spatial-filtering-of-eo-data-using-the-hydrological-model-sub-basins" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select the sub-basin of interest by mouse click in the geobrowser.</li>
+<li>Select the EO data of interest from the EO data drop-down menu at the top-right of the portal.</li>
+<li>Click a second time in the sub-basin of interest, and apply the spatial filter in the pop-up dialogue</li>
+</ol>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_hm_subbasin_filtering.png"><img alt="../_images/apps_hm_subbasin_filtering.png" src="../_images/apps_hm_subbasin_filtering.png" style="width: 336.8px; height: 261.6px;" /></a>
+</div>
+<p>The method will select the EO data that are covering the selected sub-basin only.</p>
+<p>By clicking somewhere in the upstream area, the spatial filter will be applied using the upstream area.</p>
+<p>The selected data sets can be added to the Feature basket and used for processing within the other thematic applications.</p>
+</div>
+</div>
+<div class="section" id="run-the-niger-hype-simulation-of-historical-period-service">
+<h2>5.3.3. Run the Niger-HYPE Simulation of historical period Service<a class="headerlink" href="#run-the-niger-hype-simulation-of-historical-period-service" title="Permalink to this headline">¶</a></h2>
+<p>To be updated based with similar content as in the Quick start guide for the updated service.</p>
+</div>
+<div class="section" id="run-the-niger-hype-forecast-processing-service">
+<h2>5.3.4. Run the Niger-HYPE Forecast Processing Service<a class="headerlink" href="#run-the-niger-hype-forecast-processing-service" title="Permalink to this headline">¶</a></h2>
+<p>To be updated based with similar content as in the Quick start guide for the updated service.</p>
+</div>
+<div class="section" id="run-the-eo-data-pre-processing-processing-service">
+<h2>5.3.5. Run the EO Data Pre-processing Processing Service<a class="headerlink" href="#run-the-eo-data-pre-processing-processing-service" title="Permalink to this headline">¶</a></h2>
+<p>To be updated based with similar content as in the Quick start guide for the updated service.</p>
+</div>
+<div class="section" id="run-the-return-period-magnitude-analysis-processing-service">
+<h2>5.3.6. Run the Return Period Magnitude Analysis Processing service<a class="headerlink" href="#run-the-return-period-magnitude-analysis-processing-service" title="Permalink to this headline">¶</a></h2>
+<p>To be updated based with similar content as in the Quick start guide for the updated service.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

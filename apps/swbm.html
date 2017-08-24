@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>5.6. Small Water Body Mapping &#8212; Hydrology Thematic Exploitation Platform 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5.7. My Workspace" href="workspace.html" />
+    <link rel="prev" title="5.5. Water Level" href="wl.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>2.0</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">2. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">5.6. Small Water Body Mapping</a><ul>
+<li><a class="reference internal" href="#access-to-the-thematic-application">5.6.1. Access to the thematic application</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="wl.html" title="Previous Chapter: 5.5. Water Level"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 5.5. Water Level</span>
+    </a>
+  </li>
+  <li>
+    <a href="workspace.html" title="Next Chapter: 5.7. My Workspace"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">5.7. My Workspace &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/apps/swbm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">2. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. Thematic Applications</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="wois_app.html">5.1. WOIS CloudToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fm.html">5.2. Flood monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hm.html">5.3. Hydrological Modelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wq.html">5.4. Water Quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wl.html">5.5. Water Level</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.6. Small Water Body Mapping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#access-to-the-thematic-application">5.6.1. Access to the thematic application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workspace.html">5.7. My worskpace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/apps/swbm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="small-water-body-mapping">
+<span id="swbm"></span><h1>5.6. Small Water Body Mapping<a class="headerlink" href="#small-water-body-mapping" title="Permalink to this headline">¶</a></h1>
+<p>The Small Water Body Mapping Service provides the extent and temporal evolution of permanent and non-permanent water bodies providing it into detailed mapping, Time Series and water bodies surface evolution in time. The service is based on Sentinel 1 SAR acquisitions and ASAR for historical analysis as well as the possibility of results refinement using Sentinel-2 Optical Data.</p>
+<div class="section" id="access-to-the-thematic-application">
+<h2>5.6.1. Access to the thematic application<a class="headerlink" href="#access-to-the-thematic-application" title="Permalink to this headline">¶</a></h2>
+<p>From the thematic application page, click on the <strong>Open App</strong> button for the <strong>Small Water Body Mapping</strong> application.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_swbm_1.png"><img alt="../_images/apps_swbm_1.png" src="../_images/apps_swbm_1.png" style="width: 100%;" /></a>
+</div>
+<p>A new page with the geobrowser, data collections and processing services associated to the Small Water Body Mapping application will appear.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/apps_swbm_2.png"><img alt="../_images/apps_swbm_2.png" src="../_images/apps_swbm_2.png" style="width: 100%;" /></a>
+</div>
+<p>Open the &#8216;Processing Services&#8217; section by clicking on <strong>Processing Services</strong> on the right-hand side of the geobrowser window:</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_wq_geobrowser2.png"><img alt="../_images/apps_wq_geobrowser2.png" src="../_images/apps_wq_geobrowser2.png" style="width: 73.0px; height: 292.0px;" /></a>
+</div>
+<p>Within the &#8216;Processing Services&#8217; section you will find the Small Water Body Mapping Service in the &#8216;Services&#8217; tab, click on the Icon to open the service:</p>
+<a class="reference internal image-reference" href="../_images/apps_swbm_3.png"><img alt="../_images/apps_swbm_3.png" src="../_images/apps_swbm_3.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_swbm_4.png"><img alt="../_images/apps_swbm_4.png" src="../_images/apps_swbm_4.png" style="width: 45%;" /></a>
+<p>Select what kind of <strong>EO Data</strong> data you would like to process using the dropdown menu on the top right, so far the Small Water Body Mapping Service only supports Sentinel-1 data.</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_5.png"><img alt="../_images/apps_swbm_5.png" src="../_images/apps_swbm_5.png" style="width: 405.9px; height: 149.4px;" /></a>
+</div>
+<p>Zoom to your region of interest and use the <strong>spatial filter</strong> to spatially restrict the list of scenes: Click on the spatial filter symbol (little square) or on the polygon symbol on the left-hand side of the geobrowser and draw a polygon on the map.</p>
+<a class="reference internal image-reference" href="../_images/apps_wq_spatialfilter1.png"><img alt="../_images/apps_wq_spatialfilter1.png" src="../_images/apps_wq_spatialfilter1.png" style="width: 14%;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_swbm_6.png"><img alt="../_images/apps_swbm_6.png" src="../_images/apps_swbm_6.png" style="width: 84%;" /></a>
+<p>Use the <strong>temporal filter</strong> via the time slider at the bottom of the map to restrict the list of scenes temporally:</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_wq_timefilter.png"><img alt="../_images/apps_wq_timefilter.png" src="../_images/apps_wq_timefilter.png" style="width: 1062.0px; height: 94.0px;" /></a>
+</div>
+<p>By clicking on the image in the geobrowser further information is visible such as Identifier, product type, swath, orbit and geometry, track, start and end time of acquisition. Images can be downloaded from the platform clicking the Download button.</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_7.png"><img alt="../_images/apps_swbm_7.png" src="../_images/apps_swbm_7.png" style="width: 1449.0px; height: 644.0px;" /></a>
+</div>
+<p>Check that all the images that you plan to process entirely cover the former drawn AOI. The wide white square delimitates the frame of the image whilst other images available appear in thiner red frames.</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_8.png"><img alt="../_images/apps_swbm_8.png" src="../_images/apps_swbm_8.png" style="width: 1452.0px; height: 872.0px;" /></a>
+</div>
+<p>The list of available scenes is now filtered for your needs. If you identified a scene you would like to process you can add the scene via drag&amp;drop from the scene list on the bottom left to the Small Water Body Service (right part of the browser):</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_9.png"><img alt="../_images/apps_swbm_9.png" src="../_images/apps_swbm_9.png" style="width: 100%;" /></a>
+</div>
+<p>In order to process this service you need at least two images to compute statistics between the water detected bodies. Drag two or more images on the <strong>Sentinel-1 GRD images</strong> squares. Then select a <strong>title</strong> for your processing job, e.g. &#8220;Lake_Selingue_test_Summer_2016_5_images&#8221;</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_10.png"><img alt="../_images/apps_swbm_10.png" src="../_images/apps_swbm_10.png" style="width: 410.4px; height: 783.9px;" /></a>
+</div>
+<p>Now you can <strong>either</strong> click on the <strong>Run Job</strong> button</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_wq_runjob0.png"><img alt="../_images/apps_wq_runjob0.png" src="../_images/apps_wq_runjob0.png" style="width: 159.0px; height: 69.0px;" /></a>
+</div>
+<p><strong>OR</strong> you could add more scenes to your job, from the same EO Data collection or you can even add scenes from another collection.
+Therefore just change the <strong>EO Data</strong> collection in the dropdown menu on the top right.</p>
+<p>If your are satisfied with your scenes and settings click on the <strong>Run Job</strong> button to start the processing.</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_11.png"><img alt="../_images/apps_swbm_11.png" src="../_images/apps_swbm_11.png" style="width: 1709.1px; height: 834.3px;" /></a>
+</div>
+<p>You can make accessible your processing results to other users. To do it click at the share button and select the more suitable option for you: Do not Share / Share with anyone / Restricted sharing to some members.</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_12.png"><img alt="../_images/apps_swbm_12.png" src="../_images/apps_swbm_12.png" style="width: 500.4px; height: 522.9px;" /></a>
+</div>
+<p>Check that now the results are tagged as public in the geobrowser. Any user in the platform will have access to your processed job and will see either its status and results when it finishes.</p>
+<div class="img-border figure align-center">
+<a class="reference internal image-reference" href="../_images/apps_swbm_13.png"><img alt="../_images/apps_swbm_13.png" src="../_images/apps_swbm_13.png" style="width: 400.5px; height: 794.7px;" /></a>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>
