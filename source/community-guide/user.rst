@@ -115,6 +115,10 @@ See your communities
 To find out which communities you belong to, just go to the **Communities** tab on your profile page.
 The communities for which you are a member are listed here, along with your role in it.
 
+.. figure:: ../includes/user_community.png
+	:figclass: img-border
+	:scale: 70%
+
 .. req:: HEP-TS-DES-014
 	:show:
 
