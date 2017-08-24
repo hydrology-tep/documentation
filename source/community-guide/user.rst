@@ -138,7 +138,7 @@ You will see:
 - how many data packages and items you loaded
 - how many wps jobs you created and how many failed or succeeded
 
-.. req:: HEP-TS-DES-014
+.. req:: HEP-TS-ICD-010
     :show:
 
     This section shows that the platform has an analytics web widget.
