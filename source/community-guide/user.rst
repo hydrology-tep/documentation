@@ -109,11 +109,15 @@ To link your Github account:
 
 .. |user_github_edit.png| image:: ../includes/user_github_edit.png
 
-See your groups
----------------
+See your communities
+--------------------
 
-To find out to which groups you belong, just go to the **Groups** tab on your profile page.
-The groups in which you are a member are listed here.
+To find out which communities you belong to, just go to the **Communities** tab on your profile page.
+The communities for which you are a member are listed here, along with your role in it.
+
+.. figure:: ../includes/user_community.png
+	:figclass: img-border
+	:scale: 70%
 
 .. req:: HEP-TS-DES-014
 	:show:
@@ -138,7 +142,7 @@ You will see:
 - how many data packages and items you loaded
 - how many wps jobs you created and how many failed or succeeded
 
-.. req:: HEP-TS-DES-014
+.. req:: HEP-TS-ICD-010
     :show:
 
     This section shows that the platform has an analytics web widget.
@@ -156,10 +160,20 @@ The accounting panel on your profile gives your current credit balance, as well 
 	:scale: 80%
 
 .. _deposit:
+
 Deposit
 ~~~~~~~
 
 A deposit transaction is stored when the user execute a job process using as balance the quotation returned first by the processing service for the selected parameters (it implies that the wps provider implemented the **quotation mode**). Deposit transactions can be *active* or *closed*. An **active deposit** is accounted when calculating your account balance (covering the possible debit transactions associated to the same process). A **closed deposit** is not accounted when calculating your account balance (but does not cover anymore the possible debit transactions associated to the same process). A deposit is automatically set from *active* to *closed* when the job process is failed or when the job is succeeded with at least one transaction recorded from the wps provider.
+
+Terms
+~~~~~
+
+- **Credit:** amount credited to the account
+- **Accounted Debit (+real cost):** amount debited from the account corresponding to a transaction ; real cost shown if different from debit, but not debited (this may vary with on accounting governance)
+- **Not Accounted Debit:** amount corresponding to the records received from the provider for this transaction, but not debited from the account, as the transaction is not completed
+- **Active Deposit:** Deposit temporarily debited from the account (until the transaction is completed)
+- **Closed Deposit:** Deposit value, not debited anymore, informational only
 
 Transaction policy
 ~~~~~~~~~~~~~~~~~~

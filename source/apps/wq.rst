@@ -35,7 +35,6 @@ Service Description
 
 **Atmospheric corrected product** consists of satellite imagery which has been corrected for the effects of the atmosphere and scattering light from adjacent land and water surfaces. It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (Rrs0+).
 
-|
 **Background on Satellite Data**
 
 Multispectral satellite sensors like MSI on Sentinel -2 or OLI on Landsat 8 measure reflected sunlight, which is modified on its way through the atmosphere and the water column. The quality of the data can be influenced by different factors. For example, due to the passive nature of this remote sensing method no signal from the water body can be derived under clouds. Also, cloud shadows can lead to a typically underestimation of the retrieved water quality parameter concentrations. High concentration of aerosols and resulting scattering or cirrus clouds can further hinder a successful retrieval. In addition, particular geometrical conditions between sun, target and sensor in combination with specific sea-state-conditions (wind speed, direction) can result in signal distorting mirroring effects, called sun glint, on the water surface. In areas with optically shallow water, where signals from the seafloor influences the signal received at the sensor, the concentrations can be overestimated. When choosing a scene to be processed, especially cloud coverage and sunglint conditions need to be considered.
@@ -49,14 +48,12 @@ From the thematic application page, click on the **Open App** button for the **W
 	:figclass: img-border
 	:width: 100%
 
-|
 A new page with the geobrowser, data collections and processing services associated to the Water Quality application will appear.
 
 .. figure:: ../includes/apps_wq_geobrowser.png
 	:figclass: img-border
 	:width: 100%
 
-|
 Open the 'Processing Services' section by clicking on **Processing Services** on the right-hand side of the geobrowser window:
 
 .. figure:: ../includes/apps_wq_geobrowser2.png
@@ -64,7 +61,6 @@ Open the 'Processing Services' section by clicking on **Processing Services** on
 	:align: center
 	:scale: 100%
 
-|
 Within the 'Processing Services' section you will find the Water Quality Service in the 'Services' tab, click on the Icon to open the service:
 
 .. image:: ../includes/apps_wq_processingservices.png
@@ -72,7 +68,6 @@ Within the 'Processing Services' section you will find the Water Quality Service
 .. image:: ../includes/apps_wq_processingservice_wq.png
 	:width: 45%
 
-|
 Select what kind of **EO Data** data you would like to process using the dropdown menu on the top right, so far Water Quality Service only supports Landsat8 and Sentinel2.
 
 .. figure:: ../includes/apps_wq_eodata.png
@@ -80,7 +75,6 @@ Select what kind of **EO Data** data you would like to process using the dropdow
 	:align: center
 	:scale: 90%
 
-|
 Zoom to your region of interest and use the **spatial filter** to spatially restrict the list of scenes: Click on the spatial filter symbol (little square) on the left-hand side of the geobrowser and draw a rectangle on the map. 
 
 .. image:: ../includes/apps_wq_spatialfilter1.png
@@ -88,7 +82,6 @@ Zoom to your region of interest and use the **spatial filter** to spatially rest
 .. image:: ../includes/apps_wq_spatialfilter2.png
 	:width: 84%
 
-|
 Use the **temporal filter** via the time slider at the bottom of the map to restrict the list of scenes temporally:
 
 .. figure:: ../includes/apps_wq_timefilter.png
@@ -96,7 +89,6 @@ Use the **temporal filter** via the time slider at the bottom of the map to rest
 	:align: center
 	:scale: 100%
 
-|
 The list of available scenes is now filtered for your needs. If you identified a scene you would like to process you can add the scene via drag&drop from the scene list on the bottom left to the Water Quality Service:
 
 .. figure:: ../includes/apps_wq_selectdata.png
@@ -104,7 +96,6 @@ The list of available scenes is now filtered for your needs. If you identified a
 	:align: center
 	:width: 100%
 
-|
 Select **one** of the three available **processing options**: 
 
 .. figure:: ../includes/apps_wq_selectoption.png
@@ -112,7 +103,6 @@ Select **one** of the three available **processing options**:
 	:align: center
 	:scale: 90%
 
-|
 Select a **title** for your processing job, e.g. "My first Water Quality Job for Bamako" 
 
 .. figure:: ../includes/apps_wq_jobtitle.png
@@ -120,7 +110,6 @@ Select a **title** for your processing job, e.g. "My first Water Quality Job for
 	:align: center
 	:scale: 90%
 
-|
 Now you can **either** click on the **Run Job** button
 
 .. figure:: ../includes/apps_wq_runjob0.png
@@ -128,7 +117,6 @@ Now you can **either** click on the **Run Job** button
 	:align: center
 	:scale: 150%
 
-|
 **OR** you could add more scenes to your job, from the same EO Data collection or you can even add scenes from another collection.
 Therefore just change the **EO Data** collection in the dropdown menu on the top right:
 
@@ -137,7 +125,6 @@ Therefore just change the **EO Data** collection in the dropdown menu on the top
 	:align: center
 	:scale: 90%
 
-|
 Your selected **spatial and temporal filters remain** and you can look for a scene from the other collection. 
 If you identified another scene you would like to process can add the scene via drag&drop from the scene list on the bottom left to the Water Quality Service:
 
@@ -146,7 +133,6 @@ If you identified another scene you would like to process can add the scene via 
 	:align: center
 	:width: 100%
 
-|
 If your are satisfied with your scenes and settings click on the **Run Job** button to start the processing.
 
 .. figure:: ../includes/apps_wq_runjob.png
@@ -154,7 +140,7 @@ If your are satisfied with your scenes and settings click on the **Run Job** but
 	:align: center
 	:scale: 90%
 
-|
+
 Results
 -------
 
@@ -167,9 +153,9 @@ If your processing job finished sucessfully you can click on the **Show results*
 
 The results of you processing will be shown in the search results list on the bottom left. The following results will be created: 
 
-|
+
 Processing option "Water Quality Parameters"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter. 
 * Furthermoe EOMAP's water quality products are accompanied by the processor's internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:
@@ -221,9 +207,8 @@ Processing option "Water Quality Parameters"
     * XML, metadata: *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
 
   
-|
 Processing option "Atmospheric Corrected Image"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.
 * It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).
@@ -232,15 +217,14 @@ Processing option "Atmospheric Corrected Image"
   * Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, Multi-channel GeoTiff, 32bit
   * Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
 
-|
 Processing option "all"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Products of both options, Water Quality Parameters and Atmospheric Corrected Image, described above are delivered.
 
 
 Naming Convention
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 The naming of EOMAP product files follows a sequence of mandatory and optional elements:
 
@@ -263,8 +247,6 @@ The naming of EOMAP product files follows a sequence of mandatory and optional e
   * SENT2 - Sentinel 2
 
 
-
-|
 Validation
 ----------
 
@@ -274,7 +256,7 @@ For the Mekong delta, validation results are available in publications resulting
 
 
 Comparability of in-situ and satellite data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When comparing EOMAP water quality products with in-situ data, the methodological differences between the various in-situ approaches and remote sensing need to be accounted for. For example, in-situ turbidity measurements are typically based on the scattering of light at a 90-degree angle between light source and detector, while remotely sensed turbidity products are physically related to a scattering angle of approx. 180 degrees (backscattering). Chlorophyll from in-situ measurements is typically based on one of three different methods, which include photometric, fluorescence and HPLC approaches and their subcategories. In the physics-based method applied at EOMAP, remotely sensed Chlorophyll is related to a linear relation of both, pigment-specific absorption and scattering. The pigments contributing to this quantifiable absorption, which is measured by the spectral satellite sensors, not only include various Chlorophyll pigments, but also other pigments such as Phaeophytin (see chapter information products). Of course, different environmental impacts and the algorithmic capabilities to correct them influence the intrinsic accuracy of the remote sensing method and need to be evaluated on their own.
 
@@ -284,7 +266,7 @@ Considering all these impacts, a match between the physics-based, satellite-deri
 
 
 Results and applicability range
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The results from the various stated comparisons are in accordance with the achievable expectation: Typically, differences of at least 30% and up to factor 2 can be observed for most water types, and the uncertainty range is approx. 50% than single in-situ measurements. Nonetheless, the method delivers independent results, and the uncertainty is still equivalent to the methodological differences to and between distinct in-situ approaches. The relevant temporal and seasonal changes can be reproduced very well for the majority of investigated cases. This proves evidence, that the physics-based approach for satellite data is intrinsically consistent and applicable as an independent method under most conditions. It deems to be an acceptable and valuable contribution, especially for large scale observations, as the natural variability of concentrations varies by more than 4 magnitudes, e.g. from approx. 0.1 to 1000 µg/l Chlorophyll, or, in extreme cases, even one magnitude for turbidity, if different scattering angles are observed.
 

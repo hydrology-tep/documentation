@@ -127,7 +127,7 @@ Results
 
 The result tab is divided in two parts:
 
-- On the left, the **Results Table** showing the list of current results displayed on the map. Results are paginatd, only 20 items are displayed, select another page to discover more products.
+- On the left, the **Results Table** showing the list of current results displayed on the map. Results are paginated, only 20 items are displayed, select another page to discover more products.
 - On the right, the **Features Basket** showing all data in the current basket and **Data Package** panel showing list of data packages accessibles for the user.
 
 Results can be dragged fron the left table to the basket. Then the basket can be saved as a new data package and shared with other users.
