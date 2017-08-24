@@ -115,6 +115,10 @@ See your communities
 To find out which communities you belong to, just go to the **Communities** tab on your profile page.
 The communities for which you are a member are listed here, along with your role in it.
 
+.. figure:: ../includes/user_community.png
+	:figclass: img-border
+	:scale: 70%
+
 .. req:: HEP-TS-DES-014
 	:show:
 
@@ -138,7 +142,7 @@ You will see:
 - how many data packages and items you loaded
 - how many wps jobs you created and how many failed or succeeded
 
-.. req:: HEP-TS-DES-014
+.. req:: HEP-TS-ICD-010
     :show:
 
     This section shows that the platform has an analytics web widget.
@@ -156,6 +160,7 @@ The accounting panel on your profile gives your current credit balance, as well 
 	:scale: 80%
 
 .. _deposit:
+
 Deposit
 ~~~~~~~
 

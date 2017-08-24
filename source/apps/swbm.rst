@@ -14,14 +14,12 @@ From the thematic application page, click on the **Open App** button for the **S
 	:figclass: img-border
 	:width: 100%
 
-|
 A new page with the geobrowser, data collections and processing services associated to the Small Water Body Mapping application will appear.
 
 .. figure:: ../includes/apps_swbm_2.png
 	:figclass: img-border
 	:width: 100%
 
-|
 Open the 'Processing Services' section by clicking on **Processing Services** on the right-hand side of the geobrowser window:
 
 .. figure:: ../includes/apps_wq_geobrowser2.png
@@ -29,7 +27,6 @@ Open the 'Processing Services' section by clicking on **Processing Services** on
 	:align: center
 	:scale: 100%
 
-|
 Within the 'Processing Services' section you will find the Small Water Body Mapping Service in the 'Services' tab, click on the Icon to open the service:
 
 .. image:: ../includes/apps_swbm_3.png
@@ -37,7 +34,6 @@ Within the 'Processing Services' section you will find the Small Water Body Mapp
 .. image:: ../includes/apps_swbm_4.png
 	:width: 45%
 
-|
 Select what kind of **EO Data** data you would like to process using the dropdown menu on the top right, so far the Small Water Body Mapping Service only supports Sentinel-1 data.
 
 .. figure:: ../includes/apps_swbm_5.png
