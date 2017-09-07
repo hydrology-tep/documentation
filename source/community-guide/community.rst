@@ -62,7 +62,7 @@ Roles
 Default roles for users are:
 
 **Content Authority**
-TEP Content Authority in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+| TEP Content Authority in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
 
 	- Add / Remove / Edit news source
 	- Add / Remove / Edit blog post
@@ -71,7 +71,7 @@ TEP Content Authority in the TEP Hydrology system shall have the following funct
 	- Add / Remove / Edit data collections
 
 **End User**
-TEP End User in the TEP Hydrology system shall be the default user role and the base for all other roles and shall have the following functionalities available:
+| TEP End User in the TEP Hydrology system shall be the default user role and the base for all other roles and shall have the following functionalities available:
 	
 	- User profile edition
 	- User and belonging groups analytics reports
@@ -80,13 +80,13 @@ TEP End User in the TEP Hydrology system shall be the default user role and the 
 	- Authorization grant to its own data packages
 
 **Expert User**
-TEP Expert User in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+| TEP Expert User in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
 	
 	- Cloud dashboard to provision a sandbox to integrate a new service
 	- Authorization grant to collection and services for which it has the Admin level
 
 **Resource Administrator**
-TEP Resource Administrator in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+| TEP Resource Administrator in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
 
 	- Cloud dashboard to provision a sandbox to integrate a new service
 	- Modify sharing authorization to any data packages, collection and services
@@ -96,7 +96,7 @@ TEP Resource Administrator in the TEP Hydrology system shall have the following 
 	- Add / Remove / Edit users and groups
 
 **Data Provider**
-Data Provider in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+| Data Provider in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
 
 	- Cloud dashboard to provision a storage block for data storage
 	- Users and groups accounting reports for its resources
