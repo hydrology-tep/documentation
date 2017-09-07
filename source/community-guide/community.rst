@@ -56,6 +56,53 @@ This tab lists all users of the community, with their role within the community,
 	:width: 30%
 	:figclass: img-border
 
+Roles
+`````
+
+Default roles for users are:
+
+**Content Authority**
+TEP Content Authority in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+
+	- Add / Remove / Edit news source
+	- Add / Remove / Edit blog post
+	- Add / Remove / Edit web stories
+	- Add / Remove / Edit processing services
+	- Add / Remove / Edit data collections
+
+**End User**
+TEP End User in the TEP Hydrology system shall be the default user role and the base for all other roles and shall have the following functionalities available:
+	
+	- User profile edition
+	- User and belonging groups analytics reports
+	- Access to authorized functions of collection and services
+	- User and belonging groups accounting reports
+	- Authorization grant to its own data packages
+
+**Expert User**
+TEP Expert User in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+	
+	- Cloud dashboard to provision a sandbox to integrate a new service
+	- Authorization grant to collection and services for which it has the Admin level
+
+**Resource Administrator**
+TEP Resource Administrator in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+
+	- Cloud dashboard to provision a sandbox to integrate a new service
+	- Modify sharing authorization to any data packages, collection and services
+	- Add / Remove / Edit news source
+	- Add / Remove / Edit blog post
+	- Add / Remove / Edit web stories
+	- Add / Remove / Edit users and groups
+
+**Data Provider**
+Data Provider in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+
+	- Cloud dashboard to provision a storage block for data storage
+	- Users and groups accounting reports for its resources
+
+
+
 Applications
 ~~~~~~~~~~~~
 
@@ -88,15 +135,25 @@ Members
 
 In this view, a manager can change the role of a user within the community.
 
+Data collections
+~~~~~~~~~~~~~~~~
+
+This tab (only visible to users with role allowing to change data collections) allows a user to associate data collections (he owns) to the community or remove data collections from the community.
+
+Wps services
+~~~~~~~~~~~~
+
+This tab (only visible to users with role allowing to change wps services) allows a user to associate wps services (he owns) to the community and manage associated tags or remove wps services from the community.
+
 Users management
 ~~~~~~~~~~~~~~~~
 
-This tab lists all users (members or not) and allow the manager to remove from the community or invite to the community.
+This tab (only visible for managers) lists all users (members or not) and allow the manager to remove from the community or invite to the community.
 
 Community management
 ~~~~~~~~~~~~~~~~~~~~
 
-This tab contains the following (editable) information:
+This tab (only visible for managers) contains the following (editable) information:
 
  	- Visibility (public or private)
  	- Identifier (used only for url links, must be without space or special characters)
