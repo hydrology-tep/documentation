@@ -61,47 +61,29 @@ Roles
 
 Default roles for users are:
 
-**Content Authority**
-| TEP Content Authority in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+**End User**: default user role and the base for all other roles
 
-	- Add / Remove / Edit news source
-	- Add / Remove / Edit blog post
-	- Add / Remove / Edit web stories
-	- Add / Remove / Edit processing services
-	- Add / Remove / Edit data collections
+    - make wps job accessible by the community
+    - make data package accessible by the community
 
-**End User**
-| TEP End User in the TEP Hydrology system shall be the default user role and the base for all other roles and shall have the following functionalities available:
-	
-	- User profile edition
-	- User and belonging groups analytics reports
-	- Access to authorized functions of collection and services
-	- User and belonging groups accounting reports
-	- Authorization grant to its own data packages
+**Expert User**: End user privileges + 
 
-**Expert User**
-| TEP Expert User in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
-	
-	- Cloud dashboard to provision a sandbox to integrate a new service
-	- Authorization grant to collection and services for which it has the Admin level
+    - add wps service accessible by the community
 
-**Resource Administrator**
-| TEP Resource Administrator in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+**Resource Administrator**: End User privileges
 
-	- Cloud dashboard to provision a sandbox to integrate a new service
-	- Modify sharing authorization to any data packages, collection and services
-	- Add / Remove / Edit news source
-	- Add / Remove / Edit blog post
-	- Add / Remove / Edit web stories
-	- Add / Remove / Edit users and groups
+**Data Provider**: End User privileges + 
 
-**Data Provider**
-| Data Provider in the TEP Hydrology system shall have the following functionalities available in addition of the TEP End user ones:
+    - create data collection in the community
 
-	- Cloud dashboard to provision a storage block for data storage
-	- Users and groups accounting reports for its resources
+**ICT Provider**: End User privileges
 
+Content Authority: End User privileges +
 
+    - manage members
+    - manage title / description / icon / discuss link
+    - manage thematic applications
+    - can delete the community
 
 Applications
 ~~~~~~~~~~~~
