@@ -20,7 +20,7 @@ Each starter user has a personal app in which he can access:
 - a service to contextualize on-demand results files
 
 Data Upload
-~~~~~~~~~~
+~~~~~~~~~~~
 
 .. figure:: ../includes/apps_mydata_dataupload.png
 	:figclass: img-border
