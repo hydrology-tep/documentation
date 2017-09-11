@@ -71,8 +71,10 @@ Data Contextualization
 This process contextualize data. It performs a geospatial analysis of the files in a specific repository for a given directory of the Data Gateway. At the end of the process, an OWS context with all the possible offerings of the analyzed files is returned.
 
 - Open the service **Data Publication** in the WPS Service tab
-- Select the **Folder path** (path under https://store.terradue.com)
+- Select the **Folder path** (custom path under the Repository key, e.g results/test-data)
 - Set Terradue **Username** and Terradue **Apikey**
-- Set the **Repository key**
+- Set the **Repository key** (usually, the Terradue username)
 - Set other options if necessary
 - Click on **Run job**
+
+For example, setting the **Folder path** to "results/test-data" and the **Repository Key** to "eboissier" will recast files you can see in the search https://recast.terradue.com/t2api/search/eboissier/results/test-data.
