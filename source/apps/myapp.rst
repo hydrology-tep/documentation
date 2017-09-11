@@ -14,6 +14,11 @@ Finally the user can save this thematic application in his private catalogue ind
 	Administrator can select the index in which to save the application.
 
 If there is already an entry with the same identifier in the index, the entry will be overwritten with the new one.
+Once created, the application is accessible from the Thematic app discovery page.
+
+.. figure:: ../includes/user_new_app.png
+	:figclass: img-border
+	:scale: 80%
 
 The following information define a Thematic Application:
 
@@ -121,11 +126,6 @@ Spatial
 ~~~~~~~
 
 Spatial area in WKT format associated to the application.
-
-
-.. figure:: ../includes/user_new_app.png
-	:figclass: img-border
-	:scale: 80%
 
 .. req:: HEP-TS-FUN-015
 	:show:
