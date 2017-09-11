@@ -78,7 +78,7 @@ Default roles for users are:
 
 **ICT Provider**: End User privileges
 
-Content Authority: End User privileges +
+**Content Authority**: End User privileges +
 
     - manage members
     - manage title / description / icon / discuss link
