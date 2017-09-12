@@ -177,9 +177,9 @@ There are other factors impacting the product and might lead to uncertainties or
 In these areas, the very shallow water leads to strong overestimations of water constituents because of contribution of the seafloor reflectance to the retrieved concentrations. Sometimes, the shallow water areas are not easy to identify. But in most cases, they are visible on first sight as you can clearly see the structures of the seafloor in a quicklook of the satellite scene. Often, they are sharply delimited to their surroundings concerning the water species concentrations in the product images.
 
 .. image:: ../includes/apps_wq_QC_Shallow1.png
-	:width: 48%
+	:width: 45%
 .. image:: ../includes/apps_wq_QC_Shallow2.png
-	:width: 48%
+	:width: 45%
 
 |    
 *Cloud/mountain/skyscraper shadows*
@@ -187,32 +187,32 @@ In these areas, the very shallow water leads to strong overestimations of water 
 Shadows of clouds, mountains or even skyscrapers can influence the results of water constituent retrievals negatively, e.g. by underestimating the water constituent concentrations.
 
 .. image:: ../includes/apps_wq_QC_Cloud1.png
-	:width: 48%
+	:width: 45%
 .. image:: ../includes/apps_wq_QC_Cloud2.png
-	:width: 48%
+	:width: 45%
 
 Cloud shadows over land can in some cases lead to the detection of wrong water areas, especially in wintertime with low sun zenith angle.
 
 .. image:: ../includes/apps_wq_QC_Cloud3.png
-	:width: 48%
+	:width: 45%
 .. image:: ../includes/apps_wq_QC_Cloud4.png
-	:width: 48%
+	:width: 45%
 
 Similar to clouds, mountains and in some scenes even skyscrapers can draw shadows on their surroundings and negatively influence the processing results. In those cases, the processor also erroneously detects water pixels inside the shadows even if there is no water in reality at all.
 
 .. image:: ../includes/apps_wq_QC_Cloud5.png
-	:width: 48%
+	:width: 45%
 .. image:: ../includes/apps_wq_QC_Cloud6.png
-	:width: 48%
+	:width: 45%
 |    
 *Sunglint*
 
 Sunglint in an image occurs when sunlight is directly reflected to the satellite sensor by the water surface. The water surface acts like a mirror and becomes silverfish. Most of the sunglint areas are masked out automatically, but sometimes it might happen that the water constituent concentrations are either calculated wrong or the areas of sunglint are classified as clouds.
 
 .. image:: ../includes/apps_wq_QC_Sunglint1.png
-	:width: 48%
+	:width: 45%
 .. image:: ../includes/apps_wq_QC_Sunglint2.png
-	:width: 48%
+	:width: 45%
     
 |    
 |    
