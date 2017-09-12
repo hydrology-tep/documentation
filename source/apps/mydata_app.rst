@@ -22,10 +22,6 @@ Each starter user has a personal app in which he can access:
 Data Upload
 ~~~~~~~~~~~
 
-.. figure:: ../includes/apps_mydata_dataupload.png
-	:figclass: img-border
-	:scale: 80%
-
 Allow the user to drag and drop local files and upload them to his private store repository (or to any accessible repository, using custom path eventually).
 
 - Click on |storeupload|
@@ -60,6 +56,10 @@ Allow the user to drag and drop local files and upload them to his private store
 
 - Click on **Close and update context**, a search query is performed on the defined context (user's private context)
 
+.. figure:: ../includes/apps_mydata_dataupload_result.png
+	:figclass: img-border
+	:scale: 80%
+
 .. |storeupload| image:: ../includes/button_storeupload.png
 
 Data Publication
@@ -74,10 +74,10 @@ This process publish data on the catalogue. It performs a query for every opense
 - Open the service **Data Publication** in the WPS Service tab
 - Select the context **My Repository**
 - Drag and drop items from the search result tab into the field **Data items**
-- Set Terradue **Username** and Terradue **Apikey**
+- Set Terradue **Username** and Terradue **Apikey** using the Geobrowser clipboard button
 - Set the **Index** (if not your private one)
 - Click on **Run job**
-- Select the context **My Index**, the published items are available in the search result
+- Click on **Show results**, the published items are available in the search result
 
 Data Contextualization
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -90,9 +90,10 @@ This process contextualize data. It performs a geospatial analysis of the files 
 
 - Open the service **Data Publication** in the WPS Service tab
 - Select the **Folder path** (custom path under the Repository key, e.g results/test-data)
-- Set Terradue **Username** and Terradue **Apikey**
+- Set Terradue **Username** and Terradue **Apikey** using the Geobrowser clipboard button
 - Set the **Repository key** (usually, the Terradue username)
 - Set other options if necessary
 - Click on **Run job**
+- Click on **Show results**, the contextualized items are available in the search result
 
 For example, setting the **Folder path** to "results/test-data" and the **Repository Key** to "eboissier" will recast files you can see in the search https://recast.terradue.com/t2api/search/eboissier/results/test-data.
