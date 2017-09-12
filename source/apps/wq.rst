@@ -157,65 +157,118 @@ The results of you processing will be shown in the search results list on the bo
 Processing option "Water Quality Parameters"
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter. 
-* Furthermoe EOMAP's water quality products are accompanied by the processor's internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:
+The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter. 
+
+Furthermore EOMAPs water quality products are accompanied by the processors internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:
 
 .. figure:: ../includes/apps_wq_EOMAP_Quality_CODING_table.png
 	:figclass: img-border
 	:align: center
 	:scale: 90%
- 
-* Overview of files delivered per satellite scene (example):
 
-  * Total Suspended Solids (TSS): 
-  
-    * GeoTiff 8bit, scaled and colored: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
-    * Geotiff 32bit, real values in mg/l: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
-    * XML, metadata: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
-  
-  * Chlorophyll (CHL): 
-   
-    * GeoTiff 8bit, scaled and colored: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
-    * Geotiff 32bit, real values in μg/l: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
-    * XML, metadata: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
-  
-  * Colored Dissolved Organic Matter (CDOM): 
-  
-    * GeoTiff 8bit, scaled and colored: *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
-    * Geotiff 32bit, real values in 1/m:  *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
-    * XML, metadata: *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+Assigned threshold values for each parameter (e.g. aerosol concentration above a certain limit) define when a parameter is assumed to affect the quality. The resulting classification divides the quality of the pixels into either '*no quality concerns*', '*warning*’ or '*critical*' status. The pixels identified as critical will be flagged out the product itself. Please note that '*warning*' pixels are marked in the QUC file as such but are not flagged.
 
-  * Surface Water Temperature (SWT): 
-  
-    * GeoTiff 8bit, scaled and colored: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
-    * Geotiff 32bit, real values in degree Celsius: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
-    * XML, metadata: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+In the Total Quality QUT file, the overall quality of each pixel is further quantified from low to high with values ranging from greyvalue 1 indicating low quality up to greyvalue 255 for best quality. In the QUT indicator only valid water pixels - excluding land, cloud or flagged pixels - are represented.
+
+There are other factors impacting the product and might lead to uncertainties or errors during the processing, which are not all covered by the automated quality control implemented:
+
+*Optical shallow water areas*
+
+In these areas, the very shallow water leads to strong overestimations of water constituents because of contribution of the seafloor reflectance to the retrieved concentrations. Sometimes, the shallow water areas are not easy to identify. But in most cases, they are visible on first sight as you can clearly see the structures of the seafloor in a quicklook of the satellite scene. Often, they are sharply delimited to their surroundings concerning the water species concentrations in the product images.
+
+.. image:: ../includes/apps_wq_QC_Shallow1.png
+	:width: 48%
+.. image:: ../includes/apps_wq_QC_Shallow2.png
+	:width: 48%
+
+|    
+*Cloud/mountain/skyscraper shadows*
+
+Shadows of clouds, mountains or even skyscrapers can influence the results of water constituent retrievals negatively, e.g. by underestimating the water constituent concentrations.
+
+.. image:: ../includes/apps_wq_QC_Cloud1.png
+	:width: 48%
+.. image:: ../includes/apps_wq_QC_Cloud2.png
+	:width: 48%
+
+Cloud shadows over land can in some cases lead to the detection of wrong water areas, especially in wintertime with low sun zenith angle.
+
+.. image:: ../includes/apps_wq_QC_Cloud3.png
+	:width: 48%
+.. image:: ../includes/apps_wq_QC_Cloud4.png
+	:width: 48%
+
+Similar to clouds, mountains and in some scenes even skyscrapers can draw shadows on their surroundings and negatively influence the processing results. In those cases, the processor also erroneously detects water pixels inside the shadows even if there is no water in reality at all.
+
+.. image:: ../includes/apps_wq_QC_Cloud5.png
+	:width: 48%
+.. image:: ../includes/apps_wq_QC_Cloud6.png
+	:width: 48%
+|    
+*Sunglint*
+
+Sunglint in an image occurs when sunlight is directly reflected to the satellite sensor by the water surface. The water surface acts like a mirror and becomes silverfish. Most of the sunglint areas are masked out automatically, but sometimes it might happen that the water constituent concentrations are either calculated wrong or the areas of sunglint are classified as clouds.
+
+.. image:: ../includes/apps_wq_QC_Sunglint1.png
+	:width: 48%
+.. image:: ../includes/apps_wq_QC_Sunglint2.png
+	:width: 48%
     
-  * Watermask (WMA): 
+|    
+|    
+**Overview of files delivered per satellite scene (example):**
+
+* Total Suspended Solids (TSS): 
   
-    * GeoTiff, 8bit, GV 100 = water, GV 0 = no water: *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, 
-    * XML, metadata: *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+  * GeoTiff 8bit, scaled and colored: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+  * Geotiff 32bit, real values in mg/l: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+  * XML, metadata: *TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+  
+* Chlorophyll (CHL): 
+   
+  * GeoTiff 8bit, scaled and colored: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+  * Geotiff 32bit, real values in μg/l: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+  * XML, metadata: *CHL_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+  
+* Colored Dissolved Organic Matter (CDOM): 
+  
+  * GeoTiff 8bit, scaled and colored: *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+  * Geotiff 32bit, real values in 1/m:  *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+  * XML, metadata: *CDM_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+
+* Surface Water Temperature (SWT): 
+  
+  * GeoTiff 8bit, scaled and colored: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+  * Geotiff 32bit, real values in degree Celsius: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif*
+  * XML, metadata: *SWT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+    
+* Watermask (WMA): 
+  
+  * GeoTiff, 8bit, GV 100 = water, GV 0 = no water: *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, 
+  * XML, metadata: *WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
 
   * Quality Coding (QUC): 
   
-    * GeoTiff, 8bit: *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
-    * XML, metadata: *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+  * GeoTiff, 8bit: *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*
+  * XML, metadata: *QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
 
-  * Total Quality (QUT): 
+* Total Quality (QUT): 
   
-    * GeoTiff, 8bit: *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif* 
-    * XML, metadata: *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
+  * GeoTiff, 8bit: *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif* 
+  * XML, metadata: *QUT_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*
 
   
 Processing option "Atmospheric Corrected Image"
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.
-* It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).
-* Overview of files delivered per satellite scene (example):
+The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.
 
-  * Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, Multi-channel GeoTiff, 32bit
-  * Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
+It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).
+
+**Overview of files delivered per satellite scene (example):**
+
+* Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif*, Multi-channel GeoTiff, 32bit
+* Remote Sensing Reflectance (RRS): *RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml*, XML, metadata
 
 Processing option "all"
 ^^^^^^^^^^^^^^^^^^^^^^^
