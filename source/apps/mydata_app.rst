@@ -29,18 +29,36 @@ Data Upload
 Allow the user to drag and drop local files and upload them to his private store repository (or to any accessible repository, using custom path eventually).
 
 - Click on |storeupload|
+
+.. figure:: ../includes/apps_mydata_dataupload_button.png
+	:figclass: img-border
+	:scale: 70%
+
 - Select a **Target Repository** and a **Target Path**
+
+.. figure:: ../includes/apps_mydata_dataupload_popup1.png
+	:figclass: img-border
+	:scale: 70%
+
 - Drag and drop files
+
+.. figure:: ../includes/apps_mydata_dataupload_popup2.png
+	:figclass: img-border
+	:scale: 70%
+
 - Click on **Submit Upload**
+
+.. figure:: ../includes/apps_mydata_dataupload_popup3.png
+	:figclass: img-border
+	:scale: 70%
+
 - Wait for upload to finish
 
-.. figure:: ../includes/apps_mydata_dataupload_uploading.png
+.. figure:: ../includes/apps_mydata_dataupload_popup4.png
 	:figclass: img-border
 	:scale: 80%
 
-.. figure:: ../includes/apps_mydata_dataupload_uploaddone.png
-	:figclass: img-border
-	:scale: 80%
+- Click on **Close and update context**, a search query is performed on the defined context (user's private context)
 
 .. |storeupload| image:: ../includes/button_storeupload.png
 
