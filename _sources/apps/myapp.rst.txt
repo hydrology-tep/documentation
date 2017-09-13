@@ -1,27 +1,3 @@
-.. _app_workspace:
-
-My Workspace
-============
-
-Explore my data
----------------
-
-The catalogue editor area is a workspace dedicated to the user in which he will be able to access all his files (results of processings, uploaded files, ...), manage them and specially ingest them in one of its catalogues or ask to publish the result as a contribution to the community results (this would need to be validated by an administrator).
-
-.. figure:: ../includes/cas_editor.png
-	:figclass: img-border
-	:scale: 70 %
-
-.. req:: HEP-TS-DES-004
-	:show:
-
-	This section describes the catalogue as a service functionality.
-
-.. req:: HEP-TS-DES-001
-	:show:
-
-	This section shows that TEP platform implement a catalogue editor.
-
 My Thematic Apps
 ----------------
 
@@ -38,6 +14,11 @@ Finally the user can save this thematic application in his private catalogue ind
 	Administrator can select the index in which to save the application.
 
 If there is already an entry with the same identifier in the index, the entry will be overwritten with the new one.
+Once created, the application is accessible from the Thematic app discovery page.
+
+.. figure:: ../includes/user_new_app.png
+	:figclass: img-border
+	:scale: 80%
 
 The following information define a Thematic Application:
 
@@ -146,13 +127,7 @@ Spatial
 
 Spatial area in WKT format associated to the application.
 
-
-.. figure:: ../includes/user_new_app.png
-	:figclass: img-border
-	:scale: 80%
-
 .. req:: HEP-TS-FUN-015
 	:show:
 
 	This section describes how a user can create its own thematic application.
-

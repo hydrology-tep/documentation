@@ -201,7 +201,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="wl.html">5.5. Water Level</a></li>
 <li class="toctree-l2"><a class="reference internal" href="swbm.html">5.6. Small Water Body Mapping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="workspace.html">5.7. My worskpace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mydata_app.html">5.7. Manage my data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testmyproc_app.html">5.8. Test my processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="myapp.html">5.9. My apps</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
@@ -293,7 +295,7 @@
 <a class="reference internal image-reference" href="../_images/apps_wq_processingservice_wq.png"><img alt="../_images/apps_wq_processingservice_wq.png" src="../_images/apps_wq_processingservice_wq.png" style="width: 45%;" /></a>
 <p>Select what kind of <strong>EO Data</strong> data you would like to process using the dropdown menu on the top right, so far Water Quality Service only supports Landsat8 and Sentinel2.</p>
 <div class="img-border figure align-center">
-<a class="reference internal image-reference" href="../_images/apps_wq_eodata.png"><img alt="../_images/apps_wq_eodata.png" src="../_images/apps_wq_eodata.png" style="width: 419.4px; height: 176.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_eodata.png"><img alt="../_images/apps_wq_eodata.png" src="../_images/apps_wq_eodata.png" style="width: 416.7px; height: 177.3px;" /></a>
 </div>
 <p>Zoom to your region of interest and use the <strong>spatial filter</strong> to spatially restrict the list of scenes: Click on the spatial filter symbol (little square) on the left-hand side of the geobrowser and draw a rectangle on the map.</p>
 <a class="reference internal image-reference" href="../_images/apps_wq_spatialfilter1.png"><img alt="../_images/apps_wq_spatialfilter1.png" src="../_images/apps_wq_spatialfilter1.png" style="width: 14%;" /></a>
@@ -321,7 +323,7 @@
 <p><strong>OR</strong> you could add more scenes to your job, from the same EO Data collection or you can even add scenes from another collection.
 Therefore just change the <strong>EO Data</strong> collection in the dropdown menu on the top right:</p>
 <div class="img-border figure align-center">
-<a class="reference internal image-reference" href="apps/../includes/apps_wq_eodata2.png"><img alt="apps/../includes/apps_wq_eodata2.png" src="apps/../includes/apps_wq_eodata2.png" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_eodata2.png"><img alt="../_images/apps_wq_eodata2.png" src="../_images/apps_wq_eodata2.png" style="width: 416.7px; height: 270.0px;" /></a>
 </div>
 <p>Your selected <strong>spatial and temporal filters remain</strong> and you can look for a scene from the other collection.
 If you identified another scene you would like to process can add the scene via drag&amp;drop from the scene list on the bottom left to the Water Quality Service:</p>
@@ -342,15 +344,44 @@ If you identified another scene you would like to process can add the scene via 
 <p>The results of you processing will be shown in the search results list on the bottom left. The following results will be created:</p>
 <div class="section" id="processing-option-water-quality-parameters">
 <h3>5.4.3.1. Processing option &#8220;Water Quality Parameters&#8221;<a class="headerlink" href="#processing-option-water-quality-parameters" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter.</li>
-<li>Furthermoe EOMAP&#8217;s water quality products are accompanied by the processor&#8217;s internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:</li>
-</ul>
+<p>The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter.</p>
+<p>Furthermore EOMAPs water quality products are accompanied by the processors internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:</p>
 <div class="img-border figure align-center">
 <a class="reference internal image-reference" href="../_images/apps_wq_EOMAP_Quality_CODING_table.png"><img alt="../_images/apps_wq_EOMAP_Quality_CODING_table.png" src="../_images/apps_wq_EOMAP_Quality_CODING_table.png" style="width: 720.9px; height: 636.3px;" /></a>
 </div>
+<p>Assigned threshold values for each parameter (e.g. aerosol concentration above a certain limit) define when a parameter is assumed to affect the quality. The resulting classification divides the quality of the pixels into either &#8216;<em>no quality concerns</em>&#8216;, &#8216;<em>warning</em>’ or &#8216;<em>critical</em>&#8216; status. The pixels identified as critical will be flagged out the product itself. Please note that &#8216;<em>warning</em>&#8216; pixels are marked in the QUC file as such but are not flagged.</p>
+<p>In the Total Quality QUT file, the overall quality of each pixel is further quantified from low to high with values ranging from greyvalue 1 indicating low quality up to greyvalue 255 for best quality. In the QUT indicator only valid water pixels - excluding land, cloud or flagged pixels - are represented.</p>
+<p>There are other factors impacting the product and might lead to uncertainties or errors during the processing, which are not all covered by the automated quality control implemented:</p>
+<p><em>Optical shallow water areas</em></p>
+<p>In these areas, the very shallow water leads to strong overestimations of water constituents because of contribution of the seafloor reflectance to the retrieved concentrations. Sometimes, the shallow water areas are not easy to identify. But in most cases, they are visible on first sight as you can clearly see the structures of the seafloor in a quicklook of the satellite scene. Often, they are sharply delimited to their surroundings concerning the water species concentrations in the product images.</p>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Shallow1.png"><img alt="../_images/apps_wq_QC_Shallow1.png" src="../_images/apps_wq_QC_Shallow1.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Shallow2.png"><img alt="../_images/apps_wq_QC_Shallow2.png" src="../_images/apps_wq_QC_Shallow2.png" style="width: 45%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Cloud/mountain/skyscraper shadows</em></p>
+<p>Shadows of clouds, mountains or even skyscrapers can influence the results of water constituent retrievals negatively, e.g. by underestimating the water constituent concentrations.</p>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Cloud1.png"><img alt="../_images/apps_wq_QC_Cloud1.png" src="../_images/apps_wq_QC_Cloud1.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Cloud2.png"><img alt="../_images/apps_wq_QC_Cloud2.png" src="../_images/apps_wq_QC_Cloud2.png" style="width: 45%;" /></a>
+<p>Cloud shadows over land can in some cases lead to the detection of wrong water areas, especially in wintertime with low sun zenith angle.</p>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Cloud3.png"><img alt="../_images/apps_wq_QC_Cloud3.png" src="../_images/apps_wq_QC_Cloud3.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Cloud4.png"><img alt="../_images/apps_wq_QC_Cloud4.png" src="../_images/apps_wq_QC_Cloud4.png" style="width: 45%;" /></a>
+<p>Similar to clouds, mountains and in some scenes even skyscrapers can draw shadows on their surroundings and negatively influence the processing results. In those cases, the processor also erroneously detects water pixels inside the shadows even if there is no water in reality at all.</p>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Cloud5.png"><img alt="../_images/apps_wq_QC_Cloud5.png" src="../_images/apps_wq_QC_Cloud5.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Cloud6.png"><img alt="../_images/apps_wq_QC_Cloud6.png" src="../_images/apps_wq_QC_Cloud6.png" style="width: 45%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Sunglint</em></p>
+<p>Sunglint in an image occurs when sunlight is directly reflected to the satellite sensor by the water surface. The water surface acts like a mirror and becomes silverfish. Most of the sunglint areas are masked out automatically, but sometimes it might happen that the water constituent concentrations are either calculated wrong or the areas of sunglint are classified as clouds.</p>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Sunglint1.png"><img alt="../_images/apps_wq_QC_Sunglint1.png" src="../_images/apps_wq_QC_Sunglint1.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/apps_wq_QC_Sunglint2.png"><img alt="../_images/apps_wq_QC_Sunglint2.png" src="../_images/apps_wq_QC_Sunglint2.png" style="width: 45%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>Overview of files delivered per satellite scene (example):</strong></p>
 <ul class="simple">
-<li>Overview of files delivered per satellite scene (example):<ul>
 <li>Total Suspended Solids (TSS):<ul>
 <li>GeoTiff 8bit, scaled and colored: <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
 <li>Geotiff 32bit, real values in mg/l: <em>TSS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030_32bit.tif</em></li>
@@ -378,9 +409,7 @@ If you identified another scene you would like to process can add the scene via 
 <li>Watermask (WMA):<ul>
 <li>GeoTiff, 8bit, GV 100 = water, GV 0 = no water: <em>WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>,</li>
 <li>XML, metadata: <em>WMA_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
-</ul>
-</li>
-<li>Quality Coding (QUC):<ul>
+<li>Quality Coding (QUC):</li>
 <li>GeoTiff, 8bit: <em>QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em></li>
 <li>XML, metadata: <em>QUC_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em></li>
 </ul>
@@ -391,19 +420,15 @@ If you identified another scene you would like to process can add the scene via 
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 </div>
 <div class="section" id="processing-option-atmospheric-corrected-image">
 <h3>5.4.3.2. Processing option &#8220;Atmospheric Corrected Image&#8221;<a class="headerlink" href="#processing-option-atmospheric-corrected-image" title="Permalink to this headline">¶</a></h3>
+<p>The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.</p>
+<p>It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).</p>
+<p><strong>Overview of files delivered per satellite scene (example):</strong></p>
 <ul class="simple">
-<li>The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.</li>
-<li>It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).</li>
-<li>Overview of files delivered per satellite scene (example):<ul>
 <li>Remote Sensing Reflectance (RRS): <em>RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.tif</em>, Multi-channel GeoTiff, 32bit</li>
 <li>Remote Sensing Reflectance (RRS): <em>RRS_wq-tep193050_EOMAP_20161122_101338_LSAT8_m0030.xml</em>, XML, metadata</li>
-</ul>
-</li>
 </ul>
 </div>
 <div class="section" id="processing-option-all">

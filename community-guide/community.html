@@ -116,7 +116,10 @@
 <li><a class="reference internal" href="#leaving-a-community">2.4.2. Leaving a community</a></li>
 <li><a class="reference internal" href="#exploring-a-community">2.4.3. Exploring a community</a><ul>
 <li><a class="reference internal" href="#overview">2.4.3.1. Overview</a></li>
-<li><a class="reference internal" href="#members">2.4.3.2. Members</a></li>
+<li><a class="reference internal" href="#members">2.4.3.2. Members</a><ul>
+<li><a class="reference internal" href="#roles">2.4.3.2.1. Roles</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#applications">2.4.3.3. Applications</a></li>
 <li><a class="reference internal" href="#activities">2.4.3.4. Activities</a></li>
 <li><a class="reference internal" href="#data-collections">2.4.3.5. Data collections</a></li>
@@ -124,8 +127,10 @@
 </li>
 <li><a class="reference internal" href="#managing-a-community">2.4.4. Managing a community</a><ul>
 <li><a class="reference internal" href="#id1">2.4.4.1. Members</a></li>
-<li><a class="reference internal" href="#users-management">2.4.4.2. Users management</a></li>
-<li><a class="reference internal" href="#community-management">2.4.4.3. Community management</a></li>
+<li><a class="reference internal" href="#id2">2.4.4.2. Data collections</a></li>
+<li><a class="reference internal" href="#wps-services">2.4.4.3. Wps services</a></li>
+<li><a class="reference internal" href="#users-management">2.4.4.4. Users management</a></li>
+<li><a class="reference internal" href="#community-management">2.4.4.5. Community management</a></li>
 </ul>
 </li>
 </ul>
@@ -194,8 +199,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#managing-a-community">2.4.4. Managing a community</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">2.4.4.1. Members</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#users-management">2.4.4.2. Users management</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#community-management">2.4.4.3. Community management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">2.4.4.2. Data collections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wps-services">2.4.4.3. Wps services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#users-management">2.4.4.4. Users management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#community-management">2.4.4.5. Community management</a></li>
 </ul>
 </li>
 </ul>
@@ -270,6 +277,40 @@ If this is a private community, you will need to be reinvited by a manager.</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/community_members1.png"><img alt="../_images/community_members1.png" src="../_images/community_members1.png" style="width: 30%;" /></a>
 </div>
+<div class="section" id="roles">
+<h4>2.4.3.2.1. Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h4>
+<p>Default roles for users are:</p>
+<p><strong>End User</strong>: default user role and the base for all other roles</p>
+<blockquote>
+<div><ul class="simple">
+<li>make wps job accessible by the community</li>
+<li>make data package accessible by the community</li>
+</ul>
+</div></blockquote>
+<p><strong>Expert User</strong>: End user privileges +</p>
+<blockquote>
+<div><ul class="simple">
+<li>add wps service accessible by the community</li>
+</ul>
+</div></blockquote>
+<p><strong>Resource Administrator</strong>: End User privileges</p>
+<p><strong>Data Provider</strong>: End User privileges +</p>
+<blockquote>
+<div><ul class="simple">
+<li>create data collection in the community</li>
+</ul>
+</div></blockquote>
+<p><strong>ICT Provider</strong>: End User privileges</p>
+<p><strong>Content Authority</strong>: End User privileges +</p>
+<blockquote>
+<div><ul class="simple">
+<li>manage members</li>
+<li>manage title / description / icon / discuss link</li>
+<li>manage thematic applications</li>
+<li>can delete the community</li>
+</ul>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="applications">
 <h3>2.4.3.3. Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h3>
@@ -300,13 +341,21 @@ The manager has 2 additional tabs in the community page, dedicated to the manage
 <h3>2.4.4.1. Members<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>In this view, a manager can change the role of a user within the community.</p>
 </div>
+<div class="section" id="id2">
+<h3>2.4.4.2. Data collections<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>This tab (only visible to users with role allowing to change data collections) allows a user to associate data collections (he owns) to the community or remove data collections from the community.</p>
+</div>
+<div class="section" id="wps-services">
+<h3>2.4.4.3. Wps services<a class="headerlink" href="#wps-services" title="Permalink to this headline">¶</a></h3>
+<p>This tab (only visible to users with role allowing to change wps services) allows a user to associate wps services (he owns) to the community and manage associated tags or remove wps services from the community.</p>
+</div>
 <div class="section" id="users-management">
-<h3>2.4.4.2. Users management<a class="headerlink" href="#users-management" title="Permalink to this headline">¶</a></h3>
-<p>This tab lists all users (members or not) and allow the manager to remove from the community or invite to the community.</p>
+<h3>2.4.4.4. Users management<a class="headerlink" href="#users-management" title="Permalink to this headline">¶</a></h3>
+<p>This tab (only visible for managers) lists all users (members or not) and allow the manager to remove from the community or invite to the community.</p>
 </div>
 <div class="section" id="community-management">
-<h3>2.4.4.3. Community management<a class="headerlink" href="#community-management" title="Permalink to this headline">¶</a></h3>
-<p>This tab contains the following (editable) information:</p>
+<h3>2.4.4.5. Community management<a class="headerlink" href="#community-management" title="Permalink to this headline">¶</a></h3>
+<p>This tab (only visible for managers) contains the following (editable) information:</p>
 <blockquote>
 <div><blockquote>
 <div><ul class="simple">
