@@ -56,6 +56,35 @@ This tab lists all users of the community, with their role within the community,
 	:width: 30%
 	:figclass: img-border
 
+Roles
+`````
+
+Default roles for users are:
+
+**End User**: default user role and the base for all other roles
+
+    - make wps job accessible by the community
+    - make data package accessible by the community
+
+**Expert User**: End user privileges + 
+
+    - add wps service accessible by the community
+
+**Resource Administrator**: End User privileges
+
+**Data Provider**: End User privileges + 
+
+    - create data collection in the community
+
+**ICT Provider**: End User privileges
+
+**Content Authority**: End User privileges +
+
+    - manage members
+    - manage title / description / icon / discuss link
+    - manage thematic applications
+    - can delete the community
+
 Applications
 ~~~~~~~~~~~~
 
@@ -88,15 +117,25 @@ Members
 
 In this view, a manager can change the role of a user within the community.
 
+Data collections
+~~~~~~~~~~~~~~~~
+
+This tab (only visible to users with role allowing to change data collections) allows a user to associate data collections (he owns) to the community or remove data collections from the community.
+
+Wps services
+~~~~~~~~~~~~
+
+This tab (only visible to users with role allowing to change wps services) allows a user to associate wps services (he owns) to the community and manage associated tags or remove wps services from the community.
+
 Users management
 ~~~~~~~~~~~~~~~~
 
-This tab lists all users (members or not) and allow the manager to remove from the community or invite to the community.
+This tab (only visible for managers) lists all users (members or not) and allow the manager to remove from the community or invite to the community.
 
 Community management
 ~~~~~~~~~~~~~~~~~~~~
 
-This tab contains the following (editable) information:
+This tab (only visible for managers) contains the following (editable) information:
 
  	- Visibility (public or private)
  	- Identifier (used only for url links, must be without space or special characters)

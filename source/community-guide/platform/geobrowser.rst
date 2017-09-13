@@ -58,7 +58,7 @@ Some parameters are just free text, others can be chosen from a list, and some p
 .. figure:: ../../includes/geobrowser_timebar.png
 	:figclass: img-border img-max-width
 
-- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png|, |geobrowser_button_placemark.png| or by uploading a shapefile, a kml or geojson file, using the import button |geobrowser_button_wkt.png|.
+- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png|, |geobrowser_button_placemark.png|, by selecting a city or country name using |geobrowser_button_citygazetter.png| or by uploading a shapefile, a kml or geojson file, using the import button |geobrowser_button_wkt.png|.
 
 .. tip:: in the *Search Term* field supported wildcards are '*', which matches any character sequence (including the empty one), and '?', which matches any single character.
 
@@ -170,3 +170,4 @@ Details on jobs can be accessed by clicking on the title of the job.
 .. |geobrowser_disaster_small_group.png| image:: ../../includes/geobrowser_disaster_small_group.png
 .. |geobrowser_disaster_event.png| image:: ../../includes/geobrowser_disaster_event.png
 .. |get_param_from_map_button.png| image:: ../../includes/get_param_from_map_button.png
+.. |geobrowser_button_citygazetter.png| image:: ../../includes/geobrowser_button_citygazetter.png
