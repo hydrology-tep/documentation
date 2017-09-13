@@ -204,6 +204,7 @@ Similar to clouds, mountains and in some scenes even skyscrapers can draw shadow
 	:width: 45%
 .. image:: ../includes/apps_wq_QC_Cloud6.png
 	:width: 45%
+	
 |    
 *Sunglint*
 
