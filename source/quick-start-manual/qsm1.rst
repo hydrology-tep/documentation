@@ -6,7 +6,7 @@ Register on ESA EO Users’ Single Sign On
 
 # Please access the HTEP Community Portal through the URL provided: https://hydrology-tep.eo.esa.int/#!. 
 
-.. figure:: ../includes/qsm1-f1.png
+.. figure:: includes/qsm1-f1.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border
@@ -17,14 +17,14 @@ Register on ESA EO Users’ Single Sign On
 
 # Figure 2 shows the ESA EO Users’ Single Sign On registration. Fill in all required information. Click on the question mark behind the field for extra info. Afterwards click on Register to continue. A confirmation as shown in Figure 3 is displayed and an email is sent.
 
-.. figure:: ../includes/qsm1-f2.png
+.. figure:: includes/qsm1-f2.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border
 
-	Figure 2: The ESA EO Users&#39; Single Sign On Registration Page
+	Figure 2: The ESA EO Users' Single Sign On Registration Page
 
-.. figure:: ../includes/qsm1-f3.png
+.. figure:: includes/qsm1-f3.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border
@@ -34,14 +34,14 @@ Register on ESA EO Users’ Single Sign On
 # Open your email and click on the link provided by the EO-SSO administrator team. You will be
 directed to a page confirming the activation of your account, as indicated by Figure 5.
 
-.. figure:: ../includes/qsm1-f4.png
+.. figure:: includes/qsm1-f4.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border
 	
 	Figure 4: Email sent by the EO-SSO administrator team
 
-.. figure:: ../includes/qsm1-f5.png
+.. figure:: includes/qsm1-f5.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -55,7 +55,7 @@ Sign into HTEP Community Portal
 
 # On the top right of the HTEP Community Portal, click on Sign in button. The button is located left of the register-button as indicated in Figure 1. You will be redirected to the sign-in page of Figure 6.
 
-.. figure:: ../includes/qsm1-f6.png
+.. figure:: includes/qsm1-f6.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -67,7 +67,7 @@ before you are automatically logged off) and max session time (maximum time befo
 are automatically logged off) and click on Login. The message below will appear at the HTEP
 Community Portal homepage.
 
-.. figure:: ../includes/qsm1-f7.png
+.. figure:: includes/qsm1-f7.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -77,7 +77,7 @@ Community Portal homepage.
 Access your email and click on the link provided by the Operations Support team at Terradue
 to verify your email address, as indicated by the arrow in Figure 8.
 
-.. figure:: ../includes/qsm1-f8.png
+.. figure:: includes/qsm1-f8.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -88,7 +88,7 @@ to verify your email address, as indicated by the arrow in Figure 8.
 After signing in a welcome message is displayed on the top of the HTEP Community Portal, as
 displayed in Figure 9. You are now registered, signed in and ready to use the HTEP platform!
 
-.. figure:: ../includes/qsm1-f9.png
+.. figure:: includes/qsm1-f9.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
