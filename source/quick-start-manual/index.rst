@@ -8,6 +8,8 @@ Hydrology thematic exploitation platform quick start manuals
    Browse your way through the HTEP Portal <qsm2>
    An Overview of the Geobrowser Features <qsm3>
    Become Member of a Community <qsm4>
+   Upload Your Own (In-Situ) Data <qsm9>
+
 
 
 
