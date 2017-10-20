@@ -125,7 +125,7 @@ During the process described from Section 2.1. until 2.3., it is possible to sha
 
  - **Do not share:** This is the default setting and means only you can see the data package or job result.
  - **Share with anyone:** Selecting this button means your data package and job results will be visible for anyone who uses HTEP.
- -** Restricted sharing:** Selecting this button means your data package and job results will be visible only for a limited number of users: for example only members of a specific community.
+ - ** Restricted sharing:** Selecting this button means your data package and job results will be visible only for a limited number of users: for example only members of a specific community.
 
 .. figure:: includes/qsm3-f9.png
 	:align: center
