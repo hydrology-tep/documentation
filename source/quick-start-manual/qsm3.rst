@@ -46,53 +46,67 @@ Search and collect data
 
 9. You can save the selection of data products you dragged into the features basket as a Data Package. As such you can easily load your data collection at any time or share your data with your community and/or others. 
 
-10.	To access your existing Data Packages, there is a Data Packages tab next to Features Basket tab. See Figure 4. Here you can for example load or share your Data Package.
-
-Process Data
-~~~~~~~~~~~~
-
-1. Once you have all data products of interest in your features basket, these data products can be processed. The Processing Services tab on the right side of the Geobrowser as indicated in Figure 3, will open the processing services.
-
 .. figure:: includes/qsm3-f3.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
-	
-	Figure 3: The Geobrowser of SWBM for Red River Application (3)
 
-2. An overview of the available services within this thematic application is given. Hovering a service provides you a small summary of the service and its developer. 
+	Figure 3: Save data products in a Data Package
 
-3. Currently for Small Water Body Mapping there is only one service available, but the search field can be used to find your service of interest once there is an extensive number of services available. 
- 
 .. figure:: includes/qsm3-f4.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
 
-	Figure 4: Available processing services for a specific thematic application
+	Figure 4: Overview of Data Packages
 
-4. Accessing the service provides you an overview of the required inputs for the specific service, as indicated in Figure 5. 
+10.	To access your existing Data Packages, there is a Data Packages tab next to Features Basket tab. See Figure 4. Here you can for example load or share your Data Package.
 
-5. Click on Run Job on the bottom to start processing your newly created job.
+Process Data
+~~~~~~~~~~~~
+
+1. Once you have all data products of interest in your features basket, these data products can be processed. The Processing Services tab on the right side of the Geobrowser as indicated in Figure 5, will open the processing services.
 
 .. figure:: includes/qsm3-f5.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
+	
+	Figure 5: The Geobrowser of SWBM for Red River Application (3)
 
-	Figure 5: Input required for a specific service
+2. An overview of the available services within this thematic application is given. Hovering a service provides you a small summary of the service and its developer. 
 
-Reproduce Data and Visualise Results
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. After a job is successfully processed, the screen of Figure 8 will appear containing information about the run job.   
+3. Currently for Small Water Body Mapping there is only one service available, but the search field can be used to find your service of interest once there is an extensive number of services available. 
  
 .. figure:: includes/qsm3-f6.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
 
-	Figure 6: Summary of a successfully run job
+	Figure 6: Available processing services for a specific thematic application
+
+4. Accessing the service provides you an overview of the required inputs for the specific service, as indicated in Figure 7. 
+
+5. Click on Run Job on the bottom to start processing your newly created job.
+
+.. figure:: includes/qsm3-f7.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+
+	Figure 7: Input required for a specific service
+
+Reproduce Data and Visualise Results
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. After a job is successfully processed, the screen of Figure 8 will appear containing information about the run job.   
+ 
+.. figure:: includes/qsm3-f8.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+
+	Figure 8: Summary of a successfully run job
 
 2.	Resubmit Job provides the possibility to rerun a job. As such it is possible to reproduce data, or to easily make small adaptions on earlier run jobs without having to go through the whole process of searching, collecting, selecting and applying data to the processing service.
 
@@ -101,7 +115,7 @@ Reproduce Data and Visualise Results
 Share Data and Results
 ~~~~~~~~~~~~~~~~~~~~~~
 
-During the process described from Section 2.1. until 2.3., it is possible to share each step with other HTEP users. Most important features are the ability to share your Data Packages and your job results. The |share| icon indicates you can share something. For a Data Package this icon can be found as explained in Section 2.1. point 10 (Figure 4). For a successful job this icon can be found on the top, as indicated in Figure 6.
+During the process described from Section 2.1. until 2.3., it is possible to share each step with other HTEP users. Most important features are the ability to share your Data Packages and your job results. The |share| icon indicates you can share something. For a Data Package this icon can be found as explained in Section 2.1. point 10 (Figure 4). For a successful job this icon can be found on the top, as indicated in Figure 8.
 
 1. Figure 9 shows the share pop-up. 
 
@@ -113,12 +127,12 @@ During the process described from Section 2.1. until 2.3., it is possible to sha
  - **Share with anyone:** Selecting this button means your data package and job results will be visible for anyone who uses HTEP.
  -** Restricted sharing:** Selecting this button means your data package and job results will be visible only for a limited number of users: for example only members of a specific community.
 
-.. figure:: includes/qsm3-f7.png
+.. figure:: includes/qsm3-f9.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
 
-	Figure 7: Sharing a Data Package
+	Figure 9: Sharing a Data Package
 
 
 .. |share| image:: ../includes/share_button.png
