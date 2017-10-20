@@ -5,6 +5,8 @@ Hydrology thematic exploitation platform quick start manuals
    :maxdepth: 2
    
    How to become a member of HTEP <qsm1>
+   Browse your way through the HTEP Portal <qsm2>
+   An Overview of the Geobrowser Features <qsm3>
    
 
 
