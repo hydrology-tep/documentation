@@ -9,7 +9,7 @@ Water Quality Application: An Introduction
 ==========================================
 
 It is of essential importance to be able to monitor temporal and spatial dynamics of inland water quality in order to obtain improved understanding of aquatic ecosystems. Making use of remotely sensed earth observation (EO) data is an efficient and cost-effective method to assess a variety of physical and biological parameters in aquatic ecosystems over large areas. The thematic application Water Quality (WQ), developed by EOMAP, is able to map these aquatic ecosystems. Combining this application with the features of the Hydrology Thematic Exploitation Platform (HTEP) ensures EO data can be easily accessed, processed, reproduced and shared with the hydrology community. In this tutorial the functionalities and features of HTEP using EOMAPs WQ application are discovered. 
-Chapter 1 discusses important information about the WQ application: the advantages of using EO data over conventional measurement methods and the currently available in- and outputs for the application. The introduction is followed by a hands-on tutorial in Chapter 2, showing you how to use this application in combination with HTEP.  
+Chapter 2.5.1.1 discusses important information about the WQ application: the advantages of using EO data over conventional measurement methods and the currently available in- and outputs for the application. The introduction is followed by a hands-on tutorial in Chapter 2.5.2, showing you how to use this application in combination with HTEP.  
 
 About EOMAPs Water Quality App
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,9 +27,13 @@ Water Quality Application Input
 +++++++++++++++++++++++++++++++
 
 As input for the WQ application, there is EO data available of multiple satellite sensors, with varying spatial, temporal and spectral resolution. For the WQ application there is currently Sentinel-2 and Landsat-8 EO data available: 
-Sentinel-2	 High Spatial, Weekly Temporal Resolution
-The maximum spatial resolution of the output products of the WQ application is approximately 30 meters using Sentinel-2 data[1]. Sentinel-2 has a monthly revisit of approximately 5 times, meaning a weekly temporal resolution. 
-Landsat-8	 High Spatial, Weekly Temporal Resolution
+
+**Sentinel-2**	 High Spatial, Weekly Temporal Resolution
+
+The maximum spatial resolution of the output products of the WQ application is approximately 30 meters using Sentinel-2 data[1]. Sentinel-2 has a monthly revisit of approximately 5 times, meaning a weekly temporal resolution.
+
+**Landsat-8**	 High Spatial, Weekly Temporal Resolution
+
 Landsat-8 has a maximal spatial resolution of about 30 meters, equal to Sentinel-2 data products. The temporal resolution of Landsat-8 is 16 days[1]. Therefore both Sentinel-2 and Landsat-8 data products are ideal for large scale monitoring of most relevant lake and river sizes.
 The spectral bands of Sentinel-2’s sensors range between 490 and 1375 nm and Landsat-8’s sensors range between 433 and 2300 nm[3] [4]. However, the output parameters of EOMAPs WQ app are based on backscattering of light between 400-850 nm, in the visible spectrum.
 
@@ -37,7 +41,7 @@ Influence of obstructions such as clouds on the results
 *******************************************************
 
 Multiple considerations are needed to decide what data products are usable for the WQ app. As mentioned in the previous paragraph, output parameters of the WQ app are determined based on backscattering of light within the visible spectrum. Wavelengths in the visible spectrum cannot properly penetrate obstructions such as clouds and haze, meaning those kind of obstructions sometimes result in difficult measuring conditions. In addition, particular geometrical conditions between sun, target and sensor in combination with specific sea-state-conditions (wind speed, direction) can result in signal distorting mirroring effects, called sun glint, on the water surface. Other circumstances influencing the results include cloud shadows, shallow waters, disturbances by floating materials and mixed land-water pixels. 
-Those pixels are flagged in the results, as will be discussed in Section 2.4. However, as clear as possible data images contribute to more reliable results. As such special care is required in terms of cloud coverage and sun glint. There are no guidelines for allowed cloud cover percentage, but a reduction in cloud coverage will improve the quality of the output products. 
+Those pixels are flagged in the results, as will be discussed in Section 2.5.2.5. However, as clear as possible data images contribute to more reliable results. As such special care is required in terms of cloud coverage and sun glint. There are no guidelines for allowed cloud cover percentage, but a reduction in cloud coverage will improve the quality of the output products. 
  
 .. figure:: includes/qsm5-f2.png
 	:align: center
@@ -50,15 +54,20 @@ Water Quality Application Output
 ++++++++++++++++++++++++++++++++
 
 The output products the WQ app is able to generate are the following four main water quality parameters and an atmospheric correction: 
-· TSS – Total Suspended Solids
+
+	- **TSS**  Total Suspended Solids
 The total suspended solid is the dry-weight of scattered particles in the water column. The influence of TSS on aquatic ecology is for example the negative effects on plants and animals due to a reduction of available light.
-· CHL – Chlorophyll
+
+	- **CHL**  Chlorophyll
 A pigment included in phytoplankton cells that serves as a proxy for algae in natural waters. The amount of chlorophyll is a measure for water quality, as it relates to algae biomass which can for instance result in decreased levels of dissolved oxygen. 
-· CDOM – Colored Dissolved Organic Matter
+
+	- **CDOM**  Colored Dissolved Organic Matter
 CDOM absorbs light at the blue end of the visible spectrum, therefore being responsible for the water colour. Increasing CDOM, primarily caused by tannin due to decaying detritus, causes the water colour to go from blue, green to brown. The amount of CDOM importantly affects aqua systems: an overdose of CDOM may for instance result in a lack of available light for phytoplankton populations to grow, while phytoplankton is the basic of oceanic food chains and important for atmospheric oxygen.
-· SWT – Surface Water Temperature 
+
+	- **SWT**  Surface Water Temperature 
 SWT speaks for itself, as it means the WQ app is able to determine the temperature at the surface of a water body at the top skin, also known as the epilimnic temperature. Water surface temperature knowledge is important in aquatic ecosystems to better determine and predict for instance wind streams introduced by temperature differences.  
-· Atmospheric corrected product 
+
+	- **Atmospheric corrected product** 
 Consists of satellite imagery which has been corrected for the effects of the atmosphere and scattering light from adjacent land and water surfaces. It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minimizing effects of haze and atmospheric aerosols. 
  
 .. figure:: includes/qsm5-f3.png
@@ -125,7 +134,7 @@ Once the Water Quality application has been accessed, a new tab opens called the
 
 3.	You can select which satellite data source you would like to use for your research on the top-right of the Geobrowser. Selecting EO Data imposes a dropdown menu showing all available remotely sensed EO data sources for this application. 
 
-As discussed in Section 1.1.1, the WQ application has currently data available from Landsat-8 and Sentinel-2. The EO data to be selected depends on your requirements and research purposes, as each satellite has its own specifications suiting different requirements. Landsat-8 and Sentinel-2 have relatively similar specifications. They both have for example a rather high spatial resolution of 30m, meaning they are well suited for monitoring of water quality in rivers and small lakes. 
+As discussed in Section 2.5.1.1.1, the WQ application has currently data available from Landsat-8 and Sentinel-2. The EO data to be selected depends on your requirements and research purposes, as each satellite has its own specifications suiting different requirements. Landsat-8 and Sentinel-2 have relatively similar specifications. They both have for example a rather high spatial resolution of 30m, meaning they are well suited for monitoring of water quality in rivers and small lakes. 
 
 For this tutorial, Landsat-8 data is selected. 
 
@@ -142,7 +151,8 @@ For this tutorial, Landsat-8 data is selected.
 
 ➢	Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 9: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others cloud- and land cover filters and geometry filters for a spatial search. For now also leave the Search Panel untouched, so at default settings. 
 
-Note: The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser. 
+.. NOTE:: 
+	The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser. 
 
 .. figure:: includes/qsm9-f1.png
 	:align: center
@@ -171,7 +181,8 @@ As you can see a spatial filter can be applied using a WKT-code, but also by sim
 Select Your Data of Interest for Your Area of Interest
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Figure 11 shows the search results from Section 2.2. Now the data products of interested will be selected and saved in a Data Package.
+Figure 11 shows the search results from Section 2.5.2.2. Now the data products of interested will be selected and saved in a Data Package.
+
 1.	By clicking on an EO data product in the current search results box, the selected product is highlighted blue. In the map the spatial area covered by the selected product is boxed by a bold white line and a pop-up appears. In the pop-up information about this specific data product is provided.
 
 2.	In the pop-up box there is also the option to select Download or Related Search. The download can be performed through the Granule Download URL (for Landsat-8 this is through the USGS database) or directly through the Data Gateway or the HTEP platform. The related search offers you the option to search for data products with a similar time range, spatial coverage or a combination thereof as the currently selected data product. Feel free to download or do another search, but for this tutorial it is not necessary. 
@@ -183,10 +194,7 @@ Figure 11 shows the search results from Section 2.2. Now the data products of in
  
     Figure 11: Step 1-4 - Select your data product of interest
 
-3.	Hovering the data  products in the search results will 
-show  the   corresponding  Landsat-8   image  in   the 
-Geobrowser.  As  such  it  can  be   easily  determined 
-what image suits your interest.  
+3.	Hovering the data  products in the search results will show  the   corresponding  Landsat-8   image  in   the  Geobrowser.  As  such  it  can  be   easily  determined what image suits your interest.  
 
 4.	To  easily  select/deselect  (multiple)  products  or show/hide (multiple)  products on the map of the Geobrowser, use the icon next to the orange  square.
 
@@ -250,7 +258,8 @@ For now, leave your data package at default settings (Do not share) and Close th
 Processing Your Data Using the Water Quality Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Section 2.2 and 2.3 explained how to search for and select your data of interest within the Geobrowser. Having the relevant data selected and saved, it is now time to process this data to obtain the desired product output.
+Section 2.5.2.2 and 2.5.2.3 explained how to search for and select your data of interest within the Geobrowser. Having the relevant data selected and saved, it is now time to process this data to obtain the desired product output.
+
 1.	The processing services can be accessed from within the Geobrowser, but they are initially hidden. Open the available processing services by clicking on the processing services tab. 
 
 .. figure:: includes/qsm5-f17.png
@@ -314,7 +323,8 @@ For now the two products in your features basket will be selected for analysis b
 Visualising and Sharing of Job Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The previous section showed how to process the data products obtained from Section 2.2 and 2.3. Once the process is finished, which may take a considerable amount of time, the results can be visualized and possibly shared with others users and/or your community.
+The previous section showed how to process the data products obtained from Section 2.5.2.2 and 2.5.2.3. Once the process is finished, which may take a considerable amount of time, the results can be visualized and possibly shared with others users and/or your community.
+
 1.	Once the processor has finished the job, the Status of the job will change from Running to Success as shown in Figure 21.
 
 .. figure:: includes/qsm5-f21.png
