@@ -3,8 +3,10 @@
 An Overview of the Geobrowser Features
 --------------------------------------
 
-Once you are logged onto the HTEP platform (see Quick Start Manual 1) and you have accessed your application of interest using the HTEP Community Portal (see Quick Start Manual 2) you are in the Geobrowser. This document provides you an overview of the various available functions and features within the Geobrowser. 
-Note: Some of the functions and features below are not visible if you are not registered and logged onto HTEP. Also, some features and functions might be invisible because your user status has not increased from ‘starter’ to ‘explorer’ yet.
+Once you are logged onto the HTEP platform (see :doc:`Quick Start Manual 1 <qsm1>`) and you have accessed your application of interest using the HTEP Community Portal (see :doc:`Quick Start Manual 2 <qsm2>`) you are in the Geobrowser. This document provides you an overview of the various available functions and features within the Geobrowser. 
+
+.. NOTE:: 
+	Some of the functions and features below are not visible if you are not registered and logged onto HTEP. Also, some features and functions might be invisible because your user status has not increased from ‘starter’ to ‘explorer’ yet.
 
 The Geobrowser
 ==============

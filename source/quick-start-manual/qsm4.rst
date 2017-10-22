@@ -36,7 +36,7 @@ An Overview of Features within a Community
 
 3. Here you can go back to an overview of all existing communities, or you can leave the current community as a member.
 
-.. figure:: includes/qsm3-f2.png
+.. figure:: includes/qsm4-f2.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -63,7 +63,7 @@ An Overview of Features within a Community
 
 10.	Within the Geobrowser, a user is able to filter data packages, job results and other community specific activities for a specific community.  This is indicated by the red circles in Figure 3.
 
-.. figure:: includes/qsm3-f3.png
+.. figure:: includes/qsm4-f3.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -76,7 +76,7 @@ Access the Discussion Board
 As mentioned in Section 1.2 and indicated by number 9 in Figure 2, on the main page of your community you see the current top discussion in your community. 
 1. Click on Go to discuss. 
  
-.. figure:: includes/qsm3-f4.png
+.. figure:: includes/qsm4-f4.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -85,7 +85,7 @@ As mentioned in Section 1.2 and indicated by number 9 in Figure 2, on the main p
 
 2. Log in with your Terradue-account. You are directed to Terradue’s discuss page with top discussions in your community, see Figure 5.
  
-.. figure:: includes/qsm3-f5.png
+.. figure:: includes/qsm4-f5.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -96,7 +96,7 @@ As mentioned in Section 1.2 and indicated by number 9 in Figure 2, on the main p
 
 4. Open the Red River Workshop – Exercise Material topic. A welcome message is shown, and the topic contains all exercise material used during this workshop (Quick Start Manuals, Questionnaire, In-Situ Data). Download the material and save for the rest of the workshop.
 
-.. figure:: includes/qsm3-f6.png
+.. figure:: includes/qsm4-f6.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 

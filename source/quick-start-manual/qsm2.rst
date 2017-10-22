@@ -3,7 +3,7 @@
 Browse your way through the HTEP Portal
 ---------------------------------------
 
-Once you are registered in ESA’s Earth Observation Single Sign on environment (ESA EO-SSO-ID) and logged onto the Hydrology Thematic Exploitation Platform (HTEP) Community Portal (See Quick Start Manual 1), you are in the HTEP Community Portal. This document guides you the way through.
+Once you are registered in ESA’s Earth Observation Single Sign on environment (ESA EO-SSO-ID) and logged onto the Hydrology Thematic Exploitation Platform (HTEP) Community Portal (See :doc:`Quick Start Manual 1 <qsm1>`), you are in the HTEP Community Portal. This document guides you the way through.
 
 .. NOTE:: 
 	Some of the functions and features below are not visible if you are not registered and logged onto HTEP. Also, some features and functions might be invisible because your user status is not advanced enough yet.
@@ -42,7 +42,7 @@ Figure 1 shows the homepage of the HTEP Community Portal, which can be accessed 
 Discover Thematic Applications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. An overview of existing thematic applications as shown in Figure 2 is accessed by clicking on View Apps below the Discover Thematic Application section indicated at Section 1 point 3.
+1. An overview of existing thematic applications as shown in Figure 2 is accessed by clicking on View Apps below the Discover Thematic Application section indicated at step 3 of section 2.2.1.
  
 .. figure:: includes/qsm2-f2.png
 	:align: center
@@ -53,7 +53,7 @@ Discover Thematic Applications
 
 2. Currently only a limited number of thematic applications is available. Once the number of thematic application has increased, this search field can be used to easily find your application of interest.
 
-3. An overview of existing thematic applications, including information about each application. Select your application of interest (e.g. Small Water Bodies for Red River) and click on Open App to access your application of interest. A new window will appear, called the Geobrowser. More info about the features within the Geobrowser can be found in Quick Start Manual 3.
+3. An overview of existing thematic applications, including information about each application. Select your application of interest (e.g. Small Water Bodies for Red River) and click on Open App to access your application of interest. A new window will appear, called the Geobrowser. More info about the features within the Geobrowser can be found in :doc:`Quick Start Manual 3 <qsm3>`.
 
 Join Communities
 ~~~~~~~~~~~~~~~~
@@ -67,9 +67,9 @@ Join Communities
 
 	Figure 3: List of existing HTEP Communities
 
-2. Currently the list of existing communities is rather small, but if this number increases the search field can be used to find your community of interest. 
+2. You can become member of a community by clicking on Join. Once you have joined a community you can access your community by clicking on Enter. More info about the features within a community follows in :doc:`Quick Start Manual 4 <qsm4>`. 
 
-3. You can become member of a community by clicking on Join. Once you have joined a community you can access your community by clicking on Enter. More info about the features within a community follows in Quick Start Manual 4. 
+3. Currently the list of existing communities is rather small, but if this number increases the search field can be used to find your community of interest. 
 
 Analyse Activities
 ~~~~~~~~~~~~~~~~~~

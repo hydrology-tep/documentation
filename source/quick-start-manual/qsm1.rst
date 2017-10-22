@@ -17,7 +17,10 @@ Register on ESA EO Users’ Single Sign On
 
 	Figure 1: The HTEP Community Portal
 
-2. On the top right a register button is displayed, encircled in red. Click on this button to go to the ESA EO Users’ Single Sign On registration page. Note: Currently HTEP is only open for early adoptors. As such the registration button will not redirect you to the registration page but show a pop-up asking you to send an email. For now the registration page can as such only be accessed through the following URL: https://eo-sso-idp.eo.esa.int/idp/umsso20/registration.
+2. On the top right a register button is displayed, encircled in red. Click on this button to go to the ESA EO Users’ Single Sign On registration page. 
+
+.. NOTE:: 
+	Currently HTEP is only open for early adoptors. As such the registration button will not redirect you to the registration page but show a pop-up asking you to send an email. For now the registration page can as such only be accessed through the following URL: https://eo-sso-idp.eo.esa.int/idp/umsso20/registration.
 
 3. Figure 2 shows the ESA EO Users’ Single Sign On registration. Fill in all required information. Click on the question mark behind the field for extra info. Afterwards click on Register to continue. A confirmation as shown in Figure 3 is displayed and an email is sent.
 
@@ -28,12 +31,15 @@ Register on ESA EO Users’ Single Sign On
 
 	Figure 2: The ESA EO Users' Single Sign On Registration Page
 
+.. NOTE::
+	Password must contain at least 8 characters, with at least one upper case lettre, one lower case letter, one integer and a special character (!, @, ?, ...).
+
 .. figure:: includes/qsm1-f3.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border
 
-	Figure 3: Confirmation of Registration at ESA EO Users&#39; Single Sign On
+	Figure 3: Confirmation of Registration at ESA EO Users Single Sign On
 
 4. Open your email and click on the link provided by the EO-SSO administrator team. You will be
 directed to a page confirming the activation of your account, as indicated by Figure 5.
@@ -88,7 +94,7 @@ to verify your email address, as indicated by the arrow in Figure 8.
 
 	Figure 8: Email Address verification email
 
-5. Repeat step 1 and 2 of Section 2: Return to the HTEP Community Portal and Sign in again.
+5. Repeat step 1 and 2 of this section: Return to the HTEP Community Portal and Sign in again.
 After signing in a welcome message is displayed on the top of the HTEP Community Portal, as
 displayed in Figure 9. You are now registered, signed in and ready to use the HTEP platform!
 
