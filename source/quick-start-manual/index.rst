@@ -9,6 +9,8 @@ Hydrology thematic exploitation platform quick start manuals
    An Overview of the Geobrowser Features <qsm3>
    Become Member of a Community <qsm4>
    Upload Your Own (In-Situ) Data <qsm9>
+   Manage Your Community <qsm10>
+
 
 
 

@@ -11,7 +11,7 @@ Tutorial: Upload Your Own (In-Situ) Data
 For this exercise, in-situ data will be uploaded. As an example for this process, a GeoTiff containing Total Suspended Solids data of the Yen Binh water reservoir at 2017-04-01, created in the Water Quality application tutorial (see Quick Start Manual 5), is used. You can get this exercise-file yourself in one of the following ways: 
 
 	-	Follow the steps of Quick Start Manual 5 to create this file yourself and download the results.
-	-	By accessing and downloading the results of job WQ_YenBinh_Reservoir_LS8_ Spring2017 (published in the Red River community).
+	-	By accessing and downloading the results of job WQ_YenBinh_Reservoir_LS8_Spring2017 (published in the Red River community).
 	-	Or by downloading the GeoTiff from the community discussion board (see Quick Start Manual 4). 
 
 To upload data you need to have an account at Terradue, where you have to create an API-key, a repository (to store your data upload), and a catalogue. This account is automatically created according to your user level (visitors users does not have an account created).
@@ -23,7 +23,7 @@ Access the Manage my Data Application
 
 You do not have an account yet? Then first register on the platform. To register at the platform, it is advised to follow the steps in the Quick Start Manual How to become a user of HTEP, which can be found under the Quick Start-tab in the menu of the HTEP Community Portal. 
 
-.. figure:: includes/qsm5-f1.png
+.. figure:: includes/qsm9-f1.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -32,7 +32,7 @@ You do not have an account yet? Then first register on the platform. To register
 
 2. Access the Thematic Applications. Open the list of existing thematic applications by clicking on View Apps below to Discover Thematic Apps-icon.
 
-.. figure:: includes/qsm5-f2.png
+.. figure:: includes/qsm9-f2.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -41,7 +41,7 @@ You do not have an account yet? Then first register on the platform. To register
 
 3. A list of available Thematic Applications is shown. For this tutorial the Manage my Data application is required. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The Manage my Data application can also be accessed directly using the URL https://hydrology-tep.eo.esa.int/geobrowser/?id=managemydata. 
 
-.. figure:: includes/qsm5-f3.png
+.. figure:: includes/qsm9-f3.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -57,7 +57,7 @@ Once the Manage my Data application has been accessed, a new tab opens called th
 
 1. Click on the Store Upload button on the top-right of the Geobrowser. 
 
-.. figure:: includes/qsm4-f4.png
+.. figure:: includes/qsm9-f4.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -68,7 +68,7 @@ Once the Manage my Data application has been accessed, a new tab opens called th
 	-	**Target path:** Choose a path (a folder) in your repository where you would like to store your (in-situ) data. By default this is /results, an automatically created folder. Leave it as default for this exercise. Change this target path only if you have multiple folders in your storage.
 	-	**Drop files:** Drag and drop, or click and browse for your (in-situ) data to be uploaded. Any file extension (.csv, .mat, .xlsx, .png etc.) is possible. For this exercise the WQ GeoTiff is selected that contains data about the TSS in the Yen Binh reservoir.
 
-.. figure:: includes/qsm4-f5.png
+.. figure:: includes/qsm9-f5.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -79,7 +79,7 @@ Once the Manage my Data application has been accessed, a new tab opens called th
 
 4. After a successful upload, you get the message Upload complete! Click on close and update context or start another upload if you would like to upload more data to your repository.
 
-.. figure:: includes/qsm4-f6.png
+.. figure:: includes/qsm9-f6.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -91,7 +91,7 @@ Publish Your (In-Situ) Data in The Catalogue
 
 1. Select My Repository in the top-right of the Geobrowser and select the folder you have stored you data in Section 1.3 to access the products you have uploaded. For now the only folder is Results.
 
-.. figure:: includes/qsm4-f7.png
+.. figure:: includes/qsm9-f7.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -100,7 +100,7 @@ Publish Your (In-Situ) Data in The Catalogue
 
 2. Open the processing services tab.
 
-.. figure:: includes/qsm4-f8.png
+.. figure:: includes/qsm9-f8.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -117,7 +117,7 @@ Publish Your (In-Situ) Data in The Catalogue
 
 4. Click on the processing service Data Publication. Using this service you can put the data from your folder to a Catalogue. A catalogue is from where your data can be searched for. So if you plan to share uploaded data with other HTEP users, make sure you publish your data to a catalogue accessible to your target users. 
 
-.. figure:: includes/qsm4-f9.png
+.. figure:: includes/qsm9-f9.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -139,7 +139,7 @@ Contextualize Your (In-Situ) Data
 This process contextualizes data. It performs a geospatial analysis of the files in a specific repository for a given directory of the Data Gateway. At the end of the process, an Open Warehouse (OWS) context with all the possible offerings of the analysed files is returned.
 1. Go back to the services tab in the processing services of the Manage my Data application (see Figure 14). Figure 15 appears.
 
-.. figure:: includes/qsm4-f10.png
+.. figure:: includes/qsm9-f10.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
