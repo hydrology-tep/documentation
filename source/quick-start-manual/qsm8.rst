@@ -14,7 +14,7 @@ About TRE ALTAMIRAs FM App
 TRE-ALTAMIRAs flood monitoring service allows users to generate water mask, water frequency maps, flood maps, flood frequency maps and produce statistics from a list of SAR images. The service is based on Sentinel 1 SAR acquisitions and ASAR for historical analysis as well as the possibility of results refinement using high resolution Sentinel-2 Optical Data.
 The usage of EO data means low costs and low labour intensity, easy mapping of large areas and a high spatial resolution. Furthermore near real-time monitoring is possible using satellites with high temporal resolution and floods in physically inaccessible areas can be easily monitored. 
 
-.. figure:: includes/qsm7-f1.png
+.. figure:: includes/qsm8-f1.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -51,7 +51,7 @@ Flood Monitoring Application Output
 
 The Flood Monitoring application currently has an extensive list of possible output results: water masks, reference mask, water frequency map, flood maps, flood frequency map and maximum floodable area. Figure 2 shows the water frequency map of the river between Viet Tri and Hanoi, in the Red River basin. In this tutorial , amongst others those results will be reproduced.
  
-.. figure:: includes/qsm7-f2.png
+.. figure:: includes/qsm8-f2.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -68,7 +68,7 @@ Accessing the Flood Monitoring Thematic Application
 
 You do not have an account yet? Then first register on the platform. To register at the platform, it is advised to follow the steps in the Quick Start Manual How to become a user of HTEP, which can be found under the Quick Start-tab in the menu of the HTEP Community Portal. 
 
-.. figure:: includes/qsm7-f3.png
+.. figure:: includes/qsm8-f3.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -77,11 +77,16 @@ You do not have an account yet? Then first register on the platform. To register
 
 2.	Access the Thematic Applications. Open the list of existing thematic applications by clicking on View Apps below to Discover Thematic Apps-icon.
 
+.. figure:: includes/qsm8-f4.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
  
-                              Figure 4: Step 2 - Access the thematic applications
+ 	Figure 4: Step 2 - Access the thematic applications
+
 3.	A list of available Thematic Applications is shown. For this tutorial the Flood Monitoring for Red River application is used. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The SWBM application can also be accessed directly using the URL https://hydrology-tep.eo.esa.int/geobrowser/?id=floodmonitoring-redriver#!. 
   
-.. figure:: includes/qsm7-f5.png
+.. figure:: includes/qsm8-f5.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -94,7 +99,7 @@ Once the FM application has been accessed, a new tab opens called the Geobrowser
 
 1.	You can zoom in and zoom out by clicking on the + and – icons on the left side of the Geobrowser, encircled in red. The map can be shifted to any desired area by clicking on the map and dragging your mouse. For this tutorial the focus is kept on default; the Red River area in Northern Vietnam and Southern China. 
  
-.. figure:: includes/qsm7-f6.png
+.. figure:: includes/qsm8-f6.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -119,7 +124,7 @@ Note: The Search Field cannot be used to search for geographic places: this feat
 
 ➢	Although the Search Panel already provides you the option for a spatial filter based search, you can also apply a spatial search through the tools of 4c. A polygon, rectangle, marker and well-known text (WKT) code can be used to define your area of interest. For this tutorial a spatial filter is applied using a WKT-code. Click on the WKT button: the pop-up of Figure 9 appears.
 
-.. figure:: includes/qsm7-f9.png
+.. figure:: includes/qsm8-f9.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -142,7 +147,7 @@ Figure 10 shows the search results from Section 2.2. Now the data products of in
 
 2.	In the pop-up box there is also the option to select Download or Related Search. The download can be performed through the Download (application/octet) (for Sentinel-1 this is through the Copernicus SciHub database) or directly through the Data Gateway of the HTEP platform. The related search offers you the option to search for data products with a similar time range, spatial coverage or a combination thereof as the currently selected data product. Feel free to download or do another search, but for this tutorial it is not necessary. 
 
-.. figure:: includes/qsm7-f1.png
+.. figure:: includes/qsm8-f10.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -156,7 +161,7 @@ square.
 
 4.	The data products of interest for your research can be selected and transferred to the features basket simply using drag and drop as illustrated in Figure 11. 
  
-.. figure:: includes/qsm7-f11.png
+.. figure:: includes/qsm8-f11.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -172,7 +177,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 
 The advantage of a Data Package is that you can easily load your data products of interest at any arbitrary time and you can also easily share it with other hydrologists. 
  
-.. figure:: includes/qsm7-f12.png
+.. figure:: includes/qsm8-f12.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -181,7 +186,7 @@ The advantage of a Data Package is that you can easily load your data products o
 
 7.	Your data package created in step 6, can be found in the Data Packages box. Access the Data Packages box using the Data Packages tab, located next to the Features Basket tab.
   
-.. figure:: includes/qsm7-f13.png
+.. figure:: includes/qsm8-f13.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -192,7 +197,7 @@ The advantage of a Data Package is that you can easily load your data products o
 
 9.	One of the options is to share your Data Package with all other HTEP users or with your community. To do so, click on share. A pop-up will appear as shown in Figure 14.
  
-.. figure:: includes/qsm7-f14.png
+.. figure:: includes/qsm8-f14.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -206,7 +211,7 @@ For now, leave your data package at default settings (Do not share) and Close th
 10.	Additional features to manage Geobrowser map visualisation: On the top-right of the Geobrowser the lay-out manager-icon, indicated by the red rectangle in Figure 15, can be selected: a list of options will appear to manage the Geobrowser map visualisation. The background of the map can be changed from default to for example Google Maps or Natural Earth. In the dropdown menu it can also be defined which products should be shown on the map: for instance the products from the related search, the products from the features basket or the data results after processing, which will be discussed in Section 2.4. Feel free to play with the visualisation of the map.
 
            	                      
-.. figure:: includes/qsm7-f15.png
+.. figure:: includes/qsm8-f15.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -219,7 +224,7 @@ Processing Your Data Using the Flood Monitoring Service
 Section 2.2 and 2.3 explained how to search for and select your data of interest within the Geobrowser. Having the relevant data selected and saved, it is now time to process this data to obtain the desired product output.
 1.	The processing services can be accessed from within the Geobrowser, but they are initially hidden. Open the available processing services by clicking on the processing services tab. 
  
-.. figure:: includes/qsm7-f16.png
+.. figure:: includes/qsm8-f16.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -235,6 +240,13 @@ Section 2.2 and 2.3 explained how to search for and select your data of interest
 ➢	Jobs: This tab lists all existing jobs. The jobs shown are the jobs you have created yourself  or the jobs who have been published by other HTEP users. 
 
 3.	For now, click on the Flood Monitoring process service hydrology-tep_acs-flood-m to access the Flood Monitoring processing service. See Figure 17.
+
+.. figure:: includes/qsm8-f17.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+ 
+ 	Figure 17: Step 3,5 - SWBM processing service
 
 4.	To process data and create output, a Job needs to be created. A job can be created by filling in all the fields as shown in Figure 17: 
 
@@ -262,6 +274,13 @@ Section 2.2 and 2.3 explained how to search for and select your data of interest
 
 5.	Click on the Calculate Cost button to run the job. 
 
+.. figure:: includes/qsm8-f18.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+ 	
+ 	Figure 18: Step 6 - Job progress and job info
+
 6.	Now the job is running, your data is analysed using HTEPs cloud services. During the processing of your data, information about your job is displayed as shown in Figure 18. Job Info provides info about the job, such as the name of the job, its identifiers, the date of creation and the user who created the job. Besides a progress bar shows you the progress of the analysis and under parameters you see the input and output parameters used for this specific job. 
 
 Visualising and Sharing of Job Results
@@ -278,11 +297,18 @@ The previous section showed how to process the data products obtained from Secti
 
 5.	The job results are not just loaded in the current search results box, but also in the Geobrowser. You can visualize each parameter individually in the Geobrowser by selecting the option show only this feature. 
 
+.. figure:: includes/qsm8-f20.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+ 
+ 	Figure 20: Step 2,3 - Job progress and job info
+
 6.	For each analysed image the output products in tiff format can be visualized in the Geobrowser.
 
 7.	The resolution of the job results within the Geobrowser is rather low and may impose the false assumption of unreliable results. Therefore, click on your data product of interest in the result box and a pop-up will appear as shown in Figure 21. Here you can Download the result in different formats. 
  
-.. figure:: includes/qsm7-f21.png
+.. figure:: includes/qsm8-f21.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
@@ -295,7 +321,7 @@ The previous section showed how to process the data products obtained from Secti
 
 10.	Click on the Show thematic jobs-field next to the Filter Jobs Search Field: here you can choose which jobs you wish to see: only the thematic jobs, all jobs, only your own created jobs or only public jobs. Once you found your job of interest, click on the name of the job and access the results as explained in steps 3-7. You will see there is a thematic job available that shows the results from this Quick Start Manual: VietTri _March17_RR-Tutorial.
   
-.. figure:: includes/qsm7-f22.png
+.. figure:: includes/qsm8-f22.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
