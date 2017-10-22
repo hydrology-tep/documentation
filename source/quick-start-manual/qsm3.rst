@@ -117,7 +117,7 @@ Reproduce Data and Visualise Results
 Share Data and Results
 ~~~~~~~~~~~~~~~~~~~~~~
 
-During the process described from Section 2.1. until 2.3., it is possible to share each step with other HTEP users. Most important features are the ability to share your Data Packages and your job results. The |share| icon indicates you can share something. For a Data Package this icon can be found as explained in Section 2.1. point 10 (Figure 4). For a successful job this icon can be found on the top, as indicated in Figure 8.
+During the process described from Section 2.3.1.1. until 2.3.1.3, it is possible to share each step with other HTEP users. Most important features are the ability to share your Data Packages and your job results. The |share| icon indicates you can share something. For a Data Package this icon can be found as explained in step 10 of Section 2.3.1.1 (Figure 4). For a successful job this icon can be found on the top, as indicated in Figure 8.
 
 1. Figure 9 shows the share pop-up. 
 
@@ -127,7 +127,7 @@ During the process described from Section 2.1. until 2.3., it is possible to sha
 
  - **Do not share:** This is the default setting and means only you can see the data package or job result.
  - **Share with anyone:** Selecting this button means your data package and job results will be visible for anyone who uses HTEP.
- - ** Restricted sharing:** Selecting this button means your data package and job results will be visible only for a limited number of users: for example only members of a specific community.
+ - **Restricted sharing:** Selecting this button means your data package and job results will be visible only for a limited number of users: for example only members of a specific community.
 
 .. figure:: includes/qsm3-f9.png
 	:align: center
