@@ -10,6 +10,8 @@ Hydrology thematic exploitation platform quick start manuals
    Become Member of a Community <qsm4>
    Create a Water Quality Map <qsm5>
    Small Water Body Mapping <qsm6>
+   Create a Water Level Time Series <qsm7>
+   Produce a Flood Map <qsm8>
    Upload Your Own (In-Situ) Data <qsm9>
    Manage Your Community <qsm10>
 
