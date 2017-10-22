@@ -11,6 +11,10 @@ User Profile
 
 Find out how to sign-in using **EO-SSO**, update your profile, link your profile with your **Github** account or get information about your usage of the platform.
 
+Register
+--------
+
+A detailed guideline describing this section is available here: `QSM1`_.
 
 Sign in
 -------

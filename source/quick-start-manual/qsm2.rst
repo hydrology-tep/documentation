@@ -1,11 +1,11 @@
 .. _QSM2:
 
 Browse your way through the HTEP Portal
---------------------------------------
+---------------------------------------
 
 Once you are registered in ESA’s Earth Observation Single Sign on environment (ESA EO-SSO-ID) and logged onto the Hydrology Thematic Exploitation Platform (HTEP) Community Portal (See Quick Start Manual 1), you are in the HTEP Community Portal. This document guides you the way through.
 
-NOTE.. 
+.. NOTE:: 
 	Some of the functions and features below are not visible if you are not registered and logged onto HTEP. Also, some features and functions might be invisible because your user status is not advanced enough yet.
 
 The HTEP Community Portal Homepage
