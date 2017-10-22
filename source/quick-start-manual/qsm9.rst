@@ -25,9 +25,9 @@ You do not have an account yet? Then first register on the platform. To register
 .. figure:: includes/qsm9-f1.png
 	:align: center
 	:width: 80%
-	:figclass: img-container-border	
- 
-    Figure 1: Step 1 – HTEP Community Portal
+	:figclass: img-container-border	 
+
+	Figure 1: Step 1 – HTEP Community Portal
 
 2. Access the Thematic Applications. Open the list of existing thematic applications by clicking on View Apps below to Discover Thematic Apps-icon.
 
@@ -35,7 +35,7 @@ You do not have an account yet? Then first register on the platform. To register
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
-                              
+    
     Figure 2: Step 2 - Access the thematic applications
 
 3. A list of available Thematic Applications is shown. For this tutorial the Manage my Data application is required. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The Manage my Data application can also be accessed directly using the URL https://hydrology-tep.eo.esa.int/geobrowser/?id=managemydata. 
