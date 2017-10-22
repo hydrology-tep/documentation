@@ -14,7 +14,7 @@ Find out how to sign-in using **EO-SSO**, update your profile, link your profile
 Register
 --------
 
-A detailed guideline describing this section is available in  :doc:`qsm1 <../quick-start-manual/qsm1>`.
+A detailed guideline describing this section is available in :doc:`Quick Start Manual 1 <../quick-start-manual/qsm1>`.
 
 Sign in
 -------

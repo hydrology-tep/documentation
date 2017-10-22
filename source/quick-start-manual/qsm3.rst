@@ -50,14 +50,14 @@ Search and collect data
 
 .. figure:: includes/qsm3-f3.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
 
 	Figure 3: Save data products in a Data Package
 
 .. figure:: includes/qsm3-f4.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
 
 	Figure 4: Overview of Data Packages

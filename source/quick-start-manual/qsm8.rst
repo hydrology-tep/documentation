@@ -43,7 +43,7 @@ Sentinel-2 works not in the microwave spectrum but in the multi-spectrum: the vi
 Influence of obstructions such as clouds
 ****************************************
 
-As mentioned in Section 1.1.1, Sentinel-1 and ENVISAT make use of sensors working in the microwave spectrum. Therefore obstructions such as clouds do not affect the SAR images. SAR is optimal for instance in areas with huge cloud coverage (floods in hurricane storms and in wet season in several areas with large amount of rainfall) where the optical sensors are very limited. As such there is no need to take into account obstructions such as cloud coverage when you pick data products for analysis from either Sentinel-1 or ENVISAT. 
+As mentioned in Section 2.8.1.1.1, Sentinel-1 and ENVISAT make use of sensors working in the microwave spectrum. Therefore obstructions such as clouds do not affect the SAR images. SAR is optimal for instance in areas with huge cloud coverage (floods in hurricane storms and in wet season in several areas with large amount of rainfall) where the optical sensors are very limited. As such there is no need to take into account obstructions such as cloud coverage when you pick data products for analysis from either Sentinel-1 or ENVISAT. 
 However, Sentinel-2 data is used to refine the water masks using optical sensors operating in the multispectrum. As those sensors use the backscattering of light within the visible spectrum, wavelengths cannot properly penetrate obstructions such as clouds and haze, meaning those kind of obstructions sometimes result in difficult measuring conditions. The quality of refinement is therefore dependent on the cloud coverage in the Sentinel-2 images. 
 
 Flood Monitoring Application Output
@@ -58,7 +58,9 @@ The Flood Monitoring application currently has an extensive list of possible out
  
  	Figure 2: Water Frequency from FM app of Red River section between Viet Tri and Hanoi
 
-2.	Tutorial: Flood Monitoring My Area of Interest
+Tutorial: Flood Monitoring My Area of Interest
+==============================================
+
 This chapter contains a hands-on tutorial how to work with TRE ALTAMIRAs FM application on HTEP. The tutorial shows and explains step-by-step the different features of HTEP and the actions to be taken in order to create amongst others the water frequency map of Figure 2. For this tutorial, the area of interest is the part of the Red River between Viet Tri and Hanoi, in the Red River basin. 
 
 Accessing the Flood Monitoring Thematic Application
@@ -94,7 +96,10 @@ You do not have an account yet? Then first register on the platform. To register
  	Figure 5: Step 3 and 4 - Available applications and your selections
 
 4.	Filter your application of interest by using the Your selections column on the left side of the Thematic Applications page: Search text allows you to use keywords to find a corresponding thematic application. Currently the Your selections-feature is unnecessary, as there is only a limited number of thematic applications available. However, you might need this feature to find your application of interest once the number of available applications has significantly increased.
-2.2.	Search Your Data of Interest for Your Area of Interest
+
+Search Your Data of Interest for Your Area of Interest
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Once the FM application has been accessed, a new tab opens called the Geobrowser. This part of the tutorial will teach you to work with the various features and functions available within the Geobrowser. Currently the default map is of Northern Vietnam and Southern China: the Red River basin. The default map shown upon opening the FM app may change in the future. 
 
 1.	You can zoom in and zoom out by clicking on the + and – icons on the left side of the Geobrowser, encircled in red. The map can be shifted to any desired area by clicking on the map and dragging your mouse. For this tutorial the focus is kept on default; the Red River area in Northern Vietnam and Southern China. 
@@ -110,7 +115,7 @@ Once the FM application has been accessed, a new tab opens called the Geobrowser
 
 3.	You can select which satellite data source you would like to use for your research on the top-right of the Geobrowser. Selecting EO Data imposes a dropdown menu showing all available remotely sensed EO data sources for this application. 
 
-As discussed in Section 1.1.1, the FM application has currently data available from Sentinel-1, Envisat, and Sentinel-2. The EO data to be selected depends on your requirements and research purposes, as each satellite has its own specifications suiting different requirements. Sentinel-1 and Envisat have relatively similar specifications and are the main input parameters for analysis: Sentinel-1 for monitoring recent flooding data and Envisat for historical analysis. Sentinel-2 products are optical data products used to refine the analysis of the main input products.
+As discussed in Section 2.8.1.1.1, the FM application has currently data available from Sentinel-1, Envisat, and Sentinel-2. The EO data to be selected depends on your requirements and research purposes, as each satellite has its own specifications suiting different requirements. Sentinel-1 and Envisat have relatively similar specifications and are the main input parameters for analysis: Sentinel-1 for monitoring recent flooding data and Envisat for historical analysis. Sentinel-2 products are optical data products used to refine the analysis of the main input products.
 
 For this tutorial, Sentinel-1 data is selected. 
 
@@ -120,7 +125,8 @@ For this tutorial, Sentinel-1 data is selected.
 
 ➢	Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others cloud- and land cover filters and geometry filters for a spatial search. For now also leave the Search Panel untouched, so at default settings. 
 
-Note: The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser. 
+.. NOTE:: 
+	The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser. 
 
 ➢	Although the Search Panel already provides you the option for a spatial filter based search, you can also apply a spatial search through the tools of 4c. A polygon, rectangle, marker and well-known text (WKT) code can be used to define your area of interest. For this tutorial a spatial filter is applied using a WKT-code. Click on the WKT button: the pop-up of Figure 9 appears.
 
@@ -131,7 +137,7 @@ Note: The Search Field cannot be used to search for geographic places: this feat
  
  	Figure 9: Step 4c - Apply a spatial filter using WKT-code or Shapefile
 
-As you can see a spatial filter can be applied using a WKT-code, but also by simply dragging and dropping a Shapefile or uploading a Shapefile from your computer. For now a WKT-text is used. Copy and paste the following code in the top field: POLYGON((105.437 21.365,105.33 21.326,105.314 21.224,105.407 21.172,105.531 21.115,105.756 21.067,105.807 21.182,105.646 21.238,105.529 21.229,105.437 21.365)) and click on OK. This WKT code is the area of interest, the part of the Red River between Viet Tri and Hanoi: the reservoir should now be boxed by a pink dashed line. 
+As you can see a spatial filter can be applied using a WKT-code, but also by simply dragging and dropping a Shapefile or uploading a Shapefile from your computer. For now a WKT-text is used. Copy and paste the following code in the top field: POLYGON((105.437 21.365,105.33 21.326,105.314 21.224,105.407 21.172,105.531 21.115,105.756 21.067,105.807 21.182,105.646 21.238,105.529 21.229,105.437 21.365)) and click on OK. This WKT code is the area of interest, the part of the Red River between Viet Tri and Hanoi: the river should now be boxed by a pink dashed line. 
 
 ➢	Now also a time filter is applied. The time filter can be applied not only through the Search Panel, but also using the tool of 4d indicated in Figure 7. The slider at the bottom is a time filter that can set by sliding the begin and end date to the desired time range. For now drag the left side of the time filter to 2017-03-01 and the right side of the time filter to 2017-03-31. Alternatively use the Search Panel.
 
@@ -142,7 +148,8 @@ As you can see a spatial filter can be applied using a WKT-code, but also by sim
 Select Your Data of Interest for Your Area of Interest
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Figure 10 shows the search results from Section 2.2. Now the data products of interested will be selected and saved in a Data Package.
+Figure 10 shows the search results from Section 2.8.2.2. Now the data products of interested will be selected and saved in a Data Package.
+
 1.	By clicking on an EO data product in the current search results box, the selected product is highlighted blue. In the map the spatial area covered by the selected product is boxed by a bold white line and a pop-up appears. In the pop-up information about this specific data product is provided, such as the product type, swath, orbit and time of capturing.
 
 2.	In the pop-up box there is also the option to select Download or Related Search. The download can be performed through the Download (application/octet) (for Sentinel-1 this is through the Copernicus SciHub database) or directly through the Data Gateway of the HTEP platform. The related search offers you the option to search for data products with a similar time range, spatial coverage or a combination thereof as the currently selected data product. Feel free to download or do another search, but for this tutorial it is not necessary. 
@@ -171,9 +178,10 @@ square.
 
 For this tutorial, select the following three products from the current search results and transfer them to the features basket: S1A GRD IW_DP L1 VV, VH 128 2017-03-20T11:05:53.4115860 (20 March 2017), S1A GRD IW_DP L1 VV, VH 91 2017-03-17T22:50:33.49198502 (17 March 2017) and S1A GRD IW_DP L1 VV, VH 128 2017-03-08T11:06:00.3705280 (8 March 2017).
 Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there are usable optical data products for result refinement. Three data product appear: click on them for additional information. As you can see, all data products have a cloud coverage of >98%. Therefore using Sentinel-2 data for refinement purposes is impossible for this exercise. 
+
 5.	The products in the features basket can be easily selected/deselected and/or removed using the options on the top-right of the features basket. 
 
-6.	All data products dropped in the features basket, can together be saved as a single Data Package using the Save button on the top-right of the features basket box. The pop-up of Figure 12 appears and a name can be assigned to the Data Package. Name your data package FM_VietTri_Hanoi_March17_ username (replace username by your username). Click on Save to Save the Data Package: a message should appear stating a successful save.
+6.	All data products dropped in the features basket, can together be saved as a single Data Package using the Save button on the top-right of the features basket box. The pop-up of Figure 12 appears and a name can be assigned to the Data Package. Name your data package FM_VietTri_Hanoi_March17_username (replace username by your username). Click on Save to Save the Data Package: a message should appear stating a successful save.
 
 The advantage of a Data Package is that you can easily load your data products of interest at any arbitrary time and you can also easily share it with other hydrologists. 
  
@@ -204,11 +212,15 @@ The advantage of a Data Package is that you can easily load your data products o
  
  	Figure 14: Step 9 - Choose the visibility of your data package
 
-· Do not share: Default setting, meaning your data package is only visible for yourself.
-· Share with anyone: Share your data package with all other HTEP users.
-· Restricted sharing: Share your data package with a limited number of users, for example only a specific user(s) or with users from the same community.
-For now, leave your data package at default settings (Do not share) and Close the pop-up. In the list of public Data Packages there should be a Data Package called SWB_VietTri-Hanoi_March17_ RR-Tutorial. This Data Package was created and published for the purpose of the Small Water Bodies tutorial (Quick Start Manual 6) but is also used for this tutorial. Please click on load: the products from this Data Package are loaded. It contains the same products as your own data package, and two additional products: A Sentinel-2 product and another Sentinel-1 product from 2016. 
-10.	Additional features to manage Geobrowser map visualisation: On the top-right of the Geobrowser the lay-out manager-icon, indicated by the red rectangle in Figure 15, can be selected: a list of options will appear to manage the Geobrowser map visualisation. The background of the map can be changed from default to for example Google Maps or Natural Earth. In the dropdown menu it can also be defined which products should be shown on the map: for instance the products from the related search, the products from the features basket or the data results after processing, which will be discussed in Section 2.4. Feel free to play with the visualisation of the map.
+The options are:
+
+	- **Do not share:** Default setting, meaning your data package is only visible for yourself.
+	- **Share with anyone:** Share your data package with all other HTEP users.
+	- **Restricted sharing:** Share your data package with a limited number of users, for example only a specific user(s) or with users from the same community.
+
+For now, leave your data package at default settings (Do not share) and Close the pop-up. In the list of public Data Packages there should be a Data Package called SWB_VietTri-Hanoi_March17_RR-Tutorial. This Data Package was created and published for the purpose of the Small Water Bodies tutorial (Quick Start Manual 6) but is also used for this tutorial. Please click on load: the products from this Data Package are loaded. It contains the same products as your own data package, and two additional products: A Sentinel-2 product and another Sentinel-1 product from 2016. 
+
+10.	Additional features to manage Geobrowser map visualisation: On the top-right of the Geobrowser the lay-out manager-icon, indicated by the red rectangle in Figure 15, can be selected: a list of options will appear to manage the Geobrowser map visualisation. The background of the map can be changed from default to for example Google Maps or Natural Earth. In the dropdown menu it can also be defined which products should be shown on the map: for instance the products from the related search, the products from the features basket or the data results after processing, which will be discussed in Section 2.8.2.4. Feel free to play with the visualisation of the map.
 
            	                      
 .. figure:: includes/qsm8-f15.png
@@ -221,12 +233,13 @@ For now, leave your data package at default settings (Do not share) and Close th
 Processing Your Data Using the Flood Monitoring Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Section 2.2 and 2.3 explained how to search for and select your data of interest within the Geobrowser. Having the relevant data selected and saved, it is now time to process this data to obtain the desired product output.
+Section 2.8.2.2 and 2.8.2.3 explained how to search for and select your data of interest within the Geobrowser. Having the relevant data selected and saved, it is now time to process this data to obtain the desired product output.
+
 1.	The processing services can be accessed from within the Geobrowser, but they are initially hidden. Open the available processing services by clicking on the processing services tab. 
  
 .. figure:: includes/qsm8-f16.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
  	Figure 16: Step 1, 2 and 3 - Access processing services   
@@ -243,7 +256,7 @@ Section 2.2 and 2.3 explained how to search for and select your data of interest
 
 .. figure:: includes/qsm8-f17.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
  	Figure 17: Step 3,5 - SWBM processing service
@@ -258,7 +271,7 @@ Section 2.2 and 2.3 explained how to search for and select your data of interest
 
 ➢	Satellite constellation: Here you define from which satellite you are going to analyse products. For this tutorial this is Sentinel-1.
 
-➢	Area of interest: Define your area of interest. Click on the arrow next to the input field and a dropdown menu appears.  Pick bbox (bounding box) - geometry to define the area used as a spatial filter in Step 4 of Section 2.1 as the area of interest. The WKT-code will appear in the field.
+➢	Area of interest: Define your area of interest. Click on the arrow next to the input field and a dropdown menu appears.  Pick bbox (bounding box) - geometry to define the area used as a spatial filter in Step 4 of Section 2.8.2.1 as the area of interest. The WKT-code will appear in the field.
 
 ➢	Temporal baseline: In this field it should be indicated what maximum time difference is allowed between the input Sentinel-1/ENVISAT data products and the Sentinel-2 data products. If the differences in water bodies between both data products are too large, it is not useful to use one product to refine the results of another product. A suitable baseline depends on the area and the event. The baseline is by default 48 hours, for this tutorial this is left as default. 
 
@@ -266,7 +279,7 @@ Section 2.2 and 2.3 explained how to search for and select your data of interest
 
 ➢	Reference Date: If you select reference data selection in the previous field, then this field is meant to provide the exact date of reference for the flood monitoring. It means the reference data can be left at NONE for this exercise.
 
-➢	Results Type:  Click this field and a dropdown menu appears with all possible output parameters discussed in Section 1.1.2. Select your output product of interest, which for this exercise is all the possible outputs from this service: All.
+➢	Results Type:  Click this field and a dropdown menu appears with all possible output parameters discussed in Section 2.8.1.1.2. Select your output product of interest, which for this exercise is all the possible outputs from this service: All.
 
 ➢	Results Label: Choose a prefix for the data output products so you recognize the output products. The output products will have the name Prefix_JobTitle. For now the prefix used is FM from Flood Monitoring.
 
@@ -286,7 +299,8 @@ Section 2.2 and 2.3 explained how to search for and select your data of interest
 Visualising and Sharing of Job Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The previous section showed how to process the data products obtained from Section 2.2 and 2.3. Once the process is finished, which may take a considerable amount of time, the results can be visualized and possibly shared with others users and/or your community.
+The previous section showed how to process the data products obtained from Section 2.8.2.2 and 2.8.2.3. Once the process is finished, which may take a considerable amount of time, the results can be visualized and possibly shared with others users and/or your community.
+
 1.	Once the processor has finished the job, the Status of the job will change from Running to Success as shown in Figure 19.
 
 2.	If a problem occurred during the processing of your job, or if it was performed using the wrong parameters then click Resubmit Job to run the job again. Adaptions to your parameters can be made.
@@ -310,7 +324,7 @@ The previous section showed how to process the data products obtained from Secti
  
 .. figure:: includes/qsm8-f21.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
  	Figure 21: Step 4-8 - Visualisation of Job Results

@@ -10,9 +10,8 @@ Tutorial: Upload Your Own (In-Situ) Data
 
 For this exercise, in-situ data will be uploaded. As an example for this process, a GeoTiff containing Total Suspended Solids data of the Yen Binh water reservoir at 2017-04-01, created in the Water Quality application tutorial (see Quick Start Manual 5), is used. You can get this exercise-file yourself in one of the following ways: 
 
-	-	Follow the steps of Quick Start Manual 5 to create this file yourself and download the results.
+	-	Follow the steps of :doc:`Quick Start Manual 5 <qsm5>` to create this file yourself and download the results.
 	-	By accessing and downloading the results of job WQ_YenBinh_Reservoir_LS8_Spring2017 (published in the Red River community).
-	-	Or by downloading the GeoTiff from the community discussion board (see Quick Start Manual 4). 
 
 To upload data you need to have an account at Terradue, where you have to create an API-key, a repository (to store your data upload), and a catalogue. This account is automatically created according to your user level (visitors users does not have an account created).
 
@@ -62,9 +61,9 @@ Once the Manage my Data application has been accessed, a new tab opens called th
 	:width: 80%
 	:figclass: img-container-border	 
 	 
-2. The Store upload-screen of Figure 10 appears. Here you define:
+2. The Store upload-screen of Figure 5 appears. Here you define:
 
-	-	**Target Repository:** The repository you wish to store your (in-situ) data. This is by default your own username repository you created in Section 1.1.2. Leave it as default for this exercise.
+	-	**Target Repository:** The repository you wish to store your (in-situ) data. This is by default your own username. Leave it as default for this exercise.
 	-	**Target path:** Choose a path (a folder) in your repository where you would like to store your (in-situ) data. By default this is /results, an automatically created folder. Leave it as default for this exercise. Change this target path only if you have multiple folders in your storage.
 	-	**Drop files:** Drag and drop, or click and browse for your (in-situ) data to be uploaded. Any file extension (.csv, .mat, .xlsx, .png etc.) is possible. For this exercise the WQ GeoTiff is selected that contains data about the TSS in the Yen Binh reservoir.
 
@@ -89,7 +88,7 @@ Once the Manage my Data application has been accessed, a new tab opens called th
 Publish Your (In-Situ) Data in The Catalogue
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Select My Repository in the top-right of the Geobrowser and select the folder you have stored you data in Section 1.3 to access the products you have uploaded. For now the only folder is Results.
+1. Select My Repository in the top-right of the Geobrowser and select the folder you have stored you data in Section 2.9.1.2 to access the products you have uploaded. For now the only folder is Results.
 
 .. figure:: includes/qsm9-f7.png
 	:align: center
@@ -102,7 +101,7 @@ Publish Your (In-Situ) Data in The Catalogue
 
 .. figure:: includes/qsm9-f8.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
 	Figure 8: Step 4 - Data Publication Processing Service
@@ -119,7 +118,7 @@ Publish Your (In-Situ) Data in The Catalogue
 
 .. figure:: includes/qsm9-f9.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
 	Figure 9: Step 5,6 - Data Publication Processor
@@ -141,7 +140,7 @@ This process contextualizes data. It performs a geospatial analysis of the files
 
 .. figure:: includes/qsm9-f10.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
 	Figure 10: Step 1-3 - Data Contextualization Processor
