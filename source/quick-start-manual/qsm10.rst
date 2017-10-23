@@ -19,38 +19,37 @@ You do not have an account yet? Then first register on the platform. To register
 
 .. figure:: includes/qsm10-f1.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 1: Step 1 – HTEP Community Portal
+ 
+	Figure 1: Step 1 – HTEP Community Portal   
 
 2. Access the Join Communities. Open the list of existing communities by clicking on View Communities below to Join Communities-icon.
 
- .. figure:: includes/qsm10-f2.png
+.. figure:: includes/qsm10-f2.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 2: Step 2 - Access the communities
+ 
+	Figure 2: Step 2 - Access the communities
 
 3. A list of available Communities is shown, each with the community title and a short description of the community. For this tutorial the Red River community is accessed by clicking on Enter. 
 
 .. figure:: includes/qsm10-f3.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 3: Step 3 – Available communities on HTEP
+ 
+	Figure 3: Step 3 – Available communities on HTEP
 
 4. After accessing the community, on the top of the community the menu as shown in Figure 4 is displayed.  
 
-
 .. figure:: includes/qsm10-f4.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 4: Step 4 – The Community Page Menu
+ 
+	Figure 4: Step 4 – The Community Page Menu
 
 Manage the Members (roles) within a Community
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
