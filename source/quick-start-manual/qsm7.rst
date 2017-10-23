@@ -208,13 +208,19 @@ Section 2.7.2.2 and 2.7.2.3 explained how to search for and select your data of 
 Figure 17:
 
 	➢ Job title: Give your Job a title, for instance WL_S3-CamSonLake_RR-Tutorial_user name. Any other name with arbitrary length and symbols is also allowed.
+
 	➢ Selected Water Mask: Here you provide one or multiple water mask where the water level needs to be obtained. Drag and drop the water mask from the Cam Son Lake (named inland_water-8) from the current search results to this input field.
+	
 	➢ Plot name: Define a name that will be
 displayed on top of the plot with the water level. For this tutorial this name is equal to
 the Job Title.
+
 	➢ Start Date: Define a start date from where the water level needs to be calculated. The date used for the data search can also be chosen: click on the magic tool left of the input field. A dropdown menue appears: click on start date.
+
 	➢ End Date: Define an end date until when the water level needs to be calculated. The date used for the data search can also be chosen: click on the magic tool left of the input field. A dropdown menue appears: click on end date.
+
 	➢ Selected polygon: In this input field define your area of interest, which for this tutorial is the polygon given in Step 4 of Section 2.7.2.2. To easily select this polygon, click on the magic tool left of the input field and select geometry.
+
 	➢ Selected Missions: The Water Level Service uses altimetry data from 3 different satellites; Sentinel-3 (S3), Saral/Altika (ATK) and Jason (JS). Type S3, ATK or JS to process data from your satellite of preference, or type ALL to process data from all satellites. For this tutorial Sentinel-3 data is used (so type S3).
 
 5. Click on the Calculate Cost and then on Run Job button at the bottom of the processor to run the job.
