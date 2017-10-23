@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>5.4. Water Quality &#8212; Hydrology Thematic Exploitation Platform 2.0 documentation</title>
+    <title>6.4. Water Quality &#8212; Hydrology Thematic Exploitation Platform 2.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.0',
+        VERSION:     '2.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -33,8 +33,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5.5. Water Level" href="wl.html" />
-    <link rel="prev" title="5.3. Hydrological Modelling" href="hm.html" />
+    <link rel="next" title="6.5. Water Level" href="wl.html" />
+    <link rel="prev" title="6.3. Hydrological Modelling" href="hm.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -72,7 +72,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>2.0</b><b class="caret"></b>
+        <b>2.1</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -93,11 +93,12 @@
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">2. Community Portal User Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. Thematic Applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start-manual/index.html">2. Quick Start Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
 </ul>
 </ul>
 </li>
@@ -111,19 +112,19 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">5.4. Water Quality</a><ul>
-<li><a class="reference internal" href="#service-description">5.4.1. Service Description</a></li>
-<li><a class="reference internal" href="#access-to-the-thematic-application">5.4.2. Access to the thematic application</a></li>
-<li><a class="reference internal" href="#results">5.4.3. Results</a><ul>
-<li><a class="reference internal" href="#processing-option-water-quality-parameters">5.4.3.1. Processing option &#8220;Water Quality Parameters&#8221;</a></li>
-<li><a class="reference internal" href="#processing-option-atmospheric-corrected-image">5.4.3.2. Processing option &#8220;Atmospheric Corrected Image&#8221;</a></li>
-<li><a class="reference internal" href="#processing-option-all">5.4.3.3. Processing option &#8220;all&#8221;</a></li>
-<li><a class="reference internal" href="#naming-convention">5.4.3.4. Naming Convention</a></li>
+<li><a class="reference internal" href="#">6.4. Water Quality</a><ul>
+<li><a class="reference internal" href="#service-description">6.4.1. Service Description</a></li>
+<li><a class="reference internal" href="#access-to-the-thematic-application">6.4.2. Access to the thematic application</a></li>
+<li><a class="reference internal" href="#results">6.4.3. Results</a><ul>
+<li><a class="reference internal" href="#processing-option-water-quality-parameters">6.4.3.1. Processing option &#8220;Water Quality Parameters&#8221;</a></li>
+<li><a class="reference internal" href="#processing-option-atmospheric-corrected-image">6.4.3.2. Processing option &#8220;Atmospheric Corrected Image&#8221;</a></li>
+<li><a class="reference internal" href="#processing-option-all">6.4.3.3. Processing option &#8220;all&#8221;</a></li>
+<li><a class="reference internal" href="#naming-convention">6.4.3.4. Naming Convention</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#validation">5.4.4. Validation</a><ul>
-<li><a class="reference internal" href="#comparability-of-in-situ-and-satellite-data">5.4.4.1. Comparability of in-situ and satellite data</a></li>
-<li><a class="reference internal" href="#results-and-applicability-range">5.4.4.2. Results and applicability range</a></li>
+<li><a class="reference internal" href="#validation">6.4.4. Validation</a><ul>
+<li><a class="reference internal" href="#comparability-of-in-situ-and-satellite-data">6.4.4.1. Comparability of in-situ and satellite data</a></li>
+<li><a class="reference internal" href="#results-and-applicability-range">6.4.4.2. Results and applicability range</a></li>
 </ul>
 </li>
 </ul>
@@ -137,11 +138,11 @@
               
                 
   <li>
-    <a href="hm.html" title="Previous Chapter: 5.3. Hydrological Modelling"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 5.3. Hydrolog...</span>
+    <a href="hm.html" title="Previous Chapter: 6.3. Hydrological Modelling"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 6.3. Hydrolog...</span>
     </a>
   </li>
   <li>
-    <a href="wl.html" title="Next Chapter: 5.5. Water Level"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">5.5. Water Level &raquo;</span>
+    <a href="wl.html" title="Next Chapter: 6.5. Water Level"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">6.5. Water Level &raquo;</span>
     </a>
   </li>
               
@@ -175,38 +176,39 @@
         <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">2. Community Portal User Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">3. Community Portal Administrator Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">4. Community Advanced User Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. Thematic Applications</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="wois_app.html">5.1. WOIS CloudToolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fm.html">5.2. Flood monitoring</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hm.html">5.3. Hydrological Modelling</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">5.4. Water Quality</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#service-description">5.4.1. Service Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#access-to-the-thematic-application">5.4.2. Access to the thematic application</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#results">5.4.3. Results</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#processing-option-water-quality-parameters">5.4.3.1. Processing option &#8220;Water Quality Parameters&#8221;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#processing-option-atmospheric-corrected-image">5.4.3.2. Processing option &#8220;Atmospheric Corrected Image&#8221;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#processing-option-all">5.4.3.3. Processing option &#8220;all&#8221;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#naming-convention">5.4.3.4. Naming Convention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start-manual/index.html">2. Quick Start Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. Thematic Applications</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="wois_app.html">6.1. WOIS CloudToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fm.html">6.2. Flood monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hm.html">6.3. Hydrological Modelling</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.4. Water Quality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#service-description">6.4.1. Service Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access-to-the-thematic-application">6.4.2. Access to the thematic application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#results">6.4.3. Results</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#processing-option-water-quality-parameters">6.4.3.1. Processing option &#8220;Water Quality Parameters&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#processing-option-atmospheric-corrected-image">6.4.3.2. Processing option &#8220;Atmospheric Corrected Image&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#processing-option-all">6.4.3.3. Processing option &#8220;all&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naming-convention">6.4.3.4. Naming Convention</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#validation">5.4.4. Validation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#comparability-of-in-situ-and-satellite-data">5.4.4.1. Comparability of in-situ and satellite data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#results-and-applicability-range">5.4.4.2. Results and applicability range</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#validation">6.4.4. Validation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#comparability-of-in-situ-and-satellite-data">6.4.4.1. Comparability of in-situ and satellite data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#results-and-applicability-range">6.4.4.2. Results and applicability range</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="wl.html">5.5. Water Level</a></li>
-<li class="toctree-l2"><a class="reference internal" href="swbm.html">5.6. Small Water Body Mapping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mydata_app.html">5.7. Manage my data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="testmyproc_app.html">5.8. Test my processor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="myapp.html">5.9. My apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wl.html">6.5. Water Level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="swbm.html">6.6. Small Water Body Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mydata_app.html">6.7. Manage my data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testmyproc_app.html">6.8. Test my processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="myapp.html">6.9. My apps</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">6. Requirement Traceability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
   <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/apps/wq.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
@@ -224,10 +226,10 @@
     <div class="col-md-9">
       
   <div class="section" id="water-quality">
-<span id="wq"></span><h1>5.4. Water Quality<a class="headerlink" href="#water-quality" title="Permalink to this headline">¶</a></h1>
+<span id="wq"></span><h1>6.4. Water Quality<a class="headerlink" href="#water-quality" title="Permalink to this headline">¶</a></h1>
 <p>Water Quality parameters <em>Chlorophyll</em>, <em>Total Suspended Solids</em> and <em>Colored Dissolved Organic Matter based on Organic Absorption</em> will be provided by <a class="reference external" href="http://www.eomap.com">EOMAPs</a> proprietary water quality processor Modular Inversion and Processing System (MIP). The processors include sensor independent state-of-the-art algorithms including adjacency correction, coupled atmospheric-in-water retrieval considering all bi-directional aspects from extreme clean to extreme turbid case 2 waters in a physically correct approach.</p>
 <div class="section" id="service-description">
-<h2>5.4.1. Service Description<a class="headerlink" href="#service-description" title="Permalink to this headline">¶</a></h2>
+<h2>6.4.1. Service Description<a class="headerlink" href="#service-description" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="21%" />
@@ -277,7 +279,7 @@
 <p>Multispectral satellite sensors like MSI on Sentinel -2 or OLI on Landsat 8 measure reflected sunlight, which is modified on its way through the atmosphere and the water column. The quality of the data can be influenced by different factors. For example, due to the passive nature of this remote sensing method no signal from the water body can be derived under clouds. Also, cloud shadows can lead to a typically underestimation of the retrieved water quality parameter concentrations. High concentration of aerosols and resulting scattering or cirrus clouds can further hinder a successful retrieval. In addition, particular geometrical conditions between sun, target and sensor in combination with specific sea-state-conditions (wind speed, direction) can result in signal distorting mirroring effects, called sun glint, on the water surface. In areas with optically shallow water, where signals from the seafloor influences the signal received at the sensor, the concentrations can be overestimated. When choosing a scene to be processed, especially cloud coverage and sunglint conditions need to be considered.</p>
 </div>
 <div class="section" id="access-to-the-thematic-application">
-<h2>5.4.2. Access to the thematic application<a class="headerlink" href="#access-to-the-thematic-application" title="Permalink to this headline">¶</a></h2>
+<h2>6.4.2. Access to the thematic application<a class="headerlink" href="#access-to-the-thematic-application" title="Permalink to this headline">¶</a></h2>
 <p>From the thematic application page, click on the <strong>Open App</strong> button for the <strong>Water Quality</strong> application.</p>
 <div class="img-border figure">
 <a class="reference internal image-reference" href="../_images/apps_wq2.png"><img alt="../_images/apps_wq2.png" src="../_images/apps_wq2.png" style="width: 100%;" /></a>
@@ -336,14 +338,14 @@ If you identified another scene you would like to process can add the scene via 
 </div>
 </div>
 <div class="section" id="results">
-<h2>5.4.3. Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<h2>6.4.3. Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
 <p>If your processing job finished sucessfully you can click on the <strong>Show results</strong> button.</p>
 <div class="img-border figure align-center">
 <a class="reference internal image-reference" href="../_images/apps_wq_results1.png"><img alt="../_images/apps_wq_results1.png" src="../_images/apps_wq_results1.png" style="width: 409.5px; height: 154.8px;" /></a>
 </div>
 <p>The results of you processing will be shown in the search results list on the bottom left. The following results will be created:</p>
 <div class="section" id="processing-option-water-quality-parameters">
-<h3>5.4.3.1. Processing option &#8220;Water Quality Parameters&#8221;<a class="headerlink" href="#processing-option-water-quality-parameters" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.3.1. Processing option &#8220;Water Quality Parameters&#8221;<a class="headerlink" href="#processing-option-water-quality-parameters" title="Permalink to this headline">¶</a></h3>
 <p>The water quality data is delivered as 32bit real value GeoTIFF, as well as 8bit scaled and colored GeoTIFF and corresponding metadata XML for each water quality parameter.</p>
 <p>Furthermore EOMAPs water quality products are accompanied by the processors internal quality control mechanisms, resulting in pixel flagging in case of unreliable values. The QUC file indicates the main quality influencing parameter using a specific EOMAP quality coding classification scheme with corresponding grey values (GV), as shown in the following figure:</p>
 <div class="img-border figure align-center">
@@ -422,7 +424,7 @@ If you identified another scene you would like to process can add the scene via 
 </ul>
 </div>
 <div class="section" id="processing-option-atmospheric-corrected-image">
-<h3>5.4.3.2. Processing option &#8220;Atmospheric Corrected Image&#8221;<a class="headerlink" href="#processing-option-atmospheric-corrected-image" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.3.2. Processing option &#8220;Atmospheric Corrected Image&#8221;<a class="headerlink" href="#processing-option-atmospheric-corrected-image" title="Permalink to this headline">¶</a></h3>
 <p>The atmospheric corrected product is delivered as 32bit multi-channel GeoTIFF with corresponding metadata XML file.</p>
 <p>It provides reflectance data instead of scaled radiances or top-of-the atmosphere products and improves satellite imagery by minizing effects of haze and atmospheric aerosols. Reflectance will be delivered as Remote Sensing Reflectance above surface at nadir (RRS0+).</p>
 <p><strong>Overview of files delivered per satellite scene (example):</strong></p>
@@ -432,11 +434,11 @@ If you identified another scene you would like to process can add the scene via 
 </ul>
 </div>
 <div class="section" id="processing-option-all">
-<h3>5.4.3.3. Processing option &#8220;all&#8221;<a class="headerlink" href="#processing-option-all" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.3.3. Processing option &#8220;all&#8221;<a class="headerlink" href="#processing-option-all" title="Permalink to this headline">¶</a></h3>
 <p>Products of both options, Water Quality Parameters and Atmospheric Corrected Image, described above are delivered.</p>
 </div>
 <div class="section" id="naming-convention">
-<h3>5.4.3.4. Naming Convention<a class="headerlink" href="#naming-convention" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.3.4. Naming Convention<a class="headerlink" href="#naming-convention" title="Permalink to this headline">¶</a></h3>
 <p>The naming of EOMAP product files follows a sequence of mandatory and optional elements:</p>
 <p><code class="docutils literal"><span class="pre">&lt;product&gt;_wq-tep&lt;optional_</span> <span class="pre">path/row(Landsat)&gt;_EOMAP_&lt;date&gt;_&lt;time&gt;</span> <span class="pre">_&lt;sensor&gt;_&lt;resolution&gt;_&lt;other_information&gt;.&lt;ext&gt;</span></code></p>
 <ul class="simple">
@@ -460,17 +462,17 @@ If you identified another scene you would like to process can add the scene via 
 </div>
 </div>
 <div class="section" id="validation">
-<h2>5.4.4. Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
+<h2>6.4.4. Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
 <p>The EOMAP processing system is proven and validated for a wide range of inland waters, lakes and riversaround the globe. Validations were performed within projects financed by the European Commission and are publicly available within theproject reports of the EU-GLASS <a class="footnote-reference" href="#f1" id="id1">[1]</a> and EU-FRESHMON <a class="footnote-reference" href="#f2" id="id2">[2]</a> projects. Especially in the most recent projects such as the EU-GLASS or the current EU SPACE-O, validations for the universal EOMAP processors mainly focus on independently retrieved water quality information in the standard processing mode.</p>
 <p>For the Mekong delta, validation results are available in publications resulting from the WISDOM <a class="footnote-reference" href="#f3" id="id3">[3]</a> project (BMBF). Further validations were undertaken by a number of clients in Australia, USA or Germany, including Water Agencies (e.g. Environmental State Authority Baden-Württemberg (LuBW), Federal Environmental Agency Germany (UBA and BAW), Environmental Authority Italy (ISPRA) or USGS USA), by large industrial companies such as Amec-Foster-Wheeler, Rio-Tinto or Woodside Energy as well as water industry and environmental consultancy companies. A large number of validation exercises is summarized and public available at the EOMAP homepage <a class="footnote-reference" href="#f4" id="id4">[4]</a>.</p>
 <div class="section" id="comparability-of-in-situ-and-satellite-data">
-<h3>5.4.4.1. Comparability of in-situ and satellite data<a class="headerlink" href="#comparability-of-in-situ-and-satellite-data" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.4.1. Comparability of in-situ and satellite data<a class="headerlink" href="#comparability-of-in-situ-and-satellite-data" title="Permalink to this headline">¶</a></h3>
 <p>When comparing EOMAP water quality products with in-situ data, the methodological differences between the various in-situ approaches and remote sensing need to be accounted for. For example, in-situ turbidity measurements are typically based on the scattering of light at a 90-degree angle between light source and detector, while remotely sensed turbidity products are physically related to a scattering angle of approx. 180 degrees (backscattering). Chlorophyll from in-situ measurements is typically based on one of three different methods, which include photometric, fluorescence and HPLC approaches and their subcategories. In the physics-based method applied at EOMAP, remotely sensed Chlorophyll is related to a linear relation of both, pigment-specific absorption and scattering. The pigments contributing to this quantifiable absorption, which is measured by the spectral satellite sensors, not only include various Chlorophyll pigments, but also other pigments such as Phaeophytin (see chapter information products). Of course, different environmental impacts and the algorithmic capabilities to correct them influence the intrinsic accuracy of the remote sensing method and need to be evaluated on their own.</p>
 <p>Finally, the sampling differences between in-situ data and remote sensing products need to be accounted for within any validation exercise. Typical differences include the sampling location, the sampling depth interval, the sampling time, etc. For each of them, water quality parameters might vary naturally by typically 20-100%, even for measurements taken close to each other (e.g. for a time difference of 1 day or location differences of 1km horizontal or 3m vertical), and many times higher for larger sampling distances.</p>
 <p>Considering all these impacts, a match between the physics-based, satellite-derived water quality parameters and the various in-situ measures might hardly be closer than 30-50% for large scale validations.</p>
 </div>
 <div class="section" id="results-and-applicability-range">
-<h3>5.4.4.2. Results and applicability range<a class="headerlink" href="#results-and-applicability-range" title="Permalink to this headline">¶</a></h3>
+<h3>6.4.4.2. Results and applicability range<a class="headerlink" href="#results-and-applicability-range" title="Permalink to this headline">¶</a></h3>
 <p>The results from the various stated comparisons are in accordance with the achievable expectation: Typically, differences of at least 30% and up to factor 2 can be observed for most water types, and the uncertainty range is approx. 50% than single in-situ measurements. Nonetheless, the method delivers independent results, and the uncertainty is still equivalent to the methodological differences to and between distinct in-situ approaches. The relevant temporal and seasonal changes can be reproduced very well for the majority of investigated cases. This proves evidence, that the physics-based approach for satellite data is intrinsically consistent and applicable as an independent method under most conditions. It deems to be an acceptable and valuable contribution, especially for large scale observations, as the natural variability of concentrations varies by more than 4 magnitudes, e.g. from approx. 0.1 to 1000 µg/l Chlorophyll, or, in extreme cases, even one magnitude for turbidity, if different scattering angles are observed.</p>
 <p>However, caution and particular attention is still required for specific conditions and rather sensitive parameters, as also the intrinsic physics-based water quality accuracy can degrade:</p>
 <ul class="simple">

@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2.7. Create a Water Level Time Series &#8212; Hydrology Thematic Exploitation Platform 2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.8. Produce a Flood Map" href="qsm8.html" />
+    <link rel="prev" title="2.6. Small Water Body Mapping" href="qsm6.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>2.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">2.7. Create a Water Level Time Series</a><ul>
+<li><a class="reference internal" href="#water-level-an-introduction">2.7.1. Water Level: An Introduction</a><ul>
+<li><a class="reference internal" href="#about-isardsats-water-level-app">2.7.1.1. About IsardSats Water Level App</a><ul>
+<li><a class="reference internal" href="#water-level-application-input">2.7.1.1.1. Water Level Application Input</a><ul>
+<li><a class="reference internal" href="#influence-of-obstructions-such-as-clouds">2.7.1.1.1.1. Influence of obstructions such as clouds</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#water-level-application-output">2.7.1.1.2. Water Level Application Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tutorial-creating-a-water-level-time-series-in-my-area-of-interest">2.7.2. Tutorial: Creating a Water Level Time Series in My Area of Interest</a><ul>
+<li><a class="reference internal" href="#accessing-the-water-level-thematic-application">2.7.2.1. Accessing the Water Level Thematic Application</a></li>
+<li><a class="reference internal" href="#search-for-lakes-and-rivers-in-your-area-of-interest">2.7.2.2. Search for Lakes and Rivers in Your Area of Interest</a></li>
+<li><a class="reference internal" href="#search-altimetry-data-for-your-river-lake-of-interest">2.7.2.3. Search Altimetry Data for Your River/Lake of Interest</a></li>
+<li><a class="reference internal" href="#processing-your-data-using-the-water-level-service">2.7.2.4. Processing Your Data Using the Water Level service</a></li>
+<li><a class="reference internal" href="#visualising-and-sharing-of-job-results">2.7.2.5. Visualising and Sharing of Job Results</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="qsm6.html" title="Previous Chapter: 2.6. Small Water Body Mapping"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2.6. Small Wa...</span>
+    </a>
+  </li>
+  <li>
+    <a href="qsm8.html" title="Next Chapter: 2.8. Produce a Flood Map"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">2.8. Produce ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm7.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qsm1.html">2.1. How to become a member of HTEP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm2.html">2.2. Browse your way through the HTEP Portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm3.html">2.3. An Overview of the Geobrowser Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm4.html">2.4. Become Member of a Community</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm5.html">2.5. Create a Water Quality Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm6.html">2.6. Small Water Body Mapping</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.7. Create a Water Level Time Series</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#water-level-an-introduction">2.7.1. Water Level: An Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#about-isardsats-water-level-app">2.7.1.1. About IsardSats Water Level App</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tutorial-creating-a-water-level-time-series-in-my-area-of-interest">2.7.2. Tutorial: Creating a Water Level Time Series in My Area of Interest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#accessing-the-water-level-thematic-application">2.7.2.1. Accessing the Water Level Thematic Application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#search-for-lakes-and-rivers-in-your-area-of-interest">2.7.2.2. Search for Lakes and Rivers in Your Area of Interest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#search-altimetry-data-for-your-river-lake-of-interest">2.7.2.3. Search Altimetry Data for Your River/Lake of Interest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#processing-your-data-using-the-water-level-service">2.7.2.4. Processing Your Data Using the Water Level service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualising-and-sharing-of-job-results">2.7.2.5. Visualising and Sharing of Job Results</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="qsm8.html">2.8. Produce a Flood Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm9.html">2.9. Upload Your Own (In-Situ) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm10.html">2.10. Manage Your Community</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm7.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="create-a-water-level-time-series">
+<span id="qsm7"></span><h1>2.7. Create a Water Level Time Series<a class="headerlink" href="#create-a-water-level-time-series" title="Permalink to this headline">¶</a></h1>
+<p>This guideline provides information about the Water Level (WL) application of the Hydrology Thematic Exploitation Platform (HTEP). Simultaneously this document provides a hands-on tutorial showing you how to produce a water level time series of your area of interest using the application in combination with the features of HTEP.</p>
+<div class="section" id="water-level-an-introduction">
+<h2>2.7.1. Water Level: An Introduction<a class="headerlink" href="#water-level-an-introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="about-isardsats-water-level-app">
+<h3>2.7.1.1. About IsardSats Water Level App<a class="headerlink" href="#about-isardsats-water-level-app" title="Permalink to this headline">¶</a></h3>
+<p>The Water Level Service developed by IsardSat provides the water level time series of a large number of (small) lakes and rivers. The service is based on altimetry data from Sentinel 3, Jason-2 and SARAL-Altika.
+The usage of EO data means low costs and low labour intensity, easy mapping of diverse areas and a high spatial resolution. Furthermore near real-time monitoring is possible using satellites with high temporal resolution and water levels in physically inaccessible areas can be easily accessed.</p>
+<div class="section" id="water-level-application-input">
+<h4>2.7.1.1.1. Water Level Application Input<a class="headerlink" href="#water-level-application-input" title="Permalink to this headline">¶</a></h4>
+<p>Input for the water level application, consists of a water mask of the water body or river of interest, and besides of altimetry data. For altimetry data there is EO data available of multiple satellite sensors with varying spatial, temporal and spectral resolution. For the water level application they are currently the following.</p>
+<p><strong>Sentinel-3 (S3)</strong> High Spatial , High Temporal Resolution</p>
+<p>This part will contain S3 information-</p>
+<p><strong>SARAL/ALtika (ATK)</strong> High Spatial, High Temporal Resolution</p>
+<p>This part will contain ATK information-</p>
+<p><strong>Jason-2 (JS)</strong> High Spatial, High Temporal Resolution</p>
+<p>This part will contain JS information-</p>
+<p><strong>Water Masks</strong></p>
+<p>As input for the water level application a water mask of the water body or river of interest is required. Within the HTEP platform, a large amount of predefined water masks is available for lakes and rivers in the Red River basin. However, water masks can also be created using other thematic applications on the HTEP platform, for example with the Small Water Bodies Mapping service. A tutorial how to use this service is provides in Quick Start Manual 6.</p>
+<div class="section" id="influence-of-obstructions-such-as-clouds">
+<h5>2.7.1.1.1.1. Influence of obstructions such as clouds<a class="headerlink" href="#influence-of-obstructions-such-as-clouds" title="Permalink to this headline">¶</a></h5>
+<p>This part will contain info about obstructions (e.g. clouds) influence on determining input data</p>
+</div>
+</div>
+<div class="section" id="water-level-application-output">
+<h4>2.7.1.1.2. Water Level Application Output<a class="headerlink" href="#water-level-application-output" title="Permalink to this headline">¶</a></h4>
+<p>As the name of the application indicates, the output of this application is a water level time series. Figure 2 shows an example of such an output. This is the water level for the Cam Son Lake in the Northern part of the Red River basin. During this tutorial, this output will be reproduced.</p>
+<div class="img-container-border figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/qsm7-f1.png"><img alt="../_images/qsm7-f1.png" src="../_images/qsm7-f1.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 1: Cam Son Lake, Red River, Vietnam</span></p>
+</div>
+<div class="img-container-border figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/qsm7-f2.png"><img alt="../_images/qsm7-f2.png" src="../_images/qsm7-f2.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 2: Water Level Time Series from WL app of Cam Son Lake in the Red River basin</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tutorial-creating-a-water-level-time-series-in-my-area-of-interest">
+<h2>2.7.2. Tutorial: Creating a Water Level Time Series in My Area of Interest<a class="headerlink" href="#tutorial-creating-a-water-level-time-series-in-my-area-of-interest" title="Permalink to this headline">¶</a></h2>
+<p>This chapter contains a hands-on tutorial how to work with IsardSats Water Level application on HTEP. The tutorial shows and explains step-by-step the different features of HTEP and the actions to be taken in order to create the water level time series of Figure 2. For this tutorial, the area of interest is the Cam Son Lake, North-East of Hanoi of in the Red River basin.</p>
+<div class="section" id="accessing-the-water-level-thematic-application">
+<h3>2.7.2.1. Accessing the Water Level Thematic Application<a class="headerlink" href="#accessing-the-water-level-thematic-application" title="Permalink to this headline">¶</a></h3>
+<p>1. Enter the HTEP Community Portal and Sign in with your HTEP community user account. There is no preferred internet browser. However, for this specific tutorial, Google Chrome is used as the internet browser.
+You do not have an account yet? Then first register on the platform. To register at the platform, it is advised to follow the steps in the Quick Start Manual How to become a user of HTEP, which can be found under the Quick Start-tab in the menu of the HTEP Community Portal.</p>
+<div class="img-container-border figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/qsm7-f3.png"><img alt="../_images/qsm7-f3.png" src="../_images/qsm7-f3.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 3: Step 1 – HTEP Community Portal</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>Access the Thematic Applications. Open the list of existing thematic applications by clicking on View Apps below to Discover Thematic Apps-icon.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/qsm7-f4.png"><img alt="../_images/qsm7-f4.png" src="../_images/qsm7-f4.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 4: Step 2 - Access the thematic applications</span></p>
+</div>
+<ol class="arabic simple" start="3">
+<li>A list of available Thematic Applications is shown. For this tutorial the Water Level for Red River application is used. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The Water Level application can also be accessed directly using the URL <a class="reference external" href="https://hydrology-tep.eo.esa.int/geobrowser/?id=waterlevel-redriver#!&amp;context=EOData%2FAltimetrydata">https://hydrology-tep.eo.esa.int/geobrowser/?id=waterlevel-redriver#!&amp;context=EOData%2FAltimetrydata</a> fromLakesandRivers .</li>
+</ol>
+<div class="img-container-border figure align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/qsm7-f5.png"><img alt="../_images/qsm7-f5.png" src="../_images/qsm7-f5.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 5: Step 3 and 4 - Available applications and your selections</span></p>
+</div>
+<ol class="arabic simple" start="4">
+<li>Filter your application of interest by using the Your selections column on the left side of the Thematic Applications page: Search text allows you to use keywords to find a corresponding thematic application. Currently the Your selections-feature is unnecessary, as there is only a limited number of thematic applications available. However, you might need this feature to find your application of interest once the number of available applications has significantly increased.</li>
+</ol>
+</div>
+<div class="section" id="search-for-lakes-and-rivers-in-your-area-of-interest">
+<h3>2.7.2.2. Search for Lakes and Rivers in Your Area of Interest<a class="headerlink" href="#search-for-lakes-and-rivers-in-your-area-of-interest" title="Permalink to this headline">¶</a></h3>
+<p>Once the Water Level application has been accessed, a new tab opens called the Geobrowser. This part of the tutorial will teach you to work with the various features and functions available within the Geobrowser. Currently the default map is of Northern Vietnam and Southern China: the Red River basin. The default map shown upon opening the Water Level app may change in the future.</p>
+<ol class="arabic simple">
+<li>You can zoom in and zoom out by clicking on the + and – icons on the left side of the Geobrowser, encircled in red. The map can be shifted to any desired area by clicking on the map and dragging your mouse. For this tutorial the focus is kept on default; the Red River area in Northern Vietnam and Southern China.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/qsm7-f6.png"><img alt="../_images/qsm7-f6.png" src="../_images/qsm7-f6.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 6: Step 1,2 and 3 - The water level application Geobrowser</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>If you are correctly logged onto the HTEP platform, on the top-right of the Geobrowser your username should be displayed (2a). If you need any further explanation about the HTEP-platform and its features, a Help Guide can be easily accessed by clicking on the book-icon next to the email-icon (2b). If this is insufficient, you can ask for help through the contact form (2c). If you would like to sign out, this can also be done within the Geobrowser by the exit-icon (2d).</li>
+</ol>
+<p>3. You can select which satellite data source you would like to use for your research on the top-right of the Geobrowser. Selecting EO Data imposes a dropdown menu showing all available remotely sensed EO data sources for this application.
+For this tutorial, Altimetry data from Lakes and Rivers is selected. Now you will see a predefined set of water masks from lakes and rivers indicated by orange lines.</p>
+<ol class="arabic simple" start="4">
+<li>After selecting the EO data, you can search for the water mask of (part of) a river or lake where you would like to determine the water level of. This can be done following the options below, or a combination thereof for an even more specific search.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/qsm7-f7.png"><img alt="../_images/qsm7-f7.png" src="../_images/qsm7-f7.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 7: Step 4-7 - Search for data products in the Geobrowser</span></p>
+</div>
+<p>➢ Search Field (4a): On the top-left of the Geobrowser, you see a search field. In this field, you can do a text search for specific EO data products within the data source chosen in step 3. For now this field is left blank, as this search option does not suit the Water Level app very well as the different parts of rivers and lakes are often identified by a number instead of a real geographic name.</p>
+<p>➢ Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others cloud- and land cover filters and geometry filters for a spatial search. For now also leave the Search Panel untouched, so at default settings, as this again does not suit the water level application well</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser.</p>
+</div>
+<p>➢ Although the Search Panel already provides you the option for a spatial filter based search, you can also apply a spatial search through the tools of 4c. A polygon, rectangle, marker and well-known text (WKT) code can be used to define your area of interest. For this tutorial a spatial filter is applied using a WKT-code. Click on the WKT button: the pop-up of Figure 9 appears.</p>
+<div class="img-container-border figure align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/qsm7-f8.png"><img alt="../_images/qsm7-f8.png" src="../_images/qsm7-f8.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 8: Data product search panel</span></p>
+</div>
+<div class="img-container-border figure align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/qsm7-f9.png"><img alt="../_images/qsm7-f9.png" src="../_images/qsm7-f9.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 9: Step 4c - Apply a spatial filter using WKT-code or Shapefile</span></p>
+</div>
+<p>As you can see a spatial filter can be applied using a WKT-code, but also by simply dragging and dropping a Shapefile or uploading a Shapefile from your computer. For now a WKT-text is used. Copy and paste the following code in the top field: POLYGON((106.497 21.559,106.58 21.595,106.659 21.557,106.623 21.498,106.563 21.476,106.508 21.512,106.497 21.559)) and click on OK. This WKT code is the area of interest, it is a polygon covering the Cam Son Lake east of Thai Nguyen that should now be displayed in the Geobrowser by a pink dashed line.</p>
+<p>➢ Also a time filter can be applied. The time filter can be applied not only through the Search Panel, but also using the tool of 4d indicated in Figure 7. The slider at the bottom is a time filter that can set by sliding the begin and end date to the desired time range. As we are now only looking at predefined water masks of lake- and river parts in the Altimetry data from Lakes and Rivers EO Data Source, for now a time filter is not necessary.</p>
+<ol class="arabic simple" start="5">
+<li>The current search results, based on the selected satellite and the applied filters, are displayed on the bottom left of the Geobrowser. The data products in this box are also displayed on the map of the Geobrowser by means of orange lines (rivers) and circumferences (lakes).</li>
+<li>If you would like to share your search results, click on the blue icon above the search results. The link can be copied and pasted or be posted through social media (i.e. Facebook and Twitter). Feel free to share if you like.</li>
+<li>Click on the Cam Son Lake, the circumference of the lake will become a bold white line as shown in the Figure 10 and a pop-up will appear. In the current search results box, this product (named inland_water-8) will be highlighted in blue.</li>
+</ol>
+</div>
+<div class="section" id="search-altimetry-data-for-your-river-lake-of-interest">
+<h3>2.7.2.3. Search Altimetry Data for Your River/Lake of Interest<a class="headerlink" href="#search-altimetry-data-for-your-river-lake-of-interest" title="Permalink to this headline">¶</a></h3>
+<p>Figure 10 shows the search results from Section 2.7.2.2. Now the altimetry data corresponding to your area of interest (in this case the Cam Son lake) will be searched for.</p>
+<ol class="arabic simple">
+<li>For the Water Level application, it is easiest to click on Related Search button in the pop-up.</li>
+<li>Select Altimetry over feature. This will search for all satellite data products with altimetry data (Sentinel, ATK, Jason are the satellites currently providing data to HTEP for Water Level application) that cover your area of interest (in this case Cam Son lake).</li>
+<li>You can search for your products of interest using the option of Step 4, covered in Section 2.7.2.2. For now only a time filter is applied: use the Search Panel and define the start and end date at 2016-09-16 and 2017-09-15 respectively. Click on Search.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/qsm7-f10.png"><img alt="../_images/qsm7-f10.png" src="../_images/qsm7-f10.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 10: Step 1-4 - Select your data product of interest</span></p>
+</div>
+<p>4. The data products corresponding to your search are
+Shown in the current search results on the bottom-
+left of the Geobrowser.</p>
+</div>
+<div class="section" id="processing-your-data-using-the-water-level-service">
+<h3>2.7.2.4. Processing Your Data Using the Water Level service<a class="headerlink" href="#processing-your-data-using-the-water-level-service" title="Permalink to this headline">¶</a></h3>
+<p>Section 2.7.2.2 and 2.7.2.3 explained how to search for and select your data of interest within the Geobrowser. Having the relevant data, it is now time to process this data to obtain the desired product output.</p>
+<ol class="arabic simple">
+<li>The processing services can be accessed from within the Geobrowser, but they are initially hidden. Open the available processing services by clicking on the processing services tab as indicated in Figure 11.</li>
+<li>On top of the processing services, three options are displayed: Services, Jobs and a Search Field.</li>
+</ol>
+<p>➢ Services: This tab yields a list of available processing services (the different models and algorithms within the application). Currently only the Water Level Service processing service is available, but this number will increase in the future.</p>
+<p>➢ Search Field: Once the number of available processing services has increased, the Search Field can be used to filter only those processing services of interest.</p>
+<p>➢ Jobs: This tab lists all existing jobs. The jobs shown are the jobs you have created yourself or the jobs who have been published by other HTEP users.</p>
+<div class="img-container-border figure align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/qsm7-f11.png"><img alt="../_images/qsm7-f11.png" src="../_images/qsm7-f11.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 11: Step 1, 2 and 3 - Access processing services</span></p>
+</div>
+<ol class="arabic simple" start="3">
+<li>For now, click on the process service Water Level Service to access the Water Level processing service. See Figure 12.</li>
+</ol>
+<p>4. To process data and create output, a Job needs to be created. A job can be created by filling in all the fields as shown in
+Figure 17:</p>
+<blockquote>
+<div><p>➢ Job title: Give your Job a title, for instance WL_S3-CamSonLake_RR-Tutorial_user name. Any other name with arbitrary length and symbols is also allowed.</p>
+<p>➢ Selected Water Mask: Here you provide one or multiple water mask where the water level needs to be obtained. Drag and drop the water mask from the Cam Son Lake (named inland_water-8) from the current search results to this input field.</p>
+<p>➢ Plot name: Define a name that will be displayed on top of the plot with the water level. For this tutorial this name is equal to the Job Title.</p>
+<p>➢ Start Date: Define a start date from where the water level needs to be calculated. The date used for the data search can also be chosen: click on the magic tool left of the input field. A dropdown menue appears: click on start date.</p>
+<p>➢ End Date: Define an end date until when the water level needs to be calculated. The date used for the data search can also be chosen: click on the magic tool left of the input field. A dropdown menue appears: click on end date.</p>
+<p>➢ Selected polygon: In this input field define your area of interest, which for this tutorial is the polygon given in Step 4 of Section 2.7.2.2. To easily select this polygon, click on the magic tool left of the input field and select geometry.</p>
+<p>➢ Selected Missions: The Water Level Service uses altimetry data from 3 different satellites; Sentinel-3 (S3), Saral/Altika (ATK) and Jason (JS). Type S3, ATK or JS to process data from your satellite of preference, or type ALL to process data from all satellites. For this tutorial Sentinel-3 data is used (so type S3).</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Click on the Calculate Cost and then on Run Job button at the bottom of the processor to run the job.</li>
+<li>Now the job is running, your data is analysed using HTEPs cloud services. During the processing of your data,</li>
+</ol>
+<div class="img-container-border figure align-center" id="id12">
+<a class="reference internal image-reference" href="../_images/qsm7-f12.png"><img alt="../_images/qsm7-f12.png" src="../_images/qsm7-f12.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 12: Step 3-5 - WL processing service</span></p>
+</div>
+<div class="img-container-border figure align-center" id="id13">
+<a class="reference internal image-reference" href="../_images/qsm7-f13.png"><img alt="../_images/qsm7-f13.png" src="../_images/qsm7-f13.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 13: Step 6 - Job progress and job info</span></p>
+</div>
+<p>information about your job is displayed as shown in Figure 13. Job Info provides info about the job, such as the name of the job, its identifiers, the date of creation and the user who created the job. Besides a progress bar shows you the progress of the analysis and under parameters you see the input and output parameters used for this specific job.</p>
+</div>
+<div class="section" id="visualising-and-sharing-of-job-results">
+<h3>2.7.2.5. Visualising and Sharing of Job Results<a class="headerlink" href="#visualising-and-sharing-of-job-results" title="Permalink to this headline">¶</a></h3>
+<p>The previous section showed how to process the data products obtained from Section 2.7.2.2 and 2.7.2.3. Once the process is finished, which may take a considerable amount of time, the results can be visualized and possibly shared with other users and/or your community.</p>
+<ol class="arabic simple">
+<li>Once the processor has finished the job, the Status of the job will change from Running to Success as shown in Figure 14.</li>
+<li>If a problem occurred during the processing of your job, or if it was performed using the wrong parameters then click Resubmit Job to run the job again. Adaptions to your parameters can be made.</li>
+<li>But if your job was processed correct and successful, simply click on the Show Results button to show the results of your job.</li>
+<li>The results of your job are loaded in what previously was the current search result box. To know if the current search results box contains EO satellite data products or job results, take a look on the top-right of the Geobrowser to check if you are in the Products tab or EO Data tab.</li>
+</ol>
+<p>5. To open the water level graphics of the selected
+area of interest, open the Tutorial_mask_1_SN3.zip file in the current search results box.</p>
+<ol class="arabic simple" start="6">
+<li>A pop-up will appear as indicated in Figure 15.</li>
+<li>Click on Download and open the .jpg file. You will see a water level series of your area of interested for your time range of interest, similar as shown in Figure 2.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id14">
+<a class="reference internal image-reference" href="../_images/qsm7-f14.png"><img alt="../_images/qsm7-f14.png" src="../_images/qsm7-f14.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 14: Step 1-3 - Processor after a successful job</span></p>
+</div>
+<div class="img-container-border figure align-center" id="id15">
+<a class="reference internal image-reference" href="../_images/qsm7-f15.png"><img alt="../_images/qsm7-f15.png" src="../_images/qsm7-f15.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 15: Step 7: Download Job Results</span></p>
+</div>
+<ol class="arabic simple" start="8">
+<li>Through the Share-button in the processor tab of Figure 13, you can share your results with other users, your community, or simply with all HTEP users.</li>
+<li>To find your previously generated job results, or to find job results shared by others users, go to the Jobs-tab in the processing service as illustrated in Figure 16.</li>
+<li>Click on the Show thematic jobs-field next to the Filter Jobs Search Field: here you can choose which jobs you wish to see: only the thematic jobs, all jobs, only your own created jobs or only public jobs. Once you found your job of interest, click on the name of the job and access the results as explained in steps 3-7. You will see there is a thematic job available that shows the results from this Quick Start Manual: WL-SN3-CamSonLake-RR-Tutorial.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id16">
+<a class="reference internal image-reference" href="../_images/qsm7-f16.png"><img alt="../_images/qsm7-f16.png" src="../_images/qsm7-f16.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 16: Step 9,10 - List of published Jobs</span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

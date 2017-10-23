@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2.9. Upload Your Own (In-Situ) Data &#8212; Hydrology Thematic Exploitation Platform 2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.10. Manage Your Community" href="qsm10.html" />
+    <link rel="prev" title="2.8. Produce a Flood Map" href="qsm8.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>2.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">2.9. Upload Your Own (In-Situ) Data</a><ul>
+<li><a class="reference internal" href="#tutorial-upload-your-own-in-situ-data">2.9.1. Tutorial: Upload Your Own (In-Situ) Data</a><ul>
+<li><a class="reference internal" href="#access-the-manage-my-data-application">2.9.1.1. Access the Manage my Data Application</a></li>
+<li><a class="reference internal" href="#upload-data-to-your-repository">2.9.1.2. Upload Data to Your Repository</a></li>
+<li><a class="reference internal" href="#publish-your-in-situ-data-in-the-catalogue">2.9.1.3. Publish Your (In-Situ) Data in The Catalogue</a></li>
+<li><a class="reference internal" href="#contextualize-your-in-situ-data">2.9.1.4. Contextualize Your (In-Situ) Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="qsm8.html" title="Previous Chapter: 2.8. Produce a Flood Map"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2.8. Produce ...</span>
+    </a>
+  </li>
+  <li>
+    <a href="qsm10.html" title="Next Chapter: 2.10. Manage Your Community"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">2.10. Manage ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm9.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qsm1.html">2.1. How to become a member of HTEP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm2.html">2.2. Browse your way through the HTEP Portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm3.html">2.3. An Overview of the Geobrowser Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm4.html">2.4. Become Member of a Community</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm5.html">2.5. Create a Water Quality Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm6.html">2.6. Small Water Body Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm7.html">2.7. Create a Water Level Time Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm8.html">2.8. Produce a Flood Map</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.9. Upload Your Own (In-Situ) Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tutorial-upload-your-own-in-situ-data">2.9.1. Tutorial: Upload Your Own (In-Situ) Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#access-the-manage-my-data-application">2.9.1.1. Access the Manage my Data Application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#upload-data-to-your-repository">2.9.1.2. Upload Data to Your Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#publish-your-in-situ-data-in-the-catalogue">2.9.1.3. Publish Your (In-Situ) Data in The Catalogue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#contextualize-your-in-situ-data">2.9.1.4. Contextualize Your (In-Situ) Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="qsm10.html">2.10. Manage Your Community</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm9.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="upload-your-own-in-situ-data">
+<span id="qsm9"></span><h1>2.9. Upload Your Own (In-Situ) Data<a class="headerlink" href="#upload-your-own-in-situ-data" title="Permalink to this headline">¶</a></h1>
+<p>This guideline contains an exercise to show you the necessary steps to be taken to upload your own (in-situ) data to the Hydrology Thematic Exploitation Platform (HTEP).</p>
+<div class="section" id="tutorial-upload-your-own-in-situ-data">
+<h2>2.9.1. Tutorial: Upload Your Own (In-Situ) Data<a class="headerlink" href="#tutorial-upload-your-own-in-situ-data" title="Permalink to this headline">¶</a></h2>
+<p>For this exercise, in-situ data will be uploaded. As an example for this process, a GeoTiff containing Total Suspended Solids data of the Yen Binh water reservoir at 2017-04-01, created in the Water Quality application tutorial (see Quick Start Manual 5), is used. You can get this exercise-file yourself in one of the following ways:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Follow the steps of <a class="reference internal" href="qsm5.html"><span class="doc">Quick Start Manual 5</span></a> to create this file yourself and download the results.</li>
+<li>By accessing and downloading the results of job WQ_YenBinh_Reservoir_LS8_Spring2017 (published in the Red River community).</li>
+</ul>
+</div></blockquote>
+<p>To upload data you need to have an account at Terradue, where you have to create an API-key, a repository (to store your data upload), and a catalogue. This account is automatically created according to your user level (visitors users does not have an account created).</p>
+<div class="section" id="access-the-manage-my-data-application">
+<h3>2.9.1.1. Access the Manage my Data Application<a class="headerlink" href="#access-the-manage-my-data-application" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Enter the HTEP Community Portal and Sign in with your HTEP community user account. There is no preferred internet browser. However, for this specific tutorial, Google Chrome is used as the internet browser.</li>
+</ol>
+<p>You do not have an account yet? Then first register on the platform. To register at the platform, it is advised to follow the steps in the Quick Start Manual How to become a user of HTEP, which can be found under the Quick Start-tab in the menu of the HTEP Community Portal.</p>
+<div class="img-container-border figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/qsm9-f1.png"><img alt="../_images/qsm9-f1.png" src="../_images/qsm9-f1.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 1: Step 1 – HTEP Community Portal</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>Access the Thematic Applications. Open the list of existing thematic applications by clicking on View Apps below to Discover Thematic Apps-icon.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/qsm9-f2.png"><img alt="../_images/qsm9-f2.png" src="../_images/qsm9-f2.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 2: Step 2 - Access the thematic applications</span></p>
+</div>
+<ol class="arabic simple" start="3">
+<li>A list of available Thematic Applications is shown. For this tutorial the Manage my Data application is required. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The Manage my Data application can also be accessed directly using the URL <a class="reference external" href="https://hydrology-tep.eo.esa.int/geobrowser/?id=managemydata">https://hydrology-tep.eo.esa.int/geobrowser/?id=managemydata</a>.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/qsm9-f3.png"><img alt="../_images/qsm9-f3.png" src="../_images/qsm9-f3.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 3: Step 3 and 4 - Available applications and your selections</span></p>
+</div>
+<ol class="arabic simple" start="4">
+<li>Filter your application of interest by using the Your selections column on the left side of the Thematic Applications page: Search text allows you to use keywords to find a corresponding thematic application. Currently the Your selections-feature is unnecessary, as there is only a limited number of thematic applications available. However, you might need this feature to find your application of interest once the number of available applications has significantly increased.</li>
+</ol>
+</div>
+<div class="section" id="upload-data-to-your-repository">
+<h3>2.9.1.2. Upload Data to Your Repository<a class="headerlink" href="#upload-data-to-your-repository" title="Permalink to this headline">¶</a></h3>
+<p>Once the Manage my Data application has been accessed, a new tab opens called the Geobrowser. In the Geobrowser you can upload your (in-situ) data to your newly created repository.</p>
+<ol class="arabic simple">
+<li>Click on the Store Upload button on the top-right of the Geobrowser.</li>
+</ol>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm9-f4.png"><img alt="../_images/qsm9-f4.png" src="../_images/qsm9-f4.png" style="width: 80%;" /></a>
+</div>
+<ol class="arabic" start="2">
+<li><p class="first">The Store upload-screen of Figure 5 appears. Here you define:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Target Repository:</strong> The repository you wish to store your (in-situ) data. This is by default your own username. Leave it as default for this exercise.</li>
+<li><strong>Target path:</strong> Choose a path (a folder) in your repository where you would like to store your (in-situ) data. By default this is /results, an automatically created folder. Leave it as default for this exercise. Change this target path only if you have multiple folders in your storage.</li>
+<li><strong>Drop files:</strong> Drag and drop, or click and browse for your (in-situ) data to be uploaded. Any file extension (.csv, .mat, .xlsx, .png etc.) is possible. For this exercise the WQ GeoTiff is selected that contains data about the TSS in the Yen Binh reservoir.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="img-container-border figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/qsm9-f5.png"><img alt="../_images/qsm9-f5.png" src="../_images/qsm9-f5.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 5: Step 2,3 - Store Upload Input Data</span></p>
+</div>
+<ol class="arabic simple" start="3">
+<li>Click on Submit Upload. A screen with the process of your upload is displayed.</li>
+<li>After a successful upload, you get the message Upload complete! Click on close and update context or start another upload if you would like to upload more data to your repository.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/qsm9-f6.png"><img alt="../_images/qsm9-f6.png" src="../_images/qsm9-f6.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 6: Step 4 - Successful Data Upload</span></p>
+</div>
+</div>
+<div class="section" id="publish-your-in-situ-data-in-the-catalogue">
+<h3>2.9.1.3. Publish Your (In-Situ) Data in The Catalogue<a class="headerlink" href="#publish-your-in-situ-data-in-the-catalogue" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select My Repository in the top-right of the Geobrowser and select the folder you have stored you data in Section 2.9.1.2 to access the products you have uploaded. For now the only folder is Results.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/qsm9-f7.png"><img alt="../_images/qsm9-f7.png" src="../_images/qsm9-f7.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 7: Step 1-3 - Publish Your Data</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>Open the processing services tab.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/qsm9-f8.png"><img alt="../_images/qsm9-f8.png" src="../_images/qsm9-f8.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 8: Step 4 - Data Publication Processing Service</span></p>
+</div>
+<ol class="arabic" start="3">
+<li><p class="first">On top of the processing services, three options are displayed: Services, Jobs and a Search Field as shown in Figure 13.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Services: This tab yields a list of available processing services. For this special application, this are the data publication service and the data contextualization service.</li>
+<li>Search Field: Once the number of available processing services has increased, the Search Field can be used to filter only those processing services of interest.</li>
+<li>Jobs: This tab lists all data publications. The jobs shown are the jobs you have created yourself  or the jobs who have been published by other HTEP users.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Click on the processing service Data Publication. Using this service you can put the data from your folder to a Catalogue. A catalogue is from where your data can be searched for. So if you plan to share uploaded data with other HTEP users, make sure you publish your data to a catalogue accessible to your target users.</p>
+</li>
+</ol>
+<div class="img-container-border figure align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/qsm9-f9.png"><img alt="../_images/qsm9-f9.png" src="../_images/qsm9-f9.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 9: Step 5,6 - Data Publication Processor</span></p>
+</div>
+<ol class="arabic" start="5">
+<li><p class="first">Within the Data Publication processing service, fill in the following fields:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Job Title: Give your data publication job a title. For instance TSS-YenBinh-20170401.</li>
+<li>Data Items: Drag and drop the to-be-published files from your repository to this field.</li>
+<li>User API key: Click on the dropdown menu and select T2 api key.</li>
+<li>Index key: Select where in the catalogue you would like to publish your data. Leave it as default if you want to publish your data only to your private catalogue. For this exercise the field is left as default.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Click on Run Job. After a successful job, information about the job is displayed. Click on Show Results to find your (in-situ) data in the current search results box.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="contextualize-your-in-situ-data">
+<h3>2.9.1.4. Contextualize Your (In-Situ) Data<a class="headerlink" href="#contextualize-your-in-situ-data" title="Permalink to this headline">¶</a></h3>
+<p>This process contextualizes data. It performs a geospatial analysis of the files in a specific repository for a given directory of the Data Gateway. At the end of the process, an Open Warehouse (OWS) context with all the possible offerings of the analysed files is returned.
+1. Go back to the services tab in the processing services of the Manage my Data application (see Figure 14). Figure 15 appears.</p>
+<div class="img-container-border figure align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/qsm9-f10.png"><img alt="../_images/qsm9-f10.png" src="../_images/qsm9-f10.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 10: Step 1-3 - Data Contextualization Processor</span></p>
+</div>
+<ol class="arabic" start="2">
+<li><p class="first">Fill in the following fields:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Job Title: Give your job a title, for instance TSS-YenBinh-20170401-Contextualization</li>
+<li>Folder path: Choose the data you would like to contextualize by defining its path (e.g. /results/example-data). For this exercise the field can be left at /results as there is currently only one file in the results folder.</li>
+<li>Use GDAL: Decide if you would like to analyse your data using the GDAL Library. This is the case for raster and vector publication. For this exercise choose true as the used contains raster data.</li>
+<li>Use API key: Provide your API key using the dropdown menu left to the input field.</li>
+<li>Repository key: Usually this is the Terradue username. Provide your username using the dropdown menu left to the input field.</li>
+<li>Use cache: Decide whether you would like to cache your contextualized data file for easy and quick access. For this exercise the field as left as default: true.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Click on Rub Job</p>
+</li>
+<li><p class="first">After a successful job, the status of the job changes from running to success. An overview of the job information and used parameters is given. Your data should now be correctly contextualized and be displayed correctly in the Geobrowser map.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

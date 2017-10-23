@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2.10. Manage Your Community &#8212; Hydrology Thematic Exploitation Platform 2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Hydrology thematic exploitation platform guide" href="../community-guide/index.html" />
+    <link rel="prev" title="2.9. Upload Your Own (In-Situ) Data" href="qsm9.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>2.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">2.10. Manage Your Community</a><ul>
+<li><a class="reference internal" href="#id1">2.10.1. Manage Your Community</a><ul>
+<li><a class="reference internal" href="#accessing-your-community">2.10.1.1. Accessing your Community</a></li>
+<li><a class="reference internal" href="#manage-the-members-roles-within-a-community">2.10.1.2. Manage the Members (roles) within a Community</a></li>
+<li><a class="reference internal" href="#community-user-management">2.10.1.3. Community User Management</a></li>
+<li><a class="reference internal" href="#community-management">2.10.1.4. Community Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="qsm9.html" title="Previous Chapter: 2.9. Upload Your Own (In-Situ) Data"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2.9. Upload Y...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../community-guide/index.html" title="Next Chapter: 3. Hydrology thematic exploitation platform guide"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">3. Hydrology ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm10.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qsm1.html">2.1. How to become a member of HTEP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm2.html">2.2. Browse your way through the HTEP Portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm3.html">2.3. An Overview of the Geobrowser Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm4.html">2.4. Become Member of a Community</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm5.html">2.5. Create a Water Quality Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm6.html">2.6. Small Water Body Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm7.html">2.7. Create a Water Level Time Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm8.html">2.8. Produce a Flood Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm9.html">2.9. Upload Your Own (In-Situ) Data</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.10. Manage Your Community</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.10.1. Manage Your Community</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#accessing-your-community">2.10.1.1. Accessing your Community</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#manage-the-members-roles-within-a-community">2.10.1.2. Manage the Members (roles) within a Community</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#community-user-management">2.10.1.3. Community User Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#community-management">2.10.1.4. Community Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm10.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="manage-your-community">
+<span id="qsm10"></span><h1>2.10. Manage Your Community<a class="headerlink" href="#manage-your-community" title="Permalink to this headline">¶</a></h1>
+<p>Once you are an explorer user and admin of your community, you can manage and control everything within your community. This guidelines shows you the various privileges you have as a manager/admin of a community and how to work with them.</p>
+<div class="section" id="id1">
+<h2>2.10.1. Manage Your Community<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>In this manual it is assumed you are already member of a community (otherwise please follow <a class="reference internal" href="qsm4.html"><span class="doc">Quick Start Manual 4</span></a>), that your user role has been upgraded from starter to explorer and that you have manager/admin privileges in your community of interest.</p>
+<div class="section" id="accessing-your-community">
+<h3>2.10.1.1. Accessing your Community<a class="headerlink" href="#accessing-your-community" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Enter the HTEP Community Portal and Sign in with your HTEP community user account. There is no preferred internet browser. However, for this specific tutorial, Google Chrome is used as the internet browser.</li>
+</ol>
+<p>You do not have an account yet? Then first register on the platform. To register at the platform, it is advised to follow the steps in the Quick Start Manual How to become a user of HTEP, which can be found under the Quick Start-tab in the menu of the HTEP Community Portal.</p>
+<div class="img-container-border figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/qsm10-f1.png"><img alt="../_images/qsm10-f1.png" src="../_images/qsm10-f1.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 1: Step 1 – HTEP Community Portal</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>Access the Join Communities. Open the list of existing communities by clicking on View Communities below to Join Communities-icon.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/qsm10-f2.png"><img alt="../_images/qsm10-f2.png" src="../_images/qsm10-f2.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 2: Step 2 - Access the communities</span></p>
+</div>
+<ol class="arabic simple" start="3">
+<li>A list of available Communities is shown, each with the community title and a short description of the community. For this tutorial the Red River community is accessed by clicking on Enter.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/qsm10-f3.png"><img alt="../_images/qsm10-f3.png" src="../_images/qsm10-f3.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 3: Step 3 – Available communities on HTEP</span></p>
+</div>
+<ol class="arabic simple" start="4">
+<li>After accessing the community, on the top of the community the menu as shown in Figure 4 is displayed.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/qsm10-f4.png"><img alt="../_images/qsm10-f4.png" src="../_images/qsm10-f4.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 4: Step 4 – The Community Page Menu</span></p>
+</div>
+</div>
+<div class="section" id="manage-the-members-roles-within-a-community">
+<h3>2.10.1.2. Manage the Members (roles) within a Community<a class="headerlink" href="#manage-the-members-roles-within-a-community" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select the Members tab of the menu of Figure 4. An overview of all the community members as in Figure 5 is shown. Here you find information about each member, for instance the role they have within the community and on HTEP. Clicking on the username will guide you to a page with additional user details, such as the amount of jobs created by that user.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/qsm10-f5.png"><img alt="../_images/qsm10-f5.png" src="../_images/qsm10-f5.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 5: Overview of community members</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>To delete a member from the community, simply click on Remove member from community and confirm your action in the pop-up screen that will appear.</li>
+<li>To edit the role of a user in the community, click on Edit member role button. A pop-up screen appears where a role can be assigned to the specific user as shown in Figure 6. Select the role you wish to assign to the user and click Save changes.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/qsm10-f6.png"><img alt="../_images/qsm10-f6.png" src="../_images/qsm10-f6.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 6: Assign a role to a member</span></p>
+</div>
+</div>
+<div class="section" id="community-user-management">
+<h3>2.10.1.3. Community User Management<a class="headerlink" href="#community-user-management" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select the User Management tab in the community menu of Figure 4. An overview of all HTEP users is given as shown in Figure 7. You can use the search field to find the user(s) you wish to add to your community. You can search by name or by username.</li>
+<li>To add a member to your community, simply click on Add as member behind the user of interest and assign a role to the user in the pop-up screen that will appear.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/qsm10-f7.png"><img alt="../_images/qsm10-f7.png" src="../_images/qsm10-f7.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 7: Users management within a community</span></p>
+</div>
+</div>
+<div class="section" id="community-management">
+<h3>2.10.1.4. Community Management<a class="headerlink" href="#community-management" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select the Community Management tab in the community menu of Figure 4. An overview of community information is given as shown in Figure 8.</li>
+<li>Remove community will remove your community. Special care needs to be taken with this button, as this action cannot be undone and will delete the entire community and its information!</li>
+<li>The Update Community information exists of multiple fields that can be used to manage your community:<ul>
+<li>Visibility: choose if you want your community to be open or private. An open community means that every member of HTEP can become member of the community on its own initiative. As a private community, members of HTEP can only become member of the community if the community managers invite them.</li>
+<li>Identifier: Choose an identifier for your community. For the Red River this is redriver.</li>
+<li>Description: Give a short description of your community. In the community overview page, this description will be displayed so HTEP users know whether or not the community if of their interest.</li>
+<li>New user default role: Click on this to open a dropdown menu with the multiple roles a user may have on HTEP and within the community. The chosen user role (for now this is end user) is the default role that all new Red River community members will have once they become a member of the community.</li>
+<li>Icon URL: Give the URL of an image that will be used as the icon of the community. This picture will be displayed when users browse to the community overview page.</li>
+<li>Applications URL: Leave this at default, it is the URL where all application information is stored.</li>
+<li>Discuss category: Leave this at default also, it is the extension that needs to be used in the Terradue Discussion board to link the discussion to the Red River community.</li>
+<li>Click on Save Changes to save any changes you made in the Update Community Information box.</li>
+</ul>
+</li>
+</ol>
+<div class="img-container-border figure align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/qsm10-f8.png"><img alt="../_images/qsm10-f8.png" src="../_images/qsm10-f8.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 8: Community Management</span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

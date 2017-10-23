@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2.3. An Overview of the Geobrowser Features &#8212; Hydrology Thematic Exploitation Platform 2.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.4. Become Member of a Community" href="qsm4.html" />
+    <link rel="prev" title="2.2. Browse your way through the HTEP Portal" href="qsm2.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>2.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">2.3. An Overview of the Geobrowser Features</a><ul>
+<li><a class="reference internal" href="#the-geobrowser">2.3.1. The Geobrowser</a><ul>
+<li><a class="reference internal" href="#search-and-collect-data">2.3.1.1. Search and collect data</a></li>
+<li><a class="reference internal" href="#process-data">2.3.1.2. Process Data</a></li>
+<li><a class="reference internal" href="#reproduce-data-and-visualise-results">2.3.1.3. Reproduce Data and Visualise Results</a></li>
+<li><a class="reference internal" href="#share-data-and-results">2.3.1.4. Share Data and Results</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="qsm2.html" title="Previous Chapter: 2.2. Browse your way through the HTEP Portal"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 2.2. Browse y...</span>
+    </a>
+  </li>
+  <li>
+    <a href="qsm4.html" title="Next Chapter: 2.4. Become Member of a Community"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">2.4. Become M... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm3.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Quick Start Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qsm1.html">2.1. How to become a member of HTEP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm2.html">2.2. Browse your way through the HTEP Portal</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.3. An Overview of the Geobrowser Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-geobrowser">2.3.1. The Geobrowser</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#search-and-collect-data">2.3.1.1. Search and collect data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#process-data">2.3.1.2. Process Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reproduce-data-and-visualise-results">2.3.1.3. Reproduce Data and Visualise Results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#share-data-and-results">2.3.1.4. Share Data and Results</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="qsm4.html">2.4. Become Member of a Community</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm5.html">2.5. Create a Water Quality Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm6.html">2.6. Small Water Body Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm7.html">2.7. Create a Water Level Time Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm8.html">2.8. Produce a Flood Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm9.html">2.9. Upload Your Own (In-Situ) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm10.html">2.10. Manage Your Community</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">3. Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">4. Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">5. Community Advanced User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">6. Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">7. Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/hydrology-tep/documentation/blob/develop/source/quick-start-manual/qsm3.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="an-overview-of-the-geobrowser-features">
+<span id="qsm3"></span><h1>2.3. An Overview of the Geobrowser Features<a class="headerlink" href="#an-overview-of-the-geobrowser-features" title="Permalink to this headline">¶</a></h1>
+<p>Once you are logged onto the HTEP platform (see <a class="reference internal" href="qsm1.html"><span class="doc">Quick Start Manual 1</span></a>) and you have accessed your application of interest using the HTEP Community Portal (see <a class="reference internal" href="qsm2.html"><span class="doc">Quick Start Manual 2</span></a>) you are in the Geobrowser. This document provides you an overview of the various available functions and features within the Geobrowser.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some of the functions and features below are not visible if you are not registered and logged onto HTEP. Also, some features and functions might be invisible because your user status has not increased from ‘starter’ to ‘explorer’ yet.</p>
+</div>
+<div class="section" id="the-geobrowser">
+<h2>2.3.1. The Geobrowser<a class="headerlink" href="#the-geobrowser" title="Permalink to this headline">¶</a></h2>
+<p>Once you have accessed your thematic application of interest the Geobrowser opens. The geobrowser for the Small Water Bodies Mapping for Red River is shown in Figure 1. Within the Geobrowser you are -amongst others- able to search and collect data, process data, reproduce results, and share data and results with your community, other HTEP users or even with visitors.</p>
+<div class="img-container-border figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/qsm3-f1.png"><img alt="../_images/qsm3-f1.png" src="../_images/qsm3-f1.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 1: The Geobrowser of SWBM for Red River Application (1)</span></p>
+</div>
+<div class="section" id="search-and-collect-data">
+<h3>2.3.1.1. Search and collect data<a class="headerlink" href="#search-and-collect-data" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>In this part of the Geobrowser you find various tools to perform a spatial data search: for example by drawing a rectangle or polygon of your area of interest, or by using a predefined WKT-string. Also you can zoom in and out on the map using the plus and minus signs respectively.</li>
+<li>The search field can be used to search for specific data types, such as for example GRD or RAW data. Please be aware the search field cannot be used to perform geographical searches.</li>
+<li>Here you can select various satellite Earth Observation (EO) data sources. For each thematic application, data from a specific number of satellites can be used. A dropdown list with available satellite data sources for the specific application appears by clicking on EO Data.</li>
+<li>Besides a spatial data search you can also apply a temporal filter. Simply click on the start and end date respectively, and drag to your dates of interest. To undo a spatial or temporal filter, click on the cross x of the specific filter next to the search field indicated of point 2.</li>
+<li>After your searches, this box shows the data products that meet the requirements of your search. Hovering the data products causes the specific product to be highlighted on the map. As such you can easily visualize the area covered by the specific data product. It also possible to show or hide the data product results on the map. This can be done using the little icons behind the data products that will appear while you hover the data product.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/qsm3-f2.png"><img alt="../_images/qsm3-f2.png" src="../_images/qsm3-f2.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 2: The Geobrowser of SWBM for Red River Application (2)</span></p>
+</div>
+<ol class="arabic simple" start="6">
+<li>Selecting a data product causes a pop-up to appear with information and meta data about the specific data product, as shown in Figure 2.</li>
+<li>If you wish you can download the data product by clicking on Download. Also you can do a related search: as such you can search for a data product within the same area or time range -or a combination thereof- of the current data product.</li>
+<li>Once you have found suitable data you would like to process, you can select your data products of interest in the results box and drag them into this box: the features basket.</li>
+<li>You can save the selection of data products you dragged into the features basket as a Data Package. As such you can easily load your data collection at any time or share your data with your community and/or others.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/qsm3-f3.png"><img alt="../_images/qsm3-f3.png" src="../_images/qsm3-f3.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 3: Save data products in a Data Package</span></p>
+</div>
+<div class="img-container-border figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/qsm3-f4.png"><img alt="../_images/qsm3-f4.png" src="../_images/qsm3-f4.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Figure 4: Overview of Data Packages</span></p>
+</div>
+<ol class="arabic simple" start="10">
+<li>To access your existing Data Packages, there is a Data Packages tab next to Features Basket tab. See Figure 4. Here you can for example load or share your Data Package.</li>
+</ol>
+</div>
+<div class="section" id="process-data">
+<h3>2.3.1.2. Process Data<a class="headerlink" href="#process-data" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Once you have all data products of interest in your features basket, these data products can be processed. The Processing Services tab on the right side of the Geobrowser as indicated in Figure 5, will open the processing services.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/qsm3-f5.png"><img alt="../_images/qsm3-f5.png" src="../_images/qsm3-f5.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 5: The Geobrowser of SWBM for Red River Application (3)</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>An overview of the available services within this thematic application is given. Hovering a service provides you a small summary of the service and its developer.</li>
+<li>Currently for Small Water Body Mapping there is only one service available, but the search field can be used to find your service of interest once there is an extensive number of services available.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/qsm3-f6.png"><img alt="../_images/qsm3-f6.png" src="../_images/qsm3-f6.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 6: Available processing services for a specific thematic application</span></p>
+</div>
+<ol class="arabic simple" start="4">
+<li>Accessing the service provides you an overview of the required inputs for the specific service, as indicated in Figure 7.</li>
+<li>Click on Run Job on the bottom to start processing your newly created job.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/qsm3-f7.png"><img alt="../_images/qsm3-f7.png" src="../_images/qsm3-f7.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 7: Input required for a specific service</span></p>
+</div>
+</div>
+<div class="section" id="reproduce-data-and-visualise-results">
+<h3>2.3.1.3. Reproduce Data and Visualise Results<a class="headerlink" href="#reproduce-data-and-visualise-results" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>After a job is successfully processed, the screen of Figure 8 will appear containing information about the run job.</li>
+</ol>
+<div class="img-container-border figure align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/qsm3-f8.png"><img alt="../_images/qsm3-f8.png" src="../_images/qsm3-f8.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 8: Summary of a successfully run job</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>Resubmit Job provides the possibility to rerun a job. As such it is possible to reproduce data, or to easily make small adaptions on earlier run jobs without having to go through the whole process of searching, collecting, selecting and applying data to the processing service.</li>
+<li>To visualize the results (in the Geobrowser), the Show Results button can be used to load the results.</li>
+</ol>
+</div>
+<div class="section" id="share-data-and-results">
+<h3>2.3.1.4. Share Data and Results<a class="headerlink" href="#share-data-and-results" title="Permalink to this headline">¶</a></h3>
+<p>During the process described from Section 2.3.1.1. until 2.3.1.3, it is possible to share each step with other HTEP users. Most important features are the ability to share your Data Packages and your job results. The <img alt="share" src="../_images/share_button1.png" /> icon indicates you can share something. For a Data Package this icon can be found as explained in step 10 of Section 2.3.1.1 (Figure 4). For a successful job this icon can be found on the top, as indicated in Figure 8.</p>
+<ol class="arabic simple">
+<li>Figure 9 shows the share pop-up.</li>
+<li>Here you can choose to share your Data Package or Job on social media such as Facebook or Twitter, or just simply copy and paste the shareable link. Keep in mind that another person can only see your data or results if this person is an HTEP user.</li>
+<li>Here you can choose for who your Data Package or Job is visible:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Do not share:</strong> This is the default setting and means only you can see the data package or job result.</li>
+<li><strong>Share with anyone:</strong> Selecting this button means your data package and job results will be visible for anyone who uses HTEP.</li>
+<li><strong>Restricted sharing:</strong> Selecting this button means your data package and job results will be visible only for a limited number of users: for example only members of a specific community.</li>
+</ul>
+</div></blockquote>
+<div class="img-container-border figure align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/qsm3-f9.png"><img alt="../_images/qsm3-f9.png" src="../_images/qsm3-f9.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 9: Sharing a Data Package</span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>
