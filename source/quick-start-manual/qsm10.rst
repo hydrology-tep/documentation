@@ -8,7 +8,7 @@ Once you are an explorer user and admin of your community, you can manage and co
 Manage Your Community
 =====================
 
-In this manual it is assumed you are already member of a community (otherwise please follow Quick Start Manual 4), that your user role has been upgraded from starter to explorer and that you have manager/admin privileges in your community of interest.  
+In this manual it is assumed you are already member of a community (otherwise please follow :doc:`Quick Start Manual 4 <qsm4>`), that your user role has been upgraded from starter to explorer and that you have manager/admin privileges in your community of interest.  
 
 Accessing your Community
 ~~~~~~~~~~~~~~~~~~~~~~~~

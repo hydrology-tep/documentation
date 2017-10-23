@@ -256,13 +256,6 @@ area of interest, open the Tutorial_mask_1_SN3.zip file in the current search re
 
 7. Click on Download and open the .jpg file. You will see a water level series of your area of interested for your time range of interest, similar as shown in Figure 2.
 
-.. figure:: includes/qsm7-f15.png
-	:align: center
-	:width: 60%
-	:figclass: img-container-border	
- 
-	Figure 15: Step 7: Download Job Results
-
 .. figure:: includes/qsm7-f14.png
 	:align: center
 	:width: 60%
@@ -270,6 +263,13 @@ area of interest, open the Tutorial_mask_1_SN3.zip file in the current search re
  
 	Figure 14: Step 1-3 - Processor after a successful job
 
+.. figure:: includes/qsm7-f15.png
+	:align: center
+	:width: 60%
+	:figclass: img-container-border	
+ 
+	Figure 15: Step 7: Download Job Results
+	
 8. Through the Share-button in the processor tab of Figure 13, you can share your results with other users, your community, or simply with all HTEP users.
 
 9. To find your previously generated job results, or to find job results shared by others users, go to the Jobs-tab in the processing service as illustrated in Figure 16.
