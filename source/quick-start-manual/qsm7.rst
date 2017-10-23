@@ -211,9 +211,7 @@ Figure 17:
 
 	➢ Selected Water Mask: Here you provide one or multiple water mask where the water level needs to be obtained. Drag and drop the water mask from the Cam Son Lake (named inland_water-8) from the current search results to this input field.
 	
-	➢ Plot name: Define a name that will be
-displayed on top of the plot with the water level. For this tutorial this name is equal to
-the Job Title.
+	➢ Plot name: Define a name that will be displayed on top of the plot with the water level. For this tutorial this name is equal to the Job Title.
 
 	➢ Start Date: Define a start date from where the water level needs to be calculated. The date used for the data search can also be chosen: click on the magic tool left of the input field. A dropdown menue appears: click on start date.
 
