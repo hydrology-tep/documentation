@@ -58,10 +58,10 @@ Manage the Members (roles) within a Community
  
 .. figure:: includes/qsm10-f5.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 5: Overview of community members
+ 
+	Figure 5: Overview of community members
 
 2.	To delete a member from the community, simply click on Remove member from community and confirm your action in the pop-up screen that will appear.
 
@@ -69,10 +69,10 @@ Manage the Members (roles) within a Community
  
 .. figure:: includes/qsm10-f6.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 6: Assign a role to a member
+ 
+	Figure 6: Assign a role to a member
 
 Community User Management
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,10 +83,10 @@ Community User Management
 
 .. figure:: includes/qsm10-f7.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 7: Users management within a community
+ 
+	Figure 7: Users management within a community
 
 Community Management
 ~~~~~~~~~~~~~~~~~~~~
@@ -108,10 +108,10 @@ Community Management
 
 .. figure:: includes/qsm10-f8.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
-
-    Figure 8: Community Management
+ 
+	Figure 8: Community Management
 
 
 

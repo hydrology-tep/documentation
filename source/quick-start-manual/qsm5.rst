@@ -18,10 +18,10 @@ EO satellite data for monitoring of water quality yields a wide variety of advan
 
 .. figure:: includes/qsm5-f1.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
- 	Figure 1: Red River, Vietnam
+	Figure 1: Red River, Vietnam
 
 Water Quality Application Input
 +++++++++++++++++++++++++++++++
@@ -45,10 +45,10 @@ Those pixels are flagged in the results, as will be discussed in Section 2.5.2.5
  
 .. figure:: includes/qsm5-f2.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 2: Landsat-8 Observations of Hoa Binh Reservoir, High Cloud Coverage
+	Figure 2: Landsat-8 Observations of Hoa Binh Reservoir, High Cloud Coverage
 
 Water Quality Application Output
 ++++++++++++++++++++++++++++++++
@@ -72,10 +72,10 @@ Consists of satellite imagery which has been corrected for the effects of the at
  
 .. figure:: includes/qsm5-f3.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 3: WQ App result on HTEP: TSS of Yen Binh Water Reservoir in the Red River basin
+	Figure 3: WQ App result on HTEP: TSS of Yen Binh Water Reservoir in the Red River basin
 
 Tutorial: Producing a Water Quality Map of My Area of Interest
 ==============================================================
@@ -91,28 +91,28 @@ You do not have an account yet? Then first register on the platform. To register
 
 .. figure:: includes/qsm5-f4.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 4: Step 1 – HTEP Community Portal
+	Figure 4: Step 1 – HTEP Community Portal
 
 2.	Access the Thematic Applications. Open the list of existing thematic applications by clicking on View Apps below the Discover Thematic Apps-icon.
 
 .. figure:: includes/qsm5-f5.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 5: Step 2 - Access the thematic applications
+	Figure 5: Step 2 - Access the thematic applications
 
 3.	A list of available Thematic Applications is shown. For this tutorial the Water Quality App for Red River is used. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The Water Quality application can also be accessed directly using the URL https://hydrology-tep.eo.esa.int/geobrowser/?id=waterquality-redriver. 
 
 .. figure:: includes/qsm5-f6.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 6: Step 3 and 4 - Available applications and your selections
+	Figure 6: Step 3 and 4 - Available applications and your selections
 
 4.	Filter your application of interest by using the Your selections column on the left side of the Thematic Applications page: Search text allows you to use keywords to find a corresponding thematic application. Currently the Your selections-feature is unnecessary, as there is only a limited number of thematic applications available. However, you might need this feature to find your application of interest once the number of available applications has significantly increased.
 
@@ -125,10 +125,10 @@ Once the Water Quality application has been accessed, a new tab opens called the
  
 .. figure:: includes/qsm5-f7.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 7: Step 1,2 and 3 - The water quality application Geobrowser
+	Figure 7: Step 1,2 and 3 - The water quality application Geobrowser
 
 2.	If you are correctly logged onto the HTEP platform, on the top-right of the Geobrowser your username should be displayed (2a). If you need any further explanation about the HTEP-platform and its features, a Help Guide can be easily accessed through clicking on the book-icon next to the email-icon (2b). If this is insufficient, you can ask for help through the contact form (2c). If you would like to sign out, this can also be done within the Geobrowser by the exit-icon (2d).
 
@@ -140,12 +140,12 @@ For this tutorial, Landsat-8 data is selected.
 
 4.	Once EO data from a certain satellite is selected, you can search for specific data images (data products) within the available database from the selected satellite. The options to filter your data products of interest out of the complete database are listed below. The actions can also be combined for an even more specific data search.
 
-.. figure:: includes/qsm9-f1.png
+.. figure:: includes/qsm5-f8.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 8: Step 4,5 - Search for data products in the geobrowser
+	Figure 8: Step 4,5 - Search for data products in the geobrowser
 
 ➢	Search Field (4a): On the top-left of the Geobrowser, you see a search field. In this field, you can do a text search for specific EO data products within the data source chosen in step 3. For now this field is left blank.
 
@@ -154,21 +154,21 @@ For this tutorial, Landsat-8 data is selected.
 .. NOTE:: 
 	The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser. 
 
-.. figure:: includes/qsm9-f1.png
+.. figure:: includes/qsm5-f9.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 9: Data products search panel
+	Figure 9: Data products search panel
 
 ➢	Although the Search Panel already provides you the option for a spatial filter based search, you can also apply a spatial search through the tools of 4c. A polygon, rectangle, marker and well-known text (WKT) code can be used to define your area of interest. For this tutorial a spatial filter is applied using a WKT-code. Click on the WKT button: the pop-up of Figure 10 appears.
  
 .. figure:: includes/qsm5-f10.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 10: Step 4c - Apply a spatial filter using WKT-code or Shapefile
+	Figure 10: Step 4c - Apply a spatial filter using WKT-code or Shapefile
 
 As you can see a spatial filter can be applied using a WKT-code, but also by simply dragging and dropping a Shapefile or uploading a Shapefile from your computer. For now a WKT-text is used. Copy and paste the following code in the top field: POLYGON((104.86 22.1,105.006 21.951,105.072 21.731,105.057 21.678,104.951 21.714,104.826 21.87,104.709 22.045,104.86 22.1)) and click on OK. This WKT code is the Yen Binh water reservoir: the reservoir should now be boxed by a pink dashed line. 
 
@@ -189,10 +189,10 @@ Figure 11 shows the search results from Section 2.5.2.2. Now the data products o
 
 .. figure:: includes/qsm5-f11.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 11: Step 1-4 - Select your data product of interest
+	Figure 11: Step 1-4 - Select your data product of interest
 
 3.	Hovering the data  products in the search results will show  the   corresponding  Landsat-8   image  in   the  Geobrowser.  As  such  it  can  be   easily  determined what image suits your interest.  
 
@@ -202,10 +202,10 @@ Figure 11 shows the search results from Section 2.5.2.2. Now the data products o
  
 .. figure:: includes/qsm5-f12.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 12: Step 5-7 - Drag and drop data products from search results to features basket
+	Figure 12: Step 5-7 - Drag and drop data products from search results to features basket
 
 For the purpose of this tutorial, two data products are selected and transferred to the features basket: LC81270452017091LGN00 (cloud free scene) and LC81270452017043LGN00 (clouded scene).
  
@@ -217,19 +217,19 @@ The advantage of a Data Package is that you can easily load your data products o
  
 .. figure:: includes/qsm5-f13.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 13: Step 7 - Save your data products in a Data Package
+	Figure 13: Step 7 - Save your data products in a Data Package
 
 8.	Your data package created in step 7, can be found in the Data Packages box. Access the Data Packages box using the Data Packages tab, located next to the Features Basket tab.
   
 .. figure:: includes/qsm5-f14.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 14: Step 8-10 - Overview of available data packages
+	Figure 14: Step 8-10 - Overview of available data packages
 
 9.	You see a list of many Data Packages published by other users. Find your own Data Package, which has the name you gave it in Step 7. The human-icon in front of the Data Package name indicates this Data Package is created by you and only visible for you. 
 
@@ -237,10 +237,10 @@ The advantage of a Data Package is that you can easily load your data products o
 
 .. figure:: includes/qsm5-f15.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 15: Step 10 - Choose the visibility of your data package
+	Figure 15: Step 10 - Choose the visibility of your data package
 
 · Do not share: Default setting, meaning your data package is only visible for yourself.
 · Share with anyone: Share your data package with all other HTEP users.
@@ -250,10 +250,10 @@ For now, leave your data package at default settings (Do not share) and Close th
        	                      
 .. figure:: includes/qsm5-f16.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 16: Step 11 - Change the visualisation of the Geobrowser map
+	Figure 16: Step 11 - Change the visualisation of the Geobrowser map
 
 Processing Your Data Using the Water Quality Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -264,10 +264,10 @@ Section 2.5.2.2 and 2.5.2.3 explained how to search for and select your data of 
 
 .. figure:: includes/qsm5-f17.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 17: Step 1, 2 and 3 - Access processing services 
+	Figure 17: Step 1, 2 and 3 - Access processing services 
 
 2.	On top of the processing services, three options are displayed: Services, Jobs and a Search Field. 
 
@@ -287,10 +287,10 @@ Section 2.5.2.2 and 2.5.2.3 explained how to search for and select your data of 
 
 .. figure:: includes/qsm5-f18.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 18: Step 3,5 - Water quality processing service
+	Figure 18: Step 3,5 - Water quality processing service
 
 As an alternative, you can also click on the arrow on the left of the field: a menu will drop down, where one can choose between current bbox (bounding box) from geometry, current geometry or current bounding box. The products that cover the area of your pick (this area is based on the defined spatial filter applied in Step 4 of Section 2.1), are then automatically selected.
 
@@ -300,10 +300,10 @@ For now the two products in your features basket will be selected for analysis b
 
 .. figure:: includes/qsm5-f19.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 19: Step 4 - Available output products
+	Figure 19: Step 4 - Available output products
 
 ➢	For now All is selected.
 
@@ -315,10 +315,10 @@ For now the two products in your features basket will be selected for analysis b
 
 .. figure:: includes/qsm5-f20.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 20: Step 7 - Job progress and job info
+	Figure 20: Step 7 - Job progress and job info
 
 Visualising and Sharing of Job Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -329,10 +329,10 @@ The previous section showed how to process the data products obtained from Secti
 
 .. figure:: includes/qsm5-f21.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 21: Step 1-3 - Processor after sucessful job
+	Figure 21: Step 1-3 - Processor after sucessful job
 
 2.	If a problem occurred during the processing of your job, or if it was performed using the wrong parameters then click Resubmit Job to run the job again. Adaptions to your parameters can be made.
 
@@ -348,10 +348,10 @@ The previous section showed how to process the data products obtained from Secti
 
 .. figure:: includes/qsm5-f22.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 22: Step 4-8 - Visualisation of Job Results
+	Figure 22: Step 4-8 - Visualisation of Job Results
 
 8.	Trough the Share-button in the processor tab, you can share your results with other users, your community, or simply with all HTEP users.
 
@@ -361,8 +361,8 @@ The previous section showed how to process the data products obtained from Secti
      
 .. figure:: includes/qsm5-f23.png
 	:align: center
-	:width: 80%
+	:width: 60%
 	:figclass: img-container-border	
  
-    Figure 23: Step 10 - List of published Jobs
+	Figure 23: Step 10 - List of published Jobs
 	
