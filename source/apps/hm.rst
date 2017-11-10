@@ -51,7 +51,8 @@ The Hydrological Modelling application is accessed from the home page of the Hyd
 .. figure:: ../includes/apps_hm_initial_view2.png
 	:figclass: img-border
 	:scale: 80%  
-	Instructions how to run the different processing services are given in the following sections.
+
+Instructions how to run the different processing services are given in the following sections.
 
 Selecting the Area of Interest based on drainage basins and upstream area
 -------------------------------------------------------------------------
@@ -65,7 +66,7 @@ Currently, the drainage basin of the Niger river as represented in the Niger-HYP
 Select a sub-basin and it’s upstream area in the Geobrowser
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1.	Zoom in to the area of interest and select a sub-basin by clicking in the map (left mouse button)[2]_ . The selected sub-basin is highlighted in green, and the upstream areas in yellow. 
+1.	Zoom in to the area of interest and select a sub-basin by clicking in the map (left mouse button) [2]_ . The selected sub-basin is highlighted in green, and the upstream areas in yellow. 
 2.	To select another sub-basin, click in another non-highlighted basin (it’s not possible to select a sub-basin from the current selected upstream area)
 
 .. [2] The EO data coverage polygons may be blocking the sub-basin polygons. Solution, see *Known issues*.
@@ -109,6 +110,7 @@ Running the Niger-HYPE historical simulation processing service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1.	Open the Niger-HYPE historical simulation service and Select name for you job in the **Job title** parameter field
+
 2.	(mandatory) Set the start of the simulation period in the **Start of simulation (yyyy-mm-dd)*** input parameter field (obligatory).
 	
 	a.	In the example 2016-04-01 (the start of the rainy season in the Niger river basin is usually in the beginning of April)
@@ -327,7 +329,8 @@ Results from the HYPE Return Period Analysis processing service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The result of the HYPE Return Period Analysis processing service is a textfile with estimated levels (annual maximum values of the input data) at different return periods (years):
-a.	Each row correspond to a sub-basin in the Niger-HYPE model, identified by the sub-basin identifier in the first column.
-b.	The remaining columns contain the estimated levels for the return periods (years) identified from the header row.
-c.	Copy the result to your Feature basket if the file should be used as input to the Niger-HYPE Forecast processing service.
+
+	a.	Each row correspond to a sub-basin in the Niger-HYPE model, identified by the sub-basin identifier in the first column.
+	b.	The remaining columns contain the estimated levels for the return periods (years) identified from the header row.
+	c.	Copy the result to your Feature basket if the file should be used as input to the Niger-HYPE Forecast processing service.
 
