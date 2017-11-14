@@ -108,7 +108,7 @@ If it's the first time the user uses this feature, a window, where the user can 
 	:figclass: img-border
 	:scale: 80%
 
-If the user already entered the API Key before, a new window listing all the datapackages owned by that user and the products inside each package will pop up automatically.
+If the user already entered the API Key before, a new window listing all the datapackages owned by that user and the products inside each package will pop up automatically (this can take a while depending on the data packages owned by the user).
 
 .. figure:: ../includes/data_tree_window.png
 	:figclass: img-border
