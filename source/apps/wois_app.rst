@@ -31,10 +31,15 @@ QGIS configuration (first access)
 - Plugins -> Installed -> Select the following plugins:
 
 	HEP Plugin
+	
 	Processing BEAM and SNAP algorithm provider
+	
 	Processing Workflows
+	
 	Temporal/Spectral Profile Tool
+	
 	Value Tool
+	
 	Zonal statistics plugin
 
 - Processing -> Toolbox (this is to activate the toolbox)
@@ -43,10 +48,12 @@ QGIS configuration (first access)
 
 	BEAM:
 	   Activate
+	   
 	   BEAM install directory: /opt/beam-5.0 (click Enter)
 
 	Processing Workflows (Step by step guidance):
 	   Activate
+	   
 	   Activate WOIS toolbox collection
 
 	R scripts
@@ -54,12 +61,16 @@ QGIS configuration (first access)
 
 	SNAP Toolbox (Sentinel Application Platform)
 	   Activate
+	   
 	   Activate Sentinel-1 toolbox (same for sentinel-2, 3)
+	   
 	   SNAP install directory: /opt/snap-5.0 (click Enter)
 
 	Orfeo Toolbox (Image analysis)
 	   Activate
+	   
 	   OTB application folder: /opt/OTB-5.0.0/lib/otb/applications
+	   
 	   OTB command line tools folder: /opt/OTB-5.0.0/bin
 
 	**Note:** If the OTB version installed is higher than 6.0.0 downgrade it to the 5.0.0 (sudo yum downgrade OTB)
