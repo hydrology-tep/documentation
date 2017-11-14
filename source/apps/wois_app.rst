@@ -25,6 +25,47 @@ To access the VM via VNC, the user can use a VNC client (e.g. VNC Viewer) or sel
 
 If the user uses a VNC client, the VNC server for the VM is **IP:5902**
 
+QGIS configuration (first access)
+---------------------------------
+
+- Plugins -> Installed -> Select the following plugins:
+
+	HEP Plugin
+	Processing BEAM and SNAP algorithm provider
+	Processing Workflows
+	Temporal/Spectral Profile Tool
+	Value Tool
+	Zonal statistics plugin
+
+- Processing -> Toolbox (this is to activate the toolbox)
+
+- Processing -> Options -> Providers:
+
+	BEAM:
+	   Activate
+	   BEAM install directory: /opt/beam-5.0 (click Enter)
+
+	Processing Workflows (Step by step guidance):
+	   Activate
+	   Activate WOIS toolbox collection
+
+	R scripts
+	   Activate
+
+	SNAP Toolbox (Sentinel Application Platform)
+	   Activate
+	   Activate Sentinel-1 toolbox (same for sentinel-2, 3)
+	   SNAP install directory: /opt/snap-5.0 (click Enter)
+
+	Orfeo Toolbox (Image analysis)
+	   Activate
+	   OTB application folder: /opt/OTB-5.0.0/lib/otb/applications
+	   OTB command line tools folder: /opt/OTB-5.0.0/bin
+
+	**Note:** If the OTB version installed is higher than 6.0.0 downgrade it to the 5.0.0 (sudo yum downgrade OTB)
+
+- Restart QGIS and the HEP Plugin button, WOIS button and all the required plugins will be available.
+
 Select Data to use on WOIS
 --------------------------
 
