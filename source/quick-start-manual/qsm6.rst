@@ -131,46 +131,46 @@ For this tutorial, Sentinel-1 data is selected.
 
 ➢	Search Field (4a): On the top-left of the Geobrowser, you see a search field. In this field, you can do a text search for specific EO data products within the data source chosen in step 3. For now this field is left blank.
 
-➢	Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others track and orbit of the image, cloud- and land cover filters and geometry filters for a spatial search. 
+➢	Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8a: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others track and orbit of the image, cloud- and land cover filters and geometry filters for a spatial search. 
 
 .. figure:: includes/qsm6-f8.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
  
- 	Figure 8: Data products search panel
+ 	Figure 8a: Data products search panel
 
 ➢	A big amount of data will originally be shown on the screen and in the list when a polygon is drawn. To limit the amount of images in the search and ease the step of Selecting images, it is recommended to filter the images by the track number. The track is a marker, which is specific of all the images with the same geometry of acquisition, and thus will have a similar footprint, incidence angle and the same pass. The service needs at least two images of the same track to work correctly.Different tracks can be combined, but at least each of the tracks has to contain a pair of acquisitions/dates to produce outputs.
 
-➢	The track number can be obtained by clicking on one of the images on the geobrowser and check the number enclosed in the panel list or in the pop-up window, such as it is highlighted on Figure 9.
+➢	The track number can be obtained by clicking on one of the images on the geobrowser and check the number enclosed in the panel list or in the pop-up window, such as it is highlighted on Figure 8b.
 
 .. figure:: includes/qsm6-f9a.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
  
- 	Figure 8a: The desired track number can be obtained by clicking on one of the images of the global search
+ 	Figure 8b: The desired track number can be obtained by clicking on one of the images of the global search
 
 .. NOTE:: 
 	The service needs at least a pair of images of the same track to work correctly. 
 
-➢	Once the track is obtained, the search can be filtered by this parameter on the "Show Other parameters" options (see Figure 8). Additional parameters and options will be disclosed and the user will be able to introduce the number of track in the tag and applying the search such as it is done in the following example:
+➢	Once the track is obtained, the search can be filtered by this parameter on the "Show Other parameters" options (see Figure 8a). Additional parameters and options will be disclosed and the user will be able to introduce the number of track in the tag and applying the search such as it is done in the following example of Figure 8c.
 
 .. figure:: includes/qsm6-f9b.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
  
- 	Figure 8b: Extended parameters of the Search Panel
+ 	Figure 8c: Extended parameters of the Search Panel
 	
-	➢	The amount of data will now be reduced to only the overlapping of the track and the AOI (Area of interest) polygon drawn. The polygon drawn in WKT format will be shown on the geometry tag.
+	➢	The amount of data will be now reduced to only the overlapping of the track and the AOI drawn. The polygon drawn will be shown in WKT string format on the geometry tag. To remove the track filter option, it can be done by deleting the track number and apply again the search or by cancelling the earth observation tab, highlighted in blue on Figure 8d.
 
 .. figure:: includes/qsm6-f9c.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
  
- 	Figure 8c: Search filtered by the track number and the AOI drawn.
+ 	Figure 8d: Search filtered by the track number and the AOI drawn.
 
 
 ➢	Although the Search Panel already provides you the option for a spatial filter based search, you can also apply a spatial search through the tools of 4c. A polygon, rectangle, marker and well-known text (WKT) code can be used to define your area of interest. For this tutorial a spatial filter is applied using a WKT-code. Click on the WKT button: the pop-up of Figure 9 appears.
