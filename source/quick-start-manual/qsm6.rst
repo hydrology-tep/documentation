@@ -131,7 +131,19 @@ For this tutorial, Sentinel-1 data is selected.
 
 ➢	Search Field (4a): On the top-left of the Geobrowser, you see a search field. In this field, you can do a text search for specific EO data products within the data source chosen in step 3. For now this field is left blank.
 
-➢	Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others cloud- and land cover filters and geometry filters for a spatial search. For now also leave the Search Panel untouched, so at default settings. 
+➢	Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others track and orbit of the image, cloud- and land cover filters and geometry filters for a spatial search. 
+
+➢	A big amount of data will originally be shown in the geobrowser when a polygon is drawn. To limit the amount of images available it is recommended to filter by the track number of the observations. The track is a marker, specific of all the images with the same geometry of acquisition, and will have a similar footprint and same other features (ascending/descending pass or incidence angle). The service needs at least two images of the same track to corregister the images to a single geometry.
+
+.. NOTE:: 
+	The service needs at least a pair of images of the same track to work correctly. Different tracks can be combined, but at least each of the tracks has to contain a pair of acquisitions/dates to produce outputs.
+
+.. figure:: includes/qsm6-f9a.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+ 
+ 	Figure 9a: Obtaining the Track number of a specific geometry
 
 .. NOTE:: 
 	The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser. 
