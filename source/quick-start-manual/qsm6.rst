@@ -133,27 +133,45 @@ For this tutorial, Sentinel-1 data is selected.
 
 ➢	Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others track and orbit of the image, cloud- and land cover filters and geometry filters for a spatial search. 
 
-➢	A big amount of data will originally be shown in the geobrowser when a polygon is drawn. To limit the amount of images available it is recommended to filter by the track number of the observations. The track is a marker, specific of all the images with the same geometry of acquisition, and will have a similar footprint and same other features (ascending/descending pass or incidence angle). The service needs at least two images of the same track to corregister the images to a single geometry.
-
-.. NOTE:: 
-	The service needs at least a pair of images of the same track to work correctly. Different tracks can be combined, but at least each of the tracks has to contain a pair of acquisitions/dates to produce outputs.
-
-.. figure:: includes/qsm6-f9a.png
-	:align: center
-	:width: 80%
-	:figclass: img-container-border	
- 
- 	Figure 9a: Obtaining the Track number of a specific geometry
-
-.. NOTE:: 
-	The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser. 
-
 .. figure:: includes/qsm6-f8.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
  
  	Figure 8: Data products search panel
+
+➢	A big amount of data will originally be shown on the screen and in the list when a polygon is drawn. To limit the amount of images in the search and ease the step of Selecting images, it is recommended to filter the images by the track number. The track is a marker, which is specific of all the images with the same geometry of acquisition, and thus will have a similar footprint, incidence angle and the same pass. The service needs at least two images of the same track to work correctly.Different tracks can be combined, but at least each of the tracks has to contain a pair of acquisitions/dates to produce outputs.
+
+➢	The track number can be obtained by clicking on one of the images on the geobrowser and check the number enclosed in the panel list or in the pop-up window, such as it is highlighted on Figure 9.
+
+.. figure:: includes/qsm6-f9a.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+ 
+ 	Figure 8a: The desired track number can be obtained by clicking on one of the images of the global search
+
+.. NOTE:: 
+	The service needs at least a pair of images of the same track to work correctly. 
+
+➢	Once the track is obtained, the search can be filtered by this parameter on the "Show Other parameters" options (see Figure 8). Additional parameters and options will be disclosed and the user will be able to introduce the number of track in the tag and applying the search such as it is done in the following example:
+
+.. figure:: includes/qsm6-f9b.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+ 
+ 	Figure 8b: Extended parameters of the Search Panel
+	
+	➢	The amount of data will now be reduced to only the overlapping of the track and the AOI (Area of interest) polygon drawn. The polygon drawn in WKT format will be shown on the geometry tag.
+
+.. figure:: includes/qsm6-f9c.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+ 
+ 	Figure 8c: Search filtered by the track number and the AOI drawn.
+
 
 ➢	Although the Search Panel already provides you the option for a spatial filter based search, you can also apply a spatial search through the tools of 4c. A polygon, rectangle, marker and well-known text (WKT) code can be used to define your area of interest. For this tutorial a spatial filter is applied using a WKT-code. Click on the WKT button: the pop-up of Figure 9 appears.
  
