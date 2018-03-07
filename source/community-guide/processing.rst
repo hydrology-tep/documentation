@@ -92,3 +92,13 @@ To access public jobs:
 4. Filter jobs using the dropdown list and selecting "show only public".
 5. Click on the job title.
 6. You can now see details about the job.
+
+Get support or contact provider
+-------------------------------
+
+Once you have processed a job, you will see on the detailed view of the job a tab named **Support**.
+This tab will allow you to send an email to the support team will all details about your job, or (only in case of successful jobs) to the service provider.
+
+.. figure:: ../includes/job_support.png
+	:figclass: img-border
+	:scale: 50 %
