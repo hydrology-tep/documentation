@@ -68,7 +68,7 @@
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
+	    <a class="navbar-brand" href="https://hydrology-tep.eo.esa.int" target="_blank"><img id="logo" src="../_static/TEP_hydrology_logo.png"></a>
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -324,17 +324,34 @@ However, Sentinel-2 data is used to refine the water masks using optical sensors
 <p class="caption"><span class="caption-text">Figure 7: Step 4,5 - Search for data products in the Geobrowser</span></p>
 </div>
 <p>➢       Search Field (4a): On the top-left of the Geobrowser, you see a search field. In this field, you can do a text search for specific EO data products within the data source chosen in step 3. For now this field is left blank.</p>
-<p>➢       Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others cloud- and land cover filters and geometry filters for a spatial search. For now also leave the Search Panel untouched, so at default settings.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The Search Field cannot be used to search for geographic places: this feature in non-existent in the Geobrowser.</p>
-</div>
+<p>➢       Clicking on the magnifying glass (4b) below the search field, opens the Search Panel of Figure 8a: a panel containing multiple additional filters to find your desired data product. For example the productType and a time range filter. Show Other Parameters opens another extensive list of filters, amongst others track and orbit of the image, cloud- and land cover filters and geometry filters for a spatial search.</p>
 <div class="img-container-border figure align-center" id="id8">
 <a class="reference internal image-reference" href="../_images/qsm6-f8.png"><img alt="../_images/qsm6-f8.png" src="../_images/qsm6-f8.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-text">Figure 8: Data products search panel</span></p>
+<p class="caption"><span class="caption-text">Figure 8a: Data products search panel</span></p>
+</div>
+<p>➢       A big amount of data will originally be shown on the screen and in the list when a polygon is drawn. To limit the amount of images in the search and ease the step of Selecting images, it is recommended to filter the images by the track number. The track is a marker, which is specific of all the images with the same geometry of acquisition, and thus will have a similar footprint, incidence angle and the same pass. The service needs at least two images of the same track to work correctly.Different tracks can be combined, but at least each of the tracks has to contain a pair of acquisitions/dates to produce outputs.</p>
+<p>➢       The track number can be obtained by clicking on one of the images on the geobrowser and check the number enclosed in the panel list or in the pop-up window, such as it is highlighted on Figure 8b.</p>
+<div class="img-container-border figure align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/qsm6-f9a.png"><img alt="../_images/qsm6-f9a.png" src="../_images/qsm6-f9a.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 8b: The desired track number can be obtained by clicking on one of the images of the global search</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The service needs at least a pair of images of the same track to work correctly.</p>
+</div>
+<p>➢       Once the track is obtained, the search can be filtered by this parameter on the &#8220;Show Other parameters&#8221; options (see Figure 8a). Additional parameters and options will be disclosed and the user will be able to introduce the number of track in the tag and applying the search such as it is done in the following example of Figure 8c.</p>
+<div class="img-container-border figure align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/qsm6-f9b.png"><img alt="../_images/qsm6-f9b.png" src="../_images/qsm6-f9b.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 8c: Extended parameters of the Search Panel</span></p>
+<div class="legend">
+➢       The amount of data will be now reduced to only the overlapping of the track and the AOI drawn. The polygon drawn will be shown in WKT string format on the geometry tag. To remove the track filter option, it can be done by deleting the track number and apply again the search or by cancelling the earth observation tab, highlighted in blue on Figure 8d.</div>
+</div>
+<div class="img-container-border figure align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/qsm6-f9c.png"><img alt="../_images/qsm6-f9c.png" src="../_images/qsm6-f9c.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 8d: Search filtered by the track number and the AOI drawn.</span></p>
 </div>
 <p>➢       Although the Search Panel already provides you the option for a spatial filter based search, you can also apply a spatial search through the tools of 4c. A polygon, rectangle, marker and well-known text (WKT) code can be used to define your area of interest. For this tutorial a spatial filter is applied using a WKT-code. Click on the WKT button: the pop-up of Figure 9 appears.</p>
-<div class="img-container-border figure align-center" id="id9">
+<div class="img-container-border figure align-center" id="id12">
 <a class="reference internal image-reference" href="../_images/qsm6-f9.png"><img alt="../_images/qsm6-f9.png" src="../_images/qsm6-f9.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 9: Step 4c - Apply a spatial filter using WKT-code or Shapefile</span></p>
 </div>
@@ -352,7 +369,7 @@ However, Sentinel-2 data is used to refine the water masks using optical sensors
 <li>By clicking on an EO data product in the current search results box, the selected product is highlighted blue. In the map the spatial area covered by the selected product is boxed by a bold white line and a pop-up appears. In the pop-up information about this specific data product is provided, such as the product type, swath, orbit and time of capturing.</li>
 <li>In the pop-up box there is also the option to select Download or Related Search. The download can be performed through the Download (application/octet) (for Sentinel-1 this is through the Copernicus SciHub database) or directly through the Data Gateway of the HTEP platform. The related search offers you the option to search for data products with a similar time range, spatial coverage or a combination thereof as the currently selected data product. Feel free to download or do another search, but for this tutorial it is not necessary.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id10">
+<div class="img-container-border figure align-center" id="id13">
 <a class="reference internal image-reference" href="../_images/qsm6-f10.png"><img alt="../_images/qsm6-f10.png" src="../_images/qsm6-f10.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 10: Step 1-3 - Select your data product of interest</span></p>
 </div>
@@ -360,7 +377,7 @@ However, Sentinel-2 data is used to refine the water masks using optical sensors
 <li>To  easily  select/deselect  (multiple)  products  or show/hide (multiple)  products on the map of the Geobrowser,  use  the  icon  next  to  the   orange square.</li>
 <li>The data products of interest for your research can be selected and transferred to the features basket simply using drag and drop as illustrated in Figure 11.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id11">
+<div class="img-container-border figure align-center" id="id14">
 <a class="reference internal image-reference" href="../_images/qsm6-f11.png"><img alt="../_images/qsm6-f11.png" src="../_images/qsm6-f11.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 11: Step 4-6 - Drag and drop data products from search results to features basket</span></p>
 </div>
@@ -371,14 +388,14 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <li>All data products dropped in the features basket, can together be saved as a single Data Package using the Save button on the top-right of the features basket box. The pop-up of Figure 12 appears and a name can be assigned to the Data Package. Name your data package SWB_VietTri_Hanoi_March17_username (replace username by your username). Click on Save to Save the Data Package: a message should appear stating a successful save.</li>
 </ol>
 <p>The advantage of a Data Package is that you can easily load your data products of interest at any arbitrary time and you can also easily share it with other hydrologists.</p>
-<div class="img-container-border figure align-center" id="id12">
+<div class="img-container-border figure align-center" id="id15">
 <a class="reference internal image-reference" href="../_images/qsm6-f12.png"><img alt="../_images/qsm6-f12.png" src="../_images/qsm6-f12.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 12: Step 6 - Save your data products in a Data Package</span></p>
 </div>
 <ol class="arabic simple" start="7">
 <li>Your data package created in step 6, can be found in the Data Packages box. Access the Data Packages box using the Data Packages tab, located next to the Features Basket tab.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id13">
+<div class="img-container-border figure align-center" id="id16">
 <a class="reference internal image-reference" href="../_images/qsm6-f13.png"><img alt="../_images/qsm6-f13.png" src="../_images/qsm6-f13.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 13: Step 7-9 - Overview of available data packages</span></p>
 </div>
@@ -386,7 +403,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <li>You see a list of many Data Packages published by other users. Find your own Data Package, which has the name you gave it in Step 6. The human-icon in front of the Data Package name indicates this Data Package is created by you and only visible for you.</li>
 <li>One of the options is to share your Data Package with all other HTEP users or with your community. To do so, click on share. A pop-up will appear as shown in Figure 14.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id14">
+<div class="img-container-border figure align-center" id="id17">
 <a class="reference internal image-reference" href="../_images/qsm6-f14.png"><img alt="../_images/qsm6-f14.png" src="../_images/qsm6-f14.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 14: Step 9 - Choose the visibility of your data package</span></p>
 </div>
@@ -402,7 +419,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <ol class="arabic simple" start="10">
 <li>Additional features to manage Geobrowser map visualisation: On the top-right of the Geobrowser the lay-out manager-icon, indicated by the red rectangle in Figure 15, can be selected: a list of options will appear to manage the Geobrowser map visualisation. The background of the map can be changed from default to for example Google Maps or Natural Earth. In the dropdown menu it can also be defined which products should be shown on the map: for instance the products from the related search, the products from the features basket or the data results after processing, which will be discussed in Section 2.6.2.4. Feel free to play with the visualisation of the map.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id15">
+<div class="img-container-border figure align-center" id="id18">
 <a class="reference internal image-reference" href="../_images/qsm6-f15.png"><img alt="../_images/qsm6-f15.png" src="../_images/qsm6-f15.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 15: Step 10 - Change the visualisation of the Geobrowser map</span></p>
 </div>
@@ -413,7 +430,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <ol class="arabic simple">
 <li>The processing services can be accessed from within the Geobrowser, but they are initially hidden. Open the available processing services by clicking on the processing services tab.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id16">
+<div class="img-container-border figure align-center" id="id19">
 <a class="reference internal image-reference" href="../_images/qsm6-f16.png"><img alt="../_images/qsm6-f16.png" src="../_images/qsm6-f16.png" style="width: 60%;" /></a>
 <p class="caption"><span class="caption-text">Figure 16: Step 1, 2 and 3 - Access processing services</span></p>
 </div>
@@ -427,7 +444,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <li>For now, click on the process service Small water bodies service to access the Small Water Body Mapping processing service. See Figure 17.</li>
 <li>To process data and create output, a Job needs to be created. A job can be created by filling in all the fields as shown in Figure 17:</li>
 </ol>
-<div class="img-container-border figure align-center" id="id17">
+<div class="img-container-border figure align-center" id="id20">
 <a class="reference internal image-reference" href="../_images/qsm6-f17.png"><img alt="../_images/qsm6-f17.png" src="../_images/qsm6-f17.png" style="width: 60%;" /></a>
 <p class="caption"><span class="caption-text">Figure 17: Step 3,5 - SWBM processing service</span></p>
 </div>
@@ -441,7 +458,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <ol class="arabic simple" start="5">
 <li>Click on the Run Job button to run the job.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id18">
+<div class="img-container-border figure align-center" id="id21">
 <a class="reference internal image-reference" href="../_images/qsm6-f18.png"><img alt="../_images/qsm6-f18.png" src="../_images/qsm6-f18.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 18: Step 6 - Job progress and job info</span></p>
 </div>
@@ -455,7 +472,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <ol class="arabic simple">
 <li>Once the processor has finished the job, the Status of the job will change from Running to Success as shown in Figure 19.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id19">
+<div class="img-container-border figure align-center" id="id22">
 <a class="reference internal image-reference" href="../_images/qsm6-f19.png"><img alt="../_images/qsm6-f19.png" src="../_images/qsm6-f19.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 19: Step 1 - Processor after a succesfull job</span></p>
 </div>
@@ -465,7 +482,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <li>The results of your job are loaded in what previously was the current search result box, see Figure 21. To know if you this box contains EO satellite data products or job results, take a look on the top-right of the Geobrowser to check if you are in the Products tab or EO Data tab.</li>
 <li>The job results are not just loaded in the current search results box, but also in the Geobrowser. You can visualize each parameter individually in the Geobrowser by selecting the option show only this feature.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id20">
+<div class="img-container-border figure align-center" id="id23">
 <a class="reference internal image-reference" href="../_images/qsm6-f20.png"><img alt="../_images/qsm6-f20.png" src="../_images/qsm6-f20.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 20: Step 2,3 - Job progress and job info</span></p>
 </div>
@@ -473,7 +490,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <li>For each analysed image there are three output products in tiff format, which can be visualized in the Geobrowser. Furthermore the results show a quality_control.zip file. The SWBM application allows you to check the intermediate results during the analysis, in order to analyse the quality and reliability of the end product. If you wish to do a quality control, download this zipfile and follow the SWBM Quality Control Manual incorporated in the HTEP User Manual: <a class="reference external" href="http://hydrology-tep.github.io/documentation/apps/swbm.html">http://hydrology-tep.github.io/documentation/apps/swbm.html</a>.</li>
 <li>The resolution of the job results within the Geobrowser is rather low and may impose the false assumption of unreliable results. Therefore, click on your data product of interest in the result box and a pop-up will appear as shown in Figure 21. Here you can Download the result in different formats.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id21">
+<div class="img-container-border figure align-center" id="id24">
 <a class="reference internal image-reference" href="../_images/qsm6-f21.png"><img alt="../_images/qsm6-f21.png" src="../_images/qsm6-f21.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 21: Step 4-8 - Visualisation of Job Results</span></p>
 </div>
@@ -482,7 +499,7 @@ Change the satellite data source from Sentinel-1 to Sentinel-2 to see if there a
 <li>To find your previously generated job results, or to find job results shared by others users, go to the Jobs-tab in the processing service as illustrated in Figure 22.</li>
 <li>Click on the Show thematic jobs-field next to the Filter Jobs Search Field: here you can choose which jobs you wish to see: only the thematic jobs, all jobs, only your own created jobs or only public jobs. Once you found your job of interest, click on the name of the job and access the results as explained in steps 3-7. You will see there is a thematic job available that shows the results from this Quick Start Manual: SWB_VietTri-Hanoi_March17-RR-Tutorial.</li>
 </ol>
-<div class="img-container-border figure align-center" id="id22">
+<div class="img-container-border figure align-center" id="id25">
 <a class="reference internal image-reference" href="../_images/qsm6-f22.png"><img alt="../_images/qsm6-f22.png" src="../_images/qsm6-f22.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">Figure 22: Step 10 - List of published Jobs</span></p>
 </div>
