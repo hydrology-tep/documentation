@@ -74,7 +74,6 @@ This process publish data on the catalogue. It performs a query for every opense
 - Open the service **Data Publication** in the WPS Service tab
 - Select the context **My Repository**
 - Drag and drop items from the search result tab into the field **Data items**
-- Set Terradue **Username** and Terradue **Apikey** using the Geobrowser clipboard button
 - Set the **Index** (if not your private one)
 - Click on **Run job**
 - Click on **Show results**, the published items are available in the search result
