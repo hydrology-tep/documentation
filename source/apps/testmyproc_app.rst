@@ -11,9 +11,9 @@ Test my processor
 	:scale: 80%
 
 
-Each expert user has a personal app in which he can access:
+Each expert user (member of the "Experts users" commubnity) will be given access to the *Test my Processor* app containing the following features:
 
-- his private catalog index,
-- his private storage,
-- data packages,
-- his private processing services
+- access to his private catalog index,
+- access to his private storage,
+- access to data packages,
+- access to his private processing services
