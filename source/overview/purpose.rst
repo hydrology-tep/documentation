@@ -98,6 +98,6 @@ Hydro-TEP is being developed by:
 Contact Information
 -------------------
 
-**Website**:	https://hydrology-tep.eo.esa.int/ - https://tep.eo.esa.int/ 
+**Website**:	https://hydrology-tep.eu/ - https://tep.eo.esa.int/ 
 
 **Lead Partner**:     	isardSAT S.L: Bernat Martínez (+34933505508, Bernat.martinez[at]isardsat.cat)

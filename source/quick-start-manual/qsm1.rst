@@ -8,7 +8,7 @@ To make use of the functions and features of the Hydrology Thematic Exploitation
 Register on ESA EO Users’ Single Sign On
 ========================================
 
-1. Please access the HTEP Community Portal through the URL provided: https://hydrology-tep.eo.esa.int/#!. 
+1. Please access the HTEP Community Portal through the URL provided: https://hydrology-tep.eu/#!. 
 
 .. figure:: includes/qsm1-f1.png
 	:align: center
@@ -18,9 +18,6 @@ Register on ESA EO Users’ Single Sign On
 	Figure 1: The HTEP Community Portal
 
 2. On the top right a register button is displayed, encircled in red. Click on this button to go to the ESA EO Users’ Single Sign On registration page. 
-
-.. NOTE:: 
-	Currently HTEP is only open for early adoptors. As such the registration button will not redirect you to the registration page but show a pop-up asking you to send an email. For now the registration page can as such only be accessed through the following URL: https://eo-sso-idp.eo.esa.int/idp/umsso20/registration.
 
 3. Figure 2 shows the ESA EO Users’ Single Sign On registration. Fill in all required information. Click on the question mark behind the field for extra info. Afterwards click on Register to continue. A confirmation as shown in Figure 3 is displayed and an email is sent.
 
@@ -61,7 +58,7 @@ directed to a page confirming the activation of your account, as indicated by Fi
 Sign into HTEP Community Portal
 ===============================
 
-1. Go back to the HTEP Community Portal: https://hydrology-tep.eo.esa.int/#!
+1. Go back to the HTEP Community Portal: https://hydrology-tep.eu/#!
 
 2. On the top right of the HTEP Community Portal, click on Sign in button. The button is located left of the register-button as indicated in Figure 1. You will be redirected to the sign-in page of Figure 6.
 

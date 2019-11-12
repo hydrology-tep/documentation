@@ -86,7 +86,7 @@ You do not have an account yet? Then first register on the platform. To register
  
  	Figure 4: Step 2 - Access the thematic applications
 
-3.	A list of available Thematic Applications is shown. For this tutorial the Flood Monitoring for Red River application is used. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The SWBM application can also be accessed directly using the URL https://hydrology-tep.eo.esa.int/geobrowser/?id=floodmonitoring-redriver#!. 
+3.	A list of available Thematic Applications is shown. For this tutorial the Flood Monitoring for Red River application is used. The application can be opened by clicking on the Open App button on the right side. A pop-up containing information about this specific application and a list of some application-keywords appears when clicking on the title of the app. The SWBM application can also be accessed directly using the URL https://hydrology-tep.eu/geobrowser/?id=floodmonitoring-redriver#!. 
   
 .. figure:: includes/qsm8-f5.png
 	:align: center
