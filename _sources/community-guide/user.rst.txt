@@ -94,7 +94,7 @@ Get your Api key
 
 You can get a private API key associated to your account.
 Currently this key can be used only to get access to your data packages without being logged in on the portal:
-e.g: https://hydrology-tep.eo.esa.int/t2api/data/package/search?key=MY_API_KEY
+e.g: https://hydrology-tep.eu/t2api/data/package/search?key=MY_API_KEY
 
 .. figure:: ../includes/user_profile_apikey.png
 	:figclass: img-border img-max-width

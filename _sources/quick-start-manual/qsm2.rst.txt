@@ -11,7 +11,7 @@ Once you are registered in ESA’s Earth Observation Single Sign on environment 
 The HTEP Community Portal Homepage
 ==================================
 
-Figure 1 shows the homepage of the HTEP Community Portal, which can be accessed through the following link: https://hydrology-tep.eo.esa.int/#!.
+Figure 1 shows the homepage of the HTEP Community Portal, which can be accessed through the following link: https://hydrology-tep.eu/#!.
 
 1. This part of HTEP is where a user can register in ESA’s EO SSO environment, sign into the HTEP Community Portal and contact HTEP.
 

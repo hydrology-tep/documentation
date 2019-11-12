@@ -21,7 +21,7 @@ Access to the thematic application
 
 The Hydrological Modelling application is accessed from the home page of the Hydrology TEP community portal:
 
-1.	Enter the **HEP portal** and **sign in** with your HEP community user account https://hydrology-tep.eo.esa.int
+1.	Enter the **HEP portal** and **sign in** with your HEP community user account https://hydrology-tep.eu
 2.	Open the list of **Thematic applications** with the view_apps link below the Discover Thematic Apps icon. 
 3.	Find the link to the Hydrological_modelling application (Open App):
 
