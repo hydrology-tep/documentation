@@ -285,6 +285,12 @@ a:hover {
   margin: 1em 0;
 }
 
+@media (min-width: 768px) {
+  .sections-collapse > li {
+    height: 1.5em;
+  }
+}
+
 .sections-collapse a {
   color: #4a4a4a;
 }
@@ -310,8 +316,17 @@ a:hover {
   margin-top: 3px;
 }
 
-@media (min-width: 768px) {
+#navbar .navbar-header.pull-right {
+  margin-top: 7px;
+}
+
+#sidebar {
+  display: none;
+}
+
+@media (min-width: 992px) {
   #sidebar {
+    display: block;
     border-right: 1px solid #ddd;
   }
 }
