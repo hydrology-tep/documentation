@@ -102,7 +102,7 @@ class ReqDirective(Directive):
             'target': targetnode,
         })
 
-        if 'show' not in self.options:
+        if not self.options.has_key('show'):
             return [targetnode]
 
         return [targetnode] + ad
@@ -123,7 +123,7 @@ def append_row(tbody, cells):
         entry = nodes.entry()
         row += entry
   
-        if isinstance(cell, str):
+        if isinstance(cell, basestring):
             node = nodes.paragraph(text=cell)
         else:
             node = cell
