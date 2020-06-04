@@ -1,3 +1,99 @@
+@font-face {
+  font-family: "finlandica";
+  font-display: "fallback";
+  src: url("./finlandica-boldWeb.woff2") format("woff2"),
+    url("./finlandica-boldWeb.woff") format("woff"),
+    url("./finlandica-boldWeb.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "finlandica";
+  font-display: "fallback";
+  src: url("./finlandica-bolditalicWeb.woff2") format("woff2"),
+    url("./finlandica-bolditalicWeb.woff") format("woff"),
+    url("./finlandica-bolditalicWeb.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "finlandica";
+  font-display: "fallback";
+  src: url("./finlandica-italicWeb.woff2") format("woff2"),
+    url("./finlandica-italicWeb.woff") format("woff"),
+    url("./finlandica-italicWeb.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "finlandica";
+  font-display: "fallback";
+  src: url("./finlandica-regularWeb.woff2") format("woff2"),
+    url("./finlandica-regularWeb.woff") format("woff"),
+    url("./finlandica-regularWeb.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: Finlandica, Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding-top: 0px;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+p,
+ul {
+  line-height: 1.5em;
+}
+
+h1,
+h2 {
+  margin: 0.67em 0;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+body > .container {
+  margin-top: 1em;
+}
+
+a {
+  color: #0098db;
+}
+
+a:hover {
+  color: #4a4a4a;
+}
+
+.Logo {
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: lowercase;
+  color: #494949;
+}
+
+.Logo__shade {
+  color: #0098db;
+}
+
+.alert {
+  background-color: #0098db;
+  background-image: none;
+  color: white;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 1em !important;
+}
 
 #sidebar.affix {
   /* position: fixed; already applied in .affix */
@@ -10,18 +106,9 @@
   /* bottom: 20px; */ /* It should stop near the bottom of its parent. */
 }
 
-.bs-sidenavNew form, .bs-sidenavNew #sourcelink {
+.bs-sidenavNew form,
+.bs-sidenavNew #sourcelink {
   padding: 5px 20px;
-}
-
-.bs-sidenavNew {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-shadow: 0 1px 0 #fff;
-	background-color: #f7f5fa;
-	border-radius: 5px;
 }
 
 /* The code below is based on the bootstrap website sidebar */
@@ -32,13 +119,17 @@
 
 /* First level of nav */
 .bs-sidenavNew {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 30px;
-  padding-top:    10px;
+  padding-top: 10px;
   padding-bottom: 10px;
-  text-shadow: 0 1px 0 #fff;
   background-color: #f7f5fa;
-  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .bs-sidenavNew {
+    margin-top: 30px;
+  }
 }
 
 /* All levels of nav */
@@ -51,7 +142,7 @@
 .bs-sidenavNew .nav > li > a:focus {
   text-decoration: none;
   background-color: #e5e3e9;
-  border-right: 1px solid #dbd8e0;
+  /* border-right: 1px solid #dbd8e0; */
 }
 .bs-sidenavNew .nav > .active > a,
 .bs-sidenavNew .nav > .active:hover > a,
@@ -63,21 +154,21 @@
 }
 
 .bs-sidenavNew .nav .nav > li > a {
-  padding-top:    3px;
+  padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 30px;
   font-size: 90%;
 }
 
 .bs-sidenavNew .nav .nav .nav > li > a {
-  padding-top:    3px;
+  padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 40px;
   font-size: 90%;
 }
 
 .bs-sidenavNew .nav .nav .nav .nav > li > a {
-  padding-top:    3px;
+  padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 50px;
   font-size: 90%;
@@ -114,41 +205,134 @@
   }
 }
 
-
-body {
-	padding-top: 0px;
-}
-
 #navbar {
-	border-radius: 0px !important;
-	box-shadow: 0px 0px 8px black;
-	background: white;
-	height: 58px;
+  border-radius: 0px !important;
+  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 #navbarSpacer {
-	height: 50px;
+  height: 70px;
 }
 
-#navbar .navbar-brand > img {
-	width: 150px;
+.navbar-fixed-top .navbar-collapse {
+  max-height: none;
+}
+
+.navbar-nav {
+  padding: 0.6em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    padding: 1.6em 0;
+    flex-direction: row;
+  }
 }
 
 .navbar-brand {
-	padding: 9px;
+  float: none;
+  height: auto;
+  padding: 0;
+  font-size: 1em;
+  line-height: auto;
+  margin-left: 0 !important;
+}
+
+.navbar-nav > li {
+  margin-right: 2.5em;
+}
+
+.navbar-nav > li > a {
+  padding: 0.3em;
+  text-align: center;
+}
+
+.nav .open > a {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: white;
+  background-color: #0098db;
+  background-image: none;
+}
+
+.dropdown-menu.globaltoc .caption {
+  padding-left: 1em;
+}
+
+.navbar-toggle {
+  border: 0;
+  border-radius: 0;
+}
+
+.sections-collapse {
+  list-style-type: none;
+}
+
+.sections-collapse > li {
+  text-align: center;
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  .sections-collapse > li {
+    height: 1.5em;
+  }
+}
+
+.sections-collapse a {
+  color: #4a4a4a;
+}
+
+@media (min-width: 768px) {
+  .sections-collapse.collapse {
+    display: flex !important;
+  }
+
+  .sections-collapse > li {
+    text-align: left;
+    margin: 0;
+  }
+
+  .sections-collapse a {
+    margin: 0 2.5em 0 0;
+  }
 }
 
 /* only for t2 logo */
 #navbar .navbar-header .navbar-brand > img {
-	width: 102px;
-	margin-top: 3px;
+  width: 102px;
+  margin-top: 3px;
+}
+
+#navbar .navbar-header.pull-right {
+  margin-top: 7px;
 }
 
 #sidebar {
-	background-color: #eee;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #sidebar {
+    display: block;
+    border-right: 1px solid #ddd;
+  }
 }
 
 header {
-  background-image: url('t2HeaderBg.png');
+  background-image: url("t2HeaderBg.png");
   height: 110px; /*140px;*/
 }
 
@@ -197,50 +381,58 @@ header #t2-random-slogan {
 }
  */
 .bs-sidenavNew {
-    background-color: #EBEBED;
+  background-color: #fff;
 }
 
 footer {
-  background-image: url('t2FooterBlackLinen.png');
-  padding: 10px;
-  padding-top: 10px;
-  color: #DDDDDD;
+  background-color: #4a4a4a;
+  padding: 2.5em !important;
+  color: #fff;
   /* font-size: 12px; */
 
-  -moz-box-shadow:    0px 1px 5px 5px #aaa;
-  -webkit-box-shadow: 0px 1px 5px 5px #aaa;
-  box-shadow:         0px 1px 5px 5px #aaa;
   margin-top: 30px;
 }
 
-footer a { color: white }
-
-
-a {
-	color: #3b5998;
+footer a {
+  color: white;
+  text-decoration: underline;
 }
 
-
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .Logo__shade {
+    background: #0098db;
+    background: linear-gradient(
+      0deg,
+      #0098db 0%,
+      #0098db 45%,
+      #c9d9ec 45%,
+      #c9d9ec 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
 
 /* add the github logo to source link */
 .githubLogo {
-	background-image: url('githubLogo.png');
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	margin-right: 3px;
-	margin-bottom: -2px;
+  background-image: url("githubLogo.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 3px;
+  margin-bottom: -2px;
 }
 
 /* add the permalink like github */
 a.headerlink {
-	background-image: url(linkIcon.png);
-	color: rgba(255,255,255,0);
-	background-size: 100%;
-	background-position: 50%;
-	background-repeat: no-repeat;
-	opacity: 0.7;
-	margin-left: 4px;
+  background-image: url(linkIcon.png);
+  color: rgba(255, 255, 255, 0);
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  margin-left: 4px;
 }
 
 /*
@@ -363,38 +555,36 @@ code {
 }
 */
 
-
-
 #sidebar ul.current a.current {
-	color: black;
-	text-decoration: none;
-	background-color: #CECECE;
-	border-right: 2px solid !important;
-	/*border-right: 1px solid #dbd8e0;*/
+  color: white;
+  text-decoration: none;
+  background-color: #0098db;
+  /* border-right: 2px solid !important; */
+  /*border-right: 1px solid #dbd8e0;*/
 }
 
 li.toctree-l1 > a {
+  font-weight: bold;
 }
 li.toctree-l2 > a {
-	font-weight: bold;
 }
 li.toctree-l3 > a {
-	font-size:85% !important;
+  font-size: 85% !important;
 }
 li.toctree-l4 > a {
-	font-style: italic;
-	font-size:80% !important;
+  font-style: italic;
+  font-size: 80% !important;
 }
 
 .admonition-congrats {
-	background-image: -webkit-linear-gradient(top,#dff0d8 0,#c8e5bc 100%);
-	background-image: linear-gradient(to bottom,#dff0d8 0,#c8e5bc 100%);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #dff0d8 0, #c8e5bc 100%);
+  background-image: linear-gradient(to bottom, #dff0d8 0, #c8e5bc 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
 
-	background-color: #dff0d8;
-	border-color: #b2dba1;
-	color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #b2dba1;
+  color: #3c763d;
 }
 
 /*
@@ -418,58 +608,58 @@ li.toctree-l4 > a {
 .highlight-bash:before,
 .highlight-python:before,
 .highlight-r:before,
-.highlight-matlab:before
-{
-	font-size: 10px;
-	border: 1px solid #ccc;
-	border-radius: 5px 5px 0px 0px;
-	border-bottom: none;
-	padding: 0px 5px;
-	display: inline-block;
-	height: 17px;
-	background-color: #f5f5f5;
+.highlight-matlab:before {
+  font-size: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none;
+  padding: 0px 5px;
+  display: inline-block;
+  height: 17px;
+  background-color: #f5f5f5;
 }
 
 /* set default text for each code block language previosly defined*/
 .highlight-console:before {
-	content: "Console command";
+  content: "Console command";
 }
 .highlight-console-output:before {
-	content: "Console output";
+  content: "Console output";
 }
 .highlight-xml:before {
-	content: "XML document";
+  content: "XML document";
 }
 .highlight-bash:before {
-	content: "Bash script";
+  content: "Bash script";
 }
 .highlight-python:before {
-	content: "Python";
+  content: "Python";
 }
 .highlight-r:before {
-	content: "R";
+  content: "R";
 }
 .highlight-matlab:before {
-	content: "matlab";
+  content: "matlab";
 }
 /* resolve sphinx-bootstrap css conflict */
-.container[class^="context-"], .container[class*=" context-"] {
-	width: auto;
-	padding: 0px;
+.container[class^="context-"],
+.container[class*=" context-"] {
+  width: auto;
+  padding: 0px;
 }
 
 /* set context texts */
 .context-run-executable.container > .highlight-bash:before {
-	content: "Bash run executable";
+  content: "Bash run executable";
 }
 .context-run-executable.container > .highlight-r:before {
-	content: "R run executable";
+  content: "R run executable";
 }
 .context-run-executable.container > .highlight-python:before {
-	content: "Python run executable";
+  content: "Python run executable";
 }
 .context-application-descriptor-file.container > .highlight-xml:before {
-	content: "Application Descriptor file (XML)";
+  content: "Application Descriptor file (XML)";
 }
 
 /* remove border top left radius when there's the caption element */
@@ -479,70 +669,75 @@ li.toctree-l4 > a {
 .highlight-bash pre,
 .highlight-python pre,
 .highlight-r pre,
-.highlight-matlab pre
-{
-	border-top-left-radius: 0px;
+.highlight-matlab pre {
+  border-top-left-radius: 0px;
 }
 
 /* enphatize console */
-.highlight-console pre, .highlight-console-output pre {
-	border-top-left-radius: 0px;
-	background: #444;
-	border-color: #444;
+.highlight-console pre,
+.highlight-console-output pre {
+  border-top-left-radius: 0px;
+  background: #444;
+  border-color: #444;
 }
 
-.highlight-console pre, .highlight-console-output pre, .highlight-console pre>span, .highlight-console pre>span.go {
-	color: #1BDF00;
+.highlight-console pre,
+.highlight-console-output pre,
+.highlight-console pre > span,
+.highlight-console pre > span.go {
+  color: #1bdf00;
 }
 
-.highlight-console pre>span.go:before {
-	content: "$";
-	margin-right: 9px;
-	color: #eee;
+.highlight-console pre > span.go:before {
+  content: "$";
+  margin-right: 9px;
+  color: #eee;
 }
 
-.highlight-matlab pre>span.n:before {
-	content: ">>";
-	margin-right: 9px;
-	color: #333;
+.highlight-matlab pre > span.n:before {
+  content: ">>";
+  margin-right: 9px;
+  color: #333;
 }
 
 /* custom captions */
-.context-custom.container>[class^="highlight-"]:before {
-	content: initial;
+.context-custom.container > [class^="highlight-"]:before {
+  content: initial;
 }
-.context-custom.container>[class^="highlight-"] pre {
-	border-top-left-radius: 0px;
+.context-custom.container > [class^="highlight-"] pre {
+  border-top-left-radius: 0px;
 }
-.context-custom.container>p {
-	display: inline-block;
-	margin: 0px;
-	border: 1px solid #ccc;
-	border-radius: 5px 5px 0px 0px;
-	border-bottom: none;
-	padding: 0px 5px;
-	height: 17px;
-	font-size: 10px;
-	background-color: #f5f5f5;
+.context-custom.container > p {
+  display: inline-block;
+  margin: 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none;
+  padding: 0px 5px;
+  height: 17px;
+  font-size: 10px;
+  background-color: #f5f5f5;
 }
 
 /* image rendering */
 .img-border img {
-	border: 2px solid gray;
-	border-radius: 6px;
-	padding: 5px;
+  border: none;
+  border-radius: 0;
+  padding: 5px;
 }
 .img-container-border {
-	border: 2px solid gray;
-	border-radius: 6px;
-	padding: 5px;
+  border: none;
+  border-radius: 0;
+  padding: 5px;
 }
 .img-max-width img {
-	width: 100% !important;
+  width: 100% !important;
 }
 .figure {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-img.align-center, .figure.align-center, object.align-center {
-	max-width: 100%;
+img.align-center,
+.figure.align-center,
+object.align-center {
+  max-width: 100%;
 }
