@@ -73,7 +73,7 @@ The members of the water user community already involved in the demonstration of
 	•	SANSA in South Africa
 	•	Water Resources Commission of Ghana
 
-A key goal of Hydro-TEP is to encourage ever greater participation of the user community.  Hydro-TEP openly welcomes the involvement of any actor interested in any water application, such as:
+A key goal of Hydrology TEP is to encourage ever greater participation of the user community.  Hydrology TEP openly welcomes the involvement of any actor interested in any water application, such as:
 
 -	Research Organisations (e.g. hydrological institutes)
 -	River Basin organisations, national water authorities, and environment agencies 
