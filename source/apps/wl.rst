@@ -7,8 +7,7 @@ Water Level services provide water level time series based on Altimetry for lake
 
 .. raw:: html
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/hbD_-9Nc698" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+	<div class="embed-container"><iframe src="https://www.youtube.com/embed/hbD_-9Nc698" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
 
