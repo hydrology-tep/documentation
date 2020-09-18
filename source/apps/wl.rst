@@ -5,12 +5,20 @@ Water Level
 
 Water Level services provide water level time series based on Altimetry for lakes and rivers.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/hbD_-9Nc698" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
 Water Level Access
 ------------------
 
 From the thematic application page, click on the **Open App** button for the **Water Level** application.
 
 A new page with the geobrowser, data collections and processing services associated to the Water Level application will appear.
+
 
 
 View Altimetry tracks on the Geobrowser
