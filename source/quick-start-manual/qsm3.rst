@@ -11,14 +11,14 @@ Once you are logged onto the HTEP platform (see :doc:`Quick Start Manual 1 <qsm1
 The Geobrowser
 ==============
 
-Once you have accessed your thematic application of interest the Geobrowser opens. The geobrowser for the Small Water Bodies Mapping for Red River is shown in Figure 1. Within the Geobrowser you are -amongst others- able to search and collect data, process data, reproduce results, and share data and results with your community, other HTEP users or even with visitors.
+Once you have accessed your thematic application of interest the Geobrowser opens. The geobrowser for the Water Quality for Red River is shown in Figure 1. Within the Geobrowser you are -amongst others- able to search and collect data, process data, reproduce results, and share data and results with your community, other HTEP users or even with visitors.
 
 .. figure:: includes/qsm3-f1.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
 	
-	Figure 1: The Geobrowser of SWBM for Red River Application (1)
+	Figure 1: The Geobrowser of WQ for Red River Application (1)
 
 Search and collect data
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,12 +33,19 @@ Search and collect data
 
 5. After your searches, this box shows the data products that meet the requirements of your search. Hovering the data products causes the specific product to be highlighted on the map. As such you can easily visualize the area covered by the specific data product. It also possible to show or hide the data product results on the map. This can be done using the little icons behind the data products that will appear while you hover the data product.
  
-.. figure:: includes/qsm3-f2.png
+.. figure:: includes/qsm3-f2.1.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	
 	
-	Figure 2: The Geobrowser of SWBM for Red River Application (2) 
+	Figure 2.1: The Geobrowser of WQ for Red River Application (2) 
+
+	.. figure:: includes/qsm3-f2.2.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border	
+	
+	Figure 2.2: The Geobrowser of WQ for Red River Application (3) 
 
 6. Selecting a data product causes a pop-up to appear with information and meta data about the specific data product, as shown in Figure 2. 
 
@@ -74,11 +81,11 @@ Process Data
 	:width: 80%
 	:figclass: img-container-border	
 	
-	Figure 5: The Geobrowser of SWBM for Red River Application (3)
+	Figure 5: The Geobrowser of WQ for Red River Application (4)
 
 2. An overview of the available services within this thematic application is given. Hovering a service provides you a small summary of the service and its developer. 
 
-3. Currently for Small Water Body Mapping there is only one service available, but the search field can be used to find your service of interest once there is an extensive number of services available. 
+3. Currently for Water Quality there is only one service available, but the search field can be used to find your service of interest once there is an extensive number of services available. 
  
 .. figure:: includes/qsm3-f6.png
 	:align: center
